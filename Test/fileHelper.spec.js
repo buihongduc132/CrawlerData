@@ -4,6 +4,7 @@ var config = require(path.join(pathToRoot, 'config.json'));
 
 var chai = require('chai');
 var expect = chai.expect;
+chai.use(require('chai-fs'));
 var fileHelper = require(path.join(pathToRoot, config.path.require.fileHelper));
 
 describe('Data Helper', () => {
@@ -23,10 +24,10 @@ describe('Data Helper', () => {
     describe('Write file', () => {
         it('should create and write file with correct content', () => {
             var seed = JSON.stringify(Math.random());
-            fileHelper.writeFile(config.path.test.writeFile, seed).then(() => {
-                fileHelper.readFile(config.path.test.writeFile).then((result) => {
-                    expect(result).equal(seed);
-                })
+            var filePath = config.path.test.writeFile;
+            fileHelper.writeFile(filePath, seed).then(() => {
+                expect(filePath).is.a.file();
+                expect(filePath).to.have.content(seed);
             })
         })
     });
@@ -36,6 +37,10 @@ describe('Data Helper', () => {
             var fileNames = ["File1", "File2.json", "File3.xml", "File4.json"];
             fileHelper.getFiles(config.path.test.readDir).then((result) => {
                 expect(result).deep.equal(fileNames);
+
+                fileNames.forEach((name) => {
+                    expect(path.join(config.path.test.readDir, name)).to.be.a.file;
+                });
             });
         });
     });
@@ -46,6 +51,10 @@ describe('Data Helper', () => {
 
             fileHelper.getFilesByType(config.path.test.readDir).then((result) => {
                 expect(result).deep.equal(fileNames);
+
+                fileNames.forEach((fileName) => {
+                    expect(path.join(config.path.test.readDir, fileName)).to.have.extname('.json');
+                });
             });
         })
     });

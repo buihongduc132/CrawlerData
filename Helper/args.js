@@ -14,6 +14,10 @@ const optionDefinitions = [
         type: Boolean
     },
     {
+        name: 'refresh-seed',
+        type: Boolean
+    },
+    {
         name: 'recursive'
     },
     {

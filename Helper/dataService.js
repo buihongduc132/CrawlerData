@@ -12,10 +12,6 @@ var getHtml = function(uri) {
     });
 }
 
-var getFile = function(path, fileName) {
-    return fileHelper.readFile(path, fileName);
-}
-
 module.exports = {
     getHtml: getHtml,
     getFile: getFile

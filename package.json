@@ -13,7 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
-    "lodash": "^4.16.4"
+    "chai-fs": "^0.1.0",
+    "lodash": "^4.16.4",
+    "sinon": "^1.17.6"
   },
   "dependencies": {
     "argparse": "^1.0.9",

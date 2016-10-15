@@ -14,24 +14,36 @@
             "writeFile": "mock/writeFile.txt",
             "readDir": "mock/readDir/",
             "mockRouting": "mock/mockRouting.js",
-            "mockData": {
-                "imdbTopRated": "",
-                "imdbTopRatedByGenre": "",
-                "imdbPopular": "",
-                "imdbPopularByGenre": "",
-                "imdbMovieListByGenere": "",
-                "imdbTopIndian": ""
-            }
-        },
-        "helper": "helper",
-        "template": "template"
+            "mockData": [
+                {
+                    "path": "mock/mockData/topRated.html",
+                    "url": "http://www.imdb.com/chart/top"
+                },
+                {
+                    "path": "mock/mockData/topRatedAction.html",
+                    "url": "http://www.imdb.com/search/title?genres=action&sort=user_rating,desc&title_type=feature&num_votes=25000,&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2406822102&pf_rd_r=1YW4TCB6SY5QC403MG2C&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_gnr_1"
+                },
+                {
+                    "path": "mock/mockData/mostPopular.html",
+                    "url": "http://www.imdb.com/chart/moviemeter"
+                },
+                {
+                    "path": "mock/mockData/popularAction.html",
+                    "url": "http://www.imdb.com/genre/action?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2251824562&pf_rd_r=0BBFFW17G9F24C46YXKT&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_gnr_1"
+                },
+                {
+                    "path": "mock/mockData/topRatedIndian.html",
+                    "url": "http://www.imdb.com/chart/top-indian-movies"
+                }
+            ]
+        }
     },
     "host": {
         "imdb": {
             "topRated": "http://www.imdb.com/chart/top",
-            "topRatedByGenre": "http://www.imdb.com/chart/top",
+            "topRatedAction": "http://www.imdb.com/search/title?genres=action&sort=user_rating,desc&title_type=feature&num_votes=25000,&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2406822102&pf_rd_r=1YW4TCB6SY5QC403MG2C&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_gnr_1",
             "popular": "http://www.imdb.com/chart/moviemeter",
-            "popularByGenre": "http://www.imdb.com/chart/moviemeter",
+            "popularAction": "http://www.imdb.com/genre/action?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2251824562&pf_rd_r=0BBFFW17G9F24C46YXKT&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_gnr_1",
             "topIndian": "http://www.imdb.com/chart/top-indian-movies"
         }
     },
