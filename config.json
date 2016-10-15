@@ -1,0 +1,23 @@
+{
+    "path": {
+        "require": {
+            "fileHelper": "./Helper/fileHelper",
+            "converter": "./Helper/converter",
+            "dataService": "./Helper/dataService",
+            "formatHelper": "./Helper/formatHelper",
+            "htmlHelper": "./Helper/htmlHelper"
+        },
+        "test": {
+            "readFile": "./TestFile/readFile.txt"
+        },
+        "helper": "helper",
+        "template": "template"
+    },
+    "host": {
+        "imdb": {
+            "domain": "http://www.imdb.com",
+            "topRated": "chart/top"
+        }
+    },
+    "fileEncoding": "utf-8"
+}

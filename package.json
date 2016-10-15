@@ -1,0 +1,32 @@
+{
+  "name": "datacrawling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --recursive --watch",
+    "testCoverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/* && open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  },
+  "dependencies": {
+    "argparse": "^1.0.9",
+    "bluebird": "^3.4.6",
+    "cheerio": "^0.22.0",
+    "command-line-args": "^3.0.1",
+    "gulp": "^3.9.1",
+    "html-minifier": "^3.1.0",
+    "http": "0.0.0",
+    "mocha": "^3.1.2",
+    "node-html-encoder": "0.0.2",
+    "pretty-data": "^0.40.0",
+    "request": "^2.75.0",
+    "xmlbuilder": "^8.2.2",
+    "xmldom": "^0.1.22",
+    "xpath": "0.0.23"
+  }
+}
