@@ -8,7 +8,9 @@
             "htmlHelper": "./Helper/htmlHelper"
         },
         "test": {
-            "readFile": "./TestFile/readFile.txt"
+            "readFile": "./TestFile/readFile.txt",
+            "writeFile": "./TestFile/writeFile.txt",
+            "readDir": "./TestFile/readDir/"
         },
         "helper": "helper",
         "template": "template"

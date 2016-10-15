@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test --recursive --watch",
-    "testCoverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/* && open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/* && open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
     "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "lodash": "^4.16.4"
   },
   "dependencies": {
     "argparse": "^1.0.9",
