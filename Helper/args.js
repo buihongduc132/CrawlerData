@@ -8,6 +8,16 @@ const optionDefinitions = [
         name: 'iteration',
         alias: 'v',
         type: Number
+    },
+    {
+        name: 'test',
+        type: Boolean
+    },
+    {
+        name: 'recursive'
+    },
+    {
+        name: 'watch'
     }
 ];
 

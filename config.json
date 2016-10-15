@@ -1,24 +1,38 @@
 {
     "path": {
         "require": {
-            "fileHelper": "./Helper/fileHelper",
-            "converter": "./Helper/converter",
-            "dataService": "./Helper/dataService",
-            "formatHelper": "./Helper/formatHelper",
-            "htmlHelper": "./Helper/htmlHelper"
+            "httpHelper": "Helper/httpHelper",
+            "fileHelper": "Helper/fileHelper",
+            "converter": "Helper/converter",
+            "dataService": "Helper/dataService",
+            "formatHelper": "Helper/formatHelper",
+            "htmlHelper": "Helper/htmlHelper",
+            "args": "Helper/args"
         },
         "test": {
-            "readFile": "./TestFile/readFile.txt",
-            "writeFile": "./TestFile/writeFile.txt",
-            "readDir": "./TestFile/readDir/"
+            "readFile": "mock/readFile.txt",
+            "writeFile": "mock/writeFile.txt",
+            "readDir": "mock/readDir/",
+            "mockRouting": "mock/mockRouting.js",
+            "mockData": {
+                "imdbTopRated": "",
+                "imdbTopRatedByGenre": "",
+                "imdbPopular": "",
+                "imdbPopularByGenre": "",
+                "imdbMovieListByGenere": "",
+                "imdbTopIndian": ""
+            }
         },
         "helper": "helper",
         "template": "template"
     },
     "host": {
         "imdb": {
-            "domain": "http://www.imdb.com",
-            "topRated": "chart/top"
+            "topRated": "http://www.imdb.com/chart/top",
+            "topRatedByGenre": "http://www.imdb.com/chart/top",
+            "popular": "http://www.imdb.com/chart/moviemeter",
+            "popularByGenre": "http://www.imdb.com/chart/moviemeter",
+            "topIndian": "http://www.imdb.com/chart/top-indian-movies"
         }
     },
     "fileEncoding": "utf-8"

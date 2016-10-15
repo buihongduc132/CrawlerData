@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --recursive --watch",
-    "coverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/* && open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
+    "test": "mocha test --recursive --watch --test",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/*",
+    "coverage:report": "open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
     "start": "node index.js"
   },
   "author": "",
