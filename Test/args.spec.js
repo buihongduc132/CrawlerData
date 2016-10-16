@@ -10,4 +10,10 @@ describe('Environment Arguments Helper', () => {
     it('should get test argument', () => {
         expect(args.test).equal(true);
     });
+    it('should be able to get a blank param', () => {
+        expect(args.getBlankParam('test')).equal(true)
+    });
+    it('should return false for params does not exists', () => {
+        expect(args.getBlankParam('ThisParamIsNotExists')).equal(false);
+    });
 });

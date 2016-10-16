@@ -1,28 +1,10 @@
-const commandLineArgs = require('command-line-args');
+var _ = require('lodash');
 
-const optionDefinitions = [
-//   { name: 'verbose', alias: 'v', type: Boolean },
-//   { name: 'src', type: String, multiple: true, defaultOption: true },
-//   { name: 'timeout', alias: 't', type: Number }
-    {
-        name: 'iteration',
-        alias: 'v',
-        type: Number
-    },
-    {
-        name: 'test',
-        type: Boolean
-    },
-    {
-        name: 'refresh-seed',
-        type: Boolean
-    },
-    {
-        name: 'recursive'
-    },
-    {
-        name: 'watch'
-    }
-];
+var args = require('minimist')(process.argv);
 
-module.exports = commandLineArgs(optionDefinitions);
+args.getBlankParam = function(paramName) {
+    return args._.indexOf(paramName) > -1;
+}
+
+args.test = args.getBlankParam('test');
+module.exports = args;
