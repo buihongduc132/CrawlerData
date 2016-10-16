@@ -1,0 +1,43 @@
+{
+    "readFile": "mock/readFile.txt",
+    "writeFile": "mock/writeFile.txt",
+    "readDir": "mock/readDir/",
+    "mockRouting": "mock/mockRouting.js",
+    "mockData": [
+        {
+            "name": "topRated",
+            "path": "mock/mockData/topRated.html",
+            "url": "http://www.imdb.com/chart/top"
+        },
+        {
+            "name": "topRateGenreList",
+            "path": "mock/mockdata/topRateGenreList.html",
+            "url": "http://www.imdb.com/chart/top"
+        },
+        {
+            "name": "topRatedAction",
+            "path": "mock/mockData/topRatedAction.html",
+            "url": "http://www.imdb.com/search/title?genres=action&sort=user_rating,desc&title_type=feature&num_votes=25000,&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2406822102&pf_rd_r=1YW4TCB6SY5QC403MG2C&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_gnr_1"
+        },
+        {
+            "name": "mostPopular",
+            "path": "mock/mockData/mostPopular.html",
+            "url": "http://www.imdb.com/chart/moviemeter"
+        },
+        {
+            "name": "popularGenreList",
+            "path": "mock/mockData/popularGenreList.html",
+            "url": "http://www.imdb.com/chart/moviemeter"
+        },
+        {
+            "name": "popularAction",
+            "path": "mock/mockData/popularAction.html",
+            "url": "http://www.imdb.com/genre/action?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2251824562&pf_rd_r=0BBFFW17G9F24C46YXKT&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_gnr_1"
+        },
+        {
+            "name": "topRatedIndian",
+            "path": "mock/mockData/topRatedIndian.html",
+            "url": "http://www.imdb.com/chart/top-indian-movies"
+        }
+    ]
+}

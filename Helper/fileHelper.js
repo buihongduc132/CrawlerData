@@ -1,12 +1,16 @@
 var pathToRoot = '../';
 var path = require('path');
-var config = require(path.join(pathToRoot, 'config.json'));
+
+var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
+var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
+
+var config = require(path.join(pathToRoot, moduleLocation.config));
 
 var Promise = require('bluebird');
 var fs = require('fs');
 Promise.promisifyAll(fs);
 var _ = require('lodash');
-var args = require(path.join(pathToRoot, config.path.require.args));
+var args = require(path.join(pathToRoot, moduleLocation.args));
 
 var readFile = function(inputPath) {
     return fs.readFileAsync(inputPath, config.fileEncoding);

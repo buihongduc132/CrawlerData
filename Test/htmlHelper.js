@@ -5,17 +5,13 @@ var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
 var testData = require(path.join(pathToRoot, 'constant/testData.json'));
 
-var _ = require('lodash');
-var mockPaths = testData.mockData;
+var chai = require('chai');
+var expect = chai.expect;
+var sinon = require('sinon');
+var htmlHelper = require(path.join(pathToRoot, moduleLocation.htmlHelper));
 
-var getMockFile = function(uri) {
-    var result = _.find(mockPaths, (path) => {
-        return path.url == uri;
+describe('Html Helper', () => {
+    it('should get the mock data', () => {
+        // htmlHelper.
     });
-
-    return result ? result.path : result;
-}
-
-module.exports = {
-    getMockFile: getMockFile    
-}
+});

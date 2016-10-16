@@ -1,0 +1,10 @@
+{
+    "httpHelper": "Helper/httpHelper",
+    "fileHelper": "Helper/fileHelper",
+    "converter": "Helper/converter",
+    "dataService": "Helper/dataService",
+    "formatHelper": "Helper/formatHelper",
+    "htmlHelper": "Helper/htmlHelper",
+    "args": "Helper/args",
+    "config": "/config.json"
+}

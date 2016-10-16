@@ -1,36 +1,5 @@
-var cheerio = require('cheerio');
 
-var getSelector = function (data, selector) {
-    let $ = cheerio.load(data);
-    return $(selector);
-};
-
-var getTextDetail = function (data, selector) {
-    let $ = cheerio.load(data);
-    var selector = $(selector).text();
-    return selector;
-};
-
-var getDataFromAttribute = function (data, selector, attribute) {
-    return getSelector(data, selector).attr(attribute);
-};
-
-var getListData = function (data, selector) {
-    let $ = cheerio.load(data);
-    var rawHtml = $(selector);
-
-    var list = [];
-    for (var i = 0; i < rawHtml.length; i++) {
-        var current = rawHtml[i];
-        list.push(current.children[0].data);
-    }
-    return list;
-};
-
-var
-
-
-var imdb = {
+module.exports = {
     list: {
         detailUrlByRanking: function (data) {
             throw new Error('not yet implemented (rankingListParser)');
@@ -43,18 +12,18 @@ var imdb = {
         }
     },
     detailToObject: function (data) {
-        let getPostName = function(postTitle) {
+        let getPostName = function (postTitle) {
             return postTitle ? postTitle.replace(/\s|\(/g, '-').replace(/\)$/, '') : '<Blank Title>';
         };
 
-        let getLinkId = function(rawId) {
+        let getLinkId = function (rawId) {
             return rawId ? rawId.replace(/^tt/, '') : '<Blank Id>';
         };
-        let getThumbnailId = function(rawId) {
+        let getThumbnailId = function (rawId) {
             return rawId * 11;
         };
 
-        let getContentImgId = function(rawId) {
+        let getContentImgId = function (rawId) {
             return rawId * 111;
         };
 
@@ -87,12 +56,3 @@ var imdb = {
         return result;
     }
 }
-
-
-var
-
-    module.exports = {
-        imdb: {
-            detailParser: imdbDetailParser
-        }
-    }

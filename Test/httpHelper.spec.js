@@ -1,13 +1,16 @@
 var pathToRoot = '../';
 var path = require('path');
-var config = require(path.join(pathToRoot, 'config.json'));
+
+var moduleLocation = require(path.join(pathToRoot, 'constant/require.json')); 
+var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
+var testData = require(path.join(pathToRoot, 'constant/testData.json'));
 
 var chai = require('chai');
 var expect = chai.expect;
 var sinon = require('sinon');
-var httpHelper = require(path.join(pathToRoot, config.path.require.httpHelper));
-var args = require(path.join(pathToRoot, config.path.require.args));
-var mock = require(path.join(pathToRoot, config.path.test.mockRouting));
+var httpHelper = require(path.join(pathToRoot, moduleLocation.httpHelper));
+var args = require(path.join(pathToRoot, moduleLocation.args));
+var mock = require(path.join(pathToRoot, testData.mockRouting));
 
 describe('Http Helper', () => {
     describe('Get Html', () => {
