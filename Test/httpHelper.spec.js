@@ -17,8 +17,7 @@ describe('Http Helper', () => {
         it('should get mocking data when testing', () => {
             expect(args.test).to.be.true;
             var getMockData = sinon.spy(mock, 'getMockFile');
-
-            httpHelper.getHtml('testingUri');
+            httpHelper.getHtml('http://www.imdb.com/chart/top');
             sinon.assert.calledOnce(getMockData);
         });
     });

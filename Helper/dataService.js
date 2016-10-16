@@ -1,18 +1,16 @@
-var request = require('request');
-var Promise = require('bluebird');
-var config = require.main.require('./config.json');
+var pathToRoot = '../';
+var path = require('path');
 
-Promise.promisifyAll(request);
-var fileHelper = require.main.require(moduleLocation.fileHelper);
+var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
+var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
 
-var getHtml = function(uri) {
-    return request.getAsync({
-        method: 'GET',
-        uri: uri
-    });
-}
+var fileHelper = require(path.join(pathToRoot, moduleLocation.fileHelper));
+var httpHelper = require(path.join(pathToRoot, moduleLocation.httpHelper));
 
 module.exports = {
-    getHtml: getHtml,
-    getFile: getFile
+    readFile: fileHelper.readFile,
+    writeFile: fileHelper.writeFile,
+    getFiles: fileHelper.getFiles,
+    getFilesByType: fileHelper.getFilesByType,
+    getHtml: httpHelper.getHtml
 }

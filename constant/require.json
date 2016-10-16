@@ -6,5 +6,7 @@
     "formatHelper": "Helper/formatHelper",
     "htmlHelper": "Helper/htmlHelper",
     "args": "Helper/args",
-    "config": "/config.json"
+    "config": "config.json",
+    "templateHelper": "Helper/templateHelper.js",
+    "constant": "Constant/constant.json"
 }

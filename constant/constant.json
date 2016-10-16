@@ -1,0 +1,29 @@
+{
+    "listType": {
+        "movie": "1",
+        "serie": "2"
+    },
+    "movieGenre": [
+        "action",
+        "adventure",
+        "animation",
+        "biography",
+        "comedy",
+        "crime",
+        "drama",
+        "family",
+        "fantasy",
+        "film-Noir",
+        "history",
+        "horror",
+        "music",
+        "musical",
+        "mystery",
+        "romance",
+        "sci-Fi",
+        "sport",
+        "thriller",
+        "war",
+        "western"
+    ]
+}
