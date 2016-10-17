@@ -33,6 +33,10 @@ var getFilesByType = function(inputPath) {
     }));
 }
 
+var stats = function(inputPath) {
+    return fs.statAsync(path.join(pathToRoot, inputPath));
+}
+
 var appendFile = function(inputPath, data) {
     return fs.appendFile(path.join(pathToRoot, inputPath), data);
 }
@@ -42,5 +46,6 @@ module.exports = {
     writeFile: writeFile,
     getFiles: getFiles,
     getFilesByType: getFilesByType,
-    appendFile: appendFile
+    appendFile: appendFile,
+    stats: stats
 }

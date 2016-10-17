@@ -13,5 +13,6 @@ module.exports = {
     getFiles: fileHelper.getFiles,
     getFilesByType: fileHelper.getFilesByType,
     appendFile: fileHelper.appendFile,
+    stats: fileHelper.stats,
     getHtml: httpHelper.getHtml
 }

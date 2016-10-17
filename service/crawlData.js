@@ -15,14 +15,7 @@ var pd = require('pretty-data').pd;
 var Promise = require('bluebird');
 var _ = require('lodash');
 
-var getMoviesOverview = function () {
-    var movieOverviewString = dataService.readFile(dataLocation.movieListOverview);
-    return movieOverviewString.then((result) => {
-        return JSON.parse(result);
-    });
-}
-
-var _getMovieInAllGenre = function(pages) {
+var _getMovieInAllGenre = function (pages) {
     var genres = constant.movieGenre;
     var filePath = dataLocation.movieListOverview;
     var movieInAllGenre = [];
@@ -40,6 +33,33 @@ var _getMovieInAllGenre = function(pages) {
     return movieInAllGenre;
 }
 
+var getMoviesOverview = function () {
+    var movieOverviewString = dataService.readFile(dataLocation.movieListOverview);
+    return movieOverviewString.then((result) => {
+        return JSON.parse(result);
+    });
+}
+
+var getNewMovies = function () {
+    var movieOverviews = dataService.readFile(dataLocation.movieListOverview);
+
+    var oldMovieList = dataService.readFile(dataLocation.oldMovies);
+
+    var newMovies = movieOverviews.then((movieOverviewData) => {
+        let movieOverviewObject = JSON.parse(movieOverviewData);
+
+        return oldMovieList.then((oldMovies) => {
+            let oldMovieObject = JSON.parse(oldMovies);
+
+            return _.reject(movieOverviewObject, (movie) => {
+                return oldMovieObject.indexOf(movie.id) > -1;
+            });
+        });
+
+    })
+    return newMovies;
+}
+
 var buildMovieJsonOverview = function () {
     var movieListByGenre = _getMovieInAllGenre(0);
 
@@ -48,7 +68,9 @@ var buildMovieJsonOverview = function () {
             return movieList;
         });
 
-        return Promise.resolve(movies);
+        var moviesUnique = _.sortedUniq(movies);
+
+        return Promise.resolve(moviesUnique);
     });
 
     return movieListAllGenre;
@@ -62,5 +84,6 @@ var writeMovieJsonOverview = function (data) {
 
 module.exports = {
     writeMovieJsonOverview: writeMovieJsonOverview,
-    buildMovieJsonOverview: buildMovieJsonOverview
+    buildMovieJsonOverview: buildMovieJsonOverview,
+    getNewMovies: getNewMovies
 }

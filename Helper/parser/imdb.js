@@ -6,10 +6,19 @@ var commonParser = require(path.join(pathToRoot, moduleLocation.parser.common));
 var url = require(path.join(pathToRoot, moduleLocation.url));
 
 var cheerio = require('cheerio');
- 
+
 let getPostName = function (postTitle) {
     return postTitle ? postTitle.replace(/\s|\(/g, '-').replace(/\)$/, '') : '<Blank Title>';
 };
+
+let getIdFromString = function (input) {
+    var regPattern = /tt\d{5,10}/;
+    var match = input.match(regPattern);
+    if(match.length > 0) {
+        return match[0];
+    }
+    return '';
+}
 
 let getLinkId = function (rawId) {
     return rawId ? rawId.replace(/^tt/, '') : '<Blank Id>';
@@ -28,16 +37,17 @@ module.exports = {
     getThumbnailId: getThumbnailId,
     getContentImgId: getContentImgId,
     list: {
-        movie: function (data) {   
+        movie: function (data) {
             let $ = cheerio.load(data);
             var result = commonParser.getSelector(data, '.lister-item-header>a');
             var movieList = [];
-            for(let i = 0 ; i < result.length ; i ++ ) {
+            for (let i = 0; i < result.length; i++) {
                 var resultHtml = $(result[i]);
 
                 movieList.push({
                     name: resultHtml.text(),
-                    url: path.join(url.imdb.root, resultHtml.attr('href'))
+                    url: path.join(url.imdb.root, resultHtml.attr('href')),
+                    id: getIdFromString(path.join(url.imdb.root, resultHtml.attr('href')))
                 })
             }
 

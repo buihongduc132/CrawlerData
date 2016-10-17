@@ -10,6 +10,10 @@ var crawlData = require(path.join(__dirname, pathToRoot, moduleLocation.service.
 
 var buildMovieJsonOverview = crawlData.buildMovieJsonOverview();
 
-var writeMovieJsonOverview = buildMovieJsonOverview.then((movies) => {
-    return crawlData.writeMovieJsonOverview(movies);
+// var writeMovieJsonOverview = buildMovieJsonOverview.then((movies) => {
+//     return crawlData.writeMovieJsonOverview(movies);
+// });
+
+var getNewMovies = crawlData.getNewMovies().then((data) => {
+    console.log(data.length);
 });
