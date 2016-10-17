@@ -1,49 +1,67 @@
+var path = require('path');
+var pathToRoot = path.join(__dirname, '../../');
+
+var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
+var commonParser = require(path.join(pathToRoot, moduleLocation.parser.common));
+var url = require(path.join(pathToRoot, moduleLocation.url));
+
+var cheerio = require('cheerio');
+ 
+let getPostName = function (postTitle) {
+    return postTitle ? postTitle.replace(/\s|\(/g, '-').replace(/\)$/, '') : '<Blank Title>';
+};
+
+let getLinkId = function (rawId) {
+    return rawId ? rawId.replace(/^tt/, '') : '<Blank Id>';
+};
+let getThumbnailId = function (rawId) {
+    return rawId * 11;
+};
+
+let getContentImgId = function (rawId) {
+    return rawId * 111;
+};
 
 module.exports = {
+    getPostName: getPostName,
+    getLinkId: getLinkId,
+    getThumbnailId: getThumbnailId,
+    getContentImgId: getContentImgId,
     list: {
-        detailUrlByRanking: function (data) {
-            throw new Error('not yet implemented (rankingListParser)');
-        },
-        detailUrlByCategory: function (data) {
-            throw new Error('not yet implemented (categoryListParser)');
-        },
-        listCategories: function (data) {
-            throw new Error('not yet implemented (listCategories)');
+        movie: function (data) {   
+            let $ = cheerio.load(data);
+            var result = commonParser.getSelector(data, '.lister-item-header>a');
+            var movieList = [];
+            for(let i = 0 ; i < result.length ; i ++ ) {
+                var resultHtml = $(result[i]);
+
+                movieList.push({
+                    name: resultHtml.text(),
+                    url: path.join(url.imdb.root, resultHtml.attr('href'))
+                })
+            }
+
+            return movieList;
         }
     },
     detailToObject: function (data) {
-        let getPostName = function (postTitle) {
-            return postTitle ? postTitle.replace(/\s|\(/g, '-').replace(/\)$/, '') : '<Blank Title>';
-        };
-
-        let getLinkId = function (rawId) {
-            return rawId ? rawId.replace(/^tt/, '') : '<Blank Id>';
-        };
-        let getThumbnailId = function (rawId) {
-            return rawId * 11;
-        };
-
-        let getContentImgId = function (rawId) {
-            return rawId * 111;
-        };
-
         var result = {
-            title: getDataFromAttribute(data, 'meta[property="og:title"]', 'content'),
-            starRaking: getTextDetail(data, 'div.ratingValue>strong>span'),
-            metaScore: getTextDetail(data, '.metacriticScore.score_favorable.titleReviewBarSubItem>span'),
-            director: getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a'),
-            writer: getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span'),
-            stars: getListData(data, '.credit_summary_item>span[itemprop="actors"]>a>span'),
-            duration: getTextDetail(data, '#titleDetails>div>time[itemprop="duration"]'),
-            genre: getListData(data, '.subtext>a>span[itemprop="genre"]'),
-            release: getDataFromAttribute(data, 'div.subtext>a>meta[itemprop="datePublished"]', 'content'),
-            poster: getDataFromAttribute(data, 'meta[property="og:image"]', 'content'),
+            title: commonParser.getDataFromAttribute(data, 'meta[property="og:title"]', 'content'),
+            starRaking: commonParser.getTextDetail(data, 'div.ratingValue>strong>span'),
+            metaScore: commonParser.getTextDetail(data, '.metacriticScore.score_favorable.titleReviewBarSubItem>span'),
+            director: commonParser.getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a'),
+            writer: commonParser.getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span'),
+            stars: commonParser.getListData(data, '.credit_summary_item>span[itemprop="actors"]>a>span'),
+            duration: commonParser.getTextDetail(data, '#titleDetails>div>time[itemprop="duration"]'),
+            genre: commonParser.getListData(data, '.subtext>a>span[itemprop="genre"]'),
+            release: commonParser.getDataFromAttribute(data, 'div.subtext>a>meta[itemprop="datePublished"]', 'content'),
+            poster: commonParser.getDataFromAttribute(data, 'meta[property="og:image"]', 'content'),
             alsoLike: '',
-            summary: getTextDetail(data, '.summary_text'),
-            storyline: getTextDetail(data, '#titleStoryLine>div[itemprop="description"]>p'),
-            year: getTextDetail(data, '#titleYear>a'),
-            uri: getDataFromAttribute(data, 'meta[property="og:url"]', 'content'),
-            id: getDataFromAttribute(data, 'meta[property="pageId"]', 'content')
+            summary: commonParser.getTextDetail(data, '.summary_text'),
+            storyline: commonParser.getTextDetail(data, '#titleStoryLine>div[itemprop="description"]>p'),
+            year: commonParser.getTextDetail(data, '#titleYear>a'),
+            uri: commonParser.getDataFromAttribute(data, 'meta[property="og:url"]', 'content'),
+            id: commonParser.getDataFromAttribute(data, 'meta[property="pageId"]', 'content')
         }
 
         result.postName = getPostName(result.title);

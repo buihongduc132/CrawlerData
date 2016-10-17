@@ -8,5 +8,14 @@
     "args": "Helper/args",
     "config": "config.json",
     "templateHelper": "Helper/templateHelper.js",
-    "constant": "Constant/constant.json"
+    "constant": "Constant/constant.json",
+    "dataLocation": "constant/dataLocation.json",
+    "url": "constant/url.json",
+    "service": {
+        "crawlData": "service/crawlData.js"
+    },
+    "parser": {
+        "common": "helper/parser/common.js",
+        "imdb": "helper/parser/imdb.js"
+    }
 }

@@ -1,5 +1,5 @@
-var pathToRoot = '../';
 var path = require('path');
+var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
@@ -13,15 +13,16 @@ var _ = require('lodash');
 var args = require(path.join(pathToRoot, moduleLocation.args));
 
 var readFile = function(inputPath) {
-    return fs.readFileAsync(inputPath, config.fileEncoding);
+    return fs.readFileAsync(path.join(pathToRoot, inputPath), config.fileEncoding);
+    // return fs.readFileAsync('./'+inputPath, config.fileEncoding);
 }
 
 var writeFile = function(inputPath, data) {
-    return fs.writeFileAsync(inputPath, data, config.fileEncoding);
+    return fs.writeFileAsync(path.join(pathToRoot, inputPath), data, config.fileEncoding);
 }
 
 var getFiles = function(inputPath) {
-    return fs.readdirAsync(inputPath);
+    return fs.readdirAsync(path.join(pathToRoot,inputPath));
 }
 
 var getFilesByType = function(inputPath) {
@@ -32,9 +33,14 @@ var getFilesByType = function(inputPath) {
     }));
 }
 
+var appendFile = function(inputPath, data) {
+    return fs.appendFile(path.join(pathToRoot, inputPath), data);
+}
+
 module.exports = { 
     readFile: readFile,
     writeFile: writeFile,
     getFiles: getFiles,
-    getFilesByType: getFilesByType
+    getFilesByType: getFilesByType,
+    appendFile: appendFile
 }

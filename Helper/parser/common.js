@@ -20,9 +20,17 @@ var getListData = function (data, selector) {
     var rawHtml = $(selector);
 
     var list = [];
+
     for (var i = 0; i < rawHtml.length; i++) {
         var current = rawHtml[i];
         list.push(current.children[0].data);
     }
     return list;
 };
+
+module.exports = {
+    getSelector: getSelector,
+    getTextDetail: getTextDetail,
+    getDataFromAttribute: getDataFromAttribute,
+    getListData: getListData
+}

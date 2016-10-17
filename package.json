@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --recursive --watch --test",
+    "test": "mocha test --recursive --watch --mock",
     "test:getData": "node mock/seed.js",
-    "coverage": "istanbul cover node_modules/.bin/_mocha test/**/* test",
+    "coverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/* --mock",
     "coverage:report": "open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
     "start": "node index.js"
   },

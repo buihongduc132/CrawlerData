@@ -1,5 +1,5 @@
-var pathToRoot = '../';
 var path = require('path');
+var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
@@ -12,5 +12,6 @@ module.exports = {
     writeFile: fileHelper.writeFile,
     getFiles: fileHelper.getFiles,
     getFilesByType: fileHelper.getFilesByType,
+    appendFile: fileHelper.appendFile,
     getHtml: httpHelper.getHtml
 }

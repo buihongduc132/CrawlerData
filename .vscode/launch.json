@@ -2,12 +2,35 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch with Mock",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/index.js",
+            "stopOnEntry": false,
+            "args": [
+                "--mock"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
             "name": "Launch",
             "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/index.js",
             "stopOnEntry": false,
-            "args": [],
+            "args": [
+            ],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": null,
             "runtimeExecutable": null,
