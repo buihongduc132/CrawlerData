@@ -2,7 +2,7 @@ var path = require('path');
 var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
-var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
+var urlLocation = require(path.join(pathToRoot, moduleLocation.url));
 
 var dataService = require(path.join(pathToRoot, moduleLocation.dataService));
 var templateHelper = require(path.join(pathToRoot, moduleLocation.templateHelper));
@@ -37,6 +37,32 @@ var getMoviesOverview = function () {
     var movieOverviewString = dataService.readFile(dataLocation.movieListOverview);
     return movieOverviewString.then((result) => {
         return JSON.parse(result);
+    });
+}
+
+var getAllMovieDetail = function() {
+    let newMovieInfo = getNewMovies();
+
+    return Promise.each(newMovieInfo, (movieInfo) => {
+        var movieUrl = movieInfo.url;
+
+        var movieDetailHtml = dataService.getHtml(movieUrl);
+
+        var movieDetail = movieDetailHtml.then((movieDetailHtml) => {
+            // var htmlString = movieDetailHtml.toString();
+            var movieDetail = imdbParser.detailToObject(movieDetailHtml);
+
+            return Promise.resolve(movieDetail);
+        });
+
+        var writeMovieDetail = movieDetail.then((movieDetail) => { 
+            return dataService.writeFile(`${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail)))
+            .then(() => {
+                console.log(`Movie Detail write to ${movieDetail.title}.json`);
+            });
+        });
+
+        return writeMovieDetail;
     });
 }
 
@@ -85,5 +111,6 @@ var writeMovieJsonOverview = function (data) {
 module.exports = {
     writeMovieJsonOverview: writeMovieJsonOverview,
     buildMovieJsonOverview: buildMovieJsonOverview,
+    getAllMovieDetail: getAllMovieDetail,
     getNewMovies: getNewMovies
 }

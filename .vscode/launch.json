@@ -2,6 +2,27 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch with Tests",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/.bin/_mocha",
+            "stopOnEntry": false,
+            "args": [
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
             "name": "Launch with Mock",
             "type": "node",
             "request": "launch",
@@ -9,6 +30,27 @@
             "stopOnEntry": false,
             "args": [
                 "--mock"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": false,
+            "outFiles": []
+        },
+        {
+            "name": "Launch Seed",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/mock/seed.js",
+            "stopOnEntry": false,
+            "args": [
             ],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": null,

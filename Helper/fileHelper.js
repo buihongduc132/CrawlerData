@@ -2,7 +2,7 @@ var path = require('path');
 var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
-var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
+var urlLocation = require(path.join(pathToRoot, moduleLocation.url));
 
 var config = require(path.join(pathToRoot, moduleLocation.config));
 
@@ -12,9 +12,16 @@ Promise.promisifyAll(fs);
 var _ = require('lodash');
 var args = require(path.join(pathToRoot, moduleLocation.args));
 
+var readFileAsHtml = function(inputPath) {
+    var file = fs.readFileAsync(path.join(pathToRoot, inputPath), config.fileEncoding);
+    return file.then((data) => {
+        var dataToString = data.replace('\\"', '"');
+        return Promise.resolve(dataToString);
+    });  
+}
+
 var readFile = function(inputPath) {
     return fs.readFileAsync(path.join(pathToRoot, inputPath), config.fileEncoding);
-    // return fs.readFileAsync('./'+inputPath, config.fileEncoding);
 }
 
 var writeFile = function(inputPath, data) {
@@ -47,5 +54,6 @@ module.exports = {
     getFiles: getFiles,
     getFilesByType: getFilesByType,
     appendFile: appendFile,
+    readFileAsHtml: readFileAsHtml,
     stats: stats
 }

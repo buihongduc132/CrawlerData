@@ -2,8 +2,8 @@ var path = require('path');
 var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json')); 
-var urlLocation = require(path.join(pathToRoot, 'constant/url.json'));
-var testData = require(path.join(pathToRoot, 'constant/testData.json'));
+var urlLocation = require(path.join(pathToRoot, moduleLocation.url));
+var testData = require(path.join(pathToRoot, moduleLocation.testData));
 
 var _ = require('lodash');
 var mockPaths = testData.mockData;
@@ -11,10 +11,16 @@ var fileHelper = require(path.join(pathToRoot, moduleLocation.fileHelper));
 
 var getMockFile = function(uri) {
     var result = _.find(mockPaths, (pathRegex) => {
-        var regTest = new RegExp(pathRegex.urlRegEx);
-        return regTest.test(uri);
+        if(!pathRegex.urlRegEx) {
+            throw new Error('Url Regex Not Found');
+        }
+
+        let regTest = new RegExp(pathRegex.urlRegEx);
+
+        let testResult = regTest.test(uri);
+        return testResult;
     });
-    return result ? result.path : result;
+    return result ? result.path : result; 
 }
 
 var getMockData = function(inputPath) {

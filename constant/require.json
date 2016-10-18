@@ -17,5 +17,6 @@
     "parser": {
         "common": "helper/parser/common.js",
         "imdb": "helper/parser/imdb.js"
-    }
+    },
+    "testData": "test/testData.json"
 }

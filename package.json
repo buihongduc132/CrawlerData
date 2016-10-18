@@ -8,7 +8,8 @@
     "test:getData": "node mock/seed.js",
     "coverage": "istanbul cover node_modules/.bin/_mocha -- -- -u exports -R spec test/**/* --mock",
     "coverage:report": "open -a \"Google Chrome\" ./coverage/Lcov-report/index.html",
-    "start": "node index.js"
+    "start": "node index.js",
+    "seed": "node mock/seed.js"
   },
   "author": "",
   "license": "ISC",

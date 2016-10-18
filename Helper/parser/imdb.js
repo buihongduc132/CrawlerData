@@ -46,7 +46,7 @@ module.exports = {
 
                 movieList.push({
                     name: resultHtml.text(),
-                    url: path.join(url.imdb.root, resultHtml.attr('href')),
+                    url: url.imdb.root + resultHtml.attr('href'),
                     id: getIdFromString(path.join(url.imdb.root, resultHtml.attr('href')))
                 })
             }
