@@ -9,18 +9,15 @@ var crawlData = require(path.join(pathToRoot, moduleLocation.service.crawlData))
 var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
 gulp.task('buildMovieJsonOverview', () => {
-    var buildMovieJsonOverview = crawlData.buildMovieJsonOverview(args.pages).then(() => {
-        // uiHelper.log.done('Testing Done Message Done');
-    });
+    return crawlData.buildMovieJsonOverview(args.pages);
 });
 
 gulp.task('buildMovieDetailJson', () => {
-    var buildMovieDetailJson = crawlData.buildMovieDetailJson().then((data) => {
-    });
+    return crawlData.buildMovieDetailJson();
 });
 
-gulp.task('buildCombinedMovieJson', () => {
-
+gulp.task('buildCombinedNewMovieJson', () => {
+    return crawlData.buildCombinedNewMovieJson();
 });
 
 gulp.task('buildSeedData', () => {

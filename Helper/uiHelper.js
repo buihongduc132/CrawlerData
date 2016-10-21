@@ -32,11 +32,11 @@ ${indient}${textLengthSpace}${indient}`;
 }
 
 var bar = function (total, action) {
-    var progressBar = new ProgressBar(action.success + ': :bar' + ' Time: :elapseds'.title,
+    var progressBar = new ProgressBar(action.success + ': :bar' + ' :percent'.green.bold + ' of ' + ':total'.red + ' items. Time: ' +':elapseds'.title,
         {
             total: total,
-            complete: ' '.progressRemain,
-            incomplete: ' '.progressDone,
+            complete: ' '.progressDone,
+            incomplete: ' '.progressRemain,
             clear: true,
             width: 50
         }

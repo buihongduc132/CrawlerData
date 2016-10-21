@@ -51,11 +51,11 @@ var bar = uiHelper.progressBar(100, 'Testing');
 // //     }
 // // );
 // var timer = setInterval(function () {
-//     bar.tick();
+//     bar.tick(0.5);
 //     if (bar.complete) {
 //         console.log('Complete'.success);
 //         clearInterval(timer);
 //     }
 // }, 100);
 
-console.log(bar.done);
+bar.tick(0);

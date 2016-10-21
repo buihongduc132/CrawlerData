@@ -39,15 +39,16 @@ module.exports = {
     list: {
         movie: function (data) {
             let $ = cheerio.load(data);
-            var result = commonParser.getSelector(data, '.lister-item-header>a');
+            var result = commonParser.getSelector(data, '.lister-item-header');
             var movieList = [];
             for (let i = 0; i < result.length; i++) {
                 var resultHtml = $(result[i]);
 
                 movieList.push({
-                    name: resultHtml.text(),
-                    url: url.imdb.root + resultHtml.attr('href'),
-                    id: getIdFromString(path.join(url.imdb.root, resultHtml.attr('href')))
+                    name: resultHtml.find('a').text() || '_Blank_name',
+                    url: url.imdb.root + resultHtml.find('a').attr('href') || '_Blank_url',
+                    id: getIdFromString(path.join(url.imdb.root, resultHtml.find('a').attr('href'))) || '_Blank_id',
+                    year: resultHtml.find('span.lister-item-year').text() || '_Blank_year_'
                 })
             }
 
@@ -56,22 +57,22 @@ module.exports = {
     },
     detailToObject: function (data) {
         var result = {
-            title: commonParser.getDataFromAttribute(data, 'meta[property="og:title"]', 'content'),
-            starRaking: commonParser.getTextDetail(data, 'div.ratingValue>strong>span'),
-            metaScore: commonParser.getTextDetail(data, '.metacriticScore.score_favorable.titleReviewBarSubItem>span'),
-            director: commonParser.getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a'),
-            writer: commonParser.getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span'),
-            stars: commonParser.getListData(data, '.credit_summary_item>span[itemprop="actors"]>a>span'),
-            duration: commonParser.getTextDetail(data, '#titleDetails>div>time[itemprop="duration"]'),
-            genre: commonParser.getListData(data, '.subtext>a>span[itemprop="genre"]'),
-            release: commonParser.getDataFromAttribute(data, 'div.subtext>a>meta[itemprop="datePublished"]', 'content'),
-            poster: commonParser.getDataFromAttribute(data, 'meta[property="og:image"]', 'content'),
-            alsoLike: '',
-            summary: commonParser.getTextDetail(data, '.summary_text'),
-            storyline: commonParser.getTextDetail(data, '#titleStoryLine>div[itemprop="description"]>p'),
-            year: commonParser.getTextDetail(data, '#titleYear>a'),
-            uri: commonParser.getDataFromAttribute(data, 'meta[property="og:url"]', 'content'),
-            id: commonParser.getDataFromAttribute(data, 'meta[property="pageId"]', 'content')
+            title: commonParser.getDataFromAttribute(data, 'meta[property="og:title"]', 'content') || '_Blank_title_',
+            starRaking: commonParser.getTextDetail(data, 'div.ratingValue>strong>span') || '_Blank_starRaking_',
+            metaScore: commonParser.getTextDetail(data, '.metacriticScore.score_favorable.titleReviewBarSubItem>span') || '_Blank_metaScore_',
+            director: commonParser.getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a') || '_Blank_director_',
+            writer: commonParser.getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span') || '_Blank_writer_',
+            stars: commonParser.getListData(data, '.credit_summary_item>span[itemprop="actors"]>a>span') || '_Blank_stars_',
+            duration: commonParser.getTextDetail(data, '#titleDetails>div>time[itemprop="duration"]') || '_Blank_duration_',
+            genre: commonParser.getListData(data, '.subtext>a>span[itemprop="genre"]') || '_Blank_genre_',
+            release: commonParser.getDataFromAttribute(data, 'div.subtext>a>meta[itemprop="datePublished"]', 'content') || '_Blank_release_',
+            poster: commonParser.getDataFromAttribute(data, 'meta[property="og:image"]', 'content') || '_Blank_poster_',
+            alsoLike: '_Blank_alsoLike_',
+            summary: commonParser.getTextDetail(data, '.summary_text') || '_Blank_summary_',
+            storyline: commonParser.getTextDetail(data, '#titleStoryLine>div[itemprop="description"]>p') || '_Blank_storyline_',
+            year: commonParser.getTextDetail(data, '#titleYear>a') || '_Blank_year_',
+            uri: commonParser.getDataFromAttribute(data, 'meta[property="og:url"]', 'content') || '_Blank_uri_',
+            id: commonParser.getDataFromAttribute(data, 'meta[property="pageId"]', 'content') || '_Blank_id_'
         }
 
         result.postName = getPostName(result.title);

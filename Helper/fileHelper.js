@@ -45,7 +45,7 @@ var stats = function(inputPath) {
 }
 
 var appendFile = function(inputPath, data) {
-    return fs.appendFile(path.join(pathToRoot, inputPath), data);
+    return fs.appendFileAsync(path.join(pathToRoot, inputPath), data);
 }
 
 module.exports = { 

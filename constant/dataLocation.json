@@ -1,6 +1,6 @@
 {
     "oldMovies": "data/oldMovies.json",
     "movieListOverview": "data/movieListOverview.json",
-    "movieList": "data/movieList.json",
+    "combinedMoviesJson": "data/combinedMovies.json",
     "movieDetail": "data/movieDetail"
 }
