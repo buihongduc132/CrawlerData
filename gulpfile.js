@@ -6,7 +6,12 @@ var pathToRoot = path.join(__dirname, '/');
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var args = require(path.join(pathToRoot, moduleLocation.args));
 var crawlData = require(path.join(pathToRoot, moduleLocation.service.crawlData));
+var converter = require(path.join(pathToRoot, moduleLocation.service.converter));
 var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
+
+gulp.task('buildWordpressXml', () => {
+    return converter.buildWordpressXml();
+});
 
 gulp.task('buildMovieJsonOverview', () => {
     return crawlData.buildMovieJsonOverview(args.pages);

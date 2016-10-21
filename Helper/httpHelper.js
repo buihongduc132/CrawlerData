@@ -10,22 +10,25 @@ var Promise = require('bluebird');
 Promise.promisifyAll(request);
 var args = require(path.join(pathToRoot, moduleLocation.args));
 var mock = require(path.join(pathToRoot, testData.mockRouting));
+var config = require(path.join(pathToRoot, moduleLocation.config));
+var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
 var templateHelper = require(path.join(pathToRoot, moduleLocation.templateHelper));
 
 var constant = require(path.join(pathToRoot, moduleLocation.constant));
 
+
 var getHtml = function (uri) {
     if (args.mock) {
-        var pathToFile = mock.getMockFile(uri, 1);
-        var mockData = mock.getMockData(pathToFile);
+        let pathToFile = mock.getMockFile(uri, 1);
+        let mockData = mock.getMockData(pathToFile);
         return mockData;
     }
     else {
         return request.getAsync({
             method: 'GET',
             uri: uri
-        }).then((result) => {
+        }).timeout(config.timeout).then((result) => {
             return Promise.resolve(result.body);
         });
     }

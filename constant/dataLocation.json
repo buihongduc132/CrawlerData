@@ -2,5 +2,7 @@
     "oldMovies": "data/oldMovies.json",
     "movieListOverview": "data/movieListOverview.json",
     "combinedMoviesJson": "data/combinedMovies.json",
-    "movieDetail": "data/movieDetail"
+    "movieDetail": "data/movieDetail",
+    "movieResult": "data/result/movies.xml",
+    "errorLog": "errorLog"
 }

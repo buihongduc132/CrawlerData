@@ -9,6 +9,7 @@ var config = require(path.join(pathToRoot, moduleLocation.config));
 var Promise = require('bluebird');
 var fs = require('fs');
 Promise.promisifyAll(fs);
+var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 var _ = require('lodash');
 var args = require(path.join(pathToRoot, moduleLocation.args));
 
@@ -45,7 +46,7 @@ var stats = function(inputPath) {
 }
 
 var appendFile = function(inputPath, data) {
-    return fs.appendFileAsync(path.join(pathToRoot, inputPath), data);
+    return fs.appendFileAsync(path.join(pathToRoot, inputPath), data, config.fileEncoding);
 }
 
 module.exports = { 

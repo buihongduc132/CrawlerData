@@ -78,8 +78,8 @@ module.exports = {
         result.postName = getPostName(result.title);
         result.intId = getLinkId(result.id);
         result.img = {
-            thumbnail: getThumbnailId(result.intId),
-            content: getContentImgId(result.intId)
+            thumbnail: getThumbnailId(result.intId).toString(),
+            content: getContentImgId(result.intId).toString()
         };
 
         return result;

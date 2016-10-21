@@ -1,4 +1,6 @@
 {
-    "fileEncoding": "utf-8",
-    "defaultPages": 1
+    "fileEncoding": "utf8",
+    "defaultPages": 1,
+    "homepage": "https://alexfreemovie.wordpress.com",
+    "timeout": 60000
 }

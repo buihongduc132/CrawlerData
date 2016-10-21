@@ -1,7 +1,7 @@
 {
     "httpHelper": "Helper/httpHelper",
     "fileHelper": "Helper/fileHelper",
-    "converter": "Helper/converter",
+    "converter": "Service/converter",
     "dataService": "Helper/dataService",
     "formatHelper": "Helper/formatHelper",
     "htmlHelper": "Helper/htmlHelper",
@@ -14,7 +14,9 @@
     "url": "constant/url.json",
     "service": {
         "crawlData": "service/crawlData.js",
-        "crawlDataHelper": "service/crawlDataHelper.js"
+        "crawlDataHelper": "service/crawlDataHelper.js",
+        "converter": "service/converter.js",
+        "wordpressConverter": "service/wordpressConverter.js"
     },
     "parser": {
         "common": "helper/parser/common.js",

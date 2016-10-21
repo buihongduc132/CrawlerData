@@ -25,18 +25,17 @@ var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
 var buildCombinedNewMovieJson = function (isOnlyNew) {
     let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
-    let progressBar;
-    var errorFiles = [];
 
-    let moviesToBuildPromise = [];
-    let movies = [];
-    var total;
+    let builtCombined = moviesToBuild.then((result) => {
+        let moviesToBuildPromise = [];
+        let movies = [];
+        let errors = [];
+        var errorFiles = [];
+        let total = result.length;
 
-    let moviesData = moviesToBuild.then((result) => {
-        total = result.length;
-        progressBar = uiHelper.progressBar(total+1, "Building Combined Detail Json");
+        let progressBar = uiHelper.progressBar(total + 1, "Building Combined Detail Json");
 
-        var progressTick = setInterval(() => {
+        let progressTick = setInterval(() => {
             progressBar.tick(0);
         }, 1000);
 
@@ -48,22 +47,29 @@ var buildCombinedNewMovieJson = function (isOnlyNew) {
             let movieDetail = dataService.readFile(filePath).then((data) => {
                 movies.push(data);
                 progressBar.tick();
-            }).catch(() => {
+                return Promise.resolve();
+            }).catch({ code: 'ENOENT' }, (err) => {
+                errors.push(uiHelper.log.error(`${err.path}`, 'File not exists'));
                 progressBar.tick();
-                errorFiles.push(filePath);
-            });
+                return Promise.resolve();
+            }).catch((err) => {
+                throw new Error('Unhandled Exception');
+            })
 
             moviesToBuildPromise.push(movieDetail);
         }
 
-        return Promise.all(moviesToBuildPromise);
+        return Promise.all(moviesToBuildPromise).then((data) => {
+            progressBar.tick();
+            clearInterval(progressTick);
+            _.uniq(errors).forEach((err) => {
+                uiHelper.log.error(err);
+            });
+            uiHelper.log.done(`Done Combined ${total} Movies Detail Json (With ${errors.length} errors)`);
+            return dataService.writeFile(dataLocation.combinedMoviesJson, movies);
+        });
     });
 
-    var readAllMovies = moviesData.then(() => {
-        progressBar.tick();
-        uiHelper.log.done(`Done Combined ${total} Movies Detail Json`);
-        return dataService.writeFile(dataLocation.combinedMoviesJson, movies);
-    });
 
     return readAllMovies;
 }
@@ -77,34 +83,53 @@ var buildMovieDetailJson = function (isOnlyNew) {
         let progressBar = uiHelper.progressBar(total, "Building Movie Detail Json");
         let moviesToBuildPromise = [];
 
-        var progressTick = setInterval(() => {
+        let progressTick = setInterval(() => {
             progressBar.tick(0);
         }, 1000);
 
+        let clientError = function (e) {
+            return e.code != 200;
+        }
+
+        let errors = [];
+
         for (let i = 0; i < total; i++) {
             let currentMovie = result[i];
-
             let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
                 let movieDetail = imdbParser.detailToObject(movieDetailHtml);
                 return Promise.resolve(movieDetail);
-            });
+            }).catch(clientError, (e) => {
+                errors.push(uiHelper.log.error(`${e}`, `Http Error`));
+                return Promise.resolve();
+            }).catch(Promise.TimeoutError, (e) => {
+                errors.push(uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`));
+                return Promise.resolve();
+            })
 
             let writeMovieDetail = movieDetail.then((movieDetail) => {
-
-                return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).catch((err) => {
-                    console.log(err);
-                    progressBar.tick();
-                }).then(() => {
-                    progressBar.tick();
-                });
+                progressBar.tick(0.5);
+                if (movieDetail) {
+                    return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
+                        progressBar.tick(0.5);
+                    });
+                }
+                else {
+                    progressBar.tick(0.5);
+                    return Promise.resolve();
+                }
             });
 
             moviesToBuildPromise.push(writeMovieDetail);
+
         }
 
         return Promise.all(moviesToBuildPromise).then(() => {
+            progressBar.tick(total);
             clearInterval(progressTick);
-            uiHelper.log.done(`Done writing ${total} movies details`);
+            _.uniq(errors).forEach((err) => {
+                console.log(err);
+            });
+            uiHelper.log.done(`Done writing ${total} movies details (With ${errors.length} errors)`);
         });
     });
 
