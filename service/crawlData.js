@@ -12,43 +12,17 @@ var htmlHelper = require(path.join(pathToRoot, moduleLocation.htmlHelper));
 var imdbParser = require(path.join(pathToRoot, moduleLocation.parser.imdb));
 var dataLocation = require(path.join(pathToRoot, moduleLocation.dataLocation));
 var config = require(path.join(pathToRoot, moduleLocation.config));
+var crawlDataHelper = require(path.join(pathToRoot, moduleLocation.service.crawlDataHelper));
 var pd = require('pretty-data').pd;
 var Promise = require('bluebird');
 var _ = require('lodash');
 
-var _getMovieInAllGenre = function (pages) {
-    var genres = constant.movieGenre;
-    var filePath = dataLocation.movieListOverview;
-    var movieInAllGenre = [];
-    var maxPage = pages || config.maxPage;
+var buildCombinedNewMovieJson = function() {
 
-    for (let i = 0; i < genres.length; i++) {
-        var genre = genres[i];
-        for (let p = 0; p < maxPage; p++) {
-            let currentPage = p+1;
-
-            let url = templateHelper.movieListByGenre(genre, currentPage);
-            let listHtml = dataService.getHtml(url);
-            let movieList = listHtml.then((result) => {
-                let listOfMovie = imdbParser.list.movie(result);
-                return listOfMovie;
-            });
-            movieInAllGenre.push(movieList);
-        }
-    }
-
-    return movieInAllGenre;
 }
 
-var getMoviesOverview = function () {
-    var movieOverviewString = dataService.readFile(dataLocation.movieListOverview);
-    return movieOverviewString.then((result) => {
-        return JSON.parse(result);
-    });
-}
-
-var buildAllNewMovieJson = function () {
-    let newMovieInfo = getNewMovies();
+var buildMovieDetailJson = function (isOnlyNew) {
+    let newMovieInfo = crawlDataHelper._getMoviesToBuild(isOnlyNew);
 
     return Promise.each(newMovieInfo, (movieInfo) => {
         var movieUrl = movieInfo.url;
@@ -71,35 +45,8 @@ var buildAllNewMovieJson = function () {
         return writeMovieDetail;
     });
 }
-
-var getNewMovies = function () {
-    var movieOverviews = dataService.readFile(dataLocation.movieListOverview);
-
-    var oldMovieList = dataService.readFile(dataLocation.oldMovies);
-
-    var newMovies = movieOverviews.then((movieOverviewData) => {
-        let movieOverviewObject = JSON.parse(movieOverviewData);
-
-        return oldMovieList.then((oldMovies) => {
-            let oldMovieObject = JSON.parse(oldMovies);
-
-            return _.reject(movieOverviewObject, (movie) => {
-                return oldMovieObject.indexOf(movie.id) > -1;
-            });
-        });
-
-    })
-    return newMovies;
-}
-
-var _writeMovieJsonOverview = function (data) {
-    var result = dataService.writeFile(dataLocation.movieListOverview, pd.json(JSON.stringify(data)));
-    console.log(`Output: ${dataLocation.movieListOverview} (${data.length} items)`)
-    return result;
-}
-
-var buildMovieJsonOverview = function () {
-    var movieListByGenre = _getMovieInAllGenre(0);
+var buildMovieJsonOverview = function (pages) {
+    var movieListByGenre = crawlDataHelper._getMovieInAllGenre(pages);
 
     var movieListAllGenre = Promise.all(movieListByGenre).then((movieLists) => {
         var movies = _.flatMapDeep(movieLists, (movieList) => {
@@ -113,7 +60,7 @@ var buildMovieJsonOverview = function () {
 
 
     var writeMovieJsonOverview = movieListAllGenre.then((movies) => {
-        return _writeMovieJsonOverview(movies);
+        return crawlDataHelper._writeMovieJsonOverview(movies);
     });
 
     return writeMovieJsonOverview;
@@ -121,6 +68,5 @@ var buildMovieJsonOverview = function () {
 
 module.exports = {
     buildMovieJsonOverview: buildMovieJsonOverview,
-    buildAllNewMovieJson: buildAllNewMovieJson,
-    getNewMovies: getNewMovies
+    buildMovieDetailJson: buildMovieDetailJson
 }

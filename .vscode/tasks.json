@@ -32,7 +32,7 @@
             ]
         },
         {
-            "taskName": "buildNewMovieJson",
+            "taskName": "buildMovieDetailJson",
             "args": ["--mock"],
             "isBuildCommand": true,
             "isWatching": false,

@@ -6,13 +6,15 @@
     "formatHelper": "Helper/formatHelper",
     "htmlHelper": "Helper/htmlHelper",
     "args": "Helper/args",
+    "uiHelper": "Helper/uiHelper.js",
     "config": "config.json",
     "templateHelper": "Helper/templateHelper.js",
     "constant": "Constant/constant.json",
     "dataLocation": "constant/dataLocation.json",
     "url": "constant/url.json",
     "service": {
-        "crawlData": "service/crawlData.js"
+        "crawlData": "service/crawlData.js",
+        "crawlDataHelper": "service/crawlDataHelper.js"
     },
     "parser": {
         "common": "helper/parser/common.js",
