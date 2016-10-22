@@ -24,7 +24,7 @@ var buildWordpressXml = function() {
     var combinedMovies = dataService.readFile(dataLocation.combinedMoviesJson);
 
     combinedMovies.then((data) => {
-        var movies = JSON.parse(data);
+        var movies = data;
         console.log(movies.length);
     });
 }

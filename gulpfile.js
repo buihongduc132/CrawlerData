@@ -21,8 +21,8 @@ gulp.task('buildMovieDetailJson', () => {
     return crawlData.buildMovieDetailJson();
 });
 
-gulp.task('buildCombinedNewMovieJson', () => {
-    return crawlData.buildCombinedNewMovieJson();
+gulp.task('buildCombinedMovieJson', () => {
+    return crawlData.buildCombinedMovieJson();
 });
 
 gulp.task('buildSeedData', () => {

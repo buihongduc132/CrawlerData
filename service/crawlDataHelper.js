@@ -46,8 +46,8 @@ var _getMovieInAllGenre = function (pages) {
     return movieInAllGenre;
 }
 
-var _addMovieDescription = function(movie, descriptions) {
-    var movieInfo = _.find(descriptions, { id: movie.id }) || {};
+var _addMovieExtraInfo = function(movie, extraInfo) {
+    var movieInfo = _.find(extraInfo, { id: movie.id }) || {};
     movie.description = movieInfo.description || '_blank_description_';
     return movie;
 }
@@ -89,5 +89,5 @@ module.exports = {
     _getMovieInAllGenre: _getMovieInAllGenre,
     _getMoviesToBuild: _getMoviesToBuild,
     _writeMovieJsonOverview: _writeMovieJsonOverview,
-    _addMovieDescription: _addMovieDescription
+    _addMovieExtraInfo: _addMovieExtraInfo
 }

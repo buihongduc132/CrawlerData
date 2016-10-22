@@ -5,5 +5,5 @@
     "movieDetail": "data/movieDetail",
     "movieResult": "data/result/movies.xml",
     "errorLog": "errorLog",
-    "movieDescription" : "data/moviesDescription.csv"
+    "movieExtraInfo" : "data/movieExtraInfo.csv"
 }

@@ -23,12 +23,12 @@ var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 // _getMoviesToBuild: _getMoviesToBuild,
 // _writeMovieJsonOverview: _writeMovieJsonOverview
 
-var buildCombinedNewMovieJson = function (isOnlyNew) {
+var buildCombinedMovieJson = function (isOnlyNew) {
     let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
 
     let builtCombined = moviesToBuild.then((result) => {
         let moviesToBuildPromise = [];
-        let movies = [];
+        let movies = new Array();
         let errors = [];
         var errorFiles = [];
         let total = result.length;
@@ -39,13 +39,12 @@ var buildCombinedNewMovieJson = function (isOnlyNew) {
             progressBar.tick(0);
         }, 1000);
 
-        let movieDetails = [];
-
         for (let i = 0; i < total; i++) {
             let currentMovie = result[i];
             let filePath = `${dataLocation.movieDetail}/${currentMovie.name} ${currentMovie.year}.json`;
             let movieDetail = dataService.readFile(filePath).then((data) => {
-                movies.push(data);
+                let movieObject = JSON.parse(data);
+                movies.push(movieObject);
                 progressBar.tick();
                 return Promise.resolve();
             }).catch({ code: 'ENOENT' }, (err) => {
@@ -68,7 +67,7 @@ var buildCombinedNewMovieJson = function (isOnlyNew) {
             });
             var doneMessage = uiHelper.log.done(`Done Combined ${total} Movies Detail Json (With ${errors.length} errors)`);
             console.log(doneMessage);
-            return dataService.writeFile(dataLocation.combinedMoviesJson, movies);
+            return dataService.writeFile(dataLocation.combinedMoviesJson, pd.json(JSON.stringify(movies)));
         });
     });
 }
@@ -92,7 +91,7 @@ var buildMovieDetailJson = function (isOnlyNew) {
 
         let errors = [];
 
-        dataService.getCsvFile(dataLocation.movieDescription).then((movieDescription) => {
+        dataService.getCsvFile(dataLocation.movieExtraInfo).then((movieExtraInfo) => {
             for (let i = 0; i < total; i++) {
                 let currentMovie = result[i];
                 let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
@@ -109,8 +108,8 @@ var buildMovieDetailJson = function (isOnlyNew) {
                 let writeMovieDetail = movieDetail.then((movieDetail) => {
                     progressBar.tick(0.5);
                     if (movieDetail) {
-                        crawlDataHelper._addMovieDescription(movieDetail, movieDescription);
-                        return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.id} | ${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
+                        movieDetail = crawlDataHelper._addMovieExtraInfo(movieDetail, movieExtraInfo);
+                        return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
                             progressBar.tick(0.5);
                         });
                     }
@@ -159,7 +158,7 @@ var buildMovieJsonOverview = function (pages) {
 }
 
 module.exports = {
-    buildCombinedNewMovieJson: buildCombinedNewMovieJson,
+    buildCombinedMovieJson: buildCombinedMovieJson,
     buildMovieJsonOverview: buildMovieJsonOverview,
     buildMovieDetailJson: buildMovieDetailJson
 }
