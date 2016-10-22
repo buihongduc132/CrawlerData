@@ -3,15 +3,15 @@ var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var urlLocation = require(path.join(pathToRoot, moduleLocation.url));
-
 var config = require(path.join(pathToRoot, moduleLocation.config));
-
 var Promise = require('bluebird');
 var fs = require('fs');
 Promise.promisifyAll(fs);
-var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 var _ = require('lodash');
 var args = require(path.join(pathToRoot, moduleLocation.args));
+var Converter = require("csvtojson").Converter;
+var csvConverter = new Converter({});
+Promise.promisifyAll(csvConverter);
 
 var readFileAsHtml = function(inputPath) {
     var file = fs.readFileAsync(path.join(pathToRoot, inputPath), config.fileEncoding);
@@ -31,6 +31,10 @@ var writeFile = function(inputPath, data) {
 
 var getFiles = function(inputPath) {
     return fs.readdirAsync(path.join(pathToRoot,inputPath));
+}
+
+var getCsvFile = function(inputPath) {
+    return csvConverter.fromFileAsync(path.join(pathToRoot, inputPath));
 }
 
 var getFilesByType = function(inputPath) {
@@ -56,5 +60,6 @@ module.exports = {
     getFilesByType: getFilesByType,
     appendFile: appendFile,
     readFileAsHtml: readFileAsHtml,
-    stats: stats
+    stats: stats,
+    getCsvFile: getCsvFile
 }

@@ -17,6 +17,7 @@ var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 var pd = require('pretty-data').pd;
 var Promise = require('bluebird');
 var _ = require('lodash');
+var movieDescriptions = undefined;
 
 var _getMovieInAllGenre = function (pages) {
     var genres = constant.movieGenre;
@@ -45,19 +46,18 @@ var _getMovieInAllGenre = function (pages) {
     return movieInAllGenre;
 }
 
-// var _getMoviesOverview = function () {
-//     var movieOverviewString = dataService.readFile(dataLocation.movieListOverview);
-//     return movieOverviewString.then((result) => {
-//         return JSON.parse(result);
-//     });
-// }
+var _addMovieDescription = function(movie, descriptions) {
+    var movieInfo = _.find(descriptions, { id: movie.id }) || {};
+    movie.description = movieInfo.description || '_blank_description_';
+    return movie;
+}
 
 var _getMoviesToBuild = function (isOnlyNew) {
     var movieOverviews = dataService.readFile(dataLocation.movieListOverview);
 
     var oldMovieList = dataService.readFile(dataLocation.oldMovies);
 
-    var newMovies = movieOverviews.then((movieOverviewData) => {
+    var newMovies = movieOverviews.then((movieOverviewData) => {;
         let movieOverviewObject = JSON.parse(movieOverviewData);
 
         if (!isOnlyNew) {
@@ -78,15 +78,16 @@ var _getMoviesToBuild = function (isOnlyNew) {
 
 var _writeMovieJsonOverview = function (data) {
     var result = dataService.writeFile(dataLocation.movieListOverview, pd.json(JSON.stringify(data))).then(() => {
-        uiHelper.log.done('Built Movie Overview');
+        var doneMessage = uiHelper.log.done('Built Movie Overview');
+        console.log(doneMessage);
         console.log(`Output: ` + `${dataLocation.movieListOverview}`.blue + ` (` + `${data.length}`.blue.bold + ` items)`);
     })
     return result;
 }
 
-
 module.exports = {
     _getMovieInAllGenre: _getMovieInAllGenre,
     _getMoviesToBuild: _getMoviesToBuild,
-    _writeMovieJsonOverview: _writeMovieJsonOverview
+    _writeMovieJsonOverview: _writeMovieJsonOverview,
+    _addMovieDescription: _addMovieDescription
 }

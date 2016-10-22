@@ -10,6 +10,8 @@ var dataService = require(path.join(pathToRoot, moduleLocation.dataService));
 var dataLocation = require(path.join(pathToRoot, moduleLocation.dataLocation));
 var moment = require('moment');
 
+console.log(path.join(pathToRoot, moduleLocation.dataService));
+
 colors.setTheme({
     success: ['green', 'bold', 'underline'],
     error: ['red', 'bold'],
@@ -66,11 +68,12 @@ module.exports = {
     progressBar: bar,
     log: {
         done: function (text) {
-            console.log(_doneMessage(text));
+            // console.log(_doneMessage(text));
+            return _doneMessage(text)
         },
         error: function (text) {
             var logTemplate = _getLogTemplate(text);
-            dataService.appendFile(dataLocation.errorLog, logTemplate);
+            Promise.resolve(dataService.appendFile(dataLocation.errorLog, logTemplate));
             return logTemplate.red;
         },
         exception: function (text) {

@@ -26,5 +26,6 @@ gulp.task('buildCombinedNewMovieJson', () => {
 });
 
 gulp.task('buildSeedData', () => {
-    console.log('testing');
+    console.log(dataService);
+    // console.log('testing');
 });

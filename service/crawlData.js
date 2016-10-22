@@ -53,8 +53,9 @@ var buildCombinedNewMovieJson = function (isOnlyNew) {
                 progressBar.tick();
                 return Promise.resolve();
             }).catch((err) => {
+                console.log(err);
                 throw new Error('Unhandled Exception');
-            })
+            });
 
             moviesToBuildPromise.push(movieDetail);
         }
@@ -63,15 +64,13 @@ var buildCombinedNewMovieJson = function (isOnlyNew) {
             progressBar.tick();
             clearInterval(progressTick);
             _.uniq(errors).forEach((err) => {
-                uiHelper.log.error(err);
+                console.log(uiHelper.log.error(err));
             });
-            uiHelper.log.done(`Done Combined ${total} Movies Detail Json (With ${errors.length} errors)`);
+            var doneMessage = uiHelper.log.done(`Done Combined ${total} Movies Detail Json (With ${errors.length} errors)`);
+            console.log(doneMessage);
             return dataService.writeFile(dataLocation.combinedMoviesJson, movies);
         });
     });
-
-
-    return readAllMovies;
 }
 
 var buildMovieDetailJson = function (isOnlyNew) {
@@ -93,35 +92,37 @@ var buildMovieDetailJson = function (isOnlyNew) {
 
         let errors = [];
 
-        for (let i = 0; i < total; i++) {
-            let currentMovie = result[i];
-            let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
-                let movieDetail = imdbParser.detailToObject(movieDetailHtml);
-                return Promise.resolve(movieDetail);
-            }).catch(clientError, (e) => {
-                errors.push(uiHelper.log.error(`${e}`, `Http Error`));
-                return Promise.resolve();
-            }).catch(Promise.TimeoutError, (e) => {
-                errors.push(uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`));
-                return Promise.resolve();
-            })
-
-            let writeMovieDetail = movieDetail.then((movieDetail) => {
-                progressBar.tick(0.5);
-                if (movieDetail) {
-                    return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
-                        progressBar.tick(0.5);
-                    });
-                }
-                else {
-                    progressBar.tick(0.5);
+        dataService.getCsvFile(dataLocation.movieDescription).then((movieDescription) => {
+            for (let i = 0; i < total; i++) {
+                let currentMovie = result[i];
+                let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
+                    let movieDetail = imdbParser.detailToObject(movieDetailHtml);
+                    return Promise.resolve(movieDetail);
+                }).catch(clientError, (e) => {
+                    errors.push(uiHelper.log.error(`${e}`, `Http Error`));
                     return Promise.resolve();
-                }
-            });
+                }).catch(Promise.TimeoutError, (e) => {
+                    errors.push(uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`));
+                    return Promise.resolve();
+                })
 
-            moviesToBuildPromise.push(writeMovieDetail);
+                let writeMovieDetail = movieDetail.then((movieDetail) => {
+                    progressBar.tick(0.5);
+                    if (movieDetail) {
+                        crawlDataHelper._addMovieDescription(movieDetail, movieDescription);
+                        return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.id} | ${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
+                            progressBar.tick(0.5);
+                        });
+                    }
+                    else {
+                        progressBar.tick(0.5);
+                        return Promise.resolve();
+                    }
+                });
 
-        }
+                moviesToBuildPromise.push(writeMovieDetail);
+            }
+        })
 
         return Promise.all(moviesToBuildPromise).then(() => {
             progressBar.tick(total);
@@ -129,7 +130,8 @@ var buildMovieDetailJson = function (isOnlyNew) {
             _.uniq(errors).forEach((err) => {
                 console.log(err);
             });
-            uiHelper.log.done(`Done writing ${total} movies details (With ${errors.length} errors)`);
+            var doneMessage = uiHelper.log.done(`Done writing ${total} movies details (With ${errors.length} errors)`);
+            console.log(doneMessage);
         });
     });
 

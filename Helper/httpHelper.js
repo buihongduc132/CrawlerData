@@ -11,8 +11,6 @@ Promise.promisifyAll(request);
 var args = require(path.join(pathToRoot, moduleLocation.args));
 var mock = require(path.join(pathToRoot, testData.mockRouting));
 var config = require(path.join(pathToRoot, moduleLocation.config));
-var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
-
 var templateHelper = require(path.join(pathToRoot, moduleLocation.templateHelper));
 
 var constant = require(path.join(pathToRoot, moduleLocation.constant));
@@ -27,7 +25,10 @@ var getHtml = function (uri) {
     else {
         return request.getAsync({
             method: 'GET',
-            uri: uri
+            uri: uri, 
+            headers: {
+                'accept-language': 'en-US'
+            }
         }).timeout(config.timeout).then((result) => {
             return Promise.resolve(result.body);
         });

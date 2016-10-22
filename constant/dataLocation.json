@@ -4,5 +4,6 @@
     "combinedMoviesJson": "data/combinedMovies.json",
     "movieDetail": "data/movieDetail",
     "movieResult": "data/result/movies.xml",
-    "errorLog": "errorLog"
+    "errorLog": "errorLog",
+    "movieDescription" : "data/moviesDescription.csv"
 }
