@@ -1,6 +1,24 @@
 {
     "fileEncoding": "utf8",
     "defaultPages": 1,
-    "homepage": "https://alexfreemovie.wordpress.com",
-    "timeout": 60000
+    "timeout": "60000",
+    "page": {
+        "wordpress": {
+            "pageSlogan": "Free Movie For Everyone.",
+            "pageName": "Free Online Movie",
+            "homepage": "https://alexfreemovie.wordpress.com",
+            "postFormat": "aside",
+            "pageWidth": 630,
+            "posterHeight": 1200,
+            "admin": "herodesalex243",
+            "keyword": {
+                "tags": [
+                    "Movie",
+                    "Stream",
+                    "Online"
+                ],
+                "url": "Full Movie"
+            }
+        }
+    }
 }

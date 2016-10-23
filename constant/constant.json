@@ -25,5 +25,11 @@
         "thriller",
         "war",
         "western"
-    ]
+    ],
+    "postFormat": {
+        "aside": {
+            "nicename": "post-format-aside",
+            "name": "Aside"
+        }
+    }
 }

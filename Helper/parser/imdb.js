@@ -31,6 +31,10 @@ let getContentImgId = function (rawId) {
     return rawId * 111;
 };
 
+let contentBody = function(data) {
+    return ``;
+}
+
 module.exports = {
     getPostName: getPostName,
     getLinkId: getLinkId,
@@ -55,12 +59,14 @@ module.exports = {
             return movieList;
         }
     },
+
+    //TODO: Change Director to push to array instead of fixed array
     detailToObject: function (data) {
         var result = {
             title: commonParser.getDataFromAttribute(data, 'meta[property="og:title"]', 'content') || '_Blank_title_',
-            starRaking: commonParser.getTextDetail(data, 'div.ratingValue>strong>span') || '_Blank_starRaking_',
+            starRanking: commonParser.getTextDetail(data, 'div.ratingValue>strong>span') || '_Blank_starRanking_',
             metaScore: commonParser.getTextDetail(data, '.metacriticScore.score_favorable.titleReviewBarSubItem>span') || '_Blank_metaScore_',
-            director: commonParser.getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a') || '_Blank_director_',
+            director: [commonParser.getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a') || '_Blank_director_'],
             writer: commonParser.getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span') || '_Blank_writer_',
             stars: commonParser.getListData(data, '.credit_summary_item>span[itemprop="actors"]>a>span') || '_Blank_stars_',
             duration: commonParser.getTextDetail(data, '#titleDetails>div>time[itemprop="duration"]') || '_Blank_duration_',
@@ -72,7 +78,8 @@ module.exports = {
             storyline: commonParser.getTextDetail(data, '#titleStoryLine>div[itemprop="description"]>p') || '_Blank_storyline_',
             year: commonParser.getTextDetail(data, '#titleYear>a') || '_Blank_year_',
             uri: commonParser.getDataFromAttribute(data, 'meta[property="og:url"]', 'content') || '_Blank_uri_',
-            id: commonParser.getDataFromAttribute(data, 'meta[property="pageId"]', 'content') || '_Blank_id_'
+            id: commonParser.getDataFromAttribute(data, 'meta[property="pageId"]', 'content') || '_Blank_id_',
+            body: contentBody(data)
         }
 
         result.postName = getPostName(result.title);

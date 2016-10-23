@@ -1,0 +1,21 @@
+.bodyTable {
+	border:1px solid red;	
+}
+
+table.bodyTable>tbody>tr>td {
+	border:1px solid red;
+	padding-left:5px;
+}
+
+
+table.bodyTable>tbody>tr>td.firstColumn {
+	width:60%;
+}
+
+table.bodyTable>tbody>tr>td.secondColumn {
+	width:60%;
+}
+
+.site-info {
+	display:none;
+}

@@ -24,8 +24,14 @@ var buildWordpressXml = function() {
     var combinedMovies = dataService.readFile(dataLocation.combinedMoviesJson);
 
     combinedMovies.then((data) => {
-        var movies = data;
-        console.log(movies.length);
+        let movies = JSON.parse(data);
+
+        let wpXml = wpConverter.constructXml(data);
+
+        // console.log(wpXml);
+        dataService.writeFile(dataLocation.wordpressXml, wpXml).then(() => {
+            uiHelper.log.done("buildWordpressXml Completed");
+        })
     });
 }
 

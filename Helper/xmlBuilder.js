@@ -49,7 +49,7 @@ module.exports = {
 
         var result = {
             title: getDataFromAttribute(data, 'meta[property="og:title"]', 'content'),
-            starRaking: getTextDetail(data, 'div.ratingValue>strong>span'),
+            starRanking: getTextDetail(data, 'div.ratingValue>strong>span'),
             metaScore: getTextDetail(data, '.metacriticScore.score_favorable.titleReviewBarSubItem>span'),
             director: getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a'),
             writer: getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span'),
@@ -79,7 +79,7 @@ module.exports = {
 
 // {
 //     "title": "Goat (2016)",
-//     "starRaking": "",
+//     "starRanking": "",
 //     "metaScore": "",
 //     "director": "",
 //     "writer": [],
