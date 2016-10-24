@@ -110,13 +110,7 @@ var _getMoviesToBuild = function (isOnlyNew) {
 
 var _updateMovieExtraInfo = function (movies, all) {
     return dataService.getCsvFile(dataLocation.movieExtraInfo).then((moviesInCsv) => {
-        // let moviesToBuild = _.uniqBy(_.flatMap(_.union([moviesInCsv, movies])), 'id');
         let moviesUnion = _.uniqBy(_.flatMap(_.union([moviesInCsv, movies])), 'id');
-        // let moviesToBuild = _.map(moviesUnion, (movieUnion) => {
-        //     return _.assign(movieUnion, _.find(movies, (movie) => {
-        //         return movie.id.replace('tt', '') === movieUnion.MovieIMDBID;
-        //     }));
-        // });
 
         let allIds = __updateMovieExtraInfoExtraction.__getAllIds(moviesUnion);
         let idChunks = _.chunk(allIds, config.page.vidSource.apiCapacity);

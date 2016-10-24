@@ -143,10 +143,33 @@ var updateMovieExtraInfo = function (pages) {
         return crawlDataHelper._updateMovieExtraInfo(movies);
     });
 }
+var updateMovieStatus = function() {
+    var combinedMovies = dataService.readFile(dataLocation.combinedMoviesJson);
+    return combinedMovies.then((data) => {
+        let movies = JSON.parse(data);
+
+        return dataService.getCsvFile(dataLocation.movieExtraInfo).then((moviesInCsv) => {
+            moviesInCsv = _.map(moviesInCsv, (movieInCsv) => {
+                if(_.some(movies, (movie) => {
+                    return movieInCsv.MovieIMDBID == movie.intId;
+                }))
+                {
+                    movieInCsv.isDone = true;
+                }
+                movieInCsv.MovieIMDBID = _.padStart(movieInCsv.MovieIMDBID, 7, '0');
+
+                return movieInCsv;
+            });
+
+            return dataService.writeCsvFile(dataLocation.movieExtraInfo, moviesInCsv);
+        });
+    });
+}
 
 module.exports = {
     buildCombinedMovieJson: buildCombinedMovieJson,
     buildMovieJsonOverview: buildMovieJsonOverview,
     buildMovieDetailJson: buildMovieDetailJson,
-    updateMovieExtraInfo: updateMovieExtraInfo
+    updateMovieExtraInfo: updateMovieExtraInfo,
+    updateMovieStatus: updateMovieStatus
 }

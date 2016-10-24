@@ -28,7 +28,6 @@ var buildWordpressXml = function() {
 
         let wpXml = wpConverter.constructXml(data);
 
-        // console.log(wpXml);
         dataService.writeFile(dataLocation.wordpressXml, wpXml).then(() => {
             uiHelper.log.done("buildWordpressXml Completed");
         })

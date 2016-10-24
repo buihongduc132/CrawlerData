@@ -29,6 +29,10 @@ gulp.task('updateMovieExtraInfo', () => {
     return crawlData.updateMovieExtraInfo(args.pages);
 });
 
+gulp.task('updateMovieStatus', () => {
+    return crawlData.updateMovieStatus();
+})
+
 gulp.task('buildSeedData', () => {
     console.log(dataService);
 });
