@@ -11,9 +11,9 @@ var expect = chai.expect;
 var mock = require(path.join(pathToRoot, testData.mockRouting));
 
 describe('Mock Routing', () => {
-    it('should route to correct for mock/mockData/topRated.html', () => {
+    it('should route to correct for mockData/topRated.html', () => {
         var mockFile = mock.getMockFile(urlLocation.imdb.topRated);
-        expect(mockFile).equal('mock/mockData/topRated.html');
+        expect(mockFile).equal('test/mockData/topRated.html');
     });
     it('should have urlRegEx property', () => {
         for(var i = 0 ; i < testData.mockData.length; i++) {

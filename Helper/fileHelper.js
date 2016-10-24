@@ -23,6 +23,7 @@ var readFileAsHtml = function (inputPath) {
 }
 
 var readFile = function (inputPath) {
+
     return fs.readFileAsync(path.join(pathToRoot, inputPath), config.fileEncoding);
 }
 

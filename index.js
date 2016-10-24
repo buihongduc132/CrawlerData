@@ -1,6 +1,6 @@
-var crawlData = require('./service/crawlData');
+var crawlDataHelper = require('./service/crawlDataHelper');
 
-crawlData.updateMovieStatus();
+crawlDataHelper._getMoviesToBuild(true);
 
 
 // var _ = require('lodash');

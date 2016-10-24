@@ -11,8 +11,6 @@ var dataLocation = require(path.join(pathToRoot, moduleLocation.dataLocation));
 var moment = require('moment');
 var args = require(path.join(pathToRoot, moduleLocation.args));
 
-console.log(path.join(pathToRoot, moduleLocation.dataService));
-
 colors.setTheme({
     success: ['green', 'bold', 'underline'],
     error: ['red', 'bold'],

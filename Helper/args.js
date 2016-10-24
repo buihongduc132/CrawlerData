@@ -12,7 +12,7 @@ args.getCommand = function (paramName) {
     return args._.indexOf(paramName) > -1;
 }
 
-args.isDebug = typeof v8debug === 'object';
+args.isDebug = typeof v8debug === 'object' || args.testing;
 
 if (args.pages === undefined) {
     args.pages = config.defaultPages;

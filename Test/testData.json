@@ -1,48 +1,48 @@
 {
-    "readFile": "mock/readFile.txt",
-    "writeFile": "mock/writeFile.txt",
-    "readDir": "mock/readDir/",
+    "readFile": "test/readFile.txt",
+    "writeFile": "test/writeFile.txt",
+    "readDir": "test/readDir/",
     "mockRouting": "mock/mockRouting.js",
     "mockData": [
         {
             "name": "multipleVidSourceMovies",
-            "path": "mock/mockData/vidSourceForList.json",
+            "path": "test/vidSourceForList.json",
             "urlRegEx": "http:\\/\\/www\\.vidsourceapi\\.com\\/WebService\\.asmx\\/GetStreamEmbedUrlByIMDBIDs\\?apikey=yQEiCTH84dOJNFQ7(&redirect=(true|false))?&imdbids=\\d{7}(,\\d{7})*(&redirect=(true|false))?",
             "seedUrl": "http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBIDs?apikey=yQEiCTH84dOJNFQ7&imdbids=0468569,1375666,0080684,0133093,0076759,0047478,0120815,2199711,1345836,0172495,0103064,0082971,0073707,2375559,0090605,0086190,0053125,4387040,2631186,1821700,0372784,0097576,0089881,0055630,1954470,2356180,2488496,0434409,0113277,0095016,0892769,0017925,3390572,1431045,1392190,2015381,0325980,0848228,0266697,1979320,0440963,1220719,0094625,0861739,1555149&redirecton=false"  
         },
         {
             "name": "topRatedIndian",
-            "path": "mock/mockData/topRatedIndian.html",
+            "path": "test/mockData/topRatedIndian.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/chart\\/top-indian-movies",
             "seedUrl": "http://www.imdb.com/chart/top-indian-movies"
         },
         {
             "name": "movieDetail",
-            "path": "mock/mockData/movieDetail.html",
+            "path": "test/mockData/movieDetail.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/title\\/tt\\d{5,10}/\\?ref_=adv_li_tt",
             "seedUrl": "http://www.imdb.com/title/tt0094625/?ref_=adv_li_tt"
         },
         {
             "name": "topRated",
-            "path": "mock/mockData/topRated.html",
+            "path": "test/mockData/topRated.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/chart\\/top",
             "seedUrl": "http://www.imdb.com/chart/top"
         },
         {
             "name": "topRatedAction",
-            "path": "mock/mockData/topRatedAction.html",
+            "path": "test/mockData/topRatedAction.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?genres=[a-z]{1,10}(_[a-z]{1,10})?&sort=user_rating,desc&title_type=feature&num_votes=25000,&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2406822102&pf_rd_r=1V8KNKKMTGS5AFZ0F8HH&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_gnr_1&page=\\d\\d?",
             "seedUrl": "http://www.imdb.com/search/title?genres=action&sort=user_rating,desc&title_type=feature&num_votes=25000,&pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2406822102&pf_rd_r=1V8KNKKMTGS5AFZ0F8HH&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_gnr_1&page=1"
         },
         {
             "name": "mostPopular",
-            "path": "mock/mockData/mostPopular.html",
+            "path": "test/mockData/mostPopular.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/chart\\/moviemeter",
             "seedUrl": "http://www.imdb.com/chart/moviemeter"
         },
         {
             "name": "popularAction",
-            "path": "mock/mockData/popularAction.html",
+            "path": "test/mockData/popularAction.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/genre\\/action\\?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2251824562&pf_rd_r=0BBFFW17G9F24C46YXKT&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_gnr_1",
             "seedUrl": "http://www.imdb.com/genre/action?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2251824562&pf_rd_r=0BBFFW17G9F24C46YXKT&pf_rd_s=right-6&pf_rd_t=15506&pf_rd_i=moviemeter&ref_=chtmvm_gnr_1"
         }

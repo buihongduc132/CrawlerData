@@ -27,6 +27,6 @@ describe('Environment Arguments Helper', () => {
         expect(args.mock).equal(true);
     });
     it('should get default params', () => {
-        expect(args.pages).equal(config.defaultPages-1);
+        expect(args.pages).equal(config.defaultPages);
     });
 });
