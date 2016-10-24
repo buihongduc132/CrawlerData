@@ -1,6 +1,8 @@
-var crawlDataHelper = require('./service/crawlDataHelper');
+var converter = require('./service/converter');
 
-crawlDataHelper._getMovieList(1);
+converter.buildWordpressXml();
+
+
 
 
 // var _ = require('lodash');

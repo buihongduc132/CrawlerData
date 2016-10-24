@@ -29,7 +29,7 @@ var buildCategory = function (category) {
 	return `
 		<category domain="category" nicename="${category}"><![CDATA[${category}]]></category>`;
 }
-var getRandom = function(length = 10) {
+var getRandom = function (length = 10) {
 	return Math.round(Math.Random() * length);
 }
 var buildPageCategories = function (categories) {
@@ -47,8 +47,8 @@ var buildPageCategories = function (categories) {
 
 buildPageTags = function (tags) {
 	let result = '';
-	
-	
+
+
 	for (let i = 0; i < tags.length; i++) {
 
 		result += `<wp:tag><wp:term_id>${getRandom()}</wp:term_id><wp:tag_slug>${getUrl(tag[i])}</wp:tag_slug><wp:tag_name><![CDATA[${tag[i]}]]></wp:tag_name>
@@ -145,24 +145,26 @@ var buildThumbnail = function (data) {
 }
 
 var buildBody = function (data) {
-	let getStreamingApi = function(data) {
+	let getStreamingApi = function (data) {
 		return `http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBID?apikey=yQEiCTH84dOJNFQ7&imdbid=${data.intId}&redirecton=true`
 	};
 
-	let buildGenre = function(data) {
+	let buildGenre = function (data) {
 		var result = [];
 
-		for(var i = 0 ; i < data.genre ; i++ ) {
+		for (var i = 0; i < data.genre.length; i++) {
 			let genre = data.genre[i];
-			result.push(`<a href="${wpConfig.homepage}/tag/${getUrl(genre)}">${genre}</a>`)
+			result.push(`<a href="/tag/${getUrl(genre)}">${genre}</a>`)
 		}
 
-		return _.join(result, ', ');
+		let finalResult = _.join(result, ', ');
+		return finalResult;
 	}
 
 	let getUrlFromArray = function (arrayInput) {
-		let result = _.map((item) => {
-			return `<a href="${getUrl(item)}">${item}</a>`
+		let result = _.map(arrayInput, (item) => {
+			let url = `<a href="${getUrl(item)}">${item}</a>`;
+			return url;
 		});
 	};
 
@@ -173,49 +175,46 @@ var buildBody = function (data) {
 		return result
 	}
 
-	let getPlayButton = function(data) {
-		
+	let getPlayButton = function (data) {
+
 	}
 
 	let getMultiLineArray = function (arrayInput) {
-		var tempArray = getUrlFromArray(arrayInput);
-		var result = _.map((item) => {
-			// return `<li><a href="${getUrl(item)}">${item}</a></li>`;
-			return `<li>${item}</li>`;
-		});
+		// var tempArray = getUrlFromArray(arrayInput);
+		// var result = _.map(arrayInput, (item) => {
+		// 	// return `<li><a href="${getUrl(item)}">${item}</a></li>`;
+		// 	return `<li>${item}</li>`;
+		// });
 
-		return result;
+		var finalResult = _.join(arrayInput, '<br>');
+		return finalResult;
 	}
 
 	var bodyContent = `[caption align="aligncenter" width="630"]<img class="alignnone size-full wp-image-13330207" src="${data.poster}"
 	alt="${data.title}" width="630" height="1200" />
-<h1>${data.title}</h1>[/caption]
+<h1 style="font-size:5vh">${data.title} - Free Movie</h1>[/caption]
 
-<div style="text-align:center">
-	<a style="font-size:250%; padding:5px; text-decorator: none; background-color:#00CED1; color:white; border-radius:10px; border-color:#0000FF; "
+<div style="text-align:center; margin: 50px;">
+	<a style="font-size:10vw; padding:15px; text-decorator: none; background-color:#6d6d6d; color:white; border-radius:10px; border-color:#0000FF; "
 		href="${getStreamingApi(data)}">Watch Now</a>
 </div>
 
-<table style="border: 1px solid red; ">
+<table style="border: 1px solid #CCC; ">
 	<tbody>
 		<tr>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Release</b>: ${data.release}</td>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 40%;"><b>IMDB score</b>: ${data.starRanking}</td>
+			<td valign="top" style="padding-left: 5px; border: 1px solid #CCC; width: 60%;"><b>Release</b>: ${data.release}</td>
+			<td valign="top" style="padding-left: 5px; border: 1px solid #CCC; width: 40%;"><b>IMDB score</b>: ${data.starRanking}</td>
 		</tr>
 		<tr>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Genre</b>: ${buildGenre(data)}</td>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 40%;"><b>Duration</b>: ${data.duration}s</td>
+			<td valign="top" style="padding-left: 5px; border: 1px solid #CCC; width: 60%;"><b>Genre</b>: ${buildGenre(data)}</td>
+			<td valign="top" style="padding-left: 5px; border: 1px solid #CCC; width: 40%;"><b>Duration</b>: ${data.duration}s</td>
 		</tr>
 		<tr>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Writer</b>:
-				<ul>
+			<td valign="top" style="padding-left: 5px; border: 1px solid #CCC; width: 60%;"><b>Writer</b>:
 					${getMultiLineArray(data.writer)}
-				</ul>
 			</td>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 40%;"><b>Stars</b>:
-				<ul>
+			<td valign="top" style="padding-left: 5px; border: 1px solid #CCC; width: 40%;"><b>Stars</b>:
 					${getMultiLineArray(data.stars)}
-				</ul>
 			</td>
 		</tr>
 	</tbody>
