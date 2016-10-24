@@ -14,7 +14,7 @@ let getPostName = function (postTitle) {
 let getIdFromString = function (input) {
     var regPattern = /tt\d{5,10}/;
     var match = input.match(regPattern);
-    if(match.length > 0) {
+    if (match.length > 0) {
         return match[0];
     }
     return '';
@@ -31,7 +31,7 @@ let getContentImgId = function (rawId) {
     return rawId * 111;
 };
 
-let contentBody = function(data) {
+let contentBody = function (data) {
     return ``;
 }
 
@@ -59,7 +59,6 @@ module.exports = {
             return movieList;
         }
     },
-
     //TODO: Change Director to push to array instead of fixed array
     detailToObject: function (data) {
         var result = {

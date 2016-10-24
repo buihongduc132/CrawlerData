@@ -904,3 +904,8 @@
 [39m
 2016-10-24 11:05:40: Error - [31m2016-10-24 11:05:40: Error - /Volumes/Data_disk/tools/CrawlMovieData/data/movieDetail/Elite Squad: The Enemy Within (2010).json
 [39m
+2016-10-24 05:28:04: Error - TypeError: expecting a function but got [object Undefined]
+2016-10-24 05:28:19: Error - TypeError: expecting a function but got [object Undefined]
+2016-10-24 05:38:13: Error - TypeError: expecting a function but got [object Undefined]
+2016-10-24 05:38:45: Error - TypeError: expecting a function but got [object Undefined]
+2016-10-24 05:39:12: Error - TypeError: expecting a function but got [object Undefined]

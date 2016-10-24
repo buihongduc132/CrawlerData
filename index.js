@@ -1,6 +1,6 @@
 var crawlDataHelper = require('./service/crawlDataHelper');
 
-crawlDataHelper._getMoviesToBuild(true);
+crawlDataHelper._getMovieList(1);
 
 
 // var _ = require('lodash');

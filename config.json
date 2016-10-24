@@ -4,7 +4,7 @@
     },
     "fileEncoding": "utf8",
     "defaultPages": 1,
-    "timeout": "60000",
+    "timeout": "600000",
     "page": {
         "wordpress": {
             "pageSlogan": "Free Movie For Everyone.",

@@ -5,6 +5,24 @@
     "mockRouting": "mock/mockRouting.js",
     "mockData": [
         {
+            "name": "mostPopularCompact",
+            "path": "test/mockData/mostPopularCompact.html",
+            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?",
+            "seedUrl": "http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=1"  
+        },
+        {
+            "name": "userRatingCompact",
+            "path": "test/mockData/userRatingCompact.html",
+            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?&sort=user_rating,desc",
+            "seedUrl": "http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=1&sort=user_rating,desc"  
+        },
+        {
+            "name": "numVotesCompact",
+            "path": "test/mockData/numVotesCompact.html",
+            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?&sort=num_votes,desc",
+            "seedUrl": "http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=1&sort=num_votes,desc"  
+        },
+        {
             "name": "multipleVidSourceMovies",
             "path": "test/vidSourceForList.json",
             "urlRegEx": "http:\\/\\/www\\.vidsourceapi\\.com\\/WebService\\.asmx\\/GetStreamEmbedUrlByIMDBIDs\\?apikey=yQEiCTH84dOJNFQ7(&redirect=(true|false))?&imdbids=\\d{7}(,\\d{7})*(&redirect=(true|false))?",

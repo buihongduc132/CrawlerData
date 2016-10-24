@@ -14,20 +14,19 @@ module.exports = {
 
         return urlTemplate;
     },
-    testHtml: function() {
-    return `<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="class-one">class one</div>
-        <div id="id-one" data="id-one-data">id one</div>
-        <div class="class-two">class 2.1</div>
-        <div class="class-two">class 2.2</div>
-        <div class="class-two">class 2.3</div>
-    </body>
-    </html>`;
+    movieListByPopularity: function(page = 1) {
+        var urlTemplate = `http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}`;
+
+        return urlTemplate;
+    },
+    movieListByUserRating: function(page = 1) {
+        var urlTemplate = `http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}&sort=user_rating,desc`;
+
+        return urlTemplate;
+    },
+    movieListByVotes: function(page = 1) {
+        var urlTemplate = `http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}&sort=num_votes,desc`;
+
+        return urlTemplate;
     }
 }

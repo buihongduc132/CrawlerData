@@ -20,40 +20,51 @@ var Promise = require('bluebird');
 var _ = require('lodash');
 var movieDescriptions = undefined;
 
-var _getMovieList = function (pages) {
-    var genres = constant.movieGenre;
-    var filePath = dataLocation.movieListOverview;
-    var movieInAllGenre = [];
+var _getMovieListMeta = function (url) {
+    let listHtml = dataService.getHtml(url);
+    return listHtml.then((result) => {
+        let listOfMovie = imdbParser.list.movie(result);
+        return listOfMovie;
+    });
+}
 
-    let totalPages = genres.length * pages;
+var _getMoviesMetaInList = function (pages) {
+    var movieListPromise = [];
+    let totalPages = pages * 3;
     var progressBar = uiHelper.progressBar(totalPages, 'Building Movie Overview List')
 
     let progressTick = setInterval(() => {
         progressBar.tick(0);
     }, 1000);
 
-    let currentPageToShow = 0;
-    for (let i = 0; i < genres.length; i++) {
-        let genre = genres[i];
-        for (let p = 0; p < pages; p++) {
-            let currentPage = p + 1;
+    for (let p = 0; p < pages; p++) {
+        let currentPage = p + 1;
 
-            let url = templateHelper.movieListByGenre(genre, currentPage);
-            let listHtml = dataService.getHtml(url);
-            let movieList = listHtml.then((result) => {
-                progressBar.tick();
-                let listOfMovie = imdbParser.list.movie(result);
-                return listOfMovie;
-            });
-            movieInAllGenre.push(movieList);
-        }
+        let movieListByPopularity = _getMovieListMeta(templateHelper.movieListByPopularity(currentPage)).then((moviesList) => {
+            progressBar.tick();
+            return moviesList;
+        });
+        let movieListByUserRating = _getMovieListMeta(templateHelper.movieListByUserRating(currentPage)).then((moviesList) => {
+            progressBar.tick();
+            return moviesList;
+        });
+        let movieListByVotes = _getMovieListMeta(templateHelper.movieListByVotes(currentPage)).then((moviesList) => {
+            progressBar.tick();
+            return moviesList;
+        });
+        movieListPromise.push(movieListByPopularity);
+        movieListPromise.push(movieListByUserRating);
+        movieListPromise.push(movieListByVotes);
     }
 
-    return Promise.all(movieInAllGenre).then((movieLists) => {
+    return movieListPromise;
+}
+
+var _getMovieList = function (pages) {
+    return Promise.all(_getMoviesMetaInList(pages)).then((movieLists) => {
         var movies = _.flatMapDeep(movieLists, (movieList) => {
             return movieList;
         });
-
 
         var moviesUnique = _.uniqBy(movies, 'id');
 
@@ -68,8 +79,8 @@ var _addMovieExtraInfo = function (movie, extraInfo) {
 }
 
 var _getAllMovies = function (pages) {
-    var movieListByGenre = _getMovieList(pages);
-    var movieListAllGenre = Promise.all(movieListByGenre).then((movieLists) => {
+    var movieList = _getMovieList(pages);
+    var movieListAllGenre = Promise.all(movieList).then((movieLists) => {
         var movies = _.flatMapDeep(movieLists, (movieList) => {
             return movieList;
         });
@@ -80,14 +91,14 @@ var _getAllMovies = function (pages) {
         return Promise.resolve(moviesUnique);
     });
 
-    return movieListByGenre;
+    return movieList;
 }
 
 var _getMoviesToBuild = function (isOnlyNew) {
     let movieOverviews = dataService.readFile(dataLocation.movieListOverview);
     let extraInfoList = dataService.getCsvFile(dataLocation.movieExtraInfo);
 
-    let newMovies =  Promise.all([movieOverviews, extraInfoList]).then((result) => {
+    let newMovies = Promise.all([movieOverviews, extraInfoList]).then((result) => {
 
         let movieOverviewsData = JSON.parse(result[0]);
         let extraInfoListData = result[1];
@@ -247,5 +258,5 @@ module.exports = {
     _getMoviesToBuild: _getMoviesToBuild,
     _writeMovieJsonOverview: _writeMovieJsonOverview,
     _addMovieExtraInfo: _addMovieExtraInfo,
-    _getAllMovies: _getAllMovies
+    _getAllMovies: _getAllMovies,
 }
