@@ -1,4 +1,7 @@
 {
+    "api": {
+        "vidSource": "yQEiCTH84dOJNFQ7"
+    },
     "fileEncoding": "utf8",
     "defaultPages": 1,
     "timeout": "60000",
@@ -19,6 +22,9 @@
                 ],
                 "url": "Full Movie"
             }
+        },
+        "vidSource": {
+            "apiCapacity": 20
         }
     }
 }

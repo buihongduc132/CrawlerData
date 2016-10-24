@@ -25,7 +25,10 @@ gulp.task('buildCombinedMovieJson', () => {
     return crawlData.buildCombinedMovieJson();
 });
 
+gulp.task('updateMovieExtraInfo', () => {
+    return crawlData.updateMovieExtraInfo(args.pages);
+});
+
 gulp.task('buildSeedData', () => {
     console.log(dataService);
-    // console.log('testing');
 });

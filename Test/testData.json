@@ -5,6 +5,12 @@
     "mockRouting": "mock/mockRouting.js",
     "mockData": [
         {
+            "name": "multipleVidSourceMovies",
+            "path": "mock/mockData/vidSourceForList.json",
+            "urlRegEx": "http:\\/\\/www\\.vidsourceapi\\.com\\/WebService\\.asmx\\/GetStreamEmbedUrlByIMDBIDs\\?apikey=yQEiCTH84dOJNFQ7(&redirect=(true|false))?&imdbids=\\d{7}(,\\d{7})*(&redirect=(true|false))?",
+            "seedUrl": "http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBIDs?apikey=yQEiCTH84dOJNFQ7&imdbids=0468569,1375666,0080684,0133093,0076759,0047478,0120815,2199711,1345836,0172495,0103064,0082971,0073707,2375559,0090605,0086190,0053125,4387040,2631186,1821700,0372784,0097576,0089881,0055630,1954470,2356180,2488496,0434409,0113277,0095016,0892769,0017925,3390572,1431045,1392190,2015381,0325980,0848228,0266697,1979320,0440963,1220719,0094625,0861739,1555149&redirecton=false"  
+        },
+        {
             "name": "topRatedIndian",
             "path": "mock/mockData/topRatedIndian.html",
             "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/chart\\/top-indian-movies",

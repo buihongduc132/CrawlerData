@@ -9,6 +9,7 @@ var config = require(path.join(pathToRoot, moduleLocation.config));
 var dataService = require(path.join(pathToRoot, moduleLocation.dataService));
 var dataLocation = require(path.join(pathToRoot, moduleLocation.dataLocation));
 var moment = require('moment');
+var args = require(path.join(pathToRoot, moduleLocation.args));
 
 console.log(path.join(pathToRoot, moduleLocation.dataService));
 
@@ -59,6 +60,12 @@ var bar = function (total, action) {
 
     progressBar.done = function (action) {
         console.log(_doneMessage(text));
+    }
+
+    if(args.isDebug) {
+        progressBar.tick = function() {
+            return;
+        }
     }
 
     return progressBar;

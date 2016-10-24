@@ -173,6 +173,10 @@ var buildBody = function (data) {
 		return result
 	}
 
+	let getPlayButton = function(data) {
+		
+	}
+
 	let getMultiLineArray = function (arrayInput) {
 		var tempArray = getUrlFromArray(arrayInput);
 		var result = _.map((item) => {
@@ -195,12 +199,12 @@ var buildBody = function (data) {
 <table style="border: 1px solid red; ">
 	<tbody>
 		<tr>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Release</b>: 1998-07-24</td>
+			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Release</b>: ${data.release}</td>
 			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 40%;"><b>IMDB score</b>: ${data.starRanking}</td>
 		</tr>
 		<tr>
 			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Genre</b>: ${buildGenre(data)}</td>
-			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 40%;"><b>Duration</b>: ${data.duration} mins</td>
+			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 40%;"><b>Duration</b>: ${data.duration}s</td>
 		</tr>
 		<tr>
 			<td valign="top" style="padding-left: 5px; border: 1px solid red; width: 60%;"><b>Writer</b>:

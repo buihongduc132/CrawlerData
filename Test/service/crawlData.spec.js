@@ -23,9 +23,9 @@ describe('Craw Data Service', () => {
     //     });
     // });
     describe('buildAllMovieJsonOverview', () => {
-        // it('should call _getMovieInAllGenre once', () => {
-        //     var _getMovieInAllGenreMock = sinon.spy(mockCrawlData, '_getMovieInAllGenre');
-        //     sinon.assert.calledOnce(_getMovieInAllGenreMock);
+        // it('should call _getMovieList once', () => {
+        //     var _getMovieListMock = sinon.spy(mockCrawlData, '_getMovieList');
+        //     sinon.assert.calledOnce(_getMovieListMock);
         // });
     });
 });

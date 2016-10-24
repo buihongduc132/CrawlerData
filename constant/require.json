@@ -22,5 +22,6 @@
         "common": "helper/parser/common.js",
         "imdb": "helper/parser/imdb.js"
     },
-    "testData": "test/testData.json"
+    "testData": "test/testData.json",
+    "stream": "helper/stream/vidSource.js"
 }

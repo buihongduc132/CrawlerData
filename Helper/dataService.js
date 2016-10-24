@@ -16,5 +16,6 @@ module.exports = {
     stats: fileHelper.stats,
     getHtml: httpHelper.getHtml,
     readFileAsHtml: fileHelper.readFileAsHtml,
-    getCsvFile: fileHelper.getCsvFile
+    getCsvFile: fileHelper.getCsvFile,
+    writeCsvFile: fileHelper.writeCsvFile
 }

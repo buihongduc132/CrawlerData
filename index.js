@@ -1,50 +1,51 @@
-// // var gulp = require('gulp');
+var crawlData = require('./service/crawlData');
 
-// // var path = require('path');
-// // var pathToRoot = path.join(__dirname, '/');
+crawlData.updateMovieExtraInfo(1);
 
-// // var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
-// // var args = require(path.join(pathToRoot, moduleLocation.args));
-// // var crawlData = require(path.join(pathToRoot, moduleLocation.service.crawlData));
-// // var converter = require(path.join(pathToRoot, moduleLocation.service.converter));
-// // var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
-// // //  crawlData.buildCombinedMovieJson();
-
-// // uiHelper.log.error('testing');
-
-// //Converter Class 
-// var Converter = require("csvtojson").Converter;
-// var converter = new Converter({});
-// var Promise = require('bluebird');
-// Promise.promisifyAll(converter);
 // var _ = require('lodash');
+// var arrOne = [
+//     {
+//         id: 1,
+//         name: 'Testing Name 1'
+//     },
+//     {
+//         id: 2,
+//         name: 'Testing Name 2'
+//     },
+//     {
+//         id: 3,
+//         name: 'Testing Name 3'
+//     },
+//     {
+//         id: 4,
+//         name: 'Testing Name 4'
+//     },
+//     { id: 5 }
+// ];
+// var arrTwo = [
+//     { id: 3 },
+//     { id: 4, name: 'Testing 4', version: 1 },
+//     { id: 5, name: 'Testing 5' },
+//     { id: 6, name: 'Testing 6' },
+//     { id: 7, name: 'Testing 7' }
+// ];
 
-// // converter.fromFileAsync("./mock/moviesDescription.csv").then((result) => {
-// //     console.log(result);
-
-// //     var testingResult = _.find(result, { id: 'tt0094625' });
-// //     console.log(testingResult);
-// // });
-
-
-// var movieDescriptions = undefined;
-// for (var i = 0; i < 10; i++) {
-//     if (!movieDescriptions) {
-//         converter.fromFileAsync("./mock/moviesDescription.csv").then((result) => {
-//             movieDescription = result;
-//             // var movieInfo = _.find(movieDescription, { id: movie.id });
-//             // movie.description = movieInfo.description;
-//             console.log("Read Description");
-//             // return Promise.resolve(movie);
-//         });
-//     }
+// var objOne = {
+//     id: 1,
+//     name: 'Name One',
+//     version: 1
 // }
 
-var fs = require('fs');
-var Promise = require('bluebird');
-Promise.promisifyAll(fs);
+// var objTwo = {
+//     id: 1,
+//     version: 2 
+// }
 
-var data = [1,2,3];
+// var final = _.assign(objOne, objTwo);
+// console.log(final);
+// // var finalArr = _.forEach(arrOne, (one) => {
+// //     return one.id * 10;
+// // });
 
-Promise.resolve(fs.writeFileAsync('./testingFile.json', JSON.stringify(data)));
+// // console.log(finalArr);

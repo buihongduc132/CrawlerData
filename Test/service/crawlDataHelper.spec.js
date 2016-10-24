@@ -22,10 +22,10 @@ describe('Craw Data Service Helper', () => {
     //         sinon.assert.calledOnce(getMockData);
     //     });
     // });
-    describe('_getMovieInAllGenre', () => {
-        it('should call _getMovieInAllGenre once', () => {
-            var _getMovieInAllGenreMock = sinon.spy(mockCrawlData, '_getMovieInAllGenre');
-            sinon.assert.calledOnce(_getMovieInAllGenreMock);
+    describe('_getMovieList', () => {
+        it('should call _getMovieList once', () => {
+            var _getMovieListMock = sinon.spy(mockCrawlData, '_getMovieList');
+            sinon.assert.calledOnce(_getMovieListMock);
         });
     });
 });

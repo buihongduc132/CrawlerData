@@ -18,11 +18,6 @@ var Promise = require('bluebird');
 var _ = require('lodash');
 var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
-
-// _getMovieInAllGenre: _getMovieInAllGenre,
-// _getMoviesToBuild: _getMoviesToBuild,
-// _writeMovieJsonOverview: _writeMovieJsonOverview
-
 var buildCombinedMovieJson = function (isOnlyNew) {
     let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
 
@@ -136,29 +131,22 @@ var buildMovieDetailJson = function (isOnlyNew) {
 
     return movies;
 }
+
 var buildMovieJsonOverview = function (pages) {
-    var movieListByGenre = crawlDataHelper._getMovieInAllGenre(pages);
-
-    var movieListAllGenre = Promise.all(movieListByGenre).then((movieLists) => {
-        var movies = _.flatMapDeep(movieLists, (movieList) => {
-            return movieList;
-        });
-
-        var moviesUnique = _.uniqBy(movies, 'id');
-
-        return Promise.resolve(moviesUnique);
-    });
-
-
-    var writeMovieJsonOverview = movieListAllGenre.then((movies) => {
+    return crawlDataHelper._getAllMovies(pages).then((movies) => {
         return crawlDataHelper._writeMovieJsonOverview(movies);
     });
+}
 
-    return writeMovieJsonOverview;
+var updateMovieExtraInfo = function (pages) {
+    return crawlDataHelper._getAllMovies(pages).then((movies) => {
+        return crawlDataHelper._updateMovieExtraInfo(movies);
+    });
 }
 
 module.exports = {
     buildCombinedMovieJson: buildCombinedMovieJson,
     buildMovieJsonOverview: buildMovieJsonOverview,
-    buildMovieDetailJson: buildMovieDetailJson
+    buildMovieDetailJson: buildMovieDetailJson,
+    updateMovieExtraInfo: updateMovieExtraInfo
 }
