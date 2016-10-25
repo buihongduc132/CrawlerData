@@ -178,6 +178,7 @@ var __updateMovieExtraInfoExtraction = {
     __getAllStreamPromise: function (idChunks) {
         let promiseGetMovieInfo = [];
         for (let i = 0; i < idChunks.length; i++) {
+            console.log(i);
             let thisChunk = idChunks[i];
 
             var movieStreamData = stream.movieStreamUrl(thisChunk).then((data) => {

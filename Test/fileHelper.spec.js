@@ -38,7 +38,7 @@ describe('Data Helper', () => {
     describe('Read directory', () => {
         it('should get all files name in test folder', () => {
             var fileNames = ["File1", "File2.json", "File3.xml", "File4.json"];
-            fileHelper.getFiles(testData.readDir).then((result) => {
+            return fileHelper.getFiles(testData.readDir).then((result) => {
                 expect(result).deep.equal(fileNames);
 
                 fileNames.forEach((name) => {
@@ -52,7 +52,7 @@ describe('Data Helper', () => {
         it('it should get all the json file in test folder', () => {
             var fileNames = ["File2.json", "File4.json"];
 
-            fileHelper.getFilesByType(testData.readDir).then((result) => {
+            return fileHelper.getFilesByType(testData.readDir).then((result) => {
                 expect(result).deep.equal(fileNames);
 
                 fileNames.forEach((fileName) => {

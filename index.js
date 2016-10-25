@@ -1,6 +1,6 @@
-var converter = require('./service/converter');
+var crawlData = require('./service/crawlData');
 
-converter.buildWordpressXml();
+crawlData.updateMovieExtraInfo(1);
 
 
 

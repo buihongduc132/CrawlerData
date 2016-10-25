@@ -72,7 +72,6 @@
             "program": "${workspaceRoot}/index.js",
             "stopOnEntry": false,
             "args": [
-                "--mock"
             ],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": null,

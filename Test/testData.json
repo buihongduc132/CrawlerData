@@ -1,31 +1,31 @@
 {
-    "readFile": "test/readFile.txt",
-    "writeFile": "test/writeFile.txt",
-    "readDir": "test/readDir/",
+    "readFile": "test/testFile/readFile.txt",
+    "writeFile": "test/testFile/writeFile.txt",
+    "readDir": "test/testFile/readDir/",
     "mockRouting": "mock/mockRouting.js",
     "mockData": [
         {
             "name": "mostPopularCompact",
             "path": "test/mockData/mostPopularCompact.html",
-            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?",
+            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?$",
             "seedUrl": "http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=1"  
         },
         {
             "name": "userRatingCompact",
             "path": "test/mockData/userRatingCompact.html",
-            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?&sort=user_rating,desc",
+            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?&sort=user_rating,desc$",
             "seedUrl": "http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=1&sort=user_rating,desc"  
         },
         {
             "name": "numVotesCompact",
             "path": "test/mockData/numVotesCompact.html",
-            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?&sort=num_votes,desc",
+            "urlRegEx": "http:\\/\\/www\\.imdb\\.com\\/search\\/title\\?count=\\d{1,3}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=\\d\\d?&sort=num_votes,desc$",
             "seedUrl": "http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=1&sort=num_votes,desc"  
         },
         {
             "name": "multipleVidSourceMovies",
-            "path": "test/vidSourceForList.json",
-            "urlRegEx": "http:\\/\\/www\\.vidsourceapi\\.com\\/WebService\\.asmx\\/GetStreamEmbedUrlByIMDBIDs\\?apikey=yQEiCTH84dOJNFQ7(&redirect=(true|false))?&imdbids=\\d{7}(,\\d{7})*(&redirect=(true|false))?",
+            "path": "test/testFile/vidSourceForList.xml",
+            "urlRegEx": "http:\\/\\/www\\.vidsourceapi\\.com\\/WebService\\.asmx\\/GetStreamEmbedUrlByIMDBIDs\\?apikey=yQEiCTH84dOJNFQ7(&redirecton=(true|false))?&imdbids=\\d{7}(,\\d{7})*(&redirecton=(true|false))?",
             "seedUrl": "http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBIDs?apikey=yQEiCTH84dOJNFQ7&imdbids=0468569,1375666,0080684,0133093,0076759,0047478,0120815,2199711,1345836,0172495,0103064,0082971,0073707,2375559,0090605,0086190,0053125,4387040,2631186,1821700,0372784,0097576,0089881,0055630,1954470,2356180,2488496,0434409,0113277,0095016,0892769,0017925,3390572,1431045,1392190,2015381,0325980,0848228,0266697,1979320,0440963,1220719,0094625,0861739,1555149&redirecton=false"  
         },
         {
