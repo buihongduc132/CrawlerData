@@ -36,9 +36,9 @@
         "id",
         "MovieIMDBID",
         "description",
+        "EmbedUrl",
         "name",
         "url",
-        "year",
-        "streamUrl"
+        "year"
     ]
 }

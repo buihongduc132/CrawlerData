@@ -138,7 +138,7 @@ var _updateMovieExtraInfo = function (movies, all) {
             let combineAllData = __updateMovieExtraInfoExtraction.__combineAllData(objResult, movies);
             let updateOldData = __updateMovieExtraInfoExtraction.__updateOldData(combineAllData, moviesInCsv);
 
-            return combineAllData;
+            return updateOldData;
         });
 
         return allApiResult.then((data) => {
@@ -166,7 +166,7 @@ var __updateMovieExtraInfoExtraction = {
         baseMovies = _.flatten(baseMovies);
         let allMovies = _.concat(baseMovies, moviesInOverview);
 
-        let combinedMovies = _.map(allMovies, (resultMovie, i) => {
+        let combinedMovies = _.map(allMovies, (resultMovie) => {
             if (resultMovie.id && resultMovie.MovieIMDBID) {
                 return resultMovie;
             }
@@ -232,11 +232,11 @@ var __updateMovieExtraInfoExtraction = {
         });
     },
     __addDefaultData: function (movie) {
-        _.forEach(constant.movieMeta, (key) => {
-            if (!movie[key]) {
-                movie[key] = '';
-            }
-        });
+        // _.forEach(constant.movieMeta, (key) => {
+        //     if (!movie[key]) {
+        //         movie[key] = '';
+        //     }
+        // });
 
         if (!movie.MovieIMDBID) {
             movie.MovieIMDBID = movie.id.replace('tt', '');
