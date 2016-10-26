@@ -12,11 +12,12 @@ var _ = require('lodash');
 let _getRawUrl = function (ids, redirect = true) {
     let stringIds = _.join(ids, ',');
     let url = `http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBIDs?apikey=${config.api.vidSource}&redirecton=${redirect}&imdbids=${stringIds}`;
+
     return url;
 };
 
 let _getStreamData = function (ids, redirect = true) {
-    return httpHelper.getHtml(_getRawUrl(ids, redirect), { "Content-Type": "application/json" }).catch((err) => {
+    return httpHelper.getHtml(_getRawUrl(ids, redirect)).catch((err) => {
         console.log(err);
     }).then((data) => {
         return data;
@@ -33,12 +34,22 @@ let _rawMovieStreamData = function (ids, redirect = true) {
 }
 
 let movieStreamData = function (ids, redirect = true) {
-    return _rawMovieStreamData(ids, redirect).then((data) =>{
-
+    return _rawMovieStreamData(ids, redirect).then((data) => {
         let rawUrl = data;
-        rawUrl = rawUrl.replace(`<?xml version="1.0" encoding="utf-8"?>
-<string xmlns="http://www.vidsourceapi.com">`, '').replace(`</string>`, '');
-        rawUrl = JSON.parse(rawUrl);
+        rawUrl = rawUrl.replace(`<?xml version="1.0" encoding="utf-8"?>`, '')
+            .replace(`<string xmlns="http://www.vidsourceapi.com">`, '')
+            .replace(`</string>`, '')
+            .substring(2);
+
+        try {
+            rawUrl = JSON.parse(rawUrl);
+        } catch (error) {
+            rawUrl = {
+                status: 0,
+                msg: 'FAILED',
+                result: []
+            };
+        }
 
         return rawUrl;
     });

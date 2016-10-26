@@ -31,5 +31,14 @@
             "nicename": "post-format-aside",
             "name": "Aside"
         }
-    }
+    },
+    "movieMeta": [
+        "id",
+        "MovieIMDBID",
+        "description",
+        "name",
+        "url",
+        "year",
+        "streamUrl"
+    ]
 }

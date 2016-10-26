@@ -4,6 +4,8 @@ var pathToRoot = path.join(__dirname, '../');
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var urlLocation = require(path.join(pathToRoot, moduleLocation.url));
 var config = require(path.join(pathToRoot, moduleLocation.config));
+var constant = require(path.join(pathToRoot, moduleLocation.constant));
+
 var Promise = require('bluebird');
 var fs = require('fs');
 Promise.promisifyAll(fs);
@@ -40,10 +42,8 @@ var getCsvFile = function (inputPath) {
 }
 
 var writeCsvFile = function (inputPath, data) {
-    var csv = json2csv({ data: data, fields: _.keys(data[0]) });
-    // Promise.resolve(data).then((result) => {
-        // console.log(data);
-    // })
+    var csv = json2csv({ data: data, fields: constant.movieMeta });
+
     return fs.writeFileAsync(path.join(pathToRoot, inputPath), csv, config.fileEncoding);
 }
 

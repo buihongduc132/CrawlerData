@@ -6,6 +6,9 @@
     "defaultPages": 1,
     "timeout": "600000",
     "page": {
+        "imdb": {
+            "compactItems": 250
+        },
         "wordpress": {
             "pageSlogan": "Free Movie For Everyone.",
             "pageName": "Free Online Movie",
@@ -24,7 +27,7 @@
             }
         },
         "vidSource": {
-            "apiCapacity": 20
+            "apiCapacity": 250
         }
     }
 }

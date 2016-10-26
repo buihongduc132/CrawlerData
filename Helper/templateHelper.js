@@ -3,6 +3,7 @@ var pathToRoot = path.join(__dirname, '../');
 
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var args = require(path.join(pathToRoot, moduleLocation.args));
+var config = require(path.join(pathToRoot, moduleLocation.config));
 
 module.exports = {
     movieListByGenre: function (genre, page = 1) {
@@ -15,18 +16,18 @@ module.exports = {
         return urlTemplate;
     },
     movieListByPopularity: function (page = 1) {
-        var urlTemplate = `http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}`;
-
+        var urlTemplate = `http://www.imdb.com/search/title?count=${config.page.imdb.compactItems}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}`;
+              
         return urlTemplate;
     },
     movieListByUserRating: function (page = 1) {
-        var urlTemplate = `http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}&sort=user_rating,desc`;
-
+        var urlTemplate = `http://www.imdb.com/search/title?count=${config.page.imdb.compactItems}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}&sort=user_rating,desc`;
+          
         return urlTemplate;
     },
     movieListByVotes: function (page = 1) {
-        var urlTemplate = `http://www.imdb.com/search/title?count=250&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}&sort=num_votes,desc`;
-
+        var urlTemplate = `http://www.imdb.com/search/title?count=${config.page.imdb.compactItems}&num_votes=25000,&production_status=released&title_type=feature&view=simple&page=${page}&sort=num_votes,desc`;
+          
         return urlTemplate;
     },
     testHtml: function () {

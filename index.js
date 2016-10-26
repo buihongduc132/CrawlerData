@@ -1,6 +1,6 @@
 var crawlData = require('./service/crawlData');
 
-crawlData.updateMovieExtraInfo(1);
+crawlData.updateMovieExtraInfo();
 
 
 

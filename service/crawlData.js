@@ -68,15 +68,20 @@ var buildCombinedMovieJson = function (isOnlyNew) {
 }
 
 var buildMovieDetailJson = function (isOnlyNew) {
-    let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
+    // let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
     var moviesToBuildPromise = [];
+    let total;
+    let progressBar;
+    let progressTick;
+    let errors = [];
 
-    let movies = moviesToBuild.then((result) => {
-        let total = result.length;
-        let progressBar = uiHelper.progressBar(total, "Building Movie Detail Json");
-        let moviesToBuildPromise = [];
+    return crawlDataHelper._getMoviesToBuild(isOnlyNew).then((movieExtraInfo) => {
+    // return dataService.getCsvFile(dataLocation.movieExtraInfo).then((movieExtraInfo) => {
+        result = JSON.parse(movieExtraInfo);
+        total = result.length;
+        progressBar = uiHelper.progressBar(total, "Building Movie Detail Json");
 
-        let progressTick = setInterval(() => {
+        progressTick = setInterval(() => {
             progressBar.tick(0);
         }, 1000);
 
@@ -84,40 +89,38 @@ var buildMovieDetailJson = function (isOnlyNew) {
             return e.code != 200;
         }
 
-        let errors = [];
+        for (let i = 0; i < total; i++) {
+            let currentMovie = result[i];
+            let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
+                let movieDetail = imdbParser.detailToObject(movieDetailHtml);
+                return Promise.resolve(movieDetail);
+            }).catch(clientError, (e) => {
+                errors.push(uiHelper.log.error(`${e}`, `Http Error`));
+                return Promise.resolve();
+            }).catch(Promise.TimeoutError, (e) => {
+                errors.push(uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`));
+                return Promise.resolve();
+            })
 
-        dataService.getCsvFile(dataLocation.movieExtraInfo).then((movieExtraInfo) => {
-            for (let i = 0; i < total; i++) {
-                let currentMovie = result[i];
-                let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
-                    let movieDetail = imdbParser.detailToObject(movieDetailHtml);
-                    return Promise.resolve(movieDetail);
-                }).catch(clientError, (e) => {
-                    errors.push(uiHelper.log.error(`${e}`, `Http Error`));
-                    return Promise.resolve();
-                }).catch(Promise.TimeoutError, (e) => {
-                    errors.push(uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`));
-                    return Promise.resolve();
-                })
-
-                let writeMovieDetail = movieDetail.then((movieDetail) => {
-                    progressBar.tick(0.5);
-                    if (movieDetail) {
-                        movieDetail = crawlDataHelper._addMovieExtraInfo(movieDetail, movieExtraInfo);
-                        return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
-                            progressBar.tick(0.5);
-                        });
-                    }
-                    else {
+            let writeMovieDetail = movieDetail.then((movieDetail) => {
+                progressBar.tick(0.5);
+                if (movieDetail) {
+                    movieDetail = crawlDataHelper._addMovieExtraInfo(movieDetail, movieExtraInfo);
+                    return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
                         progressBar.tick(0.5);
-                        return Promise.resolve();
-                    }
-                });
+                    });
+                }
+                else {
+                    progressBar.tick(0.5);
+                    return Promise.resolve();
+                }
+            });
 
-                moviesToBuildPromise.push(writeMovieDetail);
-            }
-        })
+            moviesToBuildPromise.push(writeMovieDetail);
+        }
 
+        return;
+    }).then(() => {
         return Promise.all(moviesToBuildPromise).then(() => {
             progressBar.tick(total);
             clearInterval(progressTick);
@@ -125,11 +128,8 @@ var buildMovieDetailJson = function (isOnlyNew) {
                 console.log(err);
             });
             var doneMessage = uiHelper.log.done(`Done writing ${total} movies details (With ${errors.length} errors)`);
-            console.log(doneMessage);
         });
     });
-
-    return movies;
 }
 
 var buildMovieJsonOverview = function (pages) {
@@ -138,22 +138,21 @@ var buildMovieJsonOverview = function (pages) {
     });
 }
 
-var updateMovieExtraInfo = function (pages) {
-    return crawlDataHelper._getAllMovies(pages).then((movies) => {
-        return crawlDataHelper._updateMovieExtraInfo(movies);
+var updateMovieExtraInfo = function () {
+    return dataService.readFile(dataLocation.movieListOverview).then((movies) => {
+        return crawlDataHelper._updateMovieExtraInfo(JSON.parse(movies));
     });
 }
-var updateMovieStatus = function() {
+var updateMovieStatus = function () {
     var combinedMovies = dataService.readFile(dataLocation.combinedMoviesJson);
     return combinedMovies.then((data) => {
         let movies = JSON.parse(data);
 
         return dataService.getCsvFile(dataLocation.movieExtraInfo).then((moviesInCsv) => {
             moviesInCsv = _.map(moviesInCsv, (movieInCsv) => {
-                if(_.some(movies, (movie) => {
+                if (_.some(movies, (movie) => {
                     return movieInCsv.MovieIMDBID == movie.intId;
-                }))
-                {
+                })) {
                     movieInCsv.isDone = true;
                 }
                 movieInCsv.MovieIMDBID = _.padStart(movieInCsv.MovieIMDBID, 7, '0');

@@ -57,7 +57,10 @@ var _getMoviesMetaInList = function (pages) {
         movieListPromise.push(movieListByVotes);
     }
 
-    return movieListPromise;
+    return Promise.all(movieListPromise).then((movieLists) => {
+        clearInterval(progressTick);
+        return Promise.resolve(movieLists);
+    });
 }
 
 var _getMovieList = function (pages) {
@@ -67,7 +70,6 @@ var _getMovieList = function (pages) {
         });
 
         var moviesUnique = _.uniqBy(movies, 'id');
-
         return Promise.resolve(moviesUnique);
     });
 }
@@ -75,6 +77,8 @@ var _getMovieList = function (pages) {
 var _addMovieExtraInfo = function (movie, extraInfo) {
     var movieInfo = _.find(extraInfo, { id: movie.id }) || {};
     movie.description = movieInfo.description || '';
+    movie.EmbedUrl = movieInfo.EmbedUrl || '';
+    movie.isDone = movieInfo.isDone || false;
     return movie;
 }
 
@@ -103,26 +107,19 @@ var _getMoviesToBuild = function (isOnlyNew) {
         let movieOverviewsData = JSON.parse(result[0]);
         let extraInfoListData = result[1];
 
-        let oldMovies = _.filter(extraInfoListData, (extraInfo) => {
-            return extraInfo.isDone;
-        });
-        if (isOnlyNew) {
-
-            let newMovies = _.reject(movieOverviewsData, (movie) => {
-                let isInOldList = _.some(oldMovies, (oldMovie) => {
-                    let csvMovieId = _.padStart(oldMovie.MovieIMDBID, 7, '0');
-                    let overviewMovieId = movie.id.replace('tt', '');
-                    return csvMovieId == overviewMovieId;
-                });
-
-                return isInOldList;
+        let moviesWithExtraInfo = _.map(movieOverviewsData, (movie) => {
+            let movieExtraInfo = _.find(extraInfoListData, (extraInfoData) => {
+                let csvMovieId = _.padStart(extraInfoData.MovieIMDBID, 7, '0');
+                let overviewMovieId = movie.id.replace('tt', '');
+                return csvMovieId == overviewMovieId;
             });
 
-            return newMovies;
-        }
-        else {
-            return movieOverviews;
-        }
+            let movieWithExtraInfo = _.assign(movie, movieExtraInfo);
+
+            return movieWithExtraInfo;
+        });
+
+        return moviesWithExtraInfo;
     });
 
     return newMovies;
@@ -138,11 +135,10 @@ var _updateMovieExtraInfo = function (movies, all) {
 
         let allApiResult = Promise.all(promiseGetMovieInfo).then((resultArray) => {
             let objResult = __updateMovieExtraInfoExtraction.__buildObjectFromVidSourceResult(resultArray);
-            let combinedResultArray = __updateMovieExtraInfoExtraction.__addDefaultData(objResult);
-            let combineAllData = __updateMovieExtraInfoExtraction.__combineAllData(combinedResultArray, moviesInCsv, movies);
-            let combinedWithModifiedId = __updateMovieExtraInfoExtraction.__modifyFields(combineAllData);
+            let combineAllData = __updateMovieExtraInfoExtraction.__combineAllData(objResult, movies);
+            let updateOldData = __updateMovieExtraInfoExtraction.__updateOldData(combineAllData, moviesInCsv);
 
-            return combinedWithModifiedId;
+            return combineAllData;
         });
 
         return allApiResult.then((data) => {
@@ -151,37 +147,59 @@ var _updateMovieExtraInfo = function (movies, all) {
     });
 };
 
+var __compareIds = function (movieIMDBID, Id) {
+    return _.padStart(movieIMDBID, 7, '0') == Id.replace('tt', '');
+}
 
 var __updateMovieExtraInfoExtraction = {
-    __combineAllData: function (baseMovies, moviesInCsv, moviesInOverview) {
-        baseMovies = _.map(baseMovies, (baseMovie) => {
-            let foundMovieInCsv = _.find(moviesInCsv, (movieInCsv) => {
-                return baseMovie.MovieIMDBID === movieInCsv.MovieIMDBID;
-            });
-
-            let foundMovieInOverview = _.find(moviesInOverview, (movieInOverview) => {
-                return baseMovie.MovieIMDBID === movieInOverview.id.replace('tt', '');
-            });
-
-            if (foundMovieInCsv) {
-                _.assign(baseMovie, foundMovieInCsv);
-            }
-            if (foundMovieInOverview) {
-                _.assign(baseMovie, foundMovieInOverview);
+    __updateOldData: function (newMovies, oldMovies) {
+        return _.map(newMovies, (newMovie) => {
+            let newData = _.find(oldMovies, { 'id': newMovie.id });
+            if (newData) {
+                newMovie.description = newData.description;
             }
 
-            return baseMovie;
+            return newMovie;
+        });
+    },
+    __combineAllData: function (baseMovies, moviesInOverview) {
+        baseMovies = _.flatten(baseMovies);
+        let allMovies = _.concat(baseMovies, moviesInOverview);
+
+        let combinedMovies = _.map(allMovies, (resultMovie, i) => {
+            if (resultMovie.id && resultMovie.MovieIMDBID) {
+                return resultMovie;
+            }
+            else if (resultMovie.MovieIMDBID) {
+                let foundMovieInOverview = _.find(moviesInOverview, (movieInOverview) => {
+                    return __compareIds(resultMovie.MovieIMDBID, movieInOverview.id);
+                })
+
+                _.assign(resultMovie, foundMovieInOverview);
+            }
+            else if (resultMovie.id) {
+                let foundMovieInBaseMovie = _.find(baseMovies, (baseMovie) => {
+                    return __compareIds(baseMovie.MovieIMDBID, resultMovie.id);
+                });
+
+                _.assign(resultMovie, foundMovieInBaseMovie);
+            }
+            var movieWithDefaultData = __updateMovieExtraInfoExtraction.__addDefaultData(resultMovie);
+
+            return movieWithDefaultData;
         });
 
-        return _.uniqBy(baseMovies, 'MovieIMDBID');
+        let sortArray = _.sortBy(combinedMovies, ['id']);
+
+        return _.sortedUniqBy(sortArray, 'id');
     },
     __getAllStreamPromise: function (idChunks) {
         let promiseGetMovieInfo = [];
         for (let i = 0; i < idChunks.length; i++) {
-            console.log(i);
             let thisChunk = idChunks[i];
 
-            var movieStreamData = stream.movieStreamUrl(thisChunk).then((data) => {
+            var movieStreamData = stream.movieStreamData(thisChunk).then((data) => {
+                console.log(data.length);
                 return data;
             });
             promiseGetMovieInfo.push(movieStreamData);
@@ -206,39 +224,30 @@ var __updateMovieExtraInfoExtraction = {
             return id;
         });
     },
-    __modifyFields: function (movies) {
-        let combinedWithModifiedId = _.map(movies, (combinedResult) => {
-            combinedResult.MovieIMDBID = _.padStart(combinedResult.MovieIMDBID, 7, '0');
-
-            return combinedResult;
-        });
-
-        return combinedWithModifiedId;
-    },
     __buildObjectFromVidSourceResult: function (results) {
-        return _.map(results, (result) => {
-            let objRaw = JSON.parse(result);
+        return _.map(results, (objRaw) => {
             let objData = objRaw.result;
 
             return objData;
         });
     },
-    __addDefaultData: function (movies) {
-        let allKeys = ["name", "url", "id", "year", "streamUrl", "description", "MovieIMDBID"]
-        let combinedMovies = _.flatten(movies);
-        combinedMovies = _.map(combinedMovies, (combinedResult) => {
-            combinedResult.isDone = combinedResult.isDone ? combinedResult.isDone : false;
-
-            _.forEach(allKeys, (key) => {
-                if (!combinedResult[key]) {
-                    combinedResult[key] = '';
-                }
-            });
-
-            return combinedResult;
+    __addDefaultData: function (movie) {
+        _.forEach(constant.movieMeta, (key) => {
+            if (!movie[key]) {
+                movie[key] = '';
+            }
         });
 
-        return combinedMovies;
+        if (!movie.MovieIMDBID) {
+            movie.MovieIMDBID = movie.id.replace('tt', '');
+        }
+        if (!movie.id) {
+            movie.id = 'tt' + _.padStart(movie.MovieIMDBID, 7, '0');
+        }
+
+        movie.MovieIMDBID = _.padStart(movie.MovieIMDBID, 7, '0');
+
+        return movie;
     }
 }
 
