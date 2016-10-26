@@ -18,6 +18,8 @@ var Promise = require('bluebird');
 var _ = require('lodash');
 var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
+// TODO: Change from storing data in Movie Overview List to Movie Extra Info.xml
+
 var buildCombinedMovieJson = function (isOnlyNew) {
     let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
 
@@ -67,17 +69,14 @@ var buildCombinedMovieJson = function (isOnlyNew) {
     });
 }
 
-var buildMovieDetailJson = function (isOnlyNew) {
-    // let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
+var buildMovieDetailJson = function () {
     var moviesToBuildPromise = [];
     let total;
     let progressBar;
     let progressTick;
-    let errors = [];
 
-    return crawlDataHelper._getMoviesToBuild(isOnlyNew).then((movieExtraInfo) => {
-    // return dataService.getCsvFile(dataLocation.movieExtraInfo).then((movieExtraInfo) => {
-        result = JSON.parse(movieExtraInfo);
+    return dataService.getCsvFile(dataLocation.movieExtraInfo).then((result) => {
+    // return crawlDataHelper._getMoviesToBuild().then((result) => {
         total = result.length;
         progressBar = uiHelper.progressBar(total, "Building Movie Detail Json");
 
@@ -85,35 +84,16 @@ var buildMovieDetailJson = function (isOnlyNew) {
             progressBar.tick(0);
         }, 1000);
 
-        let clientError = function (e) {
-            return e.code != 200;
-        }
-
         for (let i = 0; i < total; i++) {
             let currentMovie = result[i];
-            let movieDetail = dataService.getHtml(currentMovie.url).then((movieDetailHtml) => {
-                let movieDetail = imdbParser.detailToObject(movieDetailHtml);
-                return Promise.resolve(movieDetail);
-            }).catch(clientError, (e) => {
-                errors.push(uiHelper.log.error(`${e}`, `Http Error`));
-                return Promise.resolve();
-            }).catch(Promise.TimeoutError, (e) => {
-                errors.push(uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`));
-                return Promise.resolve();
-            })
+            let movieDetail = crawlDataHelper._buildMovieDetailJson.__getDetail(currentMovie).then((data) => {
+                progressBar.tick(0.5);
+                return data;
+            });
 
             let writeMovieDetail = movieDetail.then((movieDetail) => {
                 progressBar.tick(0.5);
-                if (movieDetail) {
-                    movieDetail = crawlDataHelper._addMovieExtraInfo(movieDetail, movieExtraInfo);
-                    return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail))).finally(() => {
-                        progressBar.tick(0.5);
-                    });
-                }
-                else {
-                    progressBar.tick(0.5);
-                    return Promise.resolve();
-                }
+                return crawlDataHelper._buildMovieDetailJson.__writeToFile(movieDetail);
             });
 
             moviesToBuildPromise.push(writeMovieDetail);
@@ -124,10 +104,7 @@ var buildMovieDetailJson = function (isOnlyNew) {
         return Promise.all(moviesToBuildPromise).then(() => {
             progressBar.tick(total);
             clearInterval(progressTick);
-            _.uniq(errors).forEach((err) => {
-                console.log(err);
-            });
-            var doneMessage = uiHelper.log.done(`Done writing ${total} movies details (With ${errors.length} errors)`);
+            var doneMessage = uiHelper.log.done(`Done writing ${total} movies details`);
         });
     });
 }

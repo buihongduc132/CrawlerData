@@ -20,6 +20,34 @@ var Promise = require('bluebird');
 var _ = require('lodash');
 var movieDescriptions = undefined;
 
+var _buildMovieDetailJson = {
+    __getDetail: function (movie) {
+        let errors = [];
+        let clientError = function (e) {
+            return e.code != 200;
+        }
+
+        return dataService.getHtml(movie.url).then((movieDetail) => {
+            _.assign(movieDetail, movie);
+            return Promise.resolve(movieDetail);
+        }).catch(clientError, (e) => {
+            uiHelper.log.error(`${e}`, `Http Error`);
+            return Promise.resolve();
+        }).catch(Promise.TimeoutError, (e) => {
+            uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`);
+            return Promise.resolve();
+        });
+    },
+    __writeToFile: function (movieDetail) {
+        if (movieDetail) {
+            // movieDetail = _addMovieExtraInfo(movieDetail, movieExtraInfo);
+            return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail)));
+        }
+        else {
+            return Promise.resolve();
+        }
+    }
+}
 var _getMovieListMeta = function (url) {
     let listHtml = dataService.getHtml(url);
     return listHtml.then((result) => {
@@ -79,6 +107,7 @@ var _addMovieExtraInfo = function (movie, extraInfo) {
     movie.description = movieInfo.description || '';
     movie.EmbedUrl = movieInfo.EmbedUrl || '';
     movie.isDone = movieInfo.isDone || false;
+    movie.gotDetail = movieInfo.gotDetail || false;
     return movie;
 }
 
@@ -98,7 +127,8 @@ var _getAllMovies = function (pages) {
     return movieList;
 }
 
-var _getMoviesToBuild = function (isOnlyNew) {
+//Deprecated
+var _getMoviesToBuild = function () {
     let movieOverviews = dataService.readFile(dataLocation.movieListOverview);
     let extraInfoList = dataService.getCsvFile(dataLocation.movieExtraInfo);
 
@@ -141,7 +171,10 @@ var _updateMovieExtraInfo = function (movies, all) {
         });
 
         return allApiResult.then((data) => {
-            return dataService.writeCsvFile(dataLocation.movieExtraInfo, data);
+            return dataService.writeCsvFile(dataLocation.movieExtraInfo, data).then(() => {
+                var doneMessage = uiHelper.log.done('Done update movie extra info');
+                console.log(doneMessage);
+            });
         });
     });
 };
@@ -156,6 +189,8 @@ var __updateMovieExtraInfoExtraction = {
             let newData = _.find(oldMovies, { 'id': newMovie.id });
             if (newData) {
                 newMovie.description = newData.description;
+                newMovie.isDone = newData.isDone ? 1 : 0;
+                newMovie.gotDetail = newData.gotDetail ? 1 : 0;
             }
 
             return newMovie;
@@ -198,7 +233,7 @@ var __updateMovieExtraInfoExtraction = {
 
         let sortArray = _.sortBy(combinedMovies, ['id']);
         clearInterval(progressTick);
-        
+
         return _.sortedUniqBy(sortArray, 'id');
     },
     __getAllStreamPromise: function (idChunks) {
@@ -214,7 +249,7 @@ var __updateMovieExtraInfoExtraction = {
             let thisChunk = idChunks[i];
 
             var movieStreamData = stream.movieStreamData(thisChunk).then((data) => {
-            progressBar.tick();
+                progressBar.tick();
                 return data;
             });
             promiseGetMovieInfo.push(movieStreamData);
@@ -253,12 +288,6 @@ var __updateMovieExtraInfoExtraction = {
         });
     },
     __addDefaultData: function (movie) {
-        // _.forEach(constant.movieMeta, (key) => {
-        //     if (!movie[key]) {
-        //         movie[key] = '';
-        //     }
-        // });
-
         if (!movie.MovieIMDBID) {
             movie.MovieIMDBID = movie.id.replace('tt', '');
         }
@@ -290,4 +319,5 @@ module.exports = {
     _writeMovieJsonOverview: _writeMovieJsonOverview,
     _addMovieExtraInfo: _addMovieExtraInfo,
     _getAllMovies: _getAllMovies,
+    _buildMovieDetailJson: _buildMovieDetailJson
 }

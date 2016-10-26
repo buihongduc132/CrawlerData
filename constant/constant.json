@@ -35,10 +35,17 @@
     "movieMeta": [
         "id",
         "MovieIMDBID",
+        "isDone",
+        "gotDetail",
         "description",
         "EmbedUrl",
         "name",
         "url",
         "year"
+    ],
+    "movieMetaToKeep": [
+        "isDone",
+        "gotDetail",
+        "description"
     ]
 }
