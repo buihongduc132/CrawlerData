@@ -133,8 +133,7 @@ var _updateMovieExtraInfo = function (movies, all) {
         let idChunks = _.chunk(allIds, config.page.vidSource.apiCapacity);
         let promiseGetMovieInfo = __updateMovieExtraInfoExtraction.__getAllStreamPromise(idChunks);
 
-        let allApiResult = Promise.all(promiseGetMovieInfo).then((resultArray) => {
-            let objResult = __updateMovieExtraInfoExtraction.__buildObjectFromVidSourceResult(resultArray);
+        let allApiResult = Promise.all(promiseGetMovieInfo).then((objResult) => {
             let combineAllData = __updateMovieExtraInfoExtraction.__combineAllData(objResult, movies);
             let updateOldData = __updateMovieExtraInfoExtraction.__updateOldData(combineAllData, moviesInCsv);
 
@@ -166,6 +165,12 @@ var __updateMovieExtraInfoExtraction = {
         baseMovies = _.flatten(baseMovies);
         let allMovies = _.concat(baseMovies, moviesInOverview);
 
+        var progressBar = uiHelper.progressBar(allMovies.length, 'Combine All Movies')
+
+        let progressTick = setInterval(() => {
+            progressBar.tick(0);
+        }, 1000);
+
         let combinedMovies = _.map(allMovies, (resultMovie) => {
             if (resultMovie.id && resultMovie.MovieIMDBID) {
                 return resultMovie;
@@ -186,25 +191,41 @@ var __updateMovieExtraInfoExtraction = {
             }
             var movieWithDefaultData = __updateMovieExtraInfoExtraction.__addDefaultData(resultMovie);
 
+            progressBar.tick();
+
             return movieWithDefaultData;
         });
 
         let sortArray = _.sortBy(combinedMovies, ['id']);
-
+        clearInterval(progressTick);
+        
         return _.sortedUniqBy(sortArray, 'id');
     },
     __getAllStreamPromise: function (idChunks) {
         let promiseGetMovieInfo = [];
+
+        var progressBar = uiHelper.progressBar(idChunks.length, 'Getting Chunks of movies')
+
+        let progressTick = setInterval(() => {
+            progressBar.tick(0);
+        }, 1000);
+
         for (let i = 0; i < idChunks.length; i++) {
             let thisChunk = idChunks[i];
 
             var movieStreamData = stream.movieStreamData(thisChunk).then((data) => {
-                console.log(data.length);
+            progressBar.tick();
                 return data;
             });
             promiseGetMovieInfo.push(movieStreamData);
         }
-        return promiseGetMovieInfo;
+
+        return Promise.all(promiseGetMovieInfo).then((resultArray) => {
+            clearInterval(progressTick);
+            let objResult = __updateMovieExtraInfoExtraction.__buildObjectFromVidSourceResult(resultArray);
+
+            return objResult;
+        });
     },
     __getAllIds: function (movies) {
 
