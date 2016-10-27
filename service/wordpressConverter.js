@@ -180,16 +180,11 @@ var buildBody = function (data) {
 	}
 
 	let getMultiLineArray = function (arrayInput) {
-		// var tempArray = getUrlFromArray(arrayInput);
-		// var result = _.map(arrayInput, (item) => {
-		// 	// return `<li><a href="${getUrl(item)}">${item}</a></li>`;
-		// 	return `<li>${item}</li>`;
-		// });
 
 		var finalResult = _.join(arrayInput, '<br>');
 		return finalResult;
 	}
-
+//TODO: Duration is now array. Should get first item.
 	var bodyContent = `[caption align="aligncenter" width="630"]<img class="alignnone size-full wp-image-13330207" src="${data.poster}"
 	alt="${data.title}" width="630" height="1200" />
 <h1 style="font-size:5vh">${data.title} - Free Movie</h1>[/caption]

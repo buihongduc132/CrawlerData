@@ -74,40 +74,54 @@ var buildMovieDetailJson = function () {
     let total;
     let progressBar;
     let progressTick;
+    let succeeded = [];
+    let csvData;
+    let errors = [];
 
     return dataService.getCsvFile(dataLocation.movieExtraInfo).then((result) => {
-    // return crawlDataHelper._getMoviesToBuild().then((result) => {
         total = result.length;
+        csvData = result;
         progressBar = uiHelper.progressBar(total, "Building Movie Detail Json");
-
         progressTick = setInterval(() => {
             progressBar.tick(0);
         }, 1000);
 
-        for (let i = 0; i < total; i++) {
-            let currentMovie = result[i];
-            let movieDetail = crawlDataHelper._buildMovieDetailJson.__getDetail(currentMovie).then((data) => {
+        return Promise.resolve(result).each((movie) => {
+            return crawlDataHelper._buildMovieDetailJson.__getDetail(movie).then((data) => {
                 progressBar.tick(0.5);
-                return data;
-            });
-
-            let writeMovieDetail = movieDetail.then((movieDetail) => {
+                return imdbParser.detailToObject(data);
+            }).then((movieDetail) => {
                 progressBar.tick(0.5);
-                return crawlDataHelper._buildMovieDetailJson.__writeToFile(movieDetail);
+                return crawlDataHelper._buildMovieDetailJson.__writeToFile(movieDetail).then(() => {
+                    succeeded.push(movieDetail);
+                });
+            }).catch((err) => {
+                errors.push(uiHelper.log.error(`${err}`, 'Building Movie Detail Json'));
+                return;
             });
-
-            moviesToBuildPromise.push(writeMovieDetail);
-        }
-
-        return;
-    }).then(() => {
-        return Promise.all(moviesToBuildPromise).then(() => {
+        }).then(() => {
             progressBar.tick(total);
             clearInterval(progressTick);
-            var doneMessage = uiHelper.log.done(`Done writing ${total} movies details`);
+            _.uniq(errors).forEach((err) => {
+                console.log(uiHelper.log.error(err));
+            });
+        });
+    }).then(() => {
+        let succeededItems = 0;
+        csvData = _.map(csvData, (csvMovie) => {
+            if (_.some(succeeded, { 'id': csvMovie.id })) {
+                csvMovie.gotDetail = 1;
+                succeededItems++;
+            }
+            return csvMovie;
+        });
+        return dataService.writeCsvFile(dataLocation.movieExtraInfo, csvData).then(() => {
+            var doneMessage = uiHelper.log.done(`Done writing ${succeededItems}/${total} movies details`);
+            console.log(doneMessage);
+            return;
         });
     });
-}
+};
 
 var buildMovieJsonOverview = function (pages) {
     return crawlDataHelper._getAllMovies(pages).then((movies) => {

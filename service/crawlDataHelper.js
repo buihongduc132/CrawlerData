@@ -32,10 +32,10 @@ var _buildMovieDetailJson = {
             return Promise.resolve(movieDetail);
         }).catch(clientError, (e) => {
             uiHelper.log.error(`${e}`, `Http Error`);
-            return Promise.resolve();
+            return Promise.resolve(false);
         }).catch(Promise.TimeoutError, (e) => {
             uiHelper.log.error(`Get Html ${currentMovie.url} (${config.timeout}ms})`, `Http Timeout`);
-            return Promise.resolve();
+            return Promise.resolve(false);
         });
     },
     __writeToFile: function (movieDetail) {
@@ -106,8 +106,8 @@ var _addMovieExtraInfo = function (movie, extraInfo) {
     var movieInfo = _.find(extraInfo, { id: movie.id }) || {};
     movie.description = movieInfo.description || '';
     movie.EmbedUrl = movieInfo.EmbedUrl || '';
-    movie.isDone = movieInfo.isDone || false;
-    movie.gotDetail = movieInfo.gotDetail || false;
+    newMovie.isDone = 0;
+    newMovie.gotDetail = 0;
     return movie;
 }
 
@@ -296,6 +296,10 @@ var __updateMovieExtraInfoExtraction = {
         }
 
         movie.MovieIMDBID = _.padStart(movie.MovieIMDBID, 7, '0');
+
+        movie.isDone = movie.isDone ? movie.isDone : 0;
+        movie.gotDetail = movie.gotDetail ? movie.gotDetail : 0; 
+        movie.description = movie.description ? movie.description : ''; 
 
         return movie;
     }

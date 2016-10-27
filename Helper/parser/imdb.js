@@ -68,7 +68,7 @@ module.exports = {
             director: [commonParser.getTextDetail(data, '.credit_summary_item>span[itemprop="director"]>a') || '_Blank_director_'],
             writer: commonParser.getListData(data, '.credit_summary_item>span[itemprop="creator"]>a>span') || '_Blank_writer_',
             stars: commonParser.getListData(data, '.credit_summary_item>span[itemprop="actors"]>a>span') || '_Blank_stars_',
-            duration: commonParser.getTextDetail(data, '#titleDetails>div>time[itemprop="duration"]:first') || '_Blank_duration_',
+            duration: commonParser.getListData(data, '#titleDetails>div>time[itemprop="duration"]') || '_Blank_duration_', //Get only first duration
             genre: commonParser.getListData(data, '.subtext>a>span[itemprop="genre"]') || '_Blank_genre_',
             release: commonParser.getDataFromAttribute(data, 'div.subtext>a>meta[itemprop="datePublished"]', 'content') || '_Blank_release_',
             poster: commonParser.getDataFromAttribute(data, 'meta[property="og:image"]', 'content') || '_Blank_poster_',
@@ -82,6 +82,7 @@ module.exports = {
         }
 
         result.postName = getPostName(result.title);
+        result.duration = result.duration[0];
         result.intId = getLinkId(result.id);
         result.img = {
             thumbnail: getThumbnailId(result.intId).toString(),
