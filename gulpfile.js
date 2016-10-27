@@ -13,8 +13,8 @@ gulp.task('buildWordpressXml', () => {
     return converter.buildWordpressXml();
 });
 
-gulp.task('buildMovieJsonOverview', () => {
-    return crawlData.buildMovieJsonOverview(args.pages);
+gulp.task('buildMovieOverview', () => {
+    return crawlData.buildMovieOverview(args.pages, args.singlePage);
 });
 
 gulp.task('buildMovieDetailJson', () => {

@@ -123,10 +123,36 @@ var buildMovieDetailJson = function () {
     });
 };
 
-var buildMovieJsonOverview = function (pages) {
-    return crawlDataHelper._getAllMovies(pages).then((movies) => {
-        return crawlDataHelper._writeMovieJsonOverview(movies);
-    });
+var buildMovieOverview = function (pages, singlePage) {
+    // TODO implement
+    // x Start getting all movie progress bar
+    // x Get list of movie by pages
+    // x Get Csv File
+    // x Combine all movies in imdb and csv
+    // x Assign Movie in CSV to Movie in imdb (*)
+    // x End getting all movie progress bar
+
+    // Start getting url for movie Bar
+    // x Getting all movies with empty EmbedUrl
+    // x Break these movie in chunk of 250
+    // x Get Url by chunks
+    // x Combine all chunks
+    // x Map all url to movie without EmbedUrl
+    // End Getting url Bar
+
+    // Write all movie in *
+    return crawlDataHelper._getMovieList(pages).then((moviesInImdb) => {
+        return dataService.getCsvFile(dataLocation.movieOverview).then((moviesInCsv) => {
+            return crawlDataHelper._buildMovieOverview.__combineAllMovies(moviesInImdb, moviesInCsv);
+        });
+    }).then((combinedMovies) => {
+        return _buildMovieOverview.__fillingMovieUrlForMovies(combinedMovies);
+    }).then((allMoviesUpdated) => {
+        return dataService.writeCsvFile(dataLocation.movieOverview);
+    }).then(() => {
+        var doneMessage = uiHelper.log.done(`Done Building Movie Overview`);
+        console.log(doneMessage);
+    })
 }
 
 var updateMovieExtraInfo = function () {
@@ -134,6 +160,7 @@ var updateMovieExtraInfo = function () {
         return crawlDataHelper._updateMovieExtraInfo(JSON.parse(movies));
     });
 }
+
 var updateMovieStatus = function () {
     var combinedMovies = dataService.readFile(dataLocation.combinedMoviesJson);
     return combinedMovies.then((data) => {
@@ -158,7 +185,7 @@ var updateMovieStatus = function () {
 
 module.exports = {
     buildCombinedMovieJson: buildCombinedMovieJson,
-    buildMovieJsonOverview: buildMovieJsonOverview,
+    buildMovieOverview: buildMovieOverview,
     buildMovieDetailJson: buildMovieDetailJson,
     updateMovieExtraInfo: updateMovieExtraInfo,
     updateMovieStatus: updateMovieStatus

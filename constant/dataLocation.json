@@ -6,5 +6,6 @@
     "movieResult": "data/result/movies.xml",
     "errorLog": "errorLog",
     "movieExtraInfo" : "data/movieExtraInfo.csv",
+    "movieOverview": "data/movieExtraInfo.csv",
     "wordpressXml": "data/result/wordpress.xml"
 }

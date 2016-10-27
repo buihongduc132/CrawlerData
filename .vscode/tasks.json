@@ -21,7 +21,7 @@
         },
 
         {
-            "taskName": "buildMovieJsonOverview",
+            "taskName": "buildMovieOverview",
             "args": ["--mock"],
             "isBuildCommand": true,
             "isWatching": false,

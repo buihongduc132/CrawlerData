@@ -1,6 +1,6 @@
 var crawlData = require('./service/crawlData');
 
-crawlData.buildMovieDetailJson();
+crawlData.buildMovieOverview(1);
 
 
 
