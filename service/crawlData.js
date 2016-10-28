@@ -146,7 +146,7 @@ var buildMovieOverview = function (pages, singlePage) {
             return crawlDataHelper._buildMovieOverview.__combineAllMovies(moviesInImdb, moviesInCsv);
         });
     }).then((combinedMovies) => {
-        return _buildMovieOverview.__fillingMovieUrlForMovies(combinedMovies);
+        return crawlDataHelper._buildMovieOverview.__fillingMovieUrlForMovies(combinedMovies);
     }).then((allMoviesUpdated) => {
         return dataService.writeCsvFile(dataLocation.movieOverview);
     }).then(() => {

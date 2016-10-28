@@ -55,7 +55,7 @@ let _buildMovieOverview = {
     __fillingMovieUrlForMovies: function (movies) {
         let total = movies.length;
 
-        let moviesWithoutEmbedUrl = _.filter(movies, (movie) => {
+        let moviesWithoutEmbedUrl = _.reject(movies, (movie) => {
             return movie.EmbedUrl;
         });
 
@@ -66,11 +66,11 @@ let _buildMovieOverview = {
         }, 1000);
         let movieWithoutEmbedUrlIds = _.map(moviesWithoutEmbedUrl, 'id');
 
-        let idChunks = _.chunk(movieWithoutEmbedUrlIds, config.vidSource.apiCapacity);
+        let idChunks = _.chunk(movieWithoutEmbedUrlIds, config.page.vidSource.apiCapacity);
 
         let movieDataFromApiInChunk = [];
         for (let i = 0; i < idChunks.length; i++) {
-            let dataFromApi = stream.getMovieStreamData(idChunks[i]);
+            let dataFromApi = stream.movieStreamData(idChunks[i]);
         };
 
         let movieChunks = []
@@ -116,7 +116,7 @@ let _buildMovieOverview = {
         let progressTick = setInterval(() => {
             progressBar.tick(0);
         }, 1000);
-
+        // TODO : Remove Comment
         let onlyImdbIds = _.reject(imdbIds, (id) => { //a
             // return _.some(commonMovieIds, (commonMovieId) => {
             //     return id == commonMovieId;
@@ -138,7 +138,7 @@ let _buildMovieOverview = {
             //     return movie.id == onlyImdbId;
             // })
             progressBar.tick(0.25);
-            return onlyImdbIds.indexOf(id) > -1;
+            return onlyImdbIds.indexOf(movie.id) > -1;
         });
 
         let onlyCsvMovies = _.filter(csvMovies, (movie) => {
@@ -146,7 +146,7 @@ let _buildMovieOverview = {
             //     return movie.id == onlyCsvId;
             // });
             progressBar.tick(0.25);
-            return commonMovieIds.indexOf(id) > -1;
+            return commonMovieIds.indexOf(movie.id) > -1;
         });
 
         let commonImdbMovies = _.reject(imdbMovies, (movie) => { // ia
