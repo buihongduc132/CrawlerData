@@ -34,11 +34,11 @@
     },
     "movieMeta": [
         "id",
-        "MovieIMDBID",
         "isDone",
         "gotDetail",
         "description",
         "EmbedUrl",
+        "MovieIMDBID",
         "name",
         "url",
         "year"

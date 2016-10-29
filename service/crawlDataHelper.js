@@ -52,6 +52,13 @@ var _buildMovieDetailJson = {
 
 
 let _buildMovieOverview = {
+    __filterInvalidMovies: function(movies) {
+        let filteredMovies =  _.filter(movies, (movie) => {
+            return /^tt\d{5,10}$/.test(movie.id);
+        });
+
+        return filteredMovies;
+    },
     __fillingMovieUrlForMovies: function (movies) {
         let total = movies.length;
 
@@ -71,19 +78,18 @@ let _buildMovieOverview = {
         let movieDataFromApiInChunk = [];
         for (let i = 0; i < idChunks.length; i++) {
             let dataFromApi = stream.movieStreamData(idChunks[i]);
+            movieDataFromApiInChunk.push(dataFromApi);
         };
 
         let movieChunks = []
-        return Promise.each(movieDataFromApiInChunk).then((movieChunk) => {
-            movieChunks.push(movieChunks.result);
-            progressBar.tick(0.4);
-            return;
-        }).then(() => {
+        return Promise.all(movieDataFromApiInChunk).then((movieChunks) => {
             let allNewMovies = _.flatten(movieChunks);
             let fixMoviesIdsFromApi = _.map(allNewMovies, (movie) => {
                 movie.MovieIMDBID = 'tt' + _.padStart(movie.MovieIMDBID, 7, '00');
                 movie.id = movie.MovieIMDBID;
                 progressBar.tick(0.3);
+
+                return movie;
             })
             return _.sortBy(fixMoviesIdsFromApi, 'id');
         }).then((moviesFromApi) => {
@@ -107,6 +113,7 @@ let _buildMovieOverview = {
         })
     },
     __combineAllMovies: function (imdbMovies, csvMovies) {
+        imdbMovies = _.sortBy(imdbMovies, 'id');
         let imdbIds = _.map(imdbMovies, 'id'); //A
         let csvIds = _.map(csvMovies, 'id'); //B
         let commonMovieIds = _.intersection(imdbIds, csvIds); //I
@@ -117,56 +124,41 @@ let _buildMovieOverview = {
             progressBar.tick(0);
         }, 1000);
         // TODO : Remove Comment
-        let onlyImdbIds = _.reject(imdbIds, (id) => { //a
-            // return _.some(commonMovieIds, (commonMovieId) => {
-            //     return id == commonMovieId;
-            // });
+        let onlyImdbIds = _.reject(imdbIds, (id) => {
             progressBar.tick(0.25);
             return commonMovieIds.indexOf(id) > -1;
         });
 
-        let onlyCsvIds = _.reject(csvIds, (id) => { //b
-            // return _.some(commonMovieIds, (commonMovieId) => {
-            //     return id == commonMovieId;
-            // });
+        let onlyCsvIds = _.reject(csvIds, (id) => {
             progressBar.tick(0.25);
             return commonMovieIds.indexOf(id) > -1;
         });
 
         let onlyImdbMovies = _.filter(imdbMovies, (movie) => {
-            // return _.some(onlyImdbIds, (onlyImdbId) => {
-            //     return movie.id == onlyImdbId;
-            // })
             progressBar.tick(0.25);
             return onlyImdbIds.indexOf(movie.id) > -1;
         });
 
         let onlyCsvMovies = _.filter(csvMovies, (movie) => {
-            // return _.some(onlyCsvIds, (onlyCsvId) => {
-            //     return movie.id == onlyCsvId;
-            // });
             progressBar.tick(0.25);
-            return commonMovieIds.indexOf(movie.id) > -1;
+            return onlyCsvIds.indexOf(movie.id) > -1;
         });
 
-        let commonImdbMovies = _.reject(imdbMovies, (movie) => { // ia
-            // return _.some(onlyImdbIds, (onlyImdbId) => {
-            //     return movie.id == onlyImdbId;
-            // })
-
+        let commonImdbMovies = _.reject(imdbMovies, (movie) => {
             progressBar.tick(0.25);
             return onlyImdbIds.indexOf(movie.id) > -1;
         });
 
         let commonMovies = commonImdbMovies;
-        _.assign(commonMovies, (commonImdbMovie) => {
+        commonMovies = _.map(commonMovies, (commonMovie) => {
             progressBar.tick(0.25);
-            return _.find(csvMovies, (csvMovie) => {
-                return csvMovie.id == commonImdbMovie.id;
-            });
+
+            _.assign(commonMovie, _.find(csvMovies, {'id': commonMovie.id}));
+
+            return commonMovie;
         });
 
-        let allMovies = _.concat(commonMovies, onlyImdbMovies, onlyCsvIds);
+        let allMovies = _.concat(commonMovies, onlyImdbMovies, onlyCsvMovies);
         let allMoviesSorted = _.sortBy(allMovies, 'id');
         let uniqueList = _.uniqBy(allMoviesSorted, 'id');
 

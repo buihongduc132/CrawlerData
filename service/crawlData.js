@@ -144,11 +144,13 @@ var buildMovieOverview = function (pages, singlePage) {
     return crawlDataHelper._getMovieList(pages).then((moviesInImdb) => {
         return dataService.getCsvFile(dataLocation.movieOverview).then((moviesInCsv) => {
             return crawlDataHelper._buildMovieOverview.__combineAllMovies(moviesInImdb, moviesInCsv);
+        }).then((movies) => {
+            return crawlDataHelper._buildMovieOverview.__filterInvalidMovies(movies);
         });
     }).then((combinedMovies) => {
         return crawlDataHelper._buildMovieOverview.__fillingMovieUrlForMovies(combinedMovies);
     }).then((allMoviesUpdated) => {
-        return dataService.writeCsvFile(dataLocation.movieOverview);
+        return dataService.writeCsvFile(dataLocation.movieOverview, allMoviesUpdated);
     }).then(() => {
         var doneMessage = uiHelper.log.done(`Done Building Movie Overview`);
         console.log(doneMessage);

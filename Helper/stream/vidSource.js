@@ -17,31 +17,27 @@ let _getRawUrl = function (ids, redirect = true) {
 };
 
 let _getStreamData = function (ids, redirect = true) {
-    return httpHelper.getHtml(_getRawUrl(ids, redirect)).catch((err) => {
-        console.log(err);
-    }).then((data) => {
-        return data;
-    })
+    return httpHelper.getHtml(_getRawUrl(ids, redirect));
 }
 
-// let _rawMovieStreamData = function (ids, redirect = true) {
-//     var actualIds = _.map(ids, (id) => {
-//         return id.replace('tt', '');
-//     });
+let _rawMovieStreamData = function (ids, redirect = true) {
+    var actualIds = _.map(ids, (id) => {
+        return id.replace('tt', '');
+    });
 
 
-//     return _getStreamData(actualIds, redirect);
-// }
+    return _getStreamData(actualIds, redirect);
+}
 
 let movieStreamData = function (ids, redirect = true) {
-    return _getStreamData(ids, redirect).then((data) => {
+    let streamData = _rawMovieStreamData(ids, redirect).then((data) => {
         let rawUrl = data;
-        rawUrl = rawUrl.replace(`<?xml version="1.0" encoding="utf-8"?>`, '')
-            .replace(`<string xmlns="http://www.vidsourceapi.com">`, '')
-            .replace(`</string>`, '')
-            .substring(2);
 
         try {
+            rawUrl = rawUrl.replace(`<?xml version="1.0" encoding="utf-8"?>`, '')
+                .replace(`<string xmlns="http://www.vidsourceapi.com">`, '')
+                .replace(`</string>`, '')
+                .substring(2);
             rawUrl = JSON.parse(rawUrl);
         } catch (error) {
             rawUrl = {
@@ -51,12 +47,14 @@ let movieStreamData = function (ids, redirect = true) {
             };
         }
 
-        return rawUrl;
+        return Promise.resolve(rawUrl.result);
     });
+
+    return streamData;
 }
 
 module.exports = {
     movieStreamData: movieStreamData,
-    _rawMovieStreamData: _rawMovieStreamData,
+    // _rawMovieStreamData: _rawMovieStreamData,
     _getRawUrl: _getRawUrl
 }

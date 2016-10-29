@@ -4,7 +4,7 @@
     },
     "fileEncoding": "utf8",
     "defaultPages": 1,
-    "timeout": "60000",
+    "timeout": "360000",
     "page": {
         "imdb": {
             "compactItems": 250

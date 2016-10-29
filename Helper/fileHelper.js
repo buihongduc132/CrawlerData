@@ -59,11 +59,21 @@ var stats = function (inputPath) {
     return fs.statAsync(path.join(pathToRoot, inputPath));
 }
 
+const isExistsDir = function(inputPath) {
+    return fs.existsSync(inputPath);
+}
+
+const newDir = function(inputPath) {
+    return fs.mkdirSync(inputPath);
+}
+
 var appendFile = function (inputPath, data) {
     return fs.appendFileAsync(path.join(pathToRoot, inputPath), data, config.fileEncoding);
 }
 
 module.exports = {
+    isExistsDir: isExistsDir,
+    newDir: newDir,
     writeCsvFile: writeCsvFile,
     readFile: readFile,
     writeFile: writeFile,
