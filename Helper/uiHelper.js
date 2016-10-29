@@ -73,12 +73,11 @@ module.exports = {
     progressBar: bar,
     log: {
         done: function (text) {
-            // console.log(_doneMessage(text));
             return _doneMessage(text)
         },
         error: function (text) {
             var logTemplate = _getLogTemplate(text);
-            Promise.resolve(dataService.appendFile(dataLocation.errorLog, logTemplate));
+            // Promise.resolve(dataService.appendFile(dataLocation.errorLog, logTemplate));
             return logTemplate.red;
         },
         exception: function (text) {

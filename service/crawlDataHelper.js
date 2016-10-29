@@ -84,6 +84,10 @@ let _buildMovieOverview = {
         let movieChunks = []
         return Promise.all(movieDataFromApiInChunk).then((movieChunks) => {
             let allNewMovies = _.flatten(movieChunks);
+            allNewMovies = _.filter(allNewMovies, (newMovie) => {
+                return newMovie; 
+            });
+
             let fixMoviesIdsFromApi = _.map(allNewMovies, (movie) => {
                 movie.MovieIMDBID = 'tt' + _.padStart(movie.MovieIMDBID, 7, '00');
                 movie.id = movie.MovieIMDBID;
@@ -117,7 +121,7 @@ let _buildMovieOverview = {
         let imdbIds = _.map(imdbMovies, 'id'); //A
         let csvIds = _.map(csvMovies, 'id'); //B
         let commonMovieIds = _.intersection(imdbIds, csvIds); //I
-        let total = imdbIds.length + csvIds.length - commonMovieIds;
+        let total = imdbIds.length + csvIds.length - commonMovieIds.length;
         let progressBar = uiHelper.progressBar(total, "Combining all movies (From CSV and IMDB) (Step 1/2)");
 
         let progressTick = setInterval(() => {

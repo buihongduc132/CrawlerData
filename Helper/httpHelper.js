@@ -13,6 +13,7 @@ var mock = require(path.join(pathToRoot, testData.mockRouting));
 var config = require(path.join(pathToRoot, moduleLocation.config));
 var templateHelper = require(path.join(pathToRoot, moduleLocation.templateHelper));
 var testData = require(path.join(pathToRoot, moduleLocation.testData));
+var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
 var constant = require(path.join(pathToRoot, moduleLocation.constant));
 var fileHelper = require(path.join(pathToRoot, moduleLocation.fileHelper));
@@ -40,7 +41,6 @@ const getDataFromWeb = function (uri, inputHeaders) {
         headers: headers
     }).timeout(config.timeout).then((result) => {
         return saveResponse(uri, result).catch({ code: 'ENAMETOOLONG' }, () => {
-            console.log('File Name Too Long. Ignore Writing File'.red.bold);
             return result.body;
         }).finally(() => {
             return result.body;
@@ -53,7 +53,7 @@ var getHtml = function (uri, inputHeaders) {
         let pathToFile = mock.getMockFile(uri, 1);
 
         if (pathToFile == 'PathNotFound') {
-            console.log('Error: PathNotFound'.red.bold);
+            uiHelper.log.error('Path Not Found: ' + uri);
             return getDataFromWeb(uri, inputHeaders);
         }
         else {
