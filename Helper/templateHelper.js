@@ -6,6 +6,14 @@ var args = require(path.join(pathToRoot, moduleLocation.args));
 var config = require(path.join(pathToRoot, moduleLocation.config));
 
 module.exports = {
+    getFilename: function(text) {
+        if(text) {
+            return text.replace('\/','_');
+        }
+        else {
+            return '';
+        }
+    },
     movieListByGenre: function (genre, page = 1) {
         if (args.mock) {
             genre = 'action';

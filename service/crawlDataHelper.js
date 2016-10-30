@@ -40,8 +40,7 @@ var _buildMovieDetailJson = {
     },
     __writeToFile: function (movieDetail) {
         if (movieDetail) {
-            // movieDetail = _addMovieExtraInfo(movieDetail, movieExtraInfo);
-            return dataService.writeFile(`${dataLocation.movieDetail}/${movieDetail.title}.json`, pd.json(JSON.stringify(movieDetail)));
+            return dataService.writeFile(`${dataLocation.movieDetail}/${templateHelper.getFilename(movieDetail.title)}.json`, pd.json(JSON.stringify(movieDetail)));
         }
         else {
             return Promise.resolve();
@@ -52,8 +51,8 @@ var _buildMovieDetailJson = {
 
 
 let _buildMovieOverview = {
-    __filterInvalidMovies: function(movies) {
-        let filteredMovies =  _.filter(movies, (movie) => {
+    __filterInvalidMovies: function (movies) {
+        let filteredMovies = _.filter(movies, (movie) => {
             return /^tt\d{5,10}$/.test(movie.id);
         });
 
@@ -85,7 +84,7 @@ let _buildMovieOverview = {
         return Promise.all(movieDataFromApiInChunk).then((movieChunks) => {
             let allNewMovies = _.flatten(movieChunks);
             allNewMovies = _.filter(allNewMovies, (newMovie) => {
-                return newMovie; 
+                return newMovie;
             });
 
             let fixMoviesIdsFromApi = _.map(allNewMovies, (movie) => {
@@ -157,7 +156,7 @@ let _buildMovieOverview = {
         commonMovies = _.map(commonMovies, (commonMovie) => {
             progressBar.tick(0.25);
 
-            _.assign(commonMovie, _.find(csvMovies, {'id': commonMovie.id}));
+            _.assign(commonMovie, _.find(csvMovies, { 'id': commonMovie.id }));
 
             return commonMovie;
         });
@@ -258,43 +257,40 @@ var _getAllMovies = function (pages, singlePage) {
     return movieList;
 }
 
-//Deprecated
-var _getMoviesToBuild = function () {
-    let movieOverviews = dataService.readFile(dataLocation.movieListOverview);
-    let extraInfoList = dataService.getCsvFile(dataLocation.movieExtraInfo);
-
-    let newMovies = Promise.all([movieOverviews, extraInfoList]).then((result) => {
-
-        let movieOverviewsData = JSON.parse(result[0]);
-        let extraInfoListData = result[1];
-
-        let moviesWithExtraInfo = _.map(movieOverviewsData, (movie) => {
-            let movieExtraInfo = _.find(extraInfoListData, (extraInfoData) => {
-                let csvMovieId = _.padStart(extraInfoData.MovieIMDBID, 7, '0');
-                let overviewMovieId = movie.id.replace('tt', '');
-                return csvMovieId == overviewMovieId;
-            });
-
-            let movieWithExtraInfo = _.assign(movie, movieExtraInfo);
-
-            return movieWithExtraInfo;
-        });
-
-        return moviesWithExtraInfo;
-    });
-
-    return newMovies;
-}
-
 var __compareIds = function (movieIMDBID, Id) {
     return _.padStart(movieIMDBID, 7, '0') == Id.replace('tt', '');
 }
 
+const _updateMovieExtraInfo = function (movies) {
+    return dataService.getFiles(dataLocation.movieDetail).then((files) => {
+        _.map(files, (file) => {
+            return dataService.readFile(path.join(dataLocation.movieDetail, file))
+                .then((jsonFile) => {
+                    let detailData = JSON.parse(jsonFile);
+
+                    let extraInfo = _.find(movies, (movie) => {
+                        return movie.id == detailData.id;
+                    });
+
+                    detailData.description = extraInfo ? extraInfo.description : '';
+                    detailData.fileName = templateHelper.getFilename(detailData.title);
+
+                    return detailData;
+                })
+                .then((updatedData) => {
+                    return dataService.writeFile(path.join(dataLocation.movieDetail, templateHelper.getFilename(updatedData.fileName) + '.json'),  pd.json(JSON.stringify(updatedData)));
+                })
+
+        });
+        return;
+    });
+}
+
 module.exports = {
     _getMovieList: _getMovieList,
-    _getMoviesToBuild: _getMoviesToBuild,
     _addMovieExtraInfo: _addMovieExtraInfo,
     _getAllMovies: _getAllMovies,
     _buildMovieDetailJson: _buildMovieDetailJson,
-    _buildMovieOverview: _buildMovieOverview
+    _buildMovieOverview: _buildMovieOverview,
+    _updateMovieExtraInfo: _updateMovieExtraInfo
 }

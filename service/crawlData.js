@@ -20,15 +20,20 @@ var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
 // TODO: Change from storing data in Movie Overview List to Movie Extra Info.xml
 
-var buildCombinedMovieJson = function (isOnlyNew) {
-    let moviesToBuild = crawlDataHelper._getMoviesToBuild(isOnlyNew);
+var buildCombinedMovieJson = function (onlyNew = false) {
+    return dataService.getCsvFile(dataLocation.movieExtraInfo).then((result) => {
+        let moviesToBuild = result;
+        if (onlyNew) {
+            moviesToBuild = _.reject(moviesToBuild, (movie) => {
+                return movie.isDone;
+            });
+        }
 
-    let builtCombined = moviesToBuild.then((result) => {
         let moviesToBuildPromise = [];
         let movies = new Array();
         let errors = [];
         var errorFiles = [];
-        let total = result.length;
+        let total = moviesToBuild.length;
 
         let progressBar = uiHelper.progressBar(total + 1, "Building Combined Detail Json");
 
@@ -37,7 +42,7 @@ var buildCombinedMovieJson = function (isOnlyNew) {
         }, 1000);
 
         for (let i = 0; i < total; i++) {
-            let currentMovie = result[i];
+            let currentMovie = moviesToBuild[i];
             let filePath = `${dataLocation.movieDetail}/${currentMovie.name} ${currentMovie.year}.json`;
             let movieDetail = dataService.readFile(filePath).then((data) => {
                 let movieObject = JSON.parse(data);
@@ -79,17 +84,31 @@ var buildMovieDetailJson = function () {
     let errors = [];
 
     return dataService.getCsvFile(dataLocation.movieExtraInfo).then((result) => {
-        total = result.length;
-        csvData = result;
+        let allCsvMovies = result;
+
+
+        filteredCsvMovies = _.reject(result, (movie) => {
+            return movie.gotDetail;
+        });
+
+        if (!filteredCsvMovies.length) {
+            return allCsvMovies;
+        }
+
+        total = filteredCsvMovies.length;
+        csvData = filteredCsvMovies;
         progressBar = uiHelper.progressBar(total, "Building Movie Detail Json");
         progressTick = setInterval(() => {
             progressBar.tick(0);
         }, 1000);
 
-        return Promise.resolve(result).each((movie) => {
+        return Promise.resolve(filteredCsvMovies).each((movie) => {
             return crawlDataHelper._buildMovieDetailJson.__getDetail(movie).then((data) => {
                 progressBar.tick(0.5);
-                return imdbParser.detailToObject(data);
+                let movieDetail = imdbParser.detailToObject(data);
+                movieDetail.description = movie.description || '';
+
+                return movieDetail;
             }).then((movieDetail) => {
                 progressBar.tick(0.5);
                 return crawlDataHelper._buildMovieDetailJson.__writeToFile(movieDetail).then(() => {
@@ -105,17 +124,18 @@ var buildMovieDetailJson = function () {
             _.uniq(errors).forEach((err) => {
                 console.log(uiHelper.log.error(err));
             });
+            return allCsvMovies;
         });
-    }).then(() => {
+    }).then((allCsvMovies) => {
         let succeededItems = 0;
-        csvData = _.map(csvData, (csvMovie) => {
+        allCsvMovies = _.map(allCsvMovies, (csvMovie) => {
             if (_.some(succeeded, { 'id': csvMovie.id })) {
                 csvMovie.gotDetail = 1;
                 succeededItems++;
             }
             return csvMovie;
         });
-        return dataService.writeCsvFile(dataLocation.movieExtraInfo, csvData).then(() => {
+        return dataService.writeCsvFile(dataLocation.movieExtraInfo, allCsvMovies).then(() => {
             var doneMessage = uiHelper.log.done(`Done writing ${succeededItems}/${total} movies details`);
             console.log(doneMessage);
             return;
@@ -124,23 +144,6 @@ var buildMovieDetailJson = function () {
 };
 
 var buildMovieOverview = function (pages, singlePage) {
-    // TODO implement
-    // x Start getting all movie progress bar
-    // x Get list of movie by pages
-    // x Get Csv File
-    // x Combine all movies in imdb and csv
-    // x Assign Movie in CSV to Movie in imdb (*)
-    // x End getting all movie progress bar
-
-    // Start getting url for movie Bar
-    // x Getting all movies with empty EmbedUrl
-    // x Break these movie in chunk of 250
-    // x Get Url by chunks
-    // x Combine all chunks
-    // x Map all url to movie without EmbedUrl
-    // End Getting url Bar
-
-    // Write all movie in *
     return crawlDataHelper._getMovieList(pages).then((moviesInImdb) => {
         return dataService.getCsvFile(dataLocation.movieOverview).then((moviesInCsv) => {
             return crawlDataHelper._buildMovieOverview.__combineAllMovies(moviesInImdb, moviesInCsv);
@@ -158,8 +161,8 @@ var buildMovieOverview = function (pages, singlePage) {
 }
 
 var updateMovieExtraInfo = function () {
-    return dataService.readFile(dataLocation.movieListOverview).then((movies) => {
-        return crawlDataHelper._updateMovieExtraInfo(JSON.parse(movies));
+    return dataService.getCsvFile(dataLocation.movieOverview).then((movies) => {
+        return crawlDataHelper._updateMovieExtraInfo(movies);
     });
 }
 

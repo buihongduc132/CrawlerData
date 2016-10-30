@@ -145,8 +145,17 @@ var buildThumbnail = function (data) {
 }
 
 var buildBody = function (data) {
-	let getStreamingApi = function (data) {
-		return `http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBID?apikey=yQEiCTH84dOJNFQ7&imdbid=${data.intId}&redirecton=true`
+	let getStreamingUrl = function (data) {
+		if (data) {
+			return `http://www.vidsourceapi.com/WebService.asmx/GetStreamEmbedUrlByIMDBID?apikey=yQEiCTH84dOJNFQ7&imdbid=${data.intId}&redirecton=true`
+		}
+		else {
+			return `javascript:void(0)`;
+		}
+	};
+
+	let getStreamingButton = function (data) {
+		return data ? `Watch Now` : `Comming Soon`;
 	};
 
 	let buildGenre = function (data) {
@@ -184,14 +193,14 @@ var buildBody = function (data) {
 		var finalResult = _.join(arrayInput, '<br>');
 		return finalResult;
 	}
-//TODO: Duration is now array. Should get first item.
+	//TODO: Duration is now array. Should get first item.
 	var bodyContent = `[caption align="aligncenter" width="630"]<img class="alignnone size-full wp-image-13330207" src="${data.poster}"
 	alt="${data.title}" width="630" height="1200" />
 <h1 style="font-size:5vh">${data.title} - Free Movie</h1>[/caption]
 
 <div style="text-align:center; margin: 50px;">
 	<a style="font-size:10vw; padding:15px; text-decorator: none; background-color:#6d6d6d; color:white; border-radius:10px; border-color:#0000FF; "
-		href="${getStreamingApi(data)}">Watch Now</a>
+		href="${getStreamingUrl(data)}">${getStreamingButton(data)}</a>
 </div>
 
 <table style="border: 1px solid #CCC; ">

@@ -20,7 +20,7 @@ var uiHelper = require(path.join(pathToRoot, moduleLocation.uiHelper));
 
 var wpConverter = require(path.join(pathToRoot, moduleLocation.service.wordpressConverter));
 
-var buildWordpressXml = function() {
+var buildWordpressXml = function () {
     var combinedMovies = dataService.readFile(dataLocation.combinedMoviesJson);
 
     combinedMovies.then((data) => {
@@ -28,12 +28,31 @@ var buildWordpressXml = function() {
 
         let wpXml = wpConverter.constructXml(data);
 
-        dataService.writeFile(dataLocation.wordpressXml, wpXml).then(() => {
-            uiHelper.log.done("buildWordpressXml Completed");
-        })
+        return dataService.writeFile(dataLocation.wordpressXml, wpXml).then(() => {
+            return movies;
+        });
+    }).then((movies) => {
+        return dataService.getCsvFile(dataLocation.movieOverview).then((csvMovies) => {
+            csvMovies = _.map(csvMovies, (csvMovie) => {
+                let updatedMovie = _.find(movies, (movie) => {
+                    return movie.id == csvMovie.id;
+                });
+
+                if (updatedMovie) {
+                    csvMovie.isDone = 1;
+                }
+                return csvMovie;
+            });
+
+            return csvMovies;
+        });
+    }).then((csvMovies) => {
+        return dataService.writeCsvFile(dataLocation.movieOverview, csvMovies);
+    }).then(() => {
+        return uiHelper.log.done('Done building Wordpress Xml');
     });
 }
 
-module.exports = { 
+module.exports = {
     buildWordpressXml: buildWordpressXml
 }

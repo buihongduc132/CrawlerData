@@ -22,7 +22,7 @@ gulp.task('buildMovieDetailJson', () => {
 });
 
 gulp.task('buildCombinedMovieJson', () => {
-    return crawlData.buildCombinedMovieJson();
+    return crawlData.buildCombinedMovieJson(args.onlyNew);
 });
 
 gulp.task('updateMovieExtraInfo', () => {
