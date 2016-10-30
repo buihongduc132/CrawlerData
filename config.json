@@ -1,10 +1,11 @@
 {
+    "maxSockets": 5,
     "api": {
         "vidSource": "yQEiCTH84dOJNFQ7"
     },
     "fileEncoding": "utf8",
     "defaultPages": 1,
-    "timeout": "360000",
+    "timeout": "60000",
     "page": {
         "imdb": {
             "compactItems": 250

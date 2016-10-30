@@ -72,7 +72,7 @@
             "program": "${workspaceRoot}/index.js",
             "stopOnEntry": false,
             "args": [
-                "--mock"
+                "--pages=20"
             ],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": null,

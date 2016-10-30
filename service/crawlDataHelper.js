@@ -180,6 +180,9 @@ var _getMovieListMeta = function (url) {
     return listHtml.then((result) => {
         let listOfMovie = imdbParser.list.movie(result);
         return listOfMovie;
+    }).catch((err) => {
+        uiHelper.log.error(err);
+        return [];
     });
 }
 
@@ -283,172 +286,13 @@ var _getMoviesToBuild = function () {
     return newMovies;
 }
 
-// var _updateMovieExtraInfo = function (movies, all) {
-//     return dataService.getCsvFile(dataLocation.movieExtraInfo).then((moviesInCsv) => {
-//         let moviesUnion = _.uniqBy(_.flatMap(_.union([moviesInCsv, movies])), 'id');
-
-//         let allIds = __updateMovieExtraInfoExtraction.__getAllIds(moviesUnion);
-//         let idChunks = _.chunk(allIds, config.page.vidSource.apiCapacity);
-//         let promiseGetMovieInfo = __updateMovieExtraInfoExtraction.__getAllStreamPromise(idChunks);
-
-//         let allApiResult = Promise.all(promiseGetMovieInfo).then((objResult) => {
-//             let combineAllData = __updateMovieExtraInfoExtraction.__combineAllData(objResult, movies);
-//             let updateOldData = __updateMovieExtraInfoExtraction.__updateOldData(combineAllData, moviesInCsv);
-
-//             return updateOldData;
-//         });
-
-//         return allApiResult.then((data) => {
-//             return dataService.writeCsvFile(dataLocation.movieExtraInfo, data).then(() => {
-//                 var doneMessage = uiHelper.log.done('Done update movie extra info');
-//                 console.log(doneMessage);
-//             });
-//         });
-//     });
-// };
-
 var __compareIds = function (movieIMDBID, Id) {
     return _.padStart(movieIMDBID, 7, '0') == Id.replace('tt', '');
 }
 
-// var __updateMovieExtraInfoExtraction = {
-//     __updateOldData: function (newMovies, oldMovies) {
-//         return _.map(newMovies, (newMovie) => {
-//             let newData = _.find(oldMovies, { 'id': newMovie.id });
-//             if (newData) {
-//                 newMovie.description = newData.description;
-//                 newMovie.isDone = newData.isDone ? 1 : 0;
-//                 newMovie.gotDetail = newData.gotDetail ? 1 : 0;
-//             }
-
-//             return newMovie;
-//         });
-//     },
-//     __combineAllData: function (baseMovies, moviesInOverview) {
-//         baseMovies = _.flatten(baseMovies);
-//         let allMovies = _.concat(baseMovies, moviesInOverview);
-
-//         var progressBar = uiHelper.progressBar(allMovies.length, 'Combine All Movies')
-
-//         let progressTick = setInterval(() => {
-//             progressBar.tick(0);
-//         }, 1000);
-
-//         let combinedMovies = _.map(allMovies, (resultMovie) => {
-//             if (resultMovie.id && resultMovie.MovieIMDBID) {
-//                 return resultMovie;
-//             }
-//             else if (resultMovie.MovieIMDBID) {
-//                 let foundMovieInOverview = _.find(moviesInOverview, (movieInOverview) => {
-//                     return __compareIds(resultMovie.MovieIMDBID, movieInOverview.id);
-//                 })
-
-//                 _.assign(resultMovie, foundMovieInOverview);
-//             }
-//             else if (resultMovie.id) {
-//                 let foundMovieInBaseMovie = _.find(baseMovies, (baseMovie) => {
-//                     return __compareIds(baseMovie.MovieIMDBID, resultMovie.id);
-//                 });
-
-//                 _.assign(resultMovie, foundMovieInBaseMovie);
-//             }
-//             var movieWithDefaultData = __updateMovieExtraInfoExtraction.__addDefaultData(resultMovie);
-
-//             progressBar.tick();
-
-//             return movieWithDefaultData;
-//         });
-
-//         let sortArray = _.sortBy(combinedMovies, ['id']);
-//         clearInterval(progressTick);
-
-//         return _.sortedUniqBy(sortArray, 'id');
-//     },
-//     __getAllStreamPromise: function (idChunks) {
-//         let promiseGetMovieInfo = [];
-
-//         var progressBar = uiHelper.progressBar(idChunks.length, 'Getting Chunks of movies')
-
-//         let progressTick = setInterval(() => {
-//             progressBar.tick(0);
-//         }, 1000);
-
-//         for (let i = 0; i < idChunks.length; i++) {
-//             let thisChunk = idChunks[i];
-
-//             var movieStreamData = stream.movieStreamData(thisChunk).then((data) => {
-//                 progressBar.tick();
-//                 return data;
-//             });
-//             promiseGetMovieInfo.push(movieStreamData);
-//         }
-
-//         return Promise.all(promiseGetMovieInfo).then((resultArray) => {
-//             clearInterval(progressTick);
-//             let objResult = __updateMovieExtraInfoExtraction.__buildObjectFromVidSourceResult(resultArray);
-
-//             return objResult;
-//         });
-//     },
-//     __getAllIds: function (movies) {
-
-//         let needToUpdate = function (movie) {
-//             if (movie.streamUrl) {
-//                 return false;
-//             }
-
-//             return true;
-//         }
-
-//         let allIds = _.map(movies, (movie) => {
-//             return movie.id;
-//         });
-
-//         return _.filter(allIds, (id) => {
-//             return id;
-//         });
-//     },
-//     __buildObjectFromVidSourceResult: function (results) {
-//         return _.map(results, (objRaw) => {
-//             let objData = objRaw.result;
-
-//             return objData;
-//         });
-//     },
-//     __addDefaultData: function (movie) {
-//         if (!movie.MovieIMDBID) {
-//             movie.MovieIMDBID = movie.id.replace('tt', '');
-//         }
-//         if (!movie.id) {
-//             movie.id = 'tt' + _.padStart(movie.MovieIMDBID, 7, '0');
-//         }
-
-//         movie.MovieIMDBID = _.padStart(movie.MovieIMDBID, 7, '0');
-
-//         movie.isDone = movie.isDone ? movie.isDone : 0;
-//         movie.gotDetail = movie.gotDetail ? movie.gotDetail : 0;
-//         movie.description = movie.description ? movie.description : '';
-
-//         return movie;
-//     }
-// }
-
-// var _writeMovieJsonOverview = function (data) {
-//     var result = dataService.writeFile(dataLocation.movieListOverview, pd.json(JSON.stringify(data))).then(() => {
-//         var doneMessage = uiHelper.log.done('Built Movie Overview');
-//         console.log(doneMessage);
-//         console.log(`Output: ` + `${dataLocation.movieListOverview}`.blue + ` (` + `${data.length}`.blue.bold + ` items)`);
-//     }).catch((err) => {
-//         uiHelper.log.error(err);
-//     });
-//     return result;
-// }
-
 module.exports = {
-    // _updateMovieExtraInfo: _updateMovieExtraInfo,
     _getMovieList: _getMovieList,
     _getMoviesToBuild: _getMoviesToBuild,
-    // _writeMovieJsonOverview: _writeMovieJsonOverview,
     _addMovieExtraInfo: _addMovieExtraInfo,
     _getAllMovies: _getAllMovies,
     _buildMovieDetailJson: _buildMovieDetailJson,

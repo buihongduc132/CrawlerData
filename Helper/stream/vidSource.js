@@ -17,7 +17,9 @@ let _getRawUrl = function (ids, redirect = true) {
 };
 
 let _getStreamData = function (ids, redirect = true) {
-    return httpHelper.getHtml(_getRawUrl(ids, redirect));
+    return httpHelper.getHtml(_getRawUrl(ids, redirect)).catch((err) => {
+        uiHelper.log.error(err);
+    });
 }
 
 let _rawMovieStreamData = function (ids, redirect = true) {

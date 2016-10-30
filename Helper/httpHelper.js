@@ -38,11 +38,13 @@ const getDataFromWeb = function (uri, inputHeaders) {
     return request.getAsync({
         method: 'GET',
         uri: uri,
-        headers: headers
+        headers: headers,
+        pool: { maxSockets: config.maxSockets }
     }).timeout(config.timeout).then((result) => {
         return saveResponse(uri, result).catch({ code: 'ENAMETOOLONG' }, () => {
+            
             return result.body;
-        }).finally(() => {
+        }).then(() => {
             return result.body;
         })
     });
