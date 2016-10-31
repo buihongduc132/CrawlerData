@@ -11,11 +11,17 @@
             "compactItems": 250
         },
         "wordpress": {
+            "postFormat": {
+                "haveThumbnail": true,
+                "haveBodyImage": true,
+                "format": "aside",
+                "type": "post"
+            },
             "posterWidth": 800,
             "pageSlogan": "Free Movie For Everyone.",
             "pageName": "Free Online Movie",
+            "filesHost": "https://alexfreemovie.files.wordpress.com",
             "homepage": "https://alexfreemovie.wordpress.com",
-            "postFormat": "aside",
             "pageWidth": 630,
             "posterHeight": 1200,
             "admin": "herodesalex243",

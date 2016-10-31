@@ -89,44 +89,6 @@ var buildList = function (data) {
         `;
 }
 
-var buildThumbnail = function (data) {
-	return `	<item>
-		<title>${data.title}-thumbnail</title>
-		<link>${wpConfig.homepage}/${data.postName}-thumbnail/</link>
-		<dc:creator>${wpConfig.admin}</dc:creator>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>${data.img.thumbnail}</wp:post_id>
-		<wp:post_date>${data.now}</wp:post_date>
-		<wp:post_date_gmt>${data.now}</wp:post_date_gmt>
-		<wp:comment_status>open</wp:comment_status>
-		<wp:ping_status>closed</wp:ping_status>
-		<wp:post_name>${data.postName}-thumbnail</wp:post_name>
-		<wp:status>inherit</wp:status>
-		<wp:post_parent>0</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>attachment</wp:post_type>
-		<wp:post_password></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-		<wp:postmeta>
-			<wp:meta_key>pre_import_post_parent</wp:meta_key>
-			<wp:meta_value><![CDATA[0]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>pre_import_post_id</wp:meta_key>
-			<wp:meta_value><![CDATA[14183411]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>restapi_import_id</wp:meta_key>
-			<wp:meta_value><![CDATA[580046f10578a]]></wp:meta_value>
-		</wp:postmeta>
-		<wp:postmeta>
-			<wp:meta_key>_original_import_url</wp:meta_key>
-			<wp:meta_value><![CDATA[${data.poster}]]></wp:meta_value>
-		</wp:postmeta>
-	</item>`;
-}
 
 var buildBody = function (data) {
 	let getArrayString = function (arrayInput, tag = false, separator = '<br>') {
@@ -136,14 +98,17 @@ var buildBody = function (data) {
 			});
 		}
 
-		var finalResult = _.join(arrayInput, separator);
+		let finalResult = _.join(arrayInput, separator);
 		return finalResult;
 	}
 
+	let getContentImage = function (data) {
+		return wpConfig.postFormat.haveBodyImage ? `<img class="alignnone size-full wp-image-${data.img.content}" src="${data.poster}"
+	alt="${data.title}" width="${wpConfig.posterWidth}" height="1200" />` : '';
+	}
+
 	//TODO: Duration is now array. Should get first item.
-	var bodyContent = `<img class="alignnone size-full wp-image-${data.img.content}" src="${data.poster}"
-	alt="${data.title}" width="${config.page.wordpress.posterWidth}" height="1200" />
-<h1 style="font-size: 20px; text-align: center;">${data.title} - Free Movie</h1>
+	var bodyContent = `${getContentImage(data)}<h1 style="font-size: 20px; text-align: center;">${data.title} - Free Movie</h1>
 
 <div style="text-align:center; margin: 50px;">
 	<a style="font-size:30px; padding:15px; text-decorator: none; background-color:#6d6d6d; color:white; border-radius:10px; border-color:#0000FF; "
@@ -179,6 +144,71 @@ var buildBody = function (data) {
 }
 
 var buildSingle = function (data) {
+	let getThumbnailLocation = function(data) {
+	// https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1NTc4NjA4M15BMl5BanBnXkFtZTcwNDYwOTgxMQ@@._V1_UY1200_CR100,0,800,1200_AL_.jpg
+	// https://alexfreemovie.files.wordpress.com/2016/10/mv5bmzmwmtm4mdu2n15bml5banbnxkftztgwmzq0mjmxmde-_v1_uy1200_cr7308001200_al_1.jpg
+
+		let now = new Date();
+		let imgLocation = data.poster.replace(`https://images-na.ssl-images-amazon.com/images/M/`, '')
+		.replace('.','-')
+		.replace(/,/g,'');
+
+		return `${wpConfig.filesHost}/${now.getFullYear()}/${now.getMonth}/${imgLocation}`;
+	}
+
+	var addThumbnail = function (data) {
+		return `	<item>
+		<title>${data.title}-thumbnail</title>
+		<link>${wpConfig.homepage}/${data.postName}-thumbnail/</link>
+		<pubDate>${data.nowGmt} +0000</pubDate>
+		<dc:creator>${wpConfig.admin}</dc:creator>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>${data.img.thumbnail}</wp:post_id>
+		<wp:post_date>${data.nowGmt}</wp:post_date>
+		<wp:post_date_gmt>${data.nowGmt}</wp:post_date_gmt>
+		<wp:comment_status>open</wp:comment_status>
+		<wp:ping_status>closed</wp:ping_status>
+		<wp:post_name>${data.postName}-thumbnail</wp:post_name>
+		<wp:status>inherit</wp:status>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:post_parent>${data.intId}</wp:post_parent>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:attachment_url>${data.poster}</wp:attachment_url>
+		<wp:postmeta>
+			<wp:meta_key>pre_import_post_parent</wp:meta_key>
+			<wp:meta_value><![CDATA[0]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>pre_import_url</wp:meta_key>
+			<wp:meta_value><![CDATA[${data.poster}]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key>_original_import_url</wp:meta_key>
+			<wp:meta_value><![CDATA[${data.poster}]]></wp:meta_value>
+		</wp:postmeta>
+	</item>`;
+	}
+
+	let addAttachments = function (data) {
+		let result = '';
+		result += wpConfig.postFormat.haveThumbnail ? addThumbnail(data) : '';
+
+		return result;
+	}
+	let getThumbnail = function (data) {
+		if (!wpConfig.postFormat.haveThumbnail) {
+			return '';
+		}
+
+		return `<wp:postmeta>
+			<wp:meta_key>_thumbnail_id</wp:meta_key>
+			<wp:meta_value><![CDATA[${data.img.thumbnail}]]></wp:meta_value>
+		</wp:postmeta>`;
+	}
 	let buildTag = function (data) {
 		let freeTags = [
 			`${data.year} Free Movies`,
@@ -219,16 +249,17 @@ var buildSingle = function (data) {
 		<wp:comment_status>open</wp:comment_status>
 		<wp:ping_status>open</wp:ping_status>
 		<wp:post_name>${data.postName}</wp:post_name>
+		<category domain="post_format" nicename="post-format-aside"><![CDATA[Aside]]></category>
 		<wp:status>publish</wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type>post</wp:post_type>
+		<wp:post_type>${wpConfig.postFormat.type}</wp:post_type>
 		<wp:post_password></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
 		${buildCategory(data.year)}
 		${buildTag(data)}
 		<category domain="category" nicename="${data.year}"><![CDATA[${data.year}]]></category>
-		<category domain="post_format" nicename="${constant.postFormat[wpConfig.postFormat].nicename}"><![CDATA[${constant.postFormat[wpConfig.postFormat].name}]]></category>
+		<category domain="post_format" nicename="${constant.postFormat[wpConfig.postFormat.format].nicename}"><![CDATA[${constant.postFormat[wpConfig.postFormat.format].name}]]></category>
 		<wp:postmeta>
 			<wp:meta_key>_rest_api_published</wp:meta_key>
 			<wp:meta_value><![CDATA[1]]></wp:meta_value>
@@ -253,7 +284,9 @@ var buildSingle = function (data) {
 			<wp:meta_key>_wp_desired_post_slug</wp:meta_key>
 			<wp:meta_value><![CDATA[${getTagUrl(data.title)}]]></wp:meta_value>
 		</wp:postmeta>
+		${getThumbnail(data)}
 	</item>
+	${addAttachments(data)}
 `;
 }
 
