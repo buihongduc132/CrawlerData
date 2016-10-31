@@ -23,8 +23,8 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                 var ue_mid = "A1EVAM02EL8SFB"; 
                 var ue_sn = "www.imdb.com";  
                 var ue_furl = "fls-na.amazon.com";
-                var ue_sid = "703-6581424-6194640";
-                var ue_id = "19MJWH8VP6A6BF9SREGW";
+                var ue_sid = "224-1165807-2512678";
+                var ue_id = "0CERK1D5AMHNQBJ7AGJ3";
                 (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
                 if (!('CS' in window)) { window.CS = {}; }
                     window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0027977%2F%3Fref_%3Dadv_li_tt";
@@ -45,7 +45,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/safari-favicon-517611381._CB526647668_.svg" mask rel="icon" sizes="any">
         <link rel="icon" type="image/ico" href="http://ia.media-imdb.com/images/G/01/imdb/images/favicon-2165806970._CB282921871_.ico" />
         <meta name="theme-color" content="#000000" />
-        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB526649049_.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB526660098_.ico" />
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-4151659188._CB526896755_.png" rel="apple-touch-icon"> 
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-76x76-53536248._CB526893050_.png" rel="apple-touch-icon" sizes="76x76"> 
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-120x120-2442878471._CB526671435_.png" rel="apple-touch-icon" sizes="120x120"> 
@@ -70,10 +70,10 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <meta name="description" content="Directed by Charles Chaplin.  With Charles Chaplin, Paulette Goddard, Henry Bergman, Tiny Sandford. The Tramp struggles to live in modern industrial society with the help of a young homeless woman." />
         <meta property="og:description" content="Directed by Charles Chaplin.  With Charles Chaplin, Paulette Goddard, Henry Bergman, Tiny Sandford. The Tramp struggles to live in modern industrial society with the help of a young homeless woman." />
         <meta name="keywords" content="Reviews, Showtimes, DVDs, Photos, Message Boards, User Ratings, Synopsis, Trailers, Credits" />
-        <meta name="request_id" content="19MJWH8VP6A6BF9SREGW" />
+        <meta name="request_id" content="0CERK1D5AMHNQBJ7AGJ3" />
         
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<!-- h=ics-1a-c4-2xl-793ce3b6.us-east-1 -->
+<!-- h=ics-1e-c3-2xl-i-b5f08f0b.us-east-1 -->
 
             <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/title-flat-v2-2242457037._CB526892456_.css" />
         <noscript>
@@ -105,7 +105,7 @@ tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
 tinygpt.set_targeting({
 'tt' : ['f'],
 'fv' : ['1'],
-'ab' : ['d'],
+'ab' : ['a'],
 'coo' : ['us'],
 'b' : ['t250'],
 'c' : ['0'],
@@ -113,8 +113,8 @@ tinygpt.set_targeting({
 'g' : ['brc','fm','co','ro','dr'],
 'md' : ['tt0027977'],
 'id' : ['tt0027977'],
-'bpx' : ['1'],
-'u': ['228999095743'],
+'bpx' : ['2'],
+'u': ['532963571217'],
 'oe': ['utf-8']
 });
 tinygpt.send();
@@ -169,29 +169,29 @@ generic.monitoring.set_forester_info("title");
 generic.monitoring.set_twilight_info(
 "title",
 "VN",
-"620033e3eb0aefdb2c5080c059936157ca123623",
-"2016-10-30T21%3A47%3A32GMT",
+"520ba337e2ccc2cc2ca5366d37f7a851cde66916",
+"2016-10-30T22%3A44%3A32GMT",
 "http://s.media-imdb.com/twilight/?",
 "consumer");
 generic.send_csm_head_metrics && generic.send_csm_head_metrics();
 generic.monitoring.start_timing("page_load");
-generic.seconds_to_midnight = 33148;
-generic.days_to_midnight = 0.3836573958396912;
+generic.seconds_to_midnight = 29728;
+generic.days_to_midnight = 0.3440740704536438;
 ad_utils.set_slots_on_page({ 'injected_billboard':1, 'injected_navstrip':1, 'bottom_ad':1, 'top_ad':1, 'navboard':1, 'btf_rhs2':1, 'top_rhs':1, 'rhs_cornerstone':1 });
 custom.full_page.data_url = "http://ia.media-imdb.com/images/G/01/imdbads/js/graffiti_data-846702029._CB526886387_.js";
 consoleLog('advertising initialized','ads');
 },"ads js missing, skipping ads setup.");
 var _gaq = _gaq || [];
-_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'd']);
+_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'a']);
 </script>
 <script>
 doWithAds(function(){
-ad_utils.register_punt_ad("top_ad","728","90"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QrG3tco8OQgjoJzCyLfFIpUAAAFYF4_XHwEAAADKAel0AtQ/https://www.shopbop.com/whats-new-clothing-jackets-coats/br/v=1/2534374302090402.htm?extid=DMU_house_sea_weg_wints_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_6874631680401\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"6874631680401\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414115\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},p=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-winter--iyt8t._V528286691_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&p(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701770000 --\>\n <div id=\"top_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IG3Lj3ZxMUj7uatoXhPp9pwAAAFYF4_XSgEAAADKy2lnwQ&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
+ad_utils.register_punt_ad("top_ad","728","90"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QgngkWV4tExRWOzXkO-3QbgAAAFYF8QHkwEAAADKAZcPxMg/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1577657950101\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"1577657950101\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709306\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),v=m(\"ad\");v.target=\"_blank\";var w=\"shazam/FallBags-728x90-International-vijOF._V279228374_.jpg\",I=m(\"staticImage\");w&&(I.src=h+w,v.style.display=\"block\");var y;c&&f(v,\"aap\"),(c||s)&&(v.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"top_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IO5ySsUw5kTYlyjcWz9rzjgAAAFYF8QHvgEAAADK_a1xoA&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
 }, "ad_utils not defined, skipping punt ad data setup.");
 </script>
 <script>
 doWithAds(function(){
-ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QqiXgBzNeOK-p-EXXER4BuoAAAFYF4_XMQEAAADKATUtF6k/https://www.eastdane.com/shops-top-sellers/br/v=1/22686.htm?extid=DMU_house_sea_feg_preview_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_preview&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_3888267080401\"></a></div><script>setTimeout(function(){!function(a,e,t){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;e.ad={aid:\"5087796830501\",cid:\"3888267080401\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:e.ad.aid,creativeId:e.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709491\"};try{t&&t.ad_utils&&t.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return e.getElementById(a)},l=function(a,e,t){a.href=e,a.target=t?\"_blank\":\"_top\"},p=function(a,e){return a.className.match(new RegExp(\"(\\\\s|^)\"+e+\"(\\\\s|$)\"))},f=function(a,e){p(a,e)||(a.className+=\" \"+e)},u=function(a,e){if(p(a,e)){var t=new RegExp(\"(\\\\s|^)\"+e+\"(\\\\s|$)\");a.className=a.className.replace(t,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/FallPreview-300x250-International-kynAF._V279227109_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var I;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),I&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_preview&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811823000 --\>\n <div id=\"top_rhs_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IA4zzbYP00MAnP8YXlWanEEAAAFYF4_XZAEAAADKZHQt_Q&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
+ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QqURsP8qq_6YyWTj-aKgZdEAAAFYF8QHkQEAAADKASAa1Gc/https://www.eastdane.com/shops-top-sellers/br/v=1/22686.htm?extid=DMU_house_sea_feg_preview_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_preview&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_5276065920201\"></a></div><script>setTimeout(function(){!function(a,e,t){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;e.ad={aid:\"5087796830501\",cid:\"5276065920201\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:e.ad.aid,creativeId:e.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709499\"};try{t&&t.ad_utils&&t.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return e.getElementById(a)},l=function(a,e,t){a.href=e,a.target=t?\"_blank\":\"_top\"},p=function(a,e){return a.className.match(new RegExp(\"(\\\\s|^)\"+e+\"(\\\\s|$)\"))},f=function(a,e){p(a,e)||(a.className+=\" \"+e)},u=function(a,e){if(p(a,e)){var t=new RegExp(\"(\\\\s|^)\"+e+\"(\\\\s|$)\");a.className=a.className.replace(t,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),v=m(\"ad\");v.target=\"_blank\";var w=\"shazam/FallPreview-300x250-Ivpld._V279227091_.jpg\",I=m(\"staticImage\");w&&(I.src=h+w,v.style.display=\"block\");var y;c&&f(v,\"aap\"),(c||s)&&(v.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_preview&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811823000 --\>\n <div id=\"top_rhs_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IKv6C7VrT0E5uRkcUc4Oxy0AAAFYF8QHxgEAAADKrOEQaA&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
 }, "ad_utils not defined, skipping punt ad data setup.");
 </script>
 <script>doWithAds(function() { ad_utils.ads_header.done(); });</script>
@@ -253,8 +253,8 @@ doWithAds(function(){
 ad_utils.register_ad('top_ad');
 });
 </script>
-<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=728x90,1008x150,1008x200,1008x30,970x250,1008x400,9x1;p=top;p=t;g=brc;g=fm;g=co;g=ro;g=dr;tt=f;coo=us;b=t250;fv=1;id=tt0027977;ab=d;bpx=1;md=tt0027977;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=228999095743;ord=228999095743?" id="top_ad" name="top_ad" class="yesScript" width="0" height="0" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Dd%26bpx%3D1%26md%3Dtt0027977%26c%3D0&tile=0&c=228999095743" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Dd%26bpx%3D1%26md%3Dtt0027977%26c%3D0&tile=0&c=228999095743" border="0" alt="advertisement" /> </a> </noscript>
+<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=728x90,1008x150,1008x200,1008x30,970x250,1008x400,9x1;p=top;p=t;g=brc;g=fm;g=co;g=ro;g=dr;tt=f;coo=us;b=t250;fv=1;id=tt0027977;ab=a;bpx=2;md=tt0027977;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=532963571217;ord=532963571217?" id="top_ad" name="top_ad" class="yesScript" width="0" height="0" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Da%26bpx%3D2%26md%3Dtt0027977%26c%3D0&tile=0&c=532963571217" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Da%26bpx%3D2%26md%3Dtt0027977%26c%3D0&tile=0&c=532963571217" border="0" alt="advertisement" /> </a> </noscript>
 </div>
 <div id="top_ad_reflow_helper"></div>
 <script>
@@ -459,19 +459,19 @@ title="Home" >IMDb</a>
 <a href="/news/ni60416786/?ref_=nv_nw_tn_1"
 > 'Inferno' Has a Meltdown, 'Madea' is #1 Again & 'Doctor Strange' Opens with $86M Overseas
 </a><br />
-                        <span class="time">5 hours ago</span>
+                        <span class="time">6 hours ago</span>
                 </li>
                 <li itemprop="headline">
 <a href="/news/ni60416582/?ref_=nv_nw_tn_2"
 > ‘Doctor Strange’ Debuts to Magical $86 Million Internationally
 </a><br />
-                        <span class="time">6 hours ago</span>
+                        <span class="time">7 hours ago</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni60417287/?ref_=nv_nw_tn_3"
-> PopPolitics: Al Jean on Why ‘The Simpsons’ Is Taking on Trump (Listen)
+<a href="/news/ni60417334/?ref_=nv_nw_tn_3"
+> 7 Eye-Popping ‘Carrie’ Facts as Classic Horror Film Turns 40 (Photos)
 </a><br />
-                        <span class="time">9 minutes ago</span>
+                        <span class="time">22 minutes ago</span>
                 </li>
     </ul>
                     </div>
@@ -592,13 +592,13 @@ imageUrl : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu
         </li>
         <li class="social">
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYhe3s8hPCrUbMKxAklSRUR3anGSV4qSCt20AvMiKjtWt9d1ZeYmVj7xf6Z_lOwT38VrQebvLol%0D%0AlROZbXt1LdB03mHN3t_4aE9daAqOu-q3B5oCUoxu-sLamV9bwWkh0_m5YHgjCH8WUQiwp_ZG5pqL%0D%0AxQzSFumtrfAWnFJVFDtGejA4pj96AP9rcQEY5Fiwq5-bUjEwuy8s3HpnUDJ24K1cuA%0D%0A&ref_=tt_nv_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYoHWNVfRDoQnUQ5iI4E1_o_2PlkFjOsdjKUuo-TBDWzy7_TnKQWt28raFA3WnoGODqkx4L1N5Q%0D%0AyySkZdu9ho4LK2LEpwB8VrUZQfoTj4J0q0H7cUdNXuzaRUyWtStqvhvRr6GMIkGfqud4CH4pWU05%0D%0AnDOWlhSinbkinPzMibTidrel6BiyD--NR3LOWCIjKs6mrpbb7vttFh0uCH0VtYl0_g%0D%0A&ref_=tt_nv_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYoZHWTdBxqSJg4h2J6ILUw68cdK9pAFJ_BFFve-OItq9PClcvzDVZh28q_WxKIjm-hNqgzXtcL%0D%0Ab1psV5kiuRAhRkSbPEmim5bKEhnRsxqGN15rWx11-iDeYmhlJAtwEM6AlcAPFibKbUBcpxfPg0at%0D%0AyPHZQ2pcPLKlYMuw6AqotVoKydytlx4qP0VByXn_DCU0o1-MROCclUDoeKV5VvlCFw%0D%0A&ref_=tt_nv_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYp9RouEsO5xZInFOulKX9U5UekYTqGNCR6nKyonym2i5zBR2LnISPGaNL5QFsMbyhWCq6--kN3%0D%0Ad6nrIN6g7JEeIdebAafxpM-1YSS0bUPVcQlGMrepPzms0q_QS3xFc03oq0EL9BRRh_tT0hNFa9-h%0D%0AzWsxrlNtfjnMV3v2pfo9UKduV2l5Kdv8HnO6cf57F82HZZDIKo787hDDko0sKPG38Q%0D%0A&ref_=tt_nv_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYoIlmWrXl78D5WXbyunJlEMnYzh7Eydi0CfmX03HOmizBjWNPUK5yb9LPX8SNgE3h3O0JeL_mY%0D%0A6u1vYSOCRVls6AlIO2sYdx_ER48HVmNO694GfGIVcEnA0AQmPUr5-FADbKjvQH4lwiiIjmN2Y_8Z%0D%0AUsPunoKIXuVLCm4Ca823XC6U9Pmncfj19Maw612qXhSd9gCy_1YKrLahmhw5bReQRQ%0D%0A&ref_=tt_nv_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYoe9e7-7icqo0NMbFegvpE4D-7WFqJImsoPV7B76RhqAIdbrNaxs9zBKuLwosBbLJ3gGnS1zfV%0D%0AFdxnb5nfj4UfK8wd3m41V-2oqYzXTgtG4il6JiycIonLQ-O_-KPq1xkk4c9nMsK3wpjdyvZxJ0AO%0D%0AUOC_zPadPn_fEmykguR5vDHUauG_6y0RGzV4dy3A6XP8D_qSg55jEDJmxWkrVYPmLQ%0D%0A&ref_=tt_nv_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
         </li>
@@ -609,7 +609,7 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
 
             <li class="css_nav_menu no_arrow" id="navUserMenu">
             <p class="navCategory singleLine">
-                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.7/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6ImNiN2IiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vIn0&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler" class="signin-button">
+                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.7/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6IjAwYjUiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vIn0&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler" class="signin-button">
                 <span class="facebook-logo"></span>
                 <span class="signin-facebook-text">Sign in with Facebook</span></a>
                 <a href="https://www.imdb.com/registration/signin?u=/title/tt0027977/%3Fref_%3Dadv_li_tt&ref_=nv_usr_lgin_1"
@@ -626,7 +626,7 @@ rel="login" class="signin-other-options-text" id="nblogin" >Other Sign in option
 	
 	<!-- begin injectable INJECTED_NAVSTRIP -->
 <div id="injected_navstrip_wrapper" class="injected_slot">
-<iframe id="injected_navstrip" name="injected_navstrip" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=228999095743;ord=228999095743?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="injected_navstrip" name="injected_navstrip" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=532963571217;ord=532963571217?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('injected_navstrip');
@@ -646,7 +646,7 @@ ad_utils.inject_ad.register('injected_navstrip');
 	
 	<!-- begin injectable INJECTED_BILLBOARD -->
 <div id="injected_billboard_wrapper" class="injected_slot">
-<iframe id="injected_billboard" name="injected_billboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=228999095743;ord=228999095743?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="injected_billboard" name="injected_billboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=532963571217;ord=532963571217?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('injected_billboard');
@@ -672,7 +672,7 @@ ad_utils.inject_ad.register('injected_billboard');
 	
 	<!-- begin injectable NAVBOARD -->
 <div id="navboard_wrapper" class="injected_slot">
-<iframe id="navboard" name="navboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=228999095743;ord=228999095743?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="navboard" name="navboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=532963571217;ord=532963571217?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('navboard');
@@ -801,7 +801,7 @@ class="quicklink" >IMDbPro</a>
             </div>
         </div>
     </div>
-    <input type="hidden" name="49e6c" value="cb7b">
+    <input type="hidden" name="49e6c" value="00b5">
 </div>
         </div>
 
@@ -934,9 +934,9 @@ class="quicklink" >Soundtracks</a>                </div>
     <div class="ratings_wrapper">
         <div class="imdbRating" itemtype="http://schema.org/AggregateRating" itemscope="" itemprop="aggregateRating">
                 <div class="ratingValue">
-<strong title="8.6 based on 146,727 user ratings"><span itemprop="ratingValue">8.6</span></strong><span class="grey">/</span><span class="grey" itemprop="bestRating">10</span>                </div>
+<strong title="8.6 based on 146,731 user ratings"><span itemprop="ratingValue">8.6</span></strong><span class="grey">/</span><span class="grey" itemprop="bestRating">10</span>                </div>
                 <a href="/title/tt0027977/ratings?ref_=tt_ov_rt"
-><span class="small" itemprop="ratingCount">146,727</span></a>
+><span class="small" itemprop="ratingCount">146,731</span></a>
                     <div class="hiddenImportant">
                             <span itemprop="reviewCount">213 user</span>
                             <span itemprop="reviewCount">119 critic</span>
@@ -1149,8 +1149,8 @@ doWithAds(function(){
 ad_utils.register_ad('top_rhs');
 });
 </script>
-<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=300x250,300x600,300x300,11x1;p=tr;g=brc;g=fm;g=co;g=ro;g=dr;tt=f;coo=us;b=t250;fv=1;id=tt0027977;ab=d;bpx=1;md=tt0027977;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=228999095743;ord=228999095743?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-original-width="300" data-original-height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Dd%26bpx%3D1%26md%3Dtt0027977%26c%3D0&tile=1&c=228999095743" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Dd%26bpx%3D1%26md%3Dtt0027977%26c%3D0&tile=1&c=228999095743" border="0" alt="advertisement" /> </a> </noscript>
+<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=300x250,300x600,300x300,11x1;p=tr;g=brc;g=fm;g=co;g=ro;g=dr;tt=f;coo=us;b=t250;fv=1;id=tt0027977;ab=a;bpx=2;md=tt0027977;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=532963571217;ord=532963571217?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-original-width="300" data-original-height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Da%26bpx%3D2%26md%3Dtt0027977%26c%3D0&tile=1&c=532963571217" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dfm%26g%3Dco%26g%3Dro%26g%3Ddr%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0027977%26ab%3Da%26bpx%3D2%26md%3Dtt0027977%26c%3D0&tile=1&c=532963571217" border="0" alt="advertisement" /> </a> </noscript>
 </div>
 <div id="top_rhs_reflow_helper"></div>
 <div id="top_rhs_after" class="after_ad" style="visibility:hidden;">
@@ -1201,7 +1201,7 @@ ad_utils.gpt.render_ad('top_rhs');
     
 
     <div class="ab_ninja">
-<span class="widget_header"> <span class="oneline"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=19MJWH8VP6A6BF9SREGW&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_hd" > <h3>Fall TV Guide</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=19MJWH8VP6A6BF9SREGW&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_i_1" > <img itemprop="image" class="pri_image" title="Justin Hartley and Chrissy Metz in This Is Us (2016)" alt="Justin Hartley and Chrissy Metz in This Is Us (2016)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTI2MzM0NzQ5MV5BMl5BanBnXkFtZTgwMDc4MjUxMDI@._V1_SY230_CR19,0,307,230_AL_.jpg" data-src-x2="https://images-na.ssl-images-amazon.com/images/M/MV5BNTI2MzM0NzQ5MV5BMl5BanBnXkFtZTgwMDc4MjUxMDI@._V1_SY230_CR19,0,307,230_AL_UY460_UX614_AL_.jpg" /> </a> <div class="widget_caption caption_overlay"> <div class="primary"> <div class="onoverflow"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=19MJWH8VP6A6BF9SREGW&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_cap_pri_1" > "This Is Us" </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Find out everything you need to stay up to date with the upcoming season in our Fall TV Guide!</p> <p class="seemore"><a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=19MJWH8VP6A6BF9SREGW&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_sm" class="position_bottom supplemental" >Visit the Fall TV Guide</a></p>    </div>
+<span class="widget_header"> <span class="oneline"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0CERK1D5AMHNQBJ7AGJ3&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_hd" > <h3>Fall TV Guide</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0CERK1D5AMHNQBJ7AGJ3&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_i_1" > <img itemprop="image" class="pri_image" title="Justin Hartley and Chrissy Metz in This Is Us (2016)" alt="Justin Hartley and Chrissy Metz in This Is Us (2016)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTI2MzM0NzQ5MV5BMl5BanBnXkFtZTgwMDc4MjUxMDI@._V1_SY230_CR19,0,307,230_AL_.jpg" data-src-x2="https://images-na.ssl-images-amazon.com/images/M/MV5BNTI2MzM0NzQ5MV5BMl5BanBnXkFtZTgwMDc4MjUxMDI@._V1_SY230_CR19,0,307,230_AL_UY460_UX614_AL_.jpg" /> </a> <div class="widget_caption caption_overlay"> <div class="primary"> <div class="onoverflow"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0CERK1D5AMHNQBJ7AGJ3&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_cap_pri_1" > "This Is Us" </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Find out everything you need to stay up to date with the upcoming season in our Fall TV Guide!</p> <p class="seemore"><a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0CERK1D5AMHNQBJ7AGJ3&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0027977&ref_=tt_ftv_rhs_sm" class="position_bottom supplemental" >Visit the Fall TV Guide</a></p>    </div>
     
 
                         
@@ -1609,29 +1609,29 @@ itemprop='url'>View more styles</a>
     <h3>User Polls</h3>
     <ul>
         <li>
-<a href="/poll/8GS368BdV_A/?ref_=tt_po_i1"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyMjgyNzA3OV5BMl5BanBnXkFtZTgwOTUxNzYxMTE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/8GS368BdV_A/?ref_=tt_po_q1"
->Spouses Acting It Out On Screen</a>
-        <li>
-<a href="/poll/cy_NQhqds2k/?ref_=tt_po_i2"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5Nzg2MTc3NF5BMl5BanBnXkFtZTgwODg0NDU5MTE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/cy_NQhqds2k/?ref_=tt_po_q2"
->National Film Registry's 1989 Inductees</a>
-        <li>
-<a href="/poll/0M3mG1sKAG0/?ref_=tt_po_i3"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQzNDcyMTM0M15BMl5BanBnXkFtZTYwODI0NDg2._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/0M3mG1sKAG0/?ref_=tt_po_q3"
->Favorite nameless character?</a>
-        <li>
-<a href="/poll/XhRRU11dppU/?ref_=tt_po_i4"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/XhRRU11dppU/?ref_=tt_po_q4"
+<a href="/poll/XhRRU11dppU/?ref_=tt_po_i1"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/XhRRU11dppU/?ref_=tt_po_q1"
 >Most Surprising IMDb-Top-250 Film to get Zero Oscar Nominations</a>
         <li>
-<a href="/poll/CImGtLl203c/?ref_=tt_po_i5"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/CImGtLl203c/?ref_=tt_po_q5"
->Funniest Comedy on the IMDb Top 250</a>
+<a href="/poll/uF1WOmEZdiY/?ref_=tt_po_i2"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyODg5Njc4N15BMl5BanBnXkFtZTgwMzExMjE3NzE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/uF1WOmEZdiY/?ref_=tt_po_q2"
+>February 29: The Bissextile Poll...</a>
         <li>
-<a href="/poll/SOThu159l-k/?ref_=tt_po_i6"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BZmRkZGY3ZmUtMTZhZS00NDU4LWJjYWUtODAzY2Y1MGE3ZjYzXkEyXkFqcGdeQXVyNjc0MzMzNjA@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/SOThu159l-k/?ref_=tt_po_q6"
->30 from the '30s.</a>
+<a href="/poll/8GS368BdV_A/?ref_=tt_po_i3"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjIyMjgyNzA3OV5BMl5BanBnXkFtZTgwOTUxNzYxMTE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/8GS368BdV_A/?ref_=tt_po_q3"
+>Spouses Acting It Out On Screen</a>
+        <li>
+<a href="/poll/29nDfjctWM0/?ref_=tt_po_i4"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNTMxYzhmMzQtM2EyMS00OTA1LTlkZGUtOGRlNTI1N2RhMjQxXkEyXkFqcGdeQXVyMjMyMDMzNjM@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/29nDfjctWM0/?ref_=tt_po_q4"
+>The peasants are revolting</a>
+        <li>
+<a href="/poll/fFlZJwQXu1I/?ref_=tt_po_i5"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/fFlZJwQXu1I/?ref_=tt_po_q5"
+>Best Movies from Years Ending in 6</a>
+        <li>
+<a href="/poll/lEhmdxXkz_c/?ref_=tt_po_i6"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/lEhmdxXkz_c/?ref_=tt_po_q6"
+>Most Glaring Omission From Empire's The 301 Greatest Movies of All Time</a>
     </ul>
     <div class="see-more"><a href="/poll/?ref_=tt_po_sm"
 >See more polls &raquo;</a></div>
@@ -1679,7 +1679,7 @@ ad_utils.register_ad('btf_rhs2');
 <div id="btf_rhs2_reflow_helper"></div>
 <script>
 doWithAds(function(){
-ad_utils.inject_serverside_ad('btf_rhs2', '<script>document.defaultAd = {h:250,w:300}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QrGQ9ZNqopobCj_wSxBzLx4AAAFYF4_XMQEAAADKAfcssP8/https://www.shopbop.com/whats-new-clothing-jackets-coats/br/v=1/2534374302090402.htm?extid=DMU_house_sea_weg_wints_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1228928480101\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"1228928480101\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414107\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},p=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},h=function(a){u(a,\"hide\")},g=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/300x250-winter-intl-5r2hI._V528286478_.jpg\",I=m(\"staticImage\");v&&(I.src=g+v,w.style.display=\"block\");var y;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&h(_),y&&p(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701771000 --\>\n <div id=\"btf_rhs2_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=ICEiiARcdkeznRHlKSddq1QAAAFYF4_XYwEAAADKC8bKZQ\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
+ad_utils.inject_serverside_ad('btf_rhs2', '<script>document.defaultAd = {h:250,w:300}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QgSwpUlFK9jNkSU2ZoQdYbcAAAFYF8QHjAEAAADKAVsPj8A/https://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm?extid=DMU_house_sea_feg_app2_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_app2&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1502645020701\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"1502645020701\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3894469\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},p=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),v=m(\"ad\");v.target=\"_blank\";var w=\"shazam/300x250-fall2-intl-v3lLJ._V278602218_.jpg\",y=m(\"staticImage\");w&&(y.src=h+w,v.style.display=\"block\");var z;c&&p(v,\"aap\"),(c||s)&&(v.target=\"_blank\"),_&&c&&g(_),z&&l(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_app2&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1475190497000 --\>\n <div id=\"btf_rhs2_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IEfOFrEnLEkPuUYqMQwH4NcAAAFYF8QHvwEAAADKfighUg\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
 },"unable to inject serverside ad");
 </script>
 	
@@ -1863,16 +1863,16 @@ class="btn-full" >See more awards</a>&nbsp;&raquo;    </span>
                     <h2>Photos</h2>
     <div class="mediastrip">        	
                 
-<a href="/title/tt0027977/mediaviewer/rm3019026944?context=default&ref_=tt_pv_md_1"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0NTI5MDE1NV5BMl5BanBnXkFtZTcwMDg3NzE5Ng@@._V1_UY105_CR18,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0027977/mediaviewer/rm2839719936?context=default&ref_=tt_pv_md_2"
+<a href="/title/tt0027977/mediaviewer/rm2839719936?context=default&ref_=tt_pv_md_1"
 itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4ODM4NDc5MF5BMl5BanBnXkFtZTcwNTc0NDQyNw@@._V1_UX105_CR0,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0027977/mediaviewer/rm3976267776?context=default&ref_=tt_pv_md_3"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYzRiNjBmZDctYjgwOS00YWFmLWI3OGEtNGJiNTI4ODM0N2Y5XkEyXkFqcGdeQXVyNTA1NDY3NzY@._V1_UY105_CR29,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0027977/mediaviewer/rm3052581376?context=default&ref_=tt_pv_md_4"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjE5ODgxNDk1OV5BMl5BanBnXkFtZTcwODc3NzE5Ng@@._V1_UY105_CR18,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0027977/mediaviewer/rm2822942720?context=default&ref_=tt_pv_md_5"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMzUwNDQyNDc0N15BMl5BanBnXkFtZTcwNjc0NDQyNw@@._V1_UX105_CR0,0,105,105_AL_.jpg" itemprop='image' /></a>    </div>
+<a href="/title/tt0027977/mediaviewer/rm2822942720?context=default&ref_=tt_pv_md_2"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMzUwNDQyNDc0N15BMl5BanBnXkFtZTcwNjc0NDQyNw@@._V1_UX105_CR0,0,105,105_AL_.jpg" itemprop='image' /></a>                
+<a href="/title/tt0027977/mediaviewer/rm3019026944?context=default&ref_=tt_pv_md_3"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA0NTI5MDE1NV5BMl5BanBnXkFtZTcwMDg3NzE5Ng@@._V1_UY105_CR18,0,105,105_AL_.jpg" itemprop='image' /></a>                
+<a href="/title/tt0027977/mediaviewer/rm3074600960?context=default&ref_=tt_pv_md_4"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin and Tiny Sandford in Modern Times (1936)" title="Charles Chaplin and Tiny Sandford in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxNzQ0ODgzNF5BMl5BanBnXkFtZTcwNzc0NDQyNw@@._V1_UY105_CR22,0,105,105_AL_.jpg" itemprop='image' /></a>                
+<a href="/title/tt0027977/mediaviewer/rm3057823744?context=default&ref_=tt_pv_md_5"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Modern Times (1936)" title="Charles Chaplin in Modern Times (1936)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTU2NDA1NTUzOV5BMl5BanBnXkFtZTcwODc0NDQyNw@@._V1_UY105_CR22,0,105,105_AL_.jpg" itemprop='image' /></a>    </div>
                 </div>
             <div class="combined-see-more see-more">
 <a href="/title/tt0027977/mediaindex?ref_=tt_pv_mi_sm"
@@ -2164,7 +2164,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Mo
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -2205,7 +2205,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Charles Chaplin in Mo
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0012349|imdb|8.3|8.3|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (69,576 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (69,578 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -2297,7 +2297,7 @@ Jackie Coogan</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -2338,7 +2338,7 @@ Jackie Coogan</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0015864|imdb|8.2|8.2|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.2/10 (69,409 votes) - click stars to rate" >
+title="Users rated this 8.2/10 (69,410 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 114.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -2430,7 +2430,7 @@ Tom Murray</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -2471,7 +2471,7 @@ Tom Murray</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0038650|imdb|8.6|8.6|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.6/10 (280,690 votes) - click stars to rate" >
+title="Users rated this 8.6/10 (280,695 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 120.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -2563,7 +2563,7 @@ Lionel Barrymore</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -2604,7 +2604,7 @@ Lionel Barrymore</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0245429|imdb|8.6|8.6|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.6/10 (428,913 votes) - click stars to rate" >
+title="Users rated this 8.6/10 (428,925 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 120.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -2696,7 +2696,7 @@ Miyu Irino</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -2737,7 +2737,7 @@ Miyu Irino</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0110357|imdb|8.5|8.5|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.5/10 (659,303 votes) - click stars to rate" >
+title="Users rated this 8.5/10 (659,319 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 119px">&nbsp;</span>
 <span class="rating-stars">
@@ -2830,7 +2830,7 @@ James Earl Jones</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -2871,7 +2871,7 @@ James Earl Jones</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0910970|imdb|8.4|8.4|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.4/10 (734,091 votes) - click stars to rate" >
+title="Users rated this 8.4/10 (734,113 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 117.6px">&nbsp;</span>
 <span class="rating-stars">
@@ -2963,7 +2963,7 @@ Jeff Garlin</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -3004,7 +3004,7 @@ Jeff Garlin</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0114709|imdb|8.3|8.3|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (636,981 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (636,996 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -3096,7 +3096,7 @@ Don Rickles</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -3137,7 +3137,7 @@ Don Rickles</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt1049413|imdb|8.3|8.3|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (680,701 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (680,713 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -3230,7 +3230,7 @@ John Ratzenberger</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -3271,7 +3271,7 @@ John Ratzenberger</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0435761|imdb|8.3|8.3|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (555,956 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (555,965 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -3363,7 +3363,7 @@ Joan Cusack</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -3403,7 +3403,7 @@ Joan Cusack</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0032138|imdb|8.1|8.1|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.1/10 (296,494 votes) - click stars to rate" >
+title="Users rated this 8.1/10 (296,496 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 113.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -3498,7 +3498,7 @@ Ray Bolger</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -3539,7 +3539,7 @@ Ray Bolger</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0096283|imdb|8.2|8.2|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.2/10 (177,486 votes) - click stars to rate" >
+title="Users rated this 8.2/10 (177,492 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 114.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -3631,7 +3631,7 @@ Chika Sakamoto</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="cb7b">
+             <input type="hidden" name="49e6c" value="00b5">
        </div>
        
        <div class="rec_details">
@@ -3672,7 +3672,7 @@ Chika Sakamoto</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0266543|imdb|8.2|8.2|p13nsims-title|tt0027977|title|main" data-ga-identifier=""
-title="Users rated this 8.2/10 (708,334 votes) - click stars to rate" >
+title="Users rated this 8.2/10 (708,348 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 114.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -4176,7 +4176,7 @@ Chaplins last 'silent' film, filled with sound effects, was made when everyone e
         <hr />
         <div class="txt-block">
             <h4 class="inline">Taglines:</h4>
-Laugh . . . Cry and Thrill To his Genius . . !                <span class="see-more inline">
+You'll never laugh as long and as loud again as long as you live! The laughs come so fast and so furious you'll wish it would end before you collapse!                <span class="see-more inline">
 <a href="/title/tt0027977/taglines?ref_=tt_stry_tg"
 > See more</a>&nbsp;&raquo;
                 </span>
@@ -4405,30 +4405,29 @@ rel="login">Edit</a>
         <h2>Did You Know?</h2>
     <div id="trivia" class="txt-block">
         <h4>Trivia</h4>
-<a href="/name/nm0000375?ref_=tt_trv_trv">Robert Downey Jr.</a>, who was Oscar-nominated for playing <a href="/name/nm0000122?ref_=tt_trv_trv">Charles Chaplin</a> in the biopic <a href="/title/tt0103939?ref_=tt_trv_trv">Chaplin</a> (1992), recorded "Smile" on his 2004 CD release "The Futurist."        <a href="trivia?ref_=tt_trv_trv"
+The machine that <a href="/name/nm0000122?ref_=tt_trv_trv">Charles Chaplin</a> goes through like a film projector was made of rubber and wood rather than steel, but it was still uncomfortable enough that Chaplin only wanted to do it once. To show him going backward again, Chaplin simply played the film backward.        <a href="trivia?ref_=tt_trv_trv"
 class="nobr" >See more</a>  &raquo;
     </div>
                 <hr />
      <div id="goofs"  class="txt-block">
         <h4>Goofs</h4>
-When Charlie tries to get the roasted duck dinner to the table, the items on his tray are fixed in place. The wine cradle barely moves when he swings the tray overhead, yet when the tray is on the table seconds later, it does.        <a href="trivia?tab=gf&ref_=tt_trv_gf"
+In the final scene of the film, when the tramp and the gamin are walking towards the camera, the sun is behind them (as seen by their shadows). When the camera angle switches, the sun is now in front of them.        <a href="trivia?tab=gf&ref_=tt_trv_gf"
 class="nobr" >See more</a>  &raquo;
     </div>   
                 <hr />
     <div id="quotes" class="text-block">
         <h4>Quotes</h4>
-[<span class="fine">Listening to a phonograph record</span>]
-<br /><a href="/name/nm0174682/?ref_=tt_trv_qu"
-><span class="character">The Mechanical Salesman</span></a>:
-Good morning, my friends. This record comes to you through the Sales Talk Transcription Company, Incorporated: your speaker, the Mechanical Salesman. May I take the pleasure of introducing Mr. J. Widdecombe Billows, the inventor of the Billows Feeding Machine, a practical device which automatically feeds your men while at work? Don't stop for lunch: be ahead of your competitor. The Billows Feeding Machine will eliminate the lunch hour, increase your production,...
-<br />                
-        <a href="trivia?tab=qt&ref_=tt_trv_qu"
+<a href="/name/nm0305087/?ref_=tt_trv_qu"
+><span class="character">President of the Electro Steel Corp.</span></a>:
+[<span class="fine">from the Telescreen in the restroom to the factory worker</span>]
+Hey you! Get back to work!
+<br />        <a href="trivia?tab=qt&ref_=tt_trv_qu"
 class="nobr" >See more</a> &raquo;
     </div>
                 <hr />
     <div id="connections" class="text-block">
         <h4>Connections</h4>
-        Referenced in <a href="/title/tt0655408?ref_=tt_trv_cnn">Mystery Science Theater 3000: Devil Doll</a>&nbsp;(1997)
+        Referenced in <a href="/title/tt0070707?ref_=tt_trv_cnn">Sleeper</a>&nbsp;(1973)
 
 
         <a href="trivia?tab=mc&ref_=tt_trv_cnn"
@@ -4437,10 +4436,10 @@ class="nobr" >See more</a> &raquo;
                 <hr />
     <div id="soundtracks" class="text-block">
         <h4>Soundtracks</h4>
-In the Evening by the Moonlight<br />
-(1880) (uncredited)<br />
-Music and Lyrics by <a href="/name/nm1147895?ref_=tt_trv_snd">James Allen Bland</a><br />
-Performed by waiters in the cafe<br />        <a href="soundtrack?ref_=tt_trv_snd"
+Theme from Modern Times<br />
+(1935) (uncredited)<br />
+(Later known as "Smile")<br />
+Music by <a href="/name/nm0000122?ref_=tt_trv_snd">Charles Chaplin</a><br />        <a href="soundtrack?ref_=tt_trv_snd"
 class="nobr" >See more</a> &raquo;
     </div>
     </div>
@@ -4540,29 +4539,30 @@ class="nobr" >See more</a>
                         <div style="width: 100px;">&nbsp;</div>
                     </div>
                 <span itemprop="review" itemscope itemtype="http://schema.org/Review">  
-                    <strong itemprop="name">The Farewell Performance of The Tramp</strong>
+                    <strong itemprop="name">Hilarious comedy with a serious message</strong>
                     <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                         <meta itemprop="worstRating" content = "1" />
                         <meta itemprop="ratingValue" content="10" />
                         <meta itemprop="bestRating" content="10" />
                     </span>
                     <div class="comment-meta">
-                        10 May 2004 | by <a href="/user/ur2244176/?ref_=tt_urv"
-><span itemprop="author">razwee (razwee@yahoo.com)</span></a>
-                        <meta itemprop="datePublished" content="2004-05-10" />
-                        &ndash; <a href="/user/ur2244176/comments?ref_=tt_urv"
+                        10 September 2000 | by <a href="/user/ur0150053/?ref_=tt_urv"
+><span itemprop="author">Chris Thomas (mr_chris@theglobe.com)</span></a>
+                        <meta itemprop="datePublished" content="2000-09-10" />
+                              (Louisville, USA)
+                        &ndash; <a href="/user/ur0150053/comments?ref_=tt_urv"
 >See all my reviews</a>
                     </div>
                     <div>
-                        <p itemprop="reviewBody"> Charlie Chaplin's Modern Times (1936) is the final film to feature the great actor/director/writer's most easily recognizable incarnation: The Tramp. Here is a character that is so ingrained in the collective conscious of modern film audiences that many recognize him despite the fact that they have not seen a single Chaplin film. Indeed, several iconographic studies have labeled The Tramp (with his worn hat, distinctive mustache, dusty suit, cane, and trademark waddle) as the single most identifiable fictional image in history.<br /><br />Still, the film that perhaps most influenced the creation and thematic realization of Modern Times was not even a silent one. The Jazz Singer, which debuted in 1927, five years before Modern Times began production, is perhaps the most important watershed film in the industry's century-old history. In the film, comic great Al Jolson stands up in front of the audience and...sings. And as Millard Mitchell said in Singin' in the Rain, the public was suddenly in a frenzy for &quot;Talking pictures! Talking pictures!&quot; Sadly, with the advent of synchronized sound and dialogue, the world of silent filmmaking began to slip into obscurity with audiences and studios now viewing it as obsolete and undesirable. Nevertheless, Chaplin continued his passion for the subtle craft by creating City Lights (1931), which many critics and academics consider one of the greatest films ever made, but by the time Modern Times was released, Chaplin was one of the last directors left clinging to a dying art.<br /><br />Modern Times is not an entirely silent film, (there are dialogue snippets and sound effects), but if you look closely, every character with dialogue (excluding Chaplin himself) is being mocked. Even when The Tramp opens his mouth (the only time he ever did so in a film), the words are nonsensical, defying the burgeoning convention that dialogue is mandatory for substance, entertainment, and quality.<br /><br />Despite the film's status as one of the greatest comedies of all-time, it is hard to ignore the political component. In his movies, Chaplin often exhibited a great mistrust for authority and progress, as often embodied through the social elite, the police, and wealthy entrepreneurs. The irony of the film's title, then, is two-fold. It connects with Chaplin's own bitter feelings regarding his moribund art form, but also refers to the plight of the working classes during the Great Depression (long working hours with little job security and meager salary, while the upper classes remain wealthy and bide their idle time) The world was changing fast, and Chaplin foresaw that many of these changes were far from beneficial.<br /><br />As we watch The Tramp struggle through the modern, mechanized world, we laugh at his antics and the absurdity of their results, but we can also feel pain and pity. He is clearly a man who does not belong. Indeed, The Tramp can almost be thought of as a misfit who has passed through a membrane from some alternate reality and unwittingly fallen into our familiar world (notice that he does not have a name or identification of any kind, and as far as we know, he has no friends, family, funds, or history).<br /><br />He takes on assembly lines, feeding machines, department stores, policemen and various other mass-oriented aspects of the industrialized world (all which demand and exhibit sameness and conformity), but The Tramp (and his symbolic extension, the individual) never seem to fit.<br /><br />This is, consequently, why Modern Times is also one of the most poignant love stories ever put on film. The only character who is on the same level as The Tramp is a young, homeless woman who is referred to as &quot;The Gamin&quot; and is played by Chaplin's then-wife, Paulette Goddard. These two are brought together by the fact they have almost nothing except the will to live and continue forward, despite adversity. Both are nameless, neither has a home, and they each have no money or material possessions.<br /><br />It is here that Chaplin makes his most poignant and saddening statement about modern living. The Tramp and The Gamin are the only characters who exhibit individuality and idealism, yet they are also the ones lowest on the social and economic food chain. The conclusion of the film, which most likely reflects upon Chaplin's own emotions, is tinged with sadness, but also a lingering hopefulness that resonates as loudly and clearly today as it did more than sixty years ago.<br /><br />Then there is, of course, the comedy, which is the stuff of legendary status. Some of the most memorable comic images in film history are found in Modern Times. These include The Tramp's bout with an assembly line (and his resulting twitches), his unfortunate encounter with &quot;nose-powder&quot;, the moment when he quite literally becomes a cog in the wheels of industry, and his epic struggle to bring roast duck to an angry customer.<br /><br />In my opinion, however, the two standout moments are the scene in a department store involving a blindfold and some rollerskates (the most exquisite moment of comedy in the film) and the sequence where The Tramp is submitted to the mad whim of an out-of-control feeding machine (the most uproarious moment in the film).<br /><br />These are just a handful of moments that make Modern Times the enduring masterpiece that it is. On a personal level, the aspect of the film that resonates strongest with me is its appeal to the idealistic misfit in all of us. In our hearts, many of us long for the simplicity and exuberance with which The Tramp and The Gamin live life (with attention to the bare essentials and an absence of need for materialism and modern trappings).<br /><br />As Chaplin so skillfully shows, however, our modern times make this lifestyle a faded dream, lost among the sheep-like herds of men and women scurrying through a modern metropolis that only Fritz Lang could make seem darker and more devoid of true humanity. Still, the final image of Modern Times refuses to let the film end on an exclusively tragic note and demonstrates that the individual is still alive and may yet find his way in an ever-changing world.</p>
+                        <p itemprop="reviewBody"> &quot;Modern Times&quot; is in my top 5 films, and #2 in my list of favorite comedies. Charles Chaplin is arguably the most talented human being, nevermind film maker, that ever lived. I first saw this treasure about 8 years ago, and I watched it again recently to make sure that it really WAS funny, and that I had not given it too much praise because it was simply a Chaplin film. &quot;Modern Times&quot; passed my test with flying colors. I laughed hysterically from start to finish. Each and every scene is innovative, well thought out, and executed with the genius that only Chaplin possessed. Among my favorite scenes are the &quot;automatic worker-feeding machine&quot;; the jail scene in the cafeteria when The Tramp accidentally sprinkles cocaine on his food, thinking it is salt; and the roller skating scene in the department store. No special effects or computer animation, just pure, simple, genius.<br /><br />The storyline in &quot;Modern Times&quot; is purposefully naive, a trick Chaplin used time and again to bring a profound humanitarian quality to his films. Watching this film is comparable to watching a Warner Bros. cartoon, which coming from me is a sincere compliment. The level of physical comedy in &quot;Modern Times&quot; is on par with the masterful short films of Chuck Jones, Friz Freleng, and others.<br /><br />Finally, as was the case with most of his later films, &quot;Modern Times&quot; is a serious social commentary. Its message is as relevant today as it was more than sixty years ago when it was released. In fact, it is arguably even more relevant today, and unless the world changes drastically in the future it will continue to be. &quot;Modern Times&quot; is essentially the story of a simple but extremely kind man caught in the traps of industrialized society. The opening scene, which compares a crowd of workers boarding the subway to a flock of sheep, is Chaplin's warning against standardization, mechanization, and other facets of life which rob men and women of their individuality. Chaplin always tried to speak for the downtrodden, because despite his enormous success and wealth, he never forgot where he came from. In the end, &quot;Modern Times&quot; is a reminder that no matter how bad things are, you can still smile. Charles Chaplin has made more people smile than almost any other, and his legacy of love and laughter lives on in his films. Its up to us to keep his legacy alive.</p>
                     </div>
                 </span>
                 <hr />
-                <div class="yn" id="ynd_15344">
-                    129 of 205 people found this review helpful.&nbsp;
+                <div class="yn" id="ynd_15289">
+                    92 of 146 people found this review helpful.&nbsp;
                     Was this review helpful to you?
-                    <button class="btn small" value="Yes" name="ynb_15344_yes" onclick="CS.TMD.user_review_vote(15344, 'tt0027977', 'yes');" >Yes</button>
-                    <button class="btn small" value="No" name="ynb_15344_no" onclick="CS.TMD.user_review_vote(15344, 'tt0027977', 'no');" >No</button>
+                    <button class="btn small" value="Yes" name="ynb_15289_yes" onclick="CS.TMD.user_review_vote(15289, 'tt0027977', 'yes');" >Yes</button>
+                    <button class="btn small" value="No" name="ynb_15289_no" onclick="CS.TMD.user_review_vote(15289, 'tt0027977', 'no');" >No</button>
                 </div>
             <div class="see-more">
                 
@@ -4839,7 +4839,7 @@ ad_utils.register_ad('bottom_ad');
 <div id="bottom_ad_reflow_helper"></div>
 <script>
 doWithAds(function(){
-ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w:728}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QkLpT4DHCpDr8kKrAirp3nAAAAFYF4_XLwEAAADKAQs-N5Y/https://www.shopbop.com/special-top-sellers/br/v=1/2534374302073392.htm?extid=DMU_house_sea_feg_sku_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_sku&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_4137855340801\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"4137855340801\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3894512\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-Fall-SKUs-Tqa1J._V278602615_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&l(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_sku&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1475190498000 --\>\n <div id=\"bottom_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IDGa_zcub0cNsoJhawTJnacAAAFYF4_XVAEAAADKd_rttw\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
+ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w:728}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QvJSpYWA_sjR4yFQolko11cAAAFYF8QHkQEAAADKAYBspWo/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1577657950101\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"1577657950101\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709306\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),v=m(\"ad\");v.target=\"_blank\";var w=\"shazam/FallBags-728x90-International-vijOF._V279228374_.jpg\",I=m(\"staticImage\");w&&(I.src=h+w,v.style.display=\"block\");var y;c&&f(v,\"aap\"),(c||s)&&(v.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"bottom_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IO_3DvBVhktmvc1ltoJ9l3cAAAFYF8QHtAEAAADK4ay4_w\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
 },"unable to inject serverside ad");
 </script>
 	
@@ -4849,13 +4849,13 @@ ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w
                 <div class="col outside">
     <h3>IMDb Everywhere</h3>
     <div class="app-links">
-    <a href="/offsite/?page-action=ft_app_apple&token=BCYnA1QMckM_Ec7OEd1Gc6Fk_EuNIxraY6EoF-Uiez4ANafci8w2iLBhfn_26R3Afs-cYjSXSuvr%0D%0AU-V5JyJhow-vBjXmXN6PKEAHejHBFYbhXxtKsGEtrkLvCViDFpOan6AEXx3e_yrqmyEl9z4UGu-G%0D%0A3zt-eK-H8iHpIXwmrkM9jD_yuyjxYfCLlJpQ94p928tXc_DO2djaHFI-8UumkMYO6oYknIf5WOv6%0D%0AwDzUXCx6dAk%0D%0A&ref_=ft_app_apple"
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYkmiNstOExtfhoQ8HdKWFzgqY0O1-qBDMcuSsGWiQ4bV-wqPYK2bD4BofDWhxwa9AhwKivArJa%0D%0AQm2iWK8XqpkZrrgGtHJflujRkBb23DvOW9YuxGilxqjV1alHLTlMwYiIRQeHC5q90rkcchAeK381%0D%0AD9O6ewnIozlqkO8grxVmGq2rj4f4ZLocRfz9DdBMMF3xSMeWdCI2ZUoZnbYOpeebow1ZSpCo4TDl%0D%0AOkbuWgWOi-U%0D%0A&ref_=ft_app_apple"
 title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_google&token=BCYovwk1o0EQNYDfTvso-aVDSiF5jyaDQfbsNeCxT1BkQyEmPK5PumiyMwuKMuygzpkZgl58N6K7%0D%0As9ufUmiodKAoD1HBH2OgPwnnGspLSISXgRxs-tMSBHbz7ufUUGIoXWsqlklLjFAKoxdONs4zKlm9%0D%0AGNs_F300gkZIhzyCumxxxuu_As04e2bV-cglHy4kv1103myStrT94kXcNq6in8M-TUzc2fB6Mso0%0D%0AO7i9rtMpKVY%0D%0A&ref_=ft_app_google"
+    <a href="/offsite/?page-action=ft_app_google&token=BCYlSQGLN-No8hpYuEFUetcHgN9he8_nEzS50_0Yg0VPJHLX6mqQ6G-kZSVrhcGjLLuj1SzFQqdG%0D%0AiWZibc1nACABXRQoxFZCOaXEYQI-9gYBAq1N5-NjKByLYEKzKNoksKmbnbdO-10o5pJZDO9N-rRS%0D%0AxW67rINZsjy4wwURlo9WL2ZgtMu4N8922bdlj3jDpu7a0FUWkv9b-3wHV6qKC_-uEtb0EuPYf_Bu%0D%0AcEAHZU3M9uM%0D%0A&ref_=ft_app_google"
 title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_amazon&token=BCYrbAvwUyBx1K3iTQTP66_NfNWbgoiC4sDHiVf5RBDSpIR8RRtuj0MJm2cHv34PtDem9cNpaQjM%0D%0A5kBHzMXiWhcNRT7c0f6uDXCx9A1EJQ-ONCjC5gfCz6GDz4QuZqH1BKueV6dUJx3oAwaRnHfFfsjI%0D%0A5yUDxL9Bt1zCH44gBVskYKkCKtKpGoWZPIAK2PEhhqMI5OxgRXBHNMGpQJDsmP1COcgWWVKyLe6x%0D%0A_xLa-75mX5nQMBQHN7Txpadh8z9mwlTboeFzLCmRIdb5YySL1k8IVV1L2BCk5R_i7XA6dUk-m6vE%0D%0AMbKFfVLtxeLz1hOEIs2gJVNSBUpVFWMYvbCtrWfqYXBqIirg9huZBi1DRWysWmEbii737-Fc8svW%0D%0AohM7ercjY9gI-Jjp3w4ehGXEBgELGyX_hRDPmdQX872fsUy3SwQ%0D%0A&ref_=ft_app_amazon"
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYqKsZEptJg4zGFJdnJA80FmYDWo4mXyaK5q5UxUZoDNiJuL7IvSTQ80VayZnSQO2HncZOmmh_0%0D%0AyYLe9k1vs2H7UNkcIgjwvEnCYQ7nwv4GV1nK827pENNRaBJQuMJNvAliBt4grpSs6gfJCxa25HDd%0D%0A0JDlQueOKg6_6KpdP9__01u7e__e_mrzmg0nkuEqMntO-8MPbxDtJzJhxmbbVlWd8gGDQS-6HHdN%0D%0AtXesd8nkhCEaC3BFo-Px2XpjFSXxfw8Q9K5ct2QfcFLDcvXnqTb0FSZzgWBFJDhWz2zesvSZ52ga%0D%0A0zwOvqBwCorYzzWPlpUSrrcBtsYtc2RpWhjAuRlbVYSIA8zFYf7cNmnXPlPoNGHlrQhL6tPRDprK%0D%0ArX8l4U4T6rpBpFJMedzR54xixtP9lbHaV0osYBprRYnx3Dq3Wfw%0D%0A&ref_=ft_app_amazon"
 title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
 </a>
     </div>
@@ -4871,13 +4871,13 @@ class="touchlink" >IMDb Mobile site</a>
       Follow IMDb on
       <div>
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYqBqxKsfLnX0IQhLsU_bS-hMWpYaY0z_7AzwNLnO7TVWQ4mvpSqm9jtFV9lzdNE5zDHizzSFZP%0D%0AzlfVhic1X4d1WHRnJw41i-XsB65LpopC25nCtC7LCOQHBEbc9L-Vn6pHXbM_lV8Fh9uIDEKj-o9s%0D%0ArIqMPCZGK7j80qLkNx7vlGr6Nc9-d9NM0Pq2oSdCLRoEp6bqCJpXwaeXiQZAQ5IepA%0D%0A&ref_=tt_ft_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYkThz-2iHfVb9rsLW4SKOSNoOn8H_XVJ-gJ4WS8fB3QNOYDtpVnXo7F3MXR9K_3XHvcR0F6JqA%0D%0Ay3GsWkUOXDUociq3BuweTON6sSzH5fzub_8mcfNWhiFWQcEqUtsqZAKGGUhXNP8oaW98bRB7gVHK%0D%0AiuXmlS81vYvVN5BxfAn9TRGzbW_6n8qUfjcgpMqdWnKEKJQhnnVxz-hsEALrbar0nw%0D%0A&ref_=tt_ft_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYku5Yf-IVrairnH8M_z731k9Ct0VgxeJoeqv1yZAm1QJgDd27sNIGuqq1nDA91xm65w1sPfZK9%0D%0AMqG_hqC03SirjH_vMeeAwF_6AYW_QgCuTqSH5yEnmCw6j0xMPZRu-EvR8js0frmC2D7EKwi74bjs%0D%0AtRLEUDIFFaAOdODOKz1mWRfQPGzSXa8CHYnGsNKqyaDCEhZ67mwSJ7dUCksCt7SVyg%0D%0A&ref_=tt_ft_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYrp2iOzzk4fdVZj-rNgXEO_-MN1-EuNli5JuF8gzL9Id4zeg8AglrkrCAppzCWLZWOcgyxcV5a%0D%0AJZFgWSnKyngyI-b4_DEfIJlTOGaJT33WsIsr1P7pBFlmtJeeiGdrqyB_mOSoqsQd9fbX6GQc5oar%0D%0AOnEH1ecFG4-x5UoDlfTPyP6NotujqHDAxfj0OqevnKTKqxmxT21hIeZAL_k6o1BdJA%0D%0A&ref_=tt_ft_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYvTJPDqR1wLCQOVWGuhU70O7OCCXqXw1-RTovysyUS7DYXPR9TZTc8bthgapD07Cv71WgNQSpW%0D%0AMTSR8LWp5uj8kwhZjm6LsaUIvK2tBSpa0FUoNWODmpP6PRqaw_oZ7Scja1yNygKQSmMei9fRUXKD%0D%0A9H0O2dOe0kplLYIj3teVfmfJ_N0nMhJaWvPk1gHPZrjBku0JzCKBGrGBDbYJR5dK8Q%0D%0A&ref_=tt_ft_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYrhpEvbkOvgzdgVbIJquqIAyaJtwvfwtWUNlzF_XGi4lSpw2ulYNejvXo11W4vZHko5bOH_e5Z%0D%0A1zVz_7lZK1V4geThgWLa6U6W_MGZ7n7qSYyKpogxuxK_DdNjc5ZUokEipGUt-xWCi3bsNimgiQnU%0D%0AAwmjn_s1_UDSiiBpdgPRcTFuV4iOMlRAsKaIGuR3MS2Zu6G2S1IAy5BEbgqTahNdVQ%0D%0A&ref_=tt_ft_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
       </div>
@@ -4930,10 +4930,10 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
             <ul class="unstyled">
                 <li><a href="http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
 >IMDbPro</a></li>
-                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYvCQLDWCqoRNlhachvoyawW1UCnuQSkKgNcM8NDShFIIc7duKSwRgNynWAJy0Pq72UbpLi04Eb%0D%0A2OPod8XAMYpZRKxQsNtexSoB7GidQ5Y_NcMb7jNVxFGe7R9A5Ow8l64MsV3R6lJP9g9W_LUBpue_%0D%0AwUuDgaJXTEB5An27E8QnWEUmRoF6MLQpJ-l9h4cIa7cGoBJ53dgjJ6DT6Ct5LcnQXg%0D%0A&ref_=ft_bom"
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYtWprJIwvNgfbWEuXOA3Hi7ex6MtoLmV6vP-IvQfVcZsv40Kv5sGUHTDped51jGqm2w0svgmET%0D%0AHJDKiXgk9hZOf2tf7pg-ssg-bhs-sa3stQsK6yK-hdGchJUU7QuyJ4-wI6brzRPHzUOExSsOndlM%0D%0A6sGDROh9HA_eXIV7S9efDMpur56An-yvtv-nBLcSeR6eB1sSdxzyXQDAh9f1y0epEA%0D%0A&ref_=ft_bom"
 itemprop='url'>Box Office Mojo</a>
 </li>
-                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYp4WwBlj_BXxYpgyGsM8cy3KrGDCiIh6P5fMh6RsAaP2L9h3BbvBk0m51JyDO1UZrX-Z91ZVSQ%0D%0ASHqDe6UsegIpNWuB-cAKf156PgD-rwhMn3ip7Xp7t-8rsG-trrQ65qmqfUv5_nwE7gogWrvXp20D%0D%0AHitQr4vFtHNCwrhr_kkUQwiqmPNd6pSCzNEZJ0SWpQ_r-EaVO0DrWUVhv3Ow7vY7Xg%0D%0A&ref_=ft_wab"
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYnkPO4GIfCNTisI6V8nYwXc2BGoQ76M2EW9WlncM2O-Te6rRi1HSByzTDQcOzRmDWZUNUSrmKc%0D%0AVNN-hn5N8XyWgv8-cyoZMIEgnkmlxMXEZqiWSfLhUV07ptJWNLYl6X3N3XkttlFRL-9-IAS2ptZP%0D%0A8J77Uo9rNny94lUv_U4VR8QyqZJn6GOyPeu79YqqFZVLcHnJKYUGEFGQVs8FlMbCaw%0D%0A&ref_=ft_wab"
 itemprop='url'>Withoutabox</a>
 </li>
                 <li class="spacer"></li>
@@ -4941,7 +4941,7 @@ itemprop='url'>Withoutabox</a>
 >Conditions of Use</a></li>
                 <li><a href="/privacy?ref_=ft_pvc"
 >Privacy Policy</a></li>
-                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYsi6q6qXWH5xhJ7iqPckuW2LqzcXmjbv3BLU2YtJopW3xU-OLMMAF8NYc8IZ2sL5Zt1UqQSxDS%0D%0AO9bBfB_xDqX0vg6ucDtTXRVRJxK5o8gHXUhkjtK-4kqXWr-EqNCaEGRRIcKn4pFXUyS-u3xltEsI%0D%0ALi5TVgPVRj3PDQT_CZBj4v7a12xEIeU9AH2WGPu7sfNLtnMEKzsMbIG4QSwO5eKgISatWf0Pf5nT%0D%0A88MjEOgWxyJsW6Mo8WHBEKfiTwIe4JNJ%0D%0A&ref_=ft_iba"
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYrk7VpB1EVG-mZukrhayctxCiM3jsDsOrnDVs9g5Iai2bBwCRfFCK85etU8AoGmI5qdfqwO426%0D%0AqKtS2TPmtHkzE1OBNIp72uancD0rDJABDTP1z32lPPTZjbVZtu0J60WAeYrOSnvno6MuXe7qA_q9%0D%0Aa1UFbaHoYjzdkaICh3YUWrr7yHnqSqhkPuVSUh6yznXByXEe7qJgHEqolI4HU_bTvTiVq1fd0dE9%0D%0AU_ZVDDvRXL9kTvFgUpm16KLziFX9BVlE%0D%0A&ref_=ft_iba"
 itemprop='url'>Interest-Based Ads</a>
 </li>
                 <li class="spacer"></li>
@@ -4978,7 +4978,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-aiv&token=BCYr36YlXzMnLNKmH_eoaE8LHfWBjnXLAXyx66V3twShHv3PDsEz7c3ATyhT0Jw3NXG_AURPzCuy%0D%0ApRVy8tydGYDdFNOIcB1jROpzUKf7ENLDU81urcTwoUZh3wXRvU3442HjWA5vNyatziSLe8hh7FHb%0D%0AG5cXdoiQfOE6N0DzQVCHgKTcz6c5o_-1tx8K5IA0vr3zs-D-UjQZg3Iln_H5mlRB_NlFxk-UNsTT%0D%0AiNa6wyK-1ew%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-aiv&token=BCYv1wFuqzmecJRVN2S4qxT-K-u2hNZYws5gEmWMM1GXb8s4EEAlXnwORgc2jHPtavnxqqB6M4m1%0D%0Ai8-Adpk03E1KlB1Yh0IawMYer6jikO4eCGC3wuGrgCChuv2ptkth8Le5YOpKYMrG5mk8HJzRtlXx%0D%0A_KxtsHJ1Bn9pRIC32DaOVd0Atq6RtBx_iLQeAh7cII8qxPCWQnwsxvYjWPD97RRk4UfmCZnuJs_k%0D%0A8F4nDE_ZJS8%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Video</span><br>
                 <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
             </a>
@@ -4987,7 +4987,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-piv&token=BCYhdMSjTZobgWDGxGO3NKXZYHHZdngOpuCzZ9ILguaPPOP0AkTXOeXPX9aYioe0ca8TOxvJdRDp%0D%0AV0acZkJTXXqe1QSMdYAb8pjY9o4OvMTnqFux8Vh5-xV4IFelo51Ou_Q2Lyz4yI4Ea0zrOtSYO8w7%0D%0AfyKRGdDb8sDeM8ci5vEMMZTlG0EohbLwyM3chXxfPYebe2IzPVfQni4wRr3KUPSyn6dYQjum4Ez2%0D%0Aadt10ycFe-Q%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-piv&token=BCYkHVR25KQfCUcuT382RcE0DTcljHe1C6CtojVvlweViULeuw0RzyCPCpU5oPTyXoaFqvg4WW-z%0D%0Aud-7Ix9xAIuv_6uGx2oyzgAxrfhzPt9FRh0QoQzB2-zXo3amFgiVs-mT_Oh3Y5jVnqvMRH3Y3eOI%0D%0A57WGnn-LsINDHxpfr0gsJO2yLeBeTrU-0NxPDZCJBIHNi3mrVL1AKcp-7XSygpL1_zhFuBokO5KN%0D%0Asq27IskR4z4%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Prime Video</span><br>
                 <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
             </a>
@@ -4996,7 +4996,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-de&token=BCYvpQ5pDw85pkilemLfajpKMYlZGb_mYSKk9oJyCX6fkIcGnQ57EKyQgAtxuJl9IoU-pmSywPIU%0D%0ARulUzyojmfWM6acj-o1Z6AKQThqYTFkwgyzcrxBRimsQ97D0FERNGkocHVfEyL6cJM8AMDIU2Ret%0D%0AOh0CQrepItL3iufh5mWPEqxOpYpg1UHl-1ES9x2hxkBm1UuAM9qpgGna69BuLSRm3l-P5pgG4RZO%0D%0AVh5tdGeSiFU%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYr1PWJCz1mUqm7_yrDbLhkkPBZtHGIrZZBGj7XQoOfVx0wC6nKOex28SMf3VCsUg9UjeSXJ86P%0D%0AZu2dylgyOD1Uw0GQX2tJo6oEUcLmJBbC8_SfN54nvJ5bVYONKSpbxOccMwhArkB8v1cv5uMWGoiq%0D%0AUqCWZtvvvIdZWq27Taxue1KNR-6JlOl-4qaewyMIlQfSEdLxMYym2JfMmPRxeiUlFpSV0UhV0wE-%0D%0A1NG4Q3n1aaA%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -5005,7 +5005,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-it&token=BCYhXG1wYbQDaWhdErIZTM9Ho-10Np7w3T-CyQYE8qtVBitnyNb5D1Zhq5U2CNfouTqqrKDnG4p_%0D%0APkj7oyVxWGWgKZVlQRQDidfJ910e_gTp9FoKvaxG3MIRSmd3oxIJNS1ssBN7ZsfxhcVCveQzP0EB%0D%0AjnX_zTJ7EhmTUH6pX_TTLc8rmbcTJ70OJ_ZjaFbXuQTJcuGfpB8vDalHXf4-0w1W2Pm59X-CLPSG%0D%0Abbh4fX2GiLU%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYtUj86tgAlvZZZzgJvp_rfgrzhqg5FEpZZh-b4NVBgtexdjDqJulmUPcBJ1MMsIansrA4NMp5T%0D%0AyUBO-zunPMLEAoZXMwV3KMefzQOcWzFDFpMksRdHnbmJ8UpSvLUfBAXIId4upoZXNH3Uuz96YXyX%0D%0AzMs_waZAy14KijZy5H6gRe5f8aMQ0U0w3W7dHHqy-rpNebCOJfStd8LAZ98pLLiq8VyESjWE5QE-%0D%0AQNL4qYSyjGM%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -5014,7 +5014,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYjnoYKFwGYXMYzmvakRJNueymSytIziebz51wHnPFuubhnk5uzG2gnQOfXIZHSPtO2LrPlwKme%0D%0AvblpgKUdZA_fD5B8vsg9XiyO3wn1btKGKOJTFv-SOOI3M8_TZQhT1qhdQl690Agbxz7HawxKLsoK%0D%0ACrT2bbNf8TjYPegULreJK1u-7fNyATtjE-fofgnM3UlPtZeytX5dx3NhuCj7hmPtIW__ipX5jaTF%0D%0AqSsO1RCG9cA%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYixM1yA-k3NRUHxGnditW5df4MLfvVzmYpQyxAkR5R6rWtV0_nxz5RzrVACQSf5eKJphOA0fSi%0D%0AfTpvC3Z0uCX32zFuzaoYEDVIl0vtKQAASYi74WfZerGyiHFllzPVMwrZNPwaSBZrYW085tnkFBHU%0D%0ASoUlhJP3OhLLBM-rahyPARg8KZC65o0YZqnRT8LECIfmGr34dtfqEka5lLjyJs8RMIJ3Yl14aFP7%0D%0ApZGxfouKBIk%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon France</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -5023,7 +5023,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-in&token=BCYq15PcBwuCyp3FOyTFCPih4ZlZLMrLLEreh-TGsisFU1UYjyjQSm-6wun8RRcEBQdmhxxDw3eP%0D%0AXxpBg31VuXws8M1WTaN7heVBLvfXJ26Khhtii1bCZWlHDjvSLaX8sULzx1ClSGyiqzkbGuvRqjsK%0D%0AK6kqZB8NxhSMI_33RHi2RNXx6o17xEPrQ-toP7dqnG_I5DavEXG_iDsNpiR3VqRwpQphBi6I_uRq%0D%0AfTwLY4lTzMB3RvBfv52z0KWHVeh5bo99%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYrhzrYVNsc-h8UtHzPGUjeXHerrKWGFjgTUrl81soh3Qy4Enbh7mJH_LH1XFUlH45En9Hjpsip%0D%0ApCvYb2glonQcSwGF481FkUs0SxCeQYtqPR-1N8-yZqbS_DZLcc8SxYIdGuto0rLCl9yE6xMZpMEU%0D%0A2TgORwXuKNnN1q1VDDpFiEEtSfdftExxz9MrZUo7MFU64hNOZuca31rg_sA0Y4qjCRnwWI5u2625%0D%0AfZJZgT7cR4q9ZeitKLQ1pnuYSh5kfu0x%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon India</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
             </a>
@@ -5032,7 +5032,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYqKPiaaDgtYO3EsHkZ-SOfXWANVbu7-md1nk_lL2_PG8GUb8WY1xop4RfNxts9yiv5F7UrC-vf%0D%0Agb5joFzvgx-_F-KbYsoh2bG98uubRuZ0wem0U7oPl8ccLbs-hvmZ9zewzzcYJiZoOMdx4HSFiAMT%0D%0ARjxZSPMZyBOHJJ8P13iLDG0%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYmgZ54nlTVoW4lN0ibfSJ0TpbRlcTMXHXzobjEiY__M_1kcpK4XGeT-PZlcJZSHsP21YH3i2k5%0D%0AmHtlks9BdUD0TMffuiK9atraM3Iyet1rUprMc17Nmh4HLyoAYGRGXRcMpzZ8LPLKrUJfjK1pZPLK%0D%0A2YE7F9HBUE2voGr5AIYB9V0%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">DPReview</span><br>
                 <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
             </a>
@@ -5041,7 +5041,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYkeP1tmhrtP3hbrgQfSE6e6lT9ZCa-c3iD915tESbSFPLavkEwwuV131ysQbk2-KhNCAej2UxY%0D%0AqTJE5IbczOZ38fxivppjCrH0dBzJzBZ_LfTK_dZqlFm60vuhiTa7zCHI3tUTcGs0mAfryL7yLk4I%0D%0A-F2T3vvFQtU2VC-Q0qum0Bg%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYvtzjLqHcdDLG6r5T-KO-qIeyMDQS0PFNFl_BC55L5gLVnAsGdH4sVFvf2_dR3VdL3NvPIhvZd%0D%0AZb_k4NHXOACdU_UguAJ8_5p4HIzm267FuztvHIPs8g2IctuUbTxzAzK1gigwLE7p_y8TWnkEGgW1%0D%0AXUC7iCgtdIdEzdVtyFHxnfA%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Audible</span><br>
                 <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
             </a>
@@ -5125,13 +5125,13 @@ href="/help/"
                 params_sis3 = [
                     "d=imdb.com",
                     "a1=",
-                    "a2=010127715ebf8eece514ef694a6037878e4e84ab7bf1154510440b7037ecfaf78bab",
+                    "a2=0101db01ff650b7f40bc57fc22bc75432d74c4366b4db77f098f094d31b41354c41f",
                     "pId=tt0027977",
                     "r=1",
                     "rP=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0027977%2F%3Fref_%3Dadv_li_tt",
                     "ex-hargs=v=1.0;c=IMDB;p=tt0027977;t=imdb_title_view;",
                     "encoding=server",
-                    "cb=228999095743"  
+                    "cb=532963571217"  
                 ];
         
             if (document.getElementById('sis_pixel_sitewide')) {
@@ -5172,13 +5172,13 @@ c15:""
 
 <script>
     doWithAds(function(){
-        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=228999095743&ord=228999095743";
+        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=532963571217&ord=532963571217";
     },"unable to request AAN pixel");
 </script>
 
 <!-- end ads footer -->
 
-<div id="servertime" time="209"/>
+<div id="servertime" time="297"/>
 
 
 

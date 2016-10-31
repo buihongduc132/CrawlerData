@@ -1,53 +1,9 @@
-var crawlData = require('./service/crawlData');
+let url = 'https://images-na.ssl-images-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_UY1200_CR88,0,630,1200_AL_.jpg';
 
-crawlData.buildMovieOverview(1);
+let pattern = /(https?:\/\/images-na\.ssl-images-amazon\.com\/images\/M\/.+@\._V1_UY\d{1,5}_CR\d{1,4},0,)\d{1,4}(,\d{1,5}_AL_\.jpg)/;
+let newPoster = url.replace(pattern, '$1800$2');
 
+let matches = url.match(pattern);
 
-
-
-// var _ = require('lodash');
-// var arrOne = [
-//     {
-//         id: 1,
-//         name: 'Testing Name 1'
-//     },
-//     {
-//         id: 2,
-//         name: 'Testing Name 2'
-//     },
-//     {
-//         id: 3,
-//         name: 'Testing Name 3'
-//     },
-//     {
-//         id: 4,
-//         name: 'Testing Name 4'
-//     },
-//     { id: 5 }
-// ];
-// var arrTwo = [
-//     { id: 3 },
-//     { id: 4, name: 'Testing 4', version: 1 },
-//     { id: 5, name: 'Testing 5' },
-//     { id: 6, name: 'Testing 6' },
-//     { id: 7, name: 'Testing 7' }
-// ];
-
-// var objOne = {
-//     id: 1,
-//     name: 'Name One',
-//     version: 1
-// }
-
-// var objTwo = {
-//     id: 1,
-//     version: 2 
-// }
-
-// var final = _.assign(objOne, objTwo);
-// console.log(final);
-// // var finalArr = _.forEach(arrOne, (one) => {
-// //     return one.id * 10;
-// // });
-
-// // console.log(finalArr);
+let result = url.replace(pattern, '$1800$2');
+console.log(result);

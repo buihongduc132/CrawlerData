@@ -23,8 +23,8 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                 var ue_mid = "A1EVAM02EL8SFB"; 
                 var ue_sn = "www.imdb.com";  
                 var ue_furl = "fls-na.amazon.com";
-                var ue_sid = "783-6867686-5203475";
-                var ue_id = "11534VWPMYC7SBKFQ788";
+                var ue_sid = "752-3657459-7084657";
+                var ue_id = "0B720P3EKG5KWED8WN8W";
                 (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
                 if (!('CS' in window)) { window.CS = {}; }
                     window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0025316%2F%3Fref_%3Dadv_li_tt";
@@ -45,7 +45,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/safari-favicon-517611381._CB526647668_.svg" mask rel="icon" sizes="any">
         <link rel="icon" type="image/ico" href="http://ia.media-imdb.com/images/G/01/imdb/images/favicon-2165806970._CB282921871_.ico" />
         <meta name="theme-color" content="#000000" />
-        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB526649049_.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB526660098_.ico" />
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-4151659188._CB526896755_.png" rel="apple-touch-icon"> 
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-76x76-53536248._CB526893050_.png" rel="apple-touch-icon" sizes="76x76"> 
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-120x120-2442878471._CB526671435_.png" rel="apple-touch-icon" sizes="120x120"> 
@@ -70,10 +70,10 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <meta name="description" content="Directed by Frank Capra.  With Clark Gable, Claudette Colbert, Walter Connolly, Roscoe Karns. A spoiled heiress running away from her family is helped by a man who is actually a reporter in need of a story." />
         <meta property="og:description" content="Directed by Frank Capra.  With Clark Gable, Claudette Colbert, Walter Connolly, Roscoe Karns. A spoiled heiress running away from her family is helped by a man who is actually a reporter in need of a story." />
         <meta name="keywords" content="Reviews, Showtimes, DVDs, Photos, Message Boards, User Ratings, Synopsis, Trailers, Credits" />
-        <meta name="request_id" content="11534VWPMYC7SBKFQ788" />
+        <meta name="request_id" content="0B720P3EKG5KWED8WN8W" />
         
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<!-- h=ics-1a-c3-2xl-0732c742.us-east-1 -->
+<!-- h=ics-1a-c3-2xl-5c44cfa9.us-east-1 -->
 
             <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/title-flat-v2-2242457037._CB526892456_.css" />
         <noscript>
@@ -91,21 +91,21 @@ var imdbads = imdbads || {}; imdbads.cmd = imdbads.cmd || [];
 !function a(b,c,d){function e(g,h){if(!c[g]){if(!b[g]){var i="function"==typeof require&&require;if(!h&&i)return i(g,!0);if(f)return f(g,!0);var j=new Error("Cannot find module '"+g+"'");throw j.code="MODULE_NOT_FOUND",j}var k=c[g]={exports:{}};b[g][0].call(k.exports,function(a){var c=b[g][1][a];return e(c?c:a)},k,k.exports,a,b,c,d)}return c[g].exports}for(var f="function"==typeof require&&require,g=0;g<d.length;g++)e(d[g]);return e}({1:[function(a,b,c){"use strict";a(2)},{2:2}],2:[function(a,b,c){"use strict";!function(){var a,b,c=function(a){return"[object Array]"===Object.prototype.toString.call(a)},d=function(a,b){for(var c=0;c<a.length;c++)c in a&&b.call(null,a[c],c)},e=[],f=!1,g=!1,h=function(){var a=[],b=[],c={};return d(e,function(e){var f="";d(e.dartsite.split("/"),function(b){""!==b&&(b in c||(c[b]=a.length,a.push(b)),f+="/"+c[b])}),b.push(f)}),{iu_parts:a,enc_prev_ius:b}},i=function(){var a=[];return d(e,function(b){var c=[];d(b.sizes,function(a){c.push(a.join("x"))}),a.push(c.join("|"))}),a},j=function(){var a=[];return d(e,function(b){a.push(k(b.targeting))}),a.join("|")},k=function(a,b){var c,d=[];for(var e in a){c=[];for(var f=0;f<a[e].length;f++)c.push(encodeURIComponent(a[e][f]));b?d.push(e+"="+encodeURIComponent(c.join(","))):d.push(e+"="+c.join(","))}return d.join("&")},l=function(){var a=+new Date;g||document.readyState&&"loaded"!==document.readyState||(g=!0,f&&imdbads.cmd.push(function(){for(var b=0;b<e.length;b++)generic.monitoring.record_metric(e[b].name+".fail",csm.duration(a))}))};window.tinygpt={define_slot:function(a,b,c,d){e.push({dartsite:a.replace(/\/$/,""),sizes:b,name:c,targeting:d})},set_targeting:function(b){a=b},callback:function(a){for(var c,d,f={},g=+new Date,h=0;h<e.length;h++)c=e[h].dartsite,d=e[h].name,a[h][c]?f[d]=a[h][c]:window.console&&console.error&&console.error("Unable to correlate GPT response for "+d);imdbads.cmd.push(function(){for(var a=0;a<e.length;a++)ad_utils.slot_events.trigger(e[a].name,"request",{timestamp:b}),ad_utils.slot_events.trigger(e[a].name,"tagdeliver",{timestamp:g});ad_utils.gpt.handle_response(f)})},send:function(){var d,g,m=[],n=function(a,b){c(b)&&(b=b.join(",")),b&&m.push(a+"="+encodeURIComponent(""+b))};if(0===e.length)return void tinygpt.callback({});n("gdfp_req","1"),n("correlator",Math.floor(4503599627370496*Math.random())),n("output","json_html"),n("callback","tinygpt.callback"),n("impl","fifs"),n("json_a","1");var o=h();n("iu_parts",o.iu_parts),n("enc_prev_ius",o.enc_prev_ius),n("prev_iu_szs",i()),n("prev_scp",j()),n("cust_params",k(a,!0)),d=document.createElement("script"),g=document.getElementsByTagName("script")[0],d.async=!0,d.type="text/javascript",d.src="http://pubads.g.doubleclick.net/gampad/ads?"+m.join("&"),d.id="tinygpt",d.onload=d.onerror=d.onreadystatechange=l,f=!0,g.parentNode.insertBefore(d,g),b=+new Date}}}()},{}]},{},[1]);</script>
 <script>
 tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
-[[728,90],[1008,150],[1008,200],[1008,30],[970,250],[1008,400],[9,1]],
-'top_ad',
-{
-'p': ['top','t']
-});
-tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
 [[300,250],[300,600],[300,300],[11,1]],
 'top_rhs',
 {
 'p': ['tr']
 });
+tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
+[[728,90],[1008,150],[1008,200],[1008,30],[970,250],[1008,400],[9,1]],
+'top_ad',
+{
+'p': ['top','t']
+});
 tinygpt.set_targeting({
 'tt' : ['f'],
 'fv' : ['1'],
-'ab' : ['e'],
+'ab' : ['b'],
 'coo' : ['us'],
 'b' : ['t250','31dom'],
 'c' : ['0'],
@@ -113,8 +113,8 @@ tinygpt.set_targeting({
 'g' : ['brc','co','ro'],
 'md' : ['tt0025316'],
 'id' : ['tt0025316'],
-'bpx' : ['2'],
-'u': ['532688327702'],
+'bpx' : ['1'],
+'u': ['476507106355'],
 'oe': ['utf-8']
 });
 tinygpt.send();
@@ -169,29 +169,29 @@ generic.monitoring.set_forester_info("title");
 generic.monitoring.set_twilight_info(
 "title",
 "VN",
-"fd0a8f7967d3775a26f22d780ca04521ff593dbb",
-"2016-10-30T21%3A47%3A30GMT",
+"625c9ac3870e93c5b20c967b51b96be9db366ffa",
+"2016-10-30T22%3A44%3A29GMT",
 "http://s.media-imdb.com/twilight/?",
 "consumer");
 generic.send_csm_head_metrics && generic.send_csm_head_metrics();
 generic.monitoring.start_timing("page_load");
-generic.seconds_to_midnight = 33150;
-generic.days_to_midnight = 0.3836805522441864;
-ad_utils.set_slots_on_page({ 'injected_billboard':1, 'injected_navstrip':1, 'bottom_ad':1, 'top_ad':1, 'navboard':1, 'btf_rhs2':1, 'top_rhs':1, 'rhs_cornerstone':1 });
+generic.seconds_to_midnight = 29731;
+generic.days_to_midnight = 0.3441087901592255;
+ad_utils.set_slots_on_page({ 'injected_billboard':1, 'injected_navstrip':1, 'bottom_ad':1, 'navboard':1, 'top_ad':1, 'top_rhs':1, 'btf_rhs2':1, 'rhs_cornerstone':1 });
 custom.full_page.data_url = "http://ia.media-imdb.com/images/G/01/imdbads/js/graffiti_data-846702029._CB526886387_.js";
 consoleLog('advertising initialized','ads');
 },"ads js missing, skipping ads setup.");
 var _gaq = _gaq || [];
-_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'e']);
+_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'b']);
 </script>
 <script>
 doWithAds(function(){
-ad_utils.register_punt_ad("top_ad","728","90"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QlemsLZwp4HpXNhObFJHl0wAAAFYF4_N_wEAAADKATS10UQ/https://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm?extid=DMU_house_sea_feg_app1_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_app1&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_3291902110201\"></a></div><script>setTimeout(function(){!function(a,e,t){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;e.ad={aid:\"4342920890301\",cid:\"3291902110201\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:e.ad.aid,creativeId:e.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3894462\"};try{t&&t.ad_utils&&t.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return e.getElementById(a)},p=function(a,e,t){a.href=e,a.target=t?\"_blank\":\"_top\"},l=function(a,e){return a.className.match(new RegExp(\"(\\\\s|^)\"+e+\"(\\\\s|$)\"))},f=function(a,e){l(a,e)||(a.className+=\" \"+e)},u=function(a,e){if(l(a,e)){var t=new RegExp(\"(\\\\s|^)\"+e+\"(\\\\s|$)\");a.className=a.className.replace(t,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-Fall-Apparel-ycNJu._V278602021_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&p(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_app1&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1475190498000 --\>\n <div id=\"top_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IEN_Cdfo60kdh7jUYb5rgF0AAAFYF4_OKAEAAADKhE9-wg&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
+ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Ql_xysiRZGIA6H9W3wgD5BEAAAFYF8P7xwEAAADKAa8rf1s/https://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm?extid=DMU_house_sea_feg_app1_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_app1&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_4613279210001\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,o=!1;if(!c){var i=a;try{for(;i!=i.parent;){if(!i.parent.document)throw new Error(\"cross-domain exception\");i=i.parent}}catch(r){}try{o=i.SFClient?i.SFClient.isOnAmazon():n.test(i.location.host)}catch(r){}}var s=!c&&!o;t.ad={aid:\"4342920890301\",cid:\"4613279210001\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3894448\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},p=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/300x250-fall-intl-2oXoo._V278603411_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&p(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&l(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_app1&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1475190498000 --\>\n <div id=\"top_rhs_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IJmkY328-kzuu5m8iFYzVA8AAAFYF8P7-AEAAADK-pElzg&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
 }, "ad_utils not defined, skipping punt ad data setup.");
 </script>
 <script>
 doWithAds(function(){
-ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QrYjwZf5Iyf2GfJrSI3zyDwAAAFYF4_N_AEAAADKARgqs8w/https://www.eastdane.com/shoes-boots/br/v=1/19217.htm?extid=DMU_house_sea_feg_boot_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_boot&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_8010591980201\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,o=!1;if(!c){var i=a;try{for(;i!=i.parent;){if(!i.parent.document)throw new Error(\"cross-domain exception\");i=i.parent}}catch(r){}try{o=i.SFClient?i.SFClient.isOnAmazon():n.test(i.location.host)}catch(r){}}var s=!c&&!o;t.ad={aid:\"5087796830501\",cid:\"8010591980201\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709395\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/FallBoots-300x250-GDekr._V279226794_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&l(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_boot&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811823000 --\>\n <div id=\"top_rhs_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=INayHK6w-UO4lBWVBi-_6JUAAAFYF4_OMAEAAADKkO-pZA&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
+ad_utils.register_punt_ad("top_ad","728","90"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QnoCzWs83MUvuivljKfn-EMAAAFYF8P7yQEAAADKAXwZpuM/https://www.shopbop.com/whats-new-clothing-jackets-coats/br/v=1/2534374302090402.htm?extid=DMU_house_sea_weg_wints_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_6874631680401\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"6874631680401\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414115\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},p=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-winter--iyt8t._V528286691_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&p(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701770000 --\>\n <div id=\"top_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=II_Q6yMClU9ZkmGBobYvMAMAAAFYF8P78gEAAADKqua6Xg&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
 }, "ad_utils not defined, skipping punt ad data setup.");
 </script>
 <script>doWithAds(function() { ad_utils.ads_header.done(); });</script>
@@ -253,8 +253,8 @@ doWithAds(function(){
 ad_utils.register_ad('top_ad');
 });
 </script>
-<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=728x90,1008x150,1008x200,1008x30,970x250,1008x400,9x1;p=top;p=t;g=brc;g=co;g=ro;tt=f;coo=us;b=t250;b=31dom;fv=1;id=tt0025316;ab=e;bpx=2;md=tt0025316;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=532688327702;ord=532688327702?" id="top_ad" name="top_ad" class="yesScript" width="0" height="0" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3De%26bpx%3D2%26md%3Dtt0025316%26c%3D0&tile=0&c=532688327702" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3De%26bpx%3D2%26md%3Dtt0025316%26c%3D0&tile=0&c=532688327702" border="0" alt="advertisement" /> </a> </noscript>
+<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=728x90,1008x150,1008x200,1008x30,970x250,1008x400,9x1;p=top;p=t;g=brc;g=co;g=ro;tt=f;coo=us;b=t250;b=31dom;fv=1;id=tt0025316;ab=b;bpx=1;md=tt0025316;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=476507106355;ord=476507106355?" id="top_ad" name="top_ad" class="yesScript" width="0" height="0" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3Db%26bpx%3D1%26md%3Dtt0025316%26c%3D0&tile=0&c=476507106355" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3Db%26bpx%3D1%26md%3Dtt0025316%26c%3D0&tile=0&c=476507106355" border="0" alt="advertisement" /> </a> </noscript>
 </div>
 <div id="top_ad_reflow_helper"></div>
 <script>
@@ -459,19 +459,19 @@ title="Home" >IMDb</a>
 <a href="/news/ni60416786/?ref_=nv_nw_tn_1"
 > 'Inferno' Has a Meltdown, 'Madea' is #1 Again & 'Doctor Strange' Opens with $86M Overseas
 </a><br />
-                        <span class="time">5 hours ago</span>
+                        <span class="time">6 hours ago</span>
                 </li>
                 <li itemprop="headline">
 <a href="/news/ni60416582/?ref_=nv_nw_tn_2"
 > ‘Doctor Strange’ Debuts to Magical $86 Million Internationally
 </a><br />
-                        <span class="time">6 hours ago</span>
+                        <span class="time">7 hours ago</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni60417287/?ref_=nv_nw_tn_3"
-> PopPolitics: Al Jean on Why ‘The Simpsons’ Is Taking on Trump (Listen)
+<a href="/news/ni60417334/?ref_=nv_nw_tn_3"
+> 7 Eye-Popping ‘Carrie’ Facts as Classic Horror Film Turns 40 (Photos)
 </a><br />
-                        <span class="time">9 minutes ago</span>
+                        <span class="time">22 minutes ago</span>
                 </li>
     </ul>
                     </div>
@@ -592,13 +592,13 @@ imageUrl : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu
         </li>
         <li class="social">
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYuJG_OJ8NdRCqsIgbkkySuGFnxx4hM6vpk29zsRFIUgagcccvKD9sCwzxGTF0W4wu7BOgFklAU%0D%0Ah4z80ZWj-Ck3wtHe3BdNj6m4hY7TzTSiYbjUGDzhBXqFysIBi3lQ5V7yJ0eut_8KVa1Yb8hXalKb%0D%0AdA8PC396pnN1R6_5USXkH1RIYL68m1SVVWd159QjJszcU5QcDpRaHRbqbpRZ2pcOPQ%0D%0A&ref_=tt_nv_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYmIOQqtodLUy5Qtw6oTMWRlnaMsBD8WZbX-upQ1JYNoPHlY4KVIjok-vBNebdDKlqbxsjEkS9N%0D%0AIue2W0Q2QaU616OvIKpTlKBgKd4DZ9JgCNehRrJ6j_REU5wecZoC7ca1ItlF09UwpbmuQYNlPW1P%0D%0A3kbyNySDJVk8wW_gSLZ5u2TAFPVLYkxQnShxcl0ZpKje3e1DR8pTZs2tRAY-3yQaSQ%0D%0A&ref_=tt_nv_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYgCJ7-2Lwh-F0ewEV7EeMCKjLF3yOubtEkSaThiw3_M6VC0hXR81yPM7lP54lPj7QzepVz_hNc%0D%0A3mg5Mz4RNwAnUC4fRSnkU-bFhbCuBxRXQ4pVsG0boo4qxRI42GPrE620KIA7kaMBQY7LOYzTwCSH%0D%0Ay9WxFXn5z33jP9KpflLXRLm-W60H7UZvdIBIwFA6eeb3OVfTXTYdc2XzO_7nHp9wJQ%0D%0A&ref_=tt_nv_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYj9dlnNTLCdAkfuop7BbVb_mILCmTHwuhN-zauBruCEtDeiJS7DTIAmxLkyJwlfrEEg9f40N7f%0D%0Apy7PhE-V_1sEzuo93tJNcgPAeokjbCsYwhm409D1NbqFubS5Lj_RpRdcxEzm43-kq3y7GOwu-I9e%0D%0ATEzPa_6trxLrhSm4hox7SVEnEN1ZV1MfDr5vohiLwEijVauPrDg7RauQrSNg08R_Jw%0D%0A&ref_=tt_nv_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYuaTS9xUlnC7TcexIz3caApBY-0n-nwz12QJq5MnP4PIgYiWDpqsZ3KjDatVeLUDqgfnkIreH2%0D%0AvjB3P2od-SIoG5NtH5jzC-cddzCQnkVwvZs-JJj9NR7o2QmqEigDi7hpyLVi7PvvITA-VpeiP8HW%0D%0ADU6rn57Ig7hlJLHMFpBb39RrYNxBIGTxN3Nm2diF0EWa8w5PIRpagqnmeO8fy1hnKQ%0D%0A&ref_=tt_nv_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYov1SiCyvri47yiR2ZyO04okaraB2UuJA5o_sbQA9oJU3YHSLHbHUizi8H9TOfol9yX4r2x-3P%0D%0AysMV_-KdQ5I05e16NmttlIEfVwYQLgidwxIPEjxyZxc6V9dkF1CTWzXhtGmj4e4SSeliy4mhweKN%0D%0AH2QcqNui_tYIZma4Ln-_bIoI_c3zD6CCi0Qwz4ufWeOTDMYt__4ECvkZvTKFtGEyaw%0D%0A&ref_=tt_nv_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
         </li>
@@ -609,7 +609,7 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
 
             <li class="css_nav_menu no_arrow" id="navUserMenu">
             <p class="navCategory singleLine">
-                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.7/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6IjRiYjAiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vIn0&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler" class="signin-button">
+                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.7/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6ImRmMzUiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vIn0&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler" class="signin-button">
                 <span class="facebook-logo"></span>
                 <span class="signin-facebook-text">Sign in with Facebook</span></a>
                 <a href="https://www.imdb.com/registration/signin?u=/title/tt0025316/%3Fref_%3Dadv_li_tt&ref_=nv_usr_lgin_1"
@@ -626,7 +626,7 @@ rel="login" class="signin-other-options-text" id="nblogin" >Other Sign in option
 	
 	<!-- begin injectable INJECTED_NAVSTRIP -->
 <div id="injected_navstrip_wrapper" class="injected_slot">
-<iframe id="injected_navstrip" name="injected_navstrip" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=532688327702;ord=532688327702?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="injected_navstrip" name="injected_navstrip" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=476507106355;ord=476507106355?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('injected_navstrip');
@@ -646,7 +646,7 @@ ad_utils.inject_ad.register('injected_navstrip');
 	
 	<!-- begin injectable INJECTED_BILLBOARD -->
 <div id="injected_billboard_wrapper" class="injected_slot">
-<iframe id="injected_billboard" name="injected_billboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=532688327702;ord=532688327702?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="injected_billboard" name="injected_billboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=476507106355;ord=476507106355?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('injected_billboard');
@@ -672,7 +672,7 @@ ad_utils.inject_ad.register('injected_billboard');
 	
 	<!-- begin injectable NAVBOARD -->
 <div id="navboard_wrapper" class="injected_slot">
-<iframe id="navboard" name="navboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=532688327702;ord=532688327702?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="navboard" name="navboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=476507106355;ord=476507106355?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('navboard');
@@ -801,7 +801,7 @@ class="quicklink" >IMDbPro</a>
             </div>
         </div>
     </div>
-    <input type="hidden" name="49e6c" value="4bb0">
+    <input type="hidden" name="49e6c" value="df35">
 </div>
         </div>
 
@@ -934,9 +934,9 @@ class="quicklink" >Soundtracks</a>                </div>
     <div class="ratings_wrapper">
         <div class="imdbRating" itemtype="http://schema.org/AggregateRating" itemscope="" itemprop="aggregateRating">
                 <div class="ratingValue">
-<strong title="8.2 based on 66,288 user ratings"><span itemprop="ratingValue">8.2</span></strong><span class="grey">/</span><span class="grey" itemprop="bestRating">10</span>                </div>
+<strong title="8.2 based on 66,289 user ratings"><span itemprop="ratingValue">8.2</span></strong><span class="grey">/</span><span class="grey" itemprop="bestRating">10</span>                </div>
                 <a href="/title/tt0025316/ratings?ref_=tt_ov_rt"
-><span class="small" itemprop="ratingCount">66,288</span></a>
+><span class="small" itemprop="ratingCount">66,289</span></a>
                     <div class="hiddenImportant">
                             <span itemprop="reviewCount">237 user</span>
                             <span itemprop="reviewCount">124 critic</span>
@@ -1152,8 +1152,8 @@ doWithAds(function(){
 ad_utils.register_ad('top_rhs');
 });
 </script>
-<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=300x250,300x600,300x300,11x1;p=tr;g=brc;g=co;g=ro;tt=f;coo=us;b=t250;b=31dom;fv=1;id=tt0025316;ab=e;bpx=2;md=tt0025316;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=532688327702;ord=532688327702?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-original-width="300" data-original-height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3De%26bpx%3D2%26md%3Dtt0025316%26c%3D0&tile=1&c=532688327702" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3De%26bpx%3D2%26md%3Dtt0025316%26c%3D0&tile=1&c=532688327702" border="0" alt="advertisement" /> </a> </noscript>
+<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=300x250,300x600,300x300,11x1;p=tr;g=brc;g=co;g=ro;tt=f;coo=us;b=t250;b=31dom;fv=1;id=tt0025316;ab=b;bpx=1;md=tt0025316;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=476507106355;ord=476507106355?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-original-width="300" data-original-height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3Db%26bpx%3D1%26md%3Dtt0025316%26c%3D0&tile=1&c=476507106355" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dbrc%26g%3Dco%26g%3Dro%26tt%3Df%26coo%3Dus%26b%3Dt250%26b%3D31dom%26fv%3D1%26id%3Dtt0025316%26ab%3Db%26bpx%3D1%26md%3Dtt0025316%26c%3D0&tile=1&c=476507106355" border="0" alt="advertisement" /> </a> </noscript>
 </div>
 <div id="top_rhs_reflow_helper"></div>
 <div id="top_rhs_after" class="after_ad" style="visibility:hidden;">
@@ -1204,7 +1204,7 @@ ad_utils.gpt.render_ad('top_rhs');
     
 
     <div class="ab_ninja">
-<span class="widget_header"> <span class="oneline"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=11534VWPMYC7SBKFQ788&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ecwoctpks_hd" > <h3>IMDb Picks: October</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=11534VWPMYC7SBKFQ788&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ecwoctpks_i_1" > <img itemprop="image" class="pri_image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BODk0NzkyOTAyNF5BMl5BanBnXkFtZTgwNDg2NjMzMDI@._CR82,281,1093,819_UX614_UY460._SY230_SX307_AL_.jpg" data-src-x2="https://images-na.ssl-images-amazon.com/images/M/MV5BODk0NzkyOTAyNF5BMl5BanBnXkFtZTgwNDg2NjMzMDI@._CR82,281,1093,819_UX614_UY460._SY230_SX307_AL_UY460_UX614_AL_.jpg" /> </a> <div class="widget_caption caption_overlay"> <div class="primary"> <div class="onoverflow"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=11534VWPMYC7SBKFQ788&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ecwoctpks_cap_pri_1" > "The Walking Dead" </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Of course the return of "<a href="/title/tt1520211/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=11534VWPMYC7SBKFQ788&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ecwoctpks_lk1">The Walking Dead</a>" is on our radar this month. See which other movies and TV shows we're excited about in <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=11534VWPMYC7SBKFQ788&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ecwoctpks_lk2">IMDb Picks</a>.</p> <p class="seemore"><a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=11534VWPMYC7SBKFQ788&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ecwoctpks_sm" class="position_bottom supplemental" >Visit IMDb Picks</a></p>    </div>
+<span class="widget_header"> <span class="oneline"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0B720P3EKG5KWED8WN8W&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ftv_rhs_hd" > <h3>Fall TV Guide</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0B720P3EKG5KWED8WN8W&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ftv_rhs_i_1" > <img itemprop="image" class="pri_image" title="Justin Hartley and Chrissy Metz in This Is Us (2016)" alt="Justin Hartley and Chrissy Metz in This Is Us (2016)" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNTI2MzM0NzQ5MV5BMl5BanBnXkFtZTgwMDc4MjUxMDI@._V1_SY230_CR19,0,307,230_AL_.jpg" data-src-x2="https://images-na.ssl-images-amazon.com/images/M/MV5BNTI2MzM0NzQ5MV5BMl5BanBnXkFtZTgwMDc4MjUxMDI@._V1_SY230_CR19,0,307,230_AL_UY460_UX614_AL_.jpg" /> </a> <div class="widget_caption caption_overlay"> <div class="primary"> <div class="onoverflow"> <a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0B720P3EKG5KWED8WN8W&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ftv_rhs_cap_pri_1" > "This Is Us" </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Find out everything you need to stay up to date with the upcoming season in our Fall TV Guide!</p> <p class="seemore"><a href="/tv/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2649272642&pf_rd_r=0B720P3EKG5KWED8WN8W&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0025316&ref_=tt_ftv_rhs_sm" class="position_bottom supplemental" >Visit the Fall TV Guide</a></p>    </div>
     
 
                         
@@ -1612,29 +1612,29 @@ itemprop='url'>View more styles</a>
     <h3>User Polls</h3>
     <ul>
         <li>
-<a href="/poll/uJUYBoHkZH8/?ref_=tt_po_i1"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTU1MzY1ODIyNV5BMl5BanBnXkFtZTcwNDU4NTE3Mg@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/uJUYBoHkZH8/?ref_=tt_po_q1"
->Proposals of a Different Kind</a>
-        <li>
-<a href="/poll/zjHSaT7VExI/?ref_=tt_po_i2"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYWQwOWVkMGItMDU2Yy00YjIzLWJkMjEtNmVkZjE3MjMwYzEzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/zjHSaT7VExI/?ref_=tt_po_q2"
->Best &quot;Best Picture&quot; - 1929 - 2009</a>
-        <li>
-<a href="/poll/VYlVbHuW5J8/?ref_=tt_po_i3"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczOTQ1MTQ4MF5BMl5BanBnXkFtZTcwODI2MDk4OQ@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/VYlVbHuW5J8/?ref_=tt_po_q3"
->Best Picture Romances</a>
-        <li>
-<a href="/poll/lEhmdxXkz_c/?ref_=tt_po_i4"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTYxNDA3MDQwNl5BMl5BanBnXkFtZTcwNTU4Mzc1Nw@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/lEhmdxXkz_c/?ref_=tt_po_q4"
->Most Glaring Omission From Empire's The 301 Greatest Movies of All Time</a>
-        <li>
-<a href="/poll/WwHC_NpVtvA/?ref_=tt_po_i5"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMDgwZmRiMDEtZDIxNi00NTIzLWFjYTAtYTZjYmRjMTNhNWNlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/WwHC_NpVtvA/?ref_=tt_po_q5"
+<a href="/poll/WwHC_NpVtvA/?ref_=tt_po_i1"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMDgwZmRiMDEtZDIxNi00NTIzLWFjYTAtYTZjYmRjMTNhNWNlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/WwHC_NpVtvA/?ref_=tt_po_q1"
 >Sacrebleu! Films whose French titles are better ...</a>
         <li>
-<a href="/poll/ux1SreoB9hc/?ref_=tt_po_i6"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczOTQ1MTQ4MF5BMl5BanBnXkFtZTcwODI2MDk4OQ@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/ux1SreoB9hc/?ref_=tt_po_q6"
+<a href="/poll/UhrlBLJ5svs/?ref_=tt_po_i2"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczOTQ1MTQ4MF5BMl5BanBnXkFtZTcwODI2MDk4OQ@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/UhrlBLJ5svs/?ref_=tt_po_q2"
+>Films Which Have Received the &quot;Big Five Academy Awards&quot;</a>
+        <li>
+<a href="/poll/XTEgMsMxA1Q/?ref_=tt_po_i3"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNjAyMzc4MTIyMV5BMl5BanBnXkFtZTgwMjM5MTM4MTE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/XTEgMsMxA1Q/?ref_=tt_po_q3"
+>Oh! What a &quot;Night&quot;! Which is your favorite?</a>
+        <li>
+<a href="/poll/ux1SreoB9hc/?ref_=tt_po_i4"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczOTQ1MTQ4MF5BMl5BanBnXkFtZTcwODI2MDk4OQ@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/ux1SreoB9hc/?ref_=tt_po_q4"
 >Movies That Won Both Leading Acting Categories</a>
+        <li>
+<a href="/poll/w_hyqY-eUyw/?ref_=tt_po_i5"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYWQwOWVkMGItMDU2Yy00YjIzLWJkMjEtNmVkZjE3MjMwYzEzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/w_hyqY-eUyw/?ref_=tt_po_q5"
+>Best &quot;Best Picture&quot; 1928 - 1939</a>
+        <li>
+<a href="/poll/zjHSaT7VExI/?ref_=tt_po_i6"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYWQwOWVkMGItMDU2Yy00YjIzLWJkMjEtNmVkZjE3MjMwYzEzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/zjHSaT7VExI/?ref_=tt_po_q6"
+>Best &quot;Best Picture&quot; - 1929 - 2009</a>
     </ul>
     <div class="see-more"><a href="/poll/?ref_=tt_po_sm"
 >See more polls &raquo;</a></div>
@@ -1682,7 +1682,7 @@ ad_utils.register_ad('btf_rhs2');
 <div id="btf_rhs2_reflow_helper"></div>
 <script>
 doWithAds(function(){
-ad_utils.inject_serverside_ad('btf_rhs2', '<script>document.defaultAd = {h:250,w:300}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QnasWNto-OCYpt6xfMJSFrIAAAFYF4_N_QEAAADKAWZIUas/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_7883433740601\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"7883433740601\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709298\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/FallBags-300x250-2ExP5._V279228229_.jpg\",x=m(\"staticImage\");v&&(x.src=h+v,w.style.display=\"block\");var y;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"btf_rhs2_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IOM2S4i3SUyevDaFshKlG2AAAAFYF4_ONgEAAADKzjeUrw\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
+ad_utils.inject_serverside_ad('btf_rhs2', '<script>document.defaultAd = {h:250,w:300}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Qt5M20hwxJFMmCo1xiwCtzMAAAFYF8P7yAEAAADKAQV9GU8/https://www.eastdane.com/shoes-boots/br/v=1/19217.htm?extid=DMU_house_sea_feg_boot_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_boot&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1362657770901\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,o=!1;if(!c){var i=a;try{for(;i!=i.parent;){if(!i.parent.document)throw new Error(\"cross-domain exception\");i=i.parent}}catch(r){}try{o=i.SFClient?i.SFClient.isOnAmazon():n.test(i.location.host)}catch(r){}}var s=!c&&!o;t.ad={aid:\"5087796830501\",cid:\"1362657770901\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709394\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/FallBoots-300x250-International-HUNUH._V279226873_.jpg\",I=m(\"staticImage\");v&&(I.src=h+v,w.style.display=\"block\");var y;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_boot&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"btf_rhs2_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IBLOONLnZEc1ggwBWfFvxMEAAAFYF8P78gEAAADK_ybQnQ\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
 },"unable to inject serverside ad");
 </script>
 	
@@ -1877,7 +1877,7 @@ class="btn-full" >See more awards</a>&nbsp;&raquo;    </span>
                 <meta itemprop="duration" content="T2M31S" />
 
 <a href="/video/imdb/vi3410886681?ref_=tt_pv_vi_aiv_1"
-title="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..." alt="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..." class="video-modal" data-video="vi3410886681" data-context="imdb" data-rid="11534VWPMYC7SBKFQ788" widget-context="titleMaindetails" itemprop="url" ><img height="105" width="139" alt="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..." title="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..."src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/no-video-slate-856072904._CB526676956_.png"class="loadlate hidden video" loadlate="http://ia.media-imdb.com/images/M/MV5BMTc1NTEzMjI5MF5BMl5BanBnXkFtZTgwMTM4ODYzMzE@._V1_SP229,229,0,C,0,0,0_CR45,62,139,105_PIimdb-blackband-204-14,TopLeft,0,0_PIimdb-blackband-204-28,BottomLeft,0,1_CR0,0,139,105_PIimdb-bluebutton-big,BottomRight,-1,-1_ZATrailer,2,76,16,137,verdenab,8,255,255,255,1_ZAon%2520IMDb,2,1,14,137,verdenab,7,255,255,255,1_ZA02:31,103,1,14,36,verdenab,7,255,255,255,1_.jpg" itemprop='image' viconst="vi3410886681" /></a>            </span>
+title="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..." alt="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..." class="video-modal" data-video="vi3410886681" data-context="imdb" data-rid="0B720P3EKG5KWED8WN8W" widget-context="titleMaindetails" itemprop="url" ><img height="105" width="139" alt="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..." title="It Happened One Night -- A spoiled heiress, running away from her family, is helped by a man who's actually a reporter looking for a story. But then he falls for her..."src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/no-video-slate-856072904._CB526676956_.png"class="loadlate hidden video" loadlate="http://ia.media-imdb.com/images/M/MV5BMTc1NTEzMjI5MF5BMl5BanBnXkFtZTgwMTM4ODYzMzE@._V1_SP229,229,0,C,0,0,0_CR45,62,139,105_PIimdb-blackband-204-14,TopLeft,0,0_PIimdb-blackband-204-28,BottomLeft,0,1_CR0,0,139,105_PIimdb-bluebutton-big,BottomRight,-1,-1_ZATrailer,2,76,16,137,verdenab,8,255,255,255,1_ZAon%2520IMDb,2,1,14,137,verdenab,7,255,255,255,1_ZA02:31,103,1,14,36,verdenab,7,255,255,255,1_.jpg" itemprop='image' viconst="vi3410886681" /></a>            </span>
     </div>
                 </div>
                 <div id="combined-photos">
@@ -1886,10 +1886,10 @@ title="It Happened One Night -- A spoiled heiress, running away from her family,
                 
 <a href="/title/tt0025316/mediaviewer/rm4104506880?context=default&ref_=tt_pv_md_1"
 itemprop='thumbnailUrl'><img height="105" width="105" alt="It Happened One Night (1934)" title="It Happened One Night (1934)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1MDcxODkyMF5BMl5BanBnXkFtZTgwNTQwNTQ3MTE@._V1_UY105_CR12,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0025316/mediaviewer/rm446601216?context=default&ref_=tt_pv_md_2"
-itemprop='thumbnailUrl'><img height="105" width="105" alt=""It Happened One Night," Clark Gable and Claudette Colbert. 1934 Columbia" title=""It Happened One Night," Clark Gable and Claudette Colbert. 1934 Columbia"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzMjU5NTgxMl5BMl5BanBnXkFtZTYwNjIzNTI2._V1_UY105_CR20,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0025316/mediaviewer/rm1453234176?context=default&ref_=tt_pv_md_3"
+<a href="/title/tt0025316/mediaviewer/rm1453234176?context=default&ref_=tt_pv_md_2"
 itemprop='thumbnailUrl'><img height="105" width="105" alt=""It Happened One Night," Clark Gable and Claudette Colbert. 1934 Columbia" title=""It Happened One Night," Clark Gable and Claudette Colbert. 1934 Columbia"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTI1NzU1NTE5M15BMl5BanBnXkFtZTYwMjM0NTI2._V1_UY105_CR22,0,105,105_AL_.jpg" itemprop='image' /></a>                
+<a href="/title/tt0025316/mediaviewer/rm446601216?context=default&ref_=tt_pv_md_3"
+itemprop='thumbnailUrl'><img height="105" width="105" alt=""It Happened One Night," Clark Gable and Claudette Colbert. 1934 Columbia" title=""It Happened One Night," Clark Gable and Claudette Colbert. 1934 Columbia"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTgzMjU5NTgxMl5BMl5BanBnXkFtZTYwNjIzNTI2._V1_UY105_CR20,0,105,105_AL_.jpg" itemprop='image' /></a>                
 <a href="/title/tt0025316/mediaviewer/rm916035584?context=default&ref_=tt_pv_md_4"
 itemprop='thumbnailUrl'><img height="105" width="105" alt="Clark Gable, Claudette Colbert, IT HAPPENED ONE NIGHT, Columbia, 1934, **I.V." title="Clark Gable, Claudette Colbert, IT HAPPENED ONE NIGHT, Columbia, 1934, **I.V."src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTM3ODI0MDUwM15BMl5BanBnXkFtZTYwOTg0MjI2._V1_UY105_CR14,0,105,105_AL_.jpg" itemprop='image' /></a>    </div>
                 </div>
@@ -2185,7 +2185,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Clark Gable, Claudett
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -2225,7 +2225,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Clark Gable, Claudett
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0031679|imdb|8.2|8.2|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.2/10 (78,669 votes) - click stars to rate" >
+title="Users rated this 8.2/10 (78,672 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 114.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -2317,7 +2317,7 @@ Claude Rains</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -2357,7 +2357,7 @@ Claude Rains</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0033870|imdb|8.1|8.1|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.1/10 (115,358 votes) - click stars to rate" >
+title="Users rated this 8.1/10 (115,360 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 113.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -2449,7 +2449,7 @@ Gladys George</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -2487,7 +2487,7 @@ Gladys George</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0042192|imdb|8.3|8.3|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (84,437 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (84,438 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -2579,7 +2579,7 @@ George Sanders</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -2620,7 +2620,7 @@ George Sanders</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0032976|imdb|8.2|8.2|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.2/10 (89,068 votes) - click stars to rate" >
+title="Users rated this 8.2/10 (89,072 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 114.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -2712,7 +2712,7 @@ George Sanders</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -2752,7 +2752,7 @@ George Sanders</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0036775|imdb|8.4|8.4|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.4/10 (99,724 votes) - click stars to rate" >
+title="Users rated this 8.4/10 (99,725 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 117.6px">&nbsp;</span>
 <span class="rating-stars">
@@ -2844,7 +2844,7 @@ Edward G. Robinson</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -2885,7 +2885,7 @@ Edward G. Robinson</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0031381|imdb|8.2|8.2|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.2/10 (218,968 votes) - click stars to rate" >
+title="Users rated this 8.2/10 (218,971 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 114.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -2980,7 +2980,7 @@ Thomas Mitchell</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -3020,7 +3020,7 @@ Thomas Mitchell</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0032551|imdb|8.1|8.1|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.1/10 (64,405 votes) - click stars to rate" >
+title="Users rated this 8.1/10 (64,406 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 113.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -3112,7 +3112,7 @@ John Carradine</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -3153,7 +3153,7 @@ John Carradine</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0053604|imdb|8.3|8.3|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (111,614 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (111,617 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -3245,7 +3245,7 @@ Fred MacMurray</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -3377,7 +3377,7 @@ Myrna Loy</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -3509,7 +3509,7 @@ Margaret Livingston</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -3550,7 +3550,7 @@ Margaret Livingston</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0040897|imdb|8.3|8.3|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (80,723 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (80,724 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -3642,7 +3642,7 @@ Tim Holt</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="4bb0">
+             <input type="hidden" name="49e6c" value="df35">
        </div>
        
        <div class="rec_details">
@@ -3683,7 +3683,7 @@ Tim Holt</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0052311|imdb|8.1|8.1|p13nsims-title|tt0025316|title|main" data-ga-identifier=""
-title="Users rated this 8.1/10 (74,241 votes) - click stars to rate" >
+title="Users rated this 8.1/10 (74,242 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 113.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -4266,47 +4266,34 @@ rel="login">Edit</a>
         <h2>Did You Know?</h2>
     <div id="trivia" class="txt-block">
         <h4>Trivia</h4>
-The first film to clinch both the Best Actor and Best Actress Oscars. This has only happened 6 times since: in 1975 when <a href="/name/nm0000197?ref_=tt_trv_trv">Jack Nicholson</a> and <a href="/name/nm0001221?ref_=tt_trv_trv">Louise Fletcher</a> both won for <a href="/title/tt0073486?ref_=tt_trv_trv">One Flew Over the Cuckoo's Nest</a> (1975), in 1976 when <a href="/name/nm0002075?ref_=tt_trv_trv">Peter Finch</a> and <a href="/name/nm0001159?ref_=tt_trv_trv">Faye Dunaway</a> both won for _Network_, in 1978 when <a href="/name/nm0000685?ref_=tt_trv_trv">Jon Voight</a> and <a href="/name/nm0000404?ref_=tt_trv_trv">Jane Fonda</a> both won for <a href="/title/tt0077362?ref_=tt_trv_trv">Coming Home</a> (1978), in 1981 when <a href="/name/nm0000020?ref_=tt_trv_trv">Henry Fonda</a> and <a href="/name/nm0000031?ref_=tt_trv_trv">Katharine Hepburn</a> both won for <a href="/title/tt0082846?ref_=tt_trv_trv">On Golden Pond</a> (1981), in 1991 when <a href="/name/nm0000164?ref_=tt_trv_trv">Anthony Hopkins</a> and <a href="/name/nm0000149?ref_=tt_trv_trv">Jodie Foster</a> both won for <a href="/title/tt0102926?ref_=tt_trv_trv">The Silence of the Lambs</a> (1991) and in 1997 when <a href="/name/nm0000197?ref_=tt_trv_trv">Jack Nicholson</a> and <a href="/name/nm0000166?ref_=tt_trv_trv">Helen Hunt</a> both won for <a href="/title/tt0119822?ref_=tt_trv_trv">As Good as It Gets</a> (1997).        <a href="trivia?ref_=tt_trv_trv"
+<a href="/name/nm0000909?ref_=tt_trv_trv">Constance Bennett</a> and <a href="/name/nm0001485?ref_=tt_trv_trv">Myrna Loy</a>, among others, turned the script down. <a href="/name/nm0001055?ref_=tt_trv_trv">Claudette Colbert</a> only accepted because Capra promised he would double her salary and she would be done in four weeks. She disliked the film so much, however, that she did not even attend the Oscars; when she won for Best Actress, she was found about to leave on a trip and was rushed to the ceremony, where she made her acceptance speech in a traveling suit.        <a href="trivia?ref_=tt_trv_trv"
 class="nobr" >See more</a>  &raquo;
     </div>
                 <hr />
      <div id="goofs"  class="txt-block">
         <h4>Goofs</h4>
-After Peter gets the car from the &quot;thief&quot;, Peter's luggage is in the back seat. As he stops the car to pick up Ellie the luggage falls to the floor. When Ellie steps into the car the luggage is back on the seat. When the car pulls away, the luggage disappears again.        <a href="trivia?tab=gf&ref_=tt_trv_gf"
+When Peter is held up by the train at a crossing, the caboose is plainly marked SP (Southern Pacific). But he is supposed to be in New Jersey. Although there might be SP box cars in New Jersey, there would not be an SP caboose.        <a href="trivia?tab=gf&ref_=tt_trv_gf"
 class="nobr" >See more</a>  &raquo;
     </div>   
                 <hr />
     <div id="quotes" class="text-block">
         <h4>Quotes</h4>
-[<span class="fine">Peter watches as Ellie dunks her donut</span>]
+<a href="/name/nm0001055/?ref_=tt_trv_qu"
+><span class="character">Ellie Andrews</span></a>:
+I'll stop a car, and I won't use my thumb!
 <br /><a href="/name/nm0000022/?ref_=tt_trv_qu"
 ><span class="character">Peter Warne</span></a>:
-Say, where'd you learn to dunk? In finishing school?
+What're you gonna do?
 <br /><a href="/name/nm0001055/?ref_=tt_trv_qu"
 ><span class="character">Ellie Andrews</span></a>:
-Aw, now don't you start telling me I shouldn't dunk.
-<br /><a href="/name/nm0000022/?ref_=tt_trv_qu"
-><span class="character">Peter Warne</span></a>:
-Of course you shouldn't - you don't know how to do it. Dunking's an art. Don't let it soak so long. A dip and
-<br />[<span class="fine">he stuffs the donut in his mouth</span>]
-<br /><a href="/name/nm0000022/?ref_=tt_trv_qu"
-><span class="character">Peter Warne</span></a>:
-plop, in your mouth. You let it hang there too long, it'll get soft and fall off. It's all a matter of timing. Aw, I oughta write a book about it.
-<br /><a href="/name/nm0001055/?ref_=tt_trv_qu"
-><span class="character">Ellie Andrews</span></a>:
-[<span class="fine">laughs</span>]
-Thanks, professor.
-<br /><a href="/name/nm0000022/?ref_=tt_trv_qu"
-><span class="character">Peter Warne</span></a>:
-Just goes to show you - twenty ...
-<br />                [...]<br />
-        <a href="trivia?tab=qt&ref_=tt_trv_qu"
+It's a system all my own.
+<br />        <a href="trivia?tab=qt&ref_=tt_trv_qu"
 class="nobr" >See more</a> &raquo;
     </div>
                 <hr />
     <div id="connections" class="text-block">
         <h4>Connections</h4>
-        Featured in <a href="/title/tt0901487?ref_=tt_trv_cnn">The Good, the Bad, the Weird</a>&nbsp;(2008)
+        Referenced in <a href="/title/tt1038422?ref_=tt_trv_cnn">Family Ties: It Happened One Night</a>&nbsp;(1988)
 
 
         <a href="trivia?tab=mc&ref_=tt_trv_cnn"
@@ -4315,11 +4302,10 @@ class="nobr" >See more</a> &raquo;
                 <hr />
     <div id="soundtracks" class="text-block">
         <h4>Soundtracks</h4>
-Bridal Chorus (Here Comes the Bride)<br />
-(1850) (uncredited)<br />
-from "Lohengrin"<br />
-Written by <a href="/name/nm0003471?ref_=tt_trv_snd">Richard Wagner</a><br />
-Sung by an offscreen chorus during the wedding<br />        <a href="soundtrack?ref_=tt_trv_snd"
+Who's Afraid of the Big Bad Wolf<br />
+(uncredited)<br />
+Written by <a href="/name/nm0161430?ref_=tt_trv_snd">Frank Churchill</a> and <a href="/name/nm0740056?ref_=tt_trv_snd">Ann Ronell</a><br />
+Sung a cappella by <a href="/name/nm0000022?ref_=tt_trv_snd">Clark Gable</a><br />        <a href="soundtrack?ref_=tt_trv_snd"
 class="nobr" >See more</a> &raquo;
     </div>
     </div>
@@ -4366,18 +4352,18 @@ class="nobr" >See more</a> &raquo;
             <div class="faq" >
                     <div class="odd">
                     <b>Q:</b>
-<a href="/title/tt0025316/faq?ref_=tt_faq_1#.2.1.6"
-> What is the song everyone was singing on the bus?</a>
+<a href="/title/tt0025316/faq?ref_=tt_faq_1#.2.1.8"
+> What did Ellie mean when she said, 'Very clever, these Armenians'?</a>
                     </div>
                     <div class="even">
                     <b>Q:</b>
-<a href="/title/tt0025316/faq?ref_=tt_faq_2#.2.1.9"
-> How does the movie end?</a>
+<a href="/title/tt0025316/faq?ref_=tt_faq_2#.2.1.3"
+> "It Happened One Night" sounds a lot like "Roman Holiday." Is it a remake or a rip-off?</a>
                     </div>
                     <div class="odd">
                     <b>Q:</b>
-<a href="/title/tt0025316/faq?ref_=tt_faq_3#.2.1.5"
-> How could Ellie run away with Peter at the end of the movie if she was already married to King?</a>
+<a href="/title/tt0025316/faq?ref_=tt_faq_3#.2.1.10"
+> What is an autogyro?</a>
                     </div>
             </div>
         
@@ -4420,34 +4406,34 @@ class="nobr" >See more</a>
     <div class="article" id="titleUserReviewsTeaser">
         <h2>User Reviews</h2>
         <div class="user-comments">
-                    <div class="tinystarbar" title="9/10">
-                        <div style="width: 90px;">&nbsp;</div>
+                    <div class="tinystarbar" title="10/10">
+                        <div style="width: 100px;">&nbsp;</div>
                     </div>
                 <span itemprop="review" itemscope itemtype="http://schema.org/Review">  
-                    <strong itemprop="name">Introducing... the Screwball Comedy</strong>
+                    <strong itemprop="name">The Hero As Comedian</strong>
                     <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                         <meta itemprop="worstRating" content = "1" />
-                        <meta itemprop="ratingValue" content="9" />
+                        <meta itemprop="ratingValue" content="10" />
                         <meta itemprop="bestRating" content="10" />
                     </span>
                     <div class="comment-meta">
-                        23 June 2002 | by <a href="/user/ur0767434/?ref_=tt_urv"
-><span itemprop="author">comix-man (comix_man_1@yahoo.com)</span></a>
-                        <meta itemprop="datePublished" content="2002-06-23" />
-                              (USA)
-                        &ndash; <a href="/user/ur0767434/comments?ref_=tt_urv"
+                        24 December 2005 | by <a href="/user/ur2483625/?ref_=tt_urv"
+><span itemprop="author">bkoganbing</span></a>
+                        <meta itemprop="datePublished" content="2005-12-24" />
+                              (Buffalo, New York)
+                        &ndash; <a href="/user/ur2483625/comments?ref_=tt_urv"
 >See all my reviews</a>
                     </div>
                     <div>
-                        <p itemprop="reviewBody"> Frank Capra's idealistic outlook on life is evident in his films. From It Happened One Night to It's a Wonderful Life, Capra has always had a tendency to let the little guy rise above it all and beat the odds. It is no small wonder that Capra enjoyed much of his success during the Depression, when movies were used to truly pull an audience out of the despair of the 1930s into a world where anything can happen, where being a nice person is all you need to succeed. While the fact that the country was in the middle of the Depression was not completely ignored, an overly optimistic view on life was taken to counter the despair of everyday life.<br /><br />There were many points in It Happened One Night where the true state of the country was indicated. Homeless people hitching rides on trains seemed perfectly normal. Rather than regard them with apprehension and pity, you smile and wave at them. Another example is the hostile reaction proprietor Zeke's wife had to the fact that her husband had let Peter and Ellie stay the night with promises of being paid. Upon seeing Peter and Ellie's car missing, they rush to the cottage to see if Peter and Ellie are still there. They cannot afford freeloaders.<br /><br />In another scene, a child's mother has passed out from hunger, because they have no money to buy food. Peter and Ellie have nearly depleted their funds, but decide that the mother and child need money more than they do and give some to them.<br /><br />Despite these instances, the movie was altogether cheerful in its depiction of the world. In the throes of the stock market crash, this movie signaled the birth of the screwball comedy. At a time when the country needed release, they could find that release and laughter in movies like It Happened One Night. Audiences were amused by scenes in the film, such as the segment in which Peter teaches Ellie how to dunk a donut. Or, when forced to share a room, Peter puts a blanket between his and Ellie's beds and calls it the `wall of Jericho,' which is revisited when the walls of Jericho come tumbling down after Peter and Ellie's marriage. Probably the most famous scene in the film is the hitchhiking sequence, which features Peter standing by the roadside trying to thumb a ride unsuccessfully, finally giving up after more than a dozen cars speed by without paying any heed to his attempts. After he gives up, beaten, Ellie simply lifts her skirt above her knee. The first car that passes stops, as we see extreme close-ups of a foot slamming down on the brakes and a hand applying the hand brake.<br /><br />A master in his profession, Capra left his mark on the films he directed. With an almost childlike cheerfulness, he maintains a sense of dignity and class. The viewer is left with a feeling of hope for humankind, even if its only that a person's ideals could be used to make such a film. Capra's films are still regarded as masterpieces. It Happened One Night arguably remains to this day unparalleled in screwball comedies. It was one of many movies made during the Depression, a sometimes sad and even lonely time in our history. It gave its audience a chance to escape and forget their troubles for a few moments in time.<br /><br />9 out of 10 stars</p>
+                        <p itemprop="reviewBody">In his autobiography, The Name's Above the Title, Frank Capra said that until It Happened One Night drama had four stock characters, the hero, the heroine, the comedian, and the villain.<br /><br />What Capra did and you might notice he followed that in a whole lot of his films, the characters of hero and comedian are combined. Not completely though because Claudette Colbert gets a few laughs herself, especially with that system all her own. But in doing what he did for Clark Gable's character, Capra created a whole new type of screen comedy, the classic screwball comedy and It Happened One Night surely set the mold.<br /><br />Capra's autobiography told the story of the making of It Happened One Night which in itself could be a movie. Capra worked for Columbia Pictures which at that time was a minor studio, along the lines of Republic or Monogram. As Capra tells it he had a vision about this story that Samuel Hopkins Adams wrote and persuaded Harry Cohn to buy it. <br /><br />Capra also had a stroke of good luck. Adolph Zukor at Paramount and Louis B. Mayer at MGM were looking to punish a couple of recalcitrant stars, Claudette Colbert and Clark Gable. The idea was to show these two what it was like to work in a small budget studio without all the perks of Paramount and MGM. In fact the description of Gable arriving to work at Columbia that first day, drunk as a skunk, is priceless. Capra dressed him down good and said that to his credit Gable came to work afterwards and couldn't have been more cooperative.<br /><br />At some point Harry Cohn at Columbia was convinced that maybe Capra had something. He had in fact delivered for Columbia the previous year with Lady for a Day. So the publicity drums were beat.<br /><br />The rest as they say is history. It Happened One Night won the first Oscar grand slam, Best Picture, Best Director, Best Actor, and Best Actress. It won the first Oscars Columbia Pictures ever got and lifted it right into the ranks of the major studios. And it set the standard for screwball comedy.<br /><br />The film could never have gotten off the ground were it not for the chemistry of Gable and Colbert. They're together for most of the film so if it doesn't click between the two of them, you have people walking out in droves. Colbert had already played a wide variety of parts at Paramount, ranging from Poppaea and Cleopatra to comedies with Maurice Chevalier like The Big Pond. Gable had played a whole lot of tough guys on both sides of the law at MGM. It Happened One Night showed he had some real comic talent, a flair MGM exploited in his roles from then on in. <br /><br />Gable and Colbert did only one other film together, Boom Town for MGM. You can't get much more different than those two films. Boom Town had a huge MGM budget, Spencer Tracy and Hedy Lamarr as well, and a lot of special effects involving the oil industry and hazards therein. It's also a great film, but it's not a classic like It Happened One Night.</p>
                     </div>
                 </span>
                 <hr />
-                <div class="yn" id="ynd_12290">
-                    73 of 78 people found this review helpful.&nbsp;
+                <div class="yn" id="ynd_1246535">
+                    62 of 68 people found this review helpful.&nbsp;
                     Was this review helpful to you?
-                    <button class="btn small" value="Yes" name="ynb_12290_yes" onclick="CS.TMD.user_review_vote(12290, 'tt0025316', 'yes');" >Yes</button>
-                    <button class="btn small" value="No" name="ynb_12290_no" onclick="CS.TMD.user_review_vote(12290, 'tt0025316', 'no');" >No</button>
+                    <button class="btn small" value="Yes" name="ynb_1246535_yes" onclick="CS.TMD.user_review_vote(1246535, 'tt0025316', 'yes');" >Yes</button>
+                    <button class="btn small" value="No" name="ynb_1246535_no" onclick="CS.TMD.user_review_vote(1246535, 'tt0025316', 'no');" >No</button>
                 </div>
             <div class="see-more">
                 
@@ -4729,7 +4715,7 @@ ad_utils.register_ad('bottom_ad');
 <div id="bottom_ad_reflow_helper"></div>
 <script>
 doWithAds(function(){
-ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w:728}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Qkz8ycAVw7fPfM7E5W08tWEAAAFYF4_N_QEAAADKAYqQsv4/https://www.shopbop.com/bags/br/v=1/2534374302024667.htm?extid=DMU_house_sea_weg_bags_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_bags&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_6326540530401\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"6326540530401\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414079\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},p=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-bags--bDQ4n._V528285786_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&p(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_bags&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701769000 --\>\n <div id=\"bottom_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IN46ScTdV0KujZFz0IR0AVYAAAFYF4_OPgEAAADKxE9MoQ\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
+ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w:728}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Qr_V0piCY4zt0FresGMf0ZcAAAFYF8P7yAEAAADKAXrypqE/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1577657950101\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"1577657950101\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709306\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),v=m(\"ad\");v.target=\"_blank\";var w=\"shazam/FallBags-728x90-International-vijOF._V279228374_.jpg\",I=m(\"staticImage\");w&&(I.src=h+w,v.style.display=\"block\");var y;c&&f(v,\"aap\"),(c||s)&&(v.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"bottom_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IOxXInv3bktIpKZxIBi4oMwAAAFYF8P78wEAAADKjYDwHw\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
 },"unable to inject serverside ad");
 </script>
 	
@@ -4739,13 +4725,13 @@ ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w
                 <div class="col outside">
     <h3>IMDb Everywhere</h3>
     <div class="app-links">
-    <a href="/offsite/?page-action=ft_app_apple&token=BCYjhNFjT20DAnUp8Oq3nCRzroOpVbGYBcwBmBowoA8wyi-b3m8dsz7LKv-lUGC91cUm038YAfea%0D%0AdAla7jsw3Z6i_soIsu9S7A2R5EX3cZca1ev3WGiEa7oCIYBUishZA2awGz5_ClkR845JABiTGFPs%0D%0AAK1yKR4ynnYZ3SGS3iOLJ3w22tbTZRxY7vLKInRKl03Wt5ipalIWnNgZu6uKS04gD4uVLX6mC2_R%0D%0ARrqPDO4eEuY%0D%0A&ref_=ft_app_apple"
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYp7xkVI1tmhTPICuI5D0AEVzawRtbSx8NGG2uKE0fFYVoS7RYYEOUYkB-I1J1hM1w8xCnhg6uL%0D%0Agh5mHMJGkq-7-LOPsxI-Dp_yCMxsf5GKJxkfQKSywhqaeWOjr6KgBs1MQH4q3OwIotSSdnKX2Xba%0D%0AV0aiRoBVwrm7UHlN8GGHN8GV4DakAZhiNZESiRhIHDcRHBIT2__FB3w4ij8TBNUf7OQhVPT_eJs4%0D%0AzzDXPwbclUU%0D%0A&ref_=ft_app_apple"
 title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_google&token=BCYhlvBi1bGTkhsAW71ZAJsLBL206KQexmK1n5mcvpYjcZ5j73dRwfvLfipzHbsVeDdQDaeh42Py%0D%0AIkMRulXnIjBuEVouw7DuldPZXwbIIp6MDnK5ykTa2aMHRuN-VrggvtXx9Cm9ynMRwXDNttWzFJvy%0D%0Ac_CCluGkcPNJrp5V72JmWL9zcBIewM2Ff9e1cpfNFaMm7lA3gGp0PX0hIJZ6MkYggj9Ju-Ukn50D%0D%0AvnhkQKFI9hE%0D%0A&ref_=ft_app_google"
+    <a href="/offsite/?page-action=ft_app_google&token=BCYjbQKdDvW-OpoiC__BXqFptnj36C-_exqEyKsBQiihW-4f0F0B0MQBYs3Z7Tw2oqX1V4BEDzJl%0D%0A5R3zzHneFDKfb7unOlb-z3Y16QuKCHg1AyBOxl5GCX1Law3yIFKER9fYW8iX6zYotBfyZv_1g97P%0D%0AhNmZ7JpW5bA67mOtB56wOiC2dFUQKt1ssP8KyTpIhI7jF6mpN4hfpkWEX5cSf27309yGVdOg5oZD%0D%0Ac-CLj57GUnQ%0D%0A&ref_=ft_app_google"
 title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_amazon&token=BCYvU9JVDLld4ZWV3FKSKlXCk52_qH1mrBES6anaVBS3p0DpAkhg3pIASI1XsjjGVyx4doZJIiH2%0D%0AHOttz1wsSLCylzwv7lOlgMeKgR17PibvBPuv51dkzR_h03_-gLVl7o0-hO5I7aKhzTDeEPYSUU2x%0D%0AxahqOaBnZ5a7o6PlS5g9D90JA24LcCNF9MH4RCpLXNC2DtNrCK0_xTpdDJhiBWed2m-ut3H_Vkj4%0D%0AMvBW2MLJ5LW4inpdGgDHNK3rastYuvYs5q1L3h_TfPxEiGF2LgRhkX1CbFxl2VNBV16AgWlXXlXY%0D%0Ah7FHkgCULmUdqwZrMvS7IDdgawTnYGviXcI7hKccfU966YbfA_ac49T1r-r8-XiPQmMr-dW_j0E3%0D%0A0X0WJDDC7IumajOAhOEVwypx9uMouHCZmlx9WctysT5K9AKknxY%0D%0A&ref_=ft_app_amazon"
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYk-3b3AGJcgLKh6YjMntAz267OMRlcW4NC2_3k75eAcIk9ToMDXxBEUcYV7AysxBhGF8GRXBuy%0D%0AC97nxjkoFu2y2A3f3ibry8ujgSYhzu4jVV6wJMN7CxIf7tFR_ClXovbI8_y1N0JCcaxwb4LRMI_Z%0D%0A4hHUDpXVxugSCxIJJAAr4j0htNngYCPlr_jo1FwHDlKta7hkXY4cy8bkrdR70Dlhs_jv6KfyyIUS%0D%0AaVY3UTlagH8ePvo2beLNIbOr8Yy3ZHMUqlhD_JelValPZDKYEfjdCFHXZYg5WEv2hF8kqi4TguEv%0D%0A800iAem1VUVQ2QZFa0rH43R3dnRRdud8mpl5ZcALhh7C5PTtDh87rC5m23xFCSEQMbEQ6qU5n1ue%0D%0AkfP2EjWPG0C-gjRBLtZadVaJKLNHHNn6IizM-F-OaggnDcbHOfs%0D%0A&ref_=ft_app_amazon"
 title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
 </a>
     </div>
@@ -4761,13 +4747,13 @@ class="touchlink" >IMDb Mobile site</a>
       Follow IMDb on
       <div>
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYu5RGyIg2u0qIaINIWojh8SuGPfHSAiSH6YAmUtoYviVLqaC1gnTlnWHKMfaDc6QoPvr4uSRtG%0D%0AI5FybsThkD050jW9Tr7lhrXLaT8HBuyxdpfOyqpHew3reT5_GzbUo_KeslLgHCC1EUX9yND3gjH6%0D%0AVsilb8AUGrQtDVrf1ldPOBcgjvHb73NCKi_eck6lyTiK6FupBVhdMiIWEx5Ud3UIEQ%0D%0A&ref_=tt_ft_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYmQ4i044IryEzIxveZEeASbiosYX7XXTQkQho5sI-iHxLWcIRTdZ6_lnW-j7GUjUWMhudeLiuH%0D%0A2qv3CRo_3nO4_TLzWOUPCOZpOPdexfceDCJyCaCZmOv2Jwddgx4YQ6-ne-PbJTsXvye_5A3iLPao%0D%0ABT0a5ZYaImOmhHnAg4eXZuawEg6PIGb9aR6lj31rJI8kjy_okE6adOe34xnOKSJUVw%0D%0A&ref_=tt_ft_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYge8AP5F3xH0vbIC-m3GOiNBf1WLzsFBxAJPRf1RCjzdIhqpVe3LlmWdvIy9zfDLpd7R-3lnsT%0D%0A6ebVWJENGJJgEpNIWvF1nRN3BkYoznDRQeLSA8IlWDVDVyAO2E7_w2zvcsKgYlsBgb4lkpqRJyrg%0D%0AarMaEGiBcbn6WqjXBlwPZJgJL0dbz7Q8Y40VK1rVSf-mnIYI2XjFwNFUkGAyAHJt0Q%0D%0A&ref_=tt_ft_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYgh-pMCDvt5a4mlrTWaV0YwqPHB9D2luBGYKzspGgCYdCR4NqqamsvapZH674Mae-OtTEvDqcO%0D%0A3HFHfCEFOmM8_zJr-8JK-PoWoTpdsa2DW1okMLUMCe3SSVRGGeGRX5u02DWKDscdxEQWNEPmoaWb%0D%0AJuapoCJIkNnWqUteKVUilVdB5sy-vK5f2rFNkvhJF4-9qOfgPHqoNLXjcK1OElYcpg%0D%0A&ref_=tt_ft_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYruOUB8v-s8kL8fKwVp2icbshJamkJkC7FVwWWNKhi-ayQRJq_HNW50CUaXJt-dUJC8wIkjFS4%0D%0AywOY4rqS2e-HReOpxVcllOIhisyG2gMLa__5MSOlizS9fU0a3K4uVCbm_lp-Aelxkf3Ep0MIW2Sq%0D%0AzZrUNYm1VMFLOki0NHXEIMGzQUEdQ2JfyAOhiiTcfuy0lr1-dAgKY3LJcYLRI45VTw%0D%0A&ref_=tt_ft_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYna4A6iNK4Oj7iV08zk7-CyJ_hmMHCwqr0CoDOjNHmc45fOU6JPtsp5ZqGFkAyrOeYz557slUc%0D%0AyVjooKUkgsbHnRf9xkyyWZAUECLhgFREok78RP6ZNiXx70qjP4F_AidlndKTatQ8ykdn5RhNnMph%0D%0Ab0QUuwajieFjFcHLmhbci5qgG0Rxt9NSwwqV6FWbTUOkBd6IzrlqFfk3_65F6ZSCrg%0D%0A&ref_=tt_ft_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
       </div>
@@ -4820,10 +4806,10 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
             <ul class="unstyled">
                 <li><a href="http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
 >IMDbPro</a></li>
-                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYuzOW9wXwNItprepUMpBe6Z4ONIsUomt5OYVFi38Mfi_l6jJsYA7cZmdhDKE5WPP8C1Vc_oDbc%0D%0At8uRLz6hohSiJf-7SKMM2akIZZAKlIhpM7f9thdY1uKWPCKSnWjhcEk6-6-oN-Y2b5zC8NKJllKW%0D%0AUEkHMCLtZ3wDsI3hAtzb39lsUhO59aqwbVhhe-6WyeJMRR3Xb67ojoQ2x9GKT2JGKg%0D%0A&ref_=ft_bom"
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYrU7lRwxgL3qlm9EHyoOSNwIE2y4DBeU8J_H3PPGoE2iyYCX-CUAwlgbStQWuhVt_ICCDeHwOC%0D%0Awt0CKmWUNvSIXmVnMtrW258-ntOxKPit3mzX5xanfA_O27gEHtsg3TGIeY2SITjlGU3z8QG0P9M7%0D%0AFgJUv0jn8vrB8tEXqbT4GG23zOFaeLQDV7ygPAWdMJdtO02mLPJ2TvYV0L64353H6w%0D%0A&ref_=ft_bom"
 itemprop='url'>Box Office Mojo</a>
 </li>
-                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYo4tl43B7j7c1Eo19tL642LLOVe9LQmuMnbLXu7hCkhzq282-buT4fEzGzIpGVRr-rp6V0fWwP%0D%0Ar4zFU9J6AHKKRmhwiSIw-Ecohy913IwM9YVGGK_Vcu7LoXTqz7nrh20JA_LY6utGHqT4iT8EsqS7%0D%0Alnaho73b1YyESKt_6uj3zprk14iYkyd9_ONEuXpCKanVtkBMUA89HYciwzDT0IvbQA%0D%0A&ref_=ft_wab"
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYrSffJ-I_lcwiZdWLPJ53G-tmQtzdhqAGjc6fm_L7KiGRIhkSHKDWP3rne8Bl2Uaf7sd-CCXzv%0D%0Az5PpVwZB4H2W_2KVk17H6TOTqovlqZcHsVD7WNty3xk5wdB7-QUhJWJjNXyF9b3MBGQ3jr9UuFKt%0D%0ABsEbPIM8GJndwQpwjq1tDpbGhWArGFw-Opd-TBSZxEmd7l9yBUX00yJInxftPPGBOA%0D%0A&ref_=ft_wab"
 itemprop='url'>Withoutabox</a>
 </li>
                 <li class="spacer"></li>
@@ -4831,7 +4817,7 @@ itemprop='url'>Withoutabox</a>
 >Conditions of Use</a></li>
                 <li><a href="/privacy?ref_=ft_pvc"
 >Privacy Policy</a></li>
-                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYgqgZPz7hnUMod0r0IB7ILB8uciczEVi07lF_WdsRpz_3UizhILTzN3E77w5wNEoKeK07v7j8s%0D%0AYyGSFBbSRxAdSp8zeKMSmuYWYx7wqFSjRdBLkPWz5wZf1Mqs5Ma_i77am4AFT7G-mJbIm6KwBjPE%0D%0A5QVfE1AU7UNhLfB2AB8p7VdgLZpDXitQfduBfncG3UBZeuB6N7knXr_zG81_qhIAOEk-77Ng8E6q%0D%0AwVh7qwAUP-pHfbtPpPiByL550ujvxbMA%0D%0A&ref_=ft_iba"
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYlItSVev959k-tFOz9ZiCAsS2IqAok3-3Ax1e0LOJ5wR-Vh6zYP87-anCQTQsNFtpU7Q_7V8aZ%0D%0A77bREVVei3eb78rveJr6-IYM3-yHRDH98q-FRa3NdjLFDWVTYCA_CYFoOYTwJMZNTumzyivhHc3m%0D%0AZwj6GMsa6EYgAJonhGGZvKQXzcN1hsW0l0EGuUc63toJ8CitBUPNno6ro1Lz7aIq7zc7RF3sAU6x%0D%0AYJJb48beG7B7-oF2rYeJNc4UlqBnn4fm%0D%0A&ref_=ft_iba"
 itemprop='url'>Interest-Based Ads</a>
 </li>
                 <li class="spacer"></li>
@@ -4868,7 +4854,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-aiv&token=BCYmakuwRjmMZnSfi4rMUNU6-r74nVBukdzlsMVzGQ-tfPTv52C88gMFax5gvMik3g0AhaimWctu%0D%0AR7kNeJFkPQBw0RnkgWAAecqGvwruTOqTS-3zCOeUndu8ADkBHhiQx3UopR7-MZ53TCh6Ni89j-k8%0D%0AkaFuJkA21IIcJTtdVNBWAkPVZW1-f-Ad_mDQ-C8g2-zOUy_hf0hPM16YEV0gvwYVa67pIocaoie8%0D%0ASV7CXCq5Iow%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-aiv&token=BCYkj7ik55mItYYOHslXLD5FGFGSx78LaShrqcQ6BrY5VNzeM6CGOdvLcwz18OO_DCTBRx7VQuZV%0D%0AN2AQfRqmWQ7K-dvKTO7FwanDk2UnbnjNuIY94FmYwgWXmjvU81Ze22JaX800VXDyHegp-XjOdKgG%0D%0ABBFgYPO8IAkwImKNj-lQJ4Qa_P1XpZlOXLER_rHQ6qTv94qZODDvJ0NRWTR2u1ALOpgwPDOXbkZv%0D%0AHqfjtdmwlHg%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Video</span><br>
                 <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
             </a>
@@ -4877,7 +4863,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-piv&token=BCYgCHHlyXDSYOEfqZn4RzdtKeEgnUMwEUrPHYB4NtN61VCowiUPflm-3X-fxD8g6WqwsfGfPuRF%0D%0AKlaIRcQr9x1O7W1LsIKZ5IUntxkEavI-oWVLY9hYX-afaT0yAlWoUo3ebOPOTJeli5Q2LLXcxP41%0D%0AYzCFfh3GA7turs3z2Uf1fKKZbZJWuDaAONHZaVv_C4cVEIvOryDznwIK9-VomQbN-229_G30MFjZ%0D%0AGzXzdODowis%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-piv&token=BCYrKkik7VK2yWx436twDopnr6JwQCx-J9j_HnOItS0vLpy10QdojXqa2Md79bzMrl9kxoGP3Dcf%0D%0AY10hGmXx0LWQPDZBApZQYZPGZF0dSeZJvpk-1C7rN_Ixv-fnr_VNQXmekKE6F2Yz8irq8HLj8DyD%0D%0Aq9J0UNyXM3KR-cA8BdIjN742OEPerOw6eYvGQ2vZVS2T2G0ZvkkQ_CzJsegVXypc-zwftbzrKPHj%0D%0AGadYJfmdnNc%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Prime Video</span><br>
                 <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
             </a>
@@ -4886,7 +4872,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-de&token=BCYiCem3pB8QU-BvSkAPQpympCxsCVCCidj2XLHbmqe06ASOMZ9Q4HYbLjtphvIBCel0LTG72WAk%0D%0Aegt3Sy8P1DSBFjDhYtRBK2TVVIEarWgMbnDMqBHt3mYWaoEsrz3jcVjfuGq-hUr_VJE29jZBGGNy%0D%0Atchnsq8X6fqOHLP6VRtpZvnSpS7kTydAP9x92TFE8rDi4LkEhcP8IK_LF-_dK74Q0DhTnKl6Gpfv%0D%0ABcvld_doBnU%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYsTA-6b4RbHDqevMFhpLcKQ8Vz5qU0ZrE2MsptM2MVvaDp40TDUVvBFqHTxadlPnWHxK_dh8PC%0D%0AqfslBrnqYNyXkxawcCHFI53dachNYKuF_dgsOkjvsdQWbbcNwAwT94qMROqmp8LueVAEWvz6i8j0%0D%0A-Jb-qi1-aWocnqa8cyH3So1w1rtiRRgLRQamFyZUAue5jRZm8D7L7LiQaddzuRsQvhI5rHTYZpi9%0D%0ARnUoIBFral0%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4895,7 +4881,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-it&token=BCYo5FmetMO3zHtVU5qbmwKqnr6s8Qqx_C_fYS9gthiqAaA77EyHYgO8B8jlU7iEBiNnv3aYTMCM%0D%0Ag4Fy39nWdXsIzxs_r5yPv6NilTdRyNW5p0FGYZLuekdkxYWZk0V7WYpO2dhrRpN6FnwB5yWvQRvs%0D%0AoQ3GpTbCwkCUe0416OwBxhei_5gLc_plUvFDKVDAsZ7RRb1sEjIfz9XoGheI4o-KmPC-8YMSjong%0D%0AO8rWSQimi9k%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYiINInEMPO-jnIKTN9l5TztciWYZxc3jIz-OohziJr9P-nY5gfQDR1BhsXAZlfGrW8hTxt7Ngx%0D%0A4vRurkj7GkZ39YAnOFB1dOflu2iDX8kkFIsIA4rSMfGD4OUX_3x04AnXPwmq5A4l3IxxccMjdWY0%0D%0AtKGl1e9RND3ZjJP6W8mtivtakSUJbO_ZmAT-STQF9BLokIOEHL6ZuhKdDh_l_Fme31mmjZ6bLW3l%0D%0AUjIRycky4HE%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4904,7 +4890,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYnCOkW1cXDPZmLWLu2ZB2xIUQFWjjY1JAcQWg_pQCZz5pQfj6rplY_MSa9_KR08u5ijAopmc95%0D%0A6WlddL7U4e26KaTJcLpg40TDokC0NltNNNg9-b_i-ikhBElB5Fo_xgrtH6STD58sPhtYWomdkiA0%0D%0AjKUTFqPwQivvVUu4LeXGpa-PY5TwWLvYCEYM8AzyRn1VT-og2j_3m-b8id4rhkXW96COmNIWGZL4%0D%0A9HWw3hl-kqk%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYpQyZ2wx0pBDtFVUbGghIeYN7lAjs2mozC4B02_YI1TAX-Ihvl_Fxe_MAqxH1w5-6DsqLUdTCi%0D%0AkPO42R8MRBgRkcRQ7k0QdAUfTDDA_e7Rbr3KWvVAYCeIQ8QU2BUrq-Zdg6dlUio1_PVEC2DSWuUp%0D%0A6VhIMom7fAawhQKck5LUPeV3_QnWerhxKYg1tpUBNZjbI4Md5fPiUM9G_a5yn6yW2cC9NYeAaVK8%0D%0AWo83lSqDzFY%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon France</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4913,7 +4899,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-in&token=BCYvfODSFaM_dURo7QNlFIDPpBRRBprjb7DdoBy7imelpjnFs78vLqQQdsFfNJoMoi5-Uw_qGDwY%0D%0AT5rejaPbVlEnuaT9Z5JODZ81Nzdu7nalORoL4oYr_xdw9nP4V-5WDpQp3ALJkWh2Hb3SXs0iY0Y_%0D%0An32peWrsBak1bFtvGcyRFq-shu2ZUATDzd_JggnBwplj-7y08BmcaJG7kUZdQHPN8yIx6CfSITfq%0D%0AQd5aXLjuYZ3EYUmiVW0NvopJ83zKzR7T%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYv7XHhXi8F81z-5gv4MxfadEFRc1nGx__dCHQ32Sw9K5csuBFwAyg9FSV1cHYbC-u6zaVgLXJT%0D%0AfNPRI-wZhNDtsyX9N9UW1dYAyygfL4Z1kNwPKfq5rTUdWz99at5HLV5quYeAiZ4-h9gmq4yiHE3z%0D%0AKuaTzUdAmlgYcLopLT-kEveeqwAk92eD_q1gQpVl5qxgqW9U5rbjUcU74ZgkvXnNOa6kU_JNFsju%0D%0AqpMkqw4_p-DAjm1j-zuGOggWI_0BG-ri%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon India</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
             </a>
@@ -4922,7 +4908,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYiHulClo-i0MQjbdg1JsKQ-j2-Z5XpkEbZRiGD5CooSOdz9H1uXmnWFI6WDgDasLuuMoT8NzVv%0D%0AUw8E8K3GyAd1N39xtJCsLMdTlrkeSAwu1uK53eNTu9ReQK30i9qYfUIsQoKeTAWwHuYICJtxmaCu%0D%0Ak2F3CXo7sO7YlPfWYVA-UZQ%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYtU_l1pfT_326rhmawyddt7zHBexEkyYHW1tjsoyOdgrU7QnmvFvLqo9LA2Y1Q3doHG4jF91r7%0D%0ACK9LAWQq2AkmFVpQpHm6jpYLGP_vUsdSZBWlfI3NnpAlF8y7JM4wIE0FKlN4CFa2eXo8Zzp8RzSk%0D%0AcYzkWjGqyo8mJnt8z7cD1n0%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">DPReview</span><br>
                 <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
             </a>
@@ -4931,7 +4917,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYv2tLxO4zDy3cbuyb_G1WRTMQ576pDDVfje5_KG1MqEfRaL63G-uHJFwtq9JLomehc1U6P0Zcx%0D%0APH22DmPPMWZjztTpoIjGDNK8B7Rax3mm4EMGKWhEyfH79XveQ-JZGoIuIe03UFrSH3iPO1cNLWYf%0D%0AGgQNX8Ktq0bGBemDK-SLsmk%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYpl5Kxo_N5L1LUs1aCFIb98cHYQ9ZoCmj8BMskg7liBkHM2VWwMYijhFk0KGl_edhuZ5N-oZ-e%0D%0AjtJVVRwgn7AqFObCbya5fXFZkBw-oxRLM7s6wfFl0TgNbWHhOyxrP6nK7OXhv5NIDNkqiIR1WZzo%0D%0AUBPAHARLOom3OZ75-u2uzlU%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Audible</span><br>
                 <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
             </a>
@@ -5015,13 +5001,13 @@ href="/help/"
                 params_sis3 = [
                     "d=imdb.com",
                     "a1=",
-                    "a2=0101dd2f4f186f43f47d1bb49fd923f067db9fd27662150272a1160ae32f6bc431e7",
+                    "a2=010181b1750b9c49e999e9fa3eefda5d401b16e51872516d4f93bf8c6e195342f922",
                     "pId=tt0025316",
                     "r=1",
                     "rP=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0025316%2F%3Fref_%3Dadv_li_tt",
                     "ex-hargs=v=1.0;c=IMDB;p=tt0025316;t=imdb_title_view;",
                     "encoding=server",
-                    "cb=532688327702"  
+                    "cb=476507106355"  
                 ];
         
             if (document.getElementById('sis_pixel_sitewide')) {
@@ -5062,13 +5048,13 @@ c15:""
 
 <script>
     doWithAds(function(){
-        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=532688327702&ord=532688327702";
+        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=476507106355&ord=476507106355";
     },"unable to request AAN pixel");
 </script>
 
 <!-- end ads footer -->
 
-<div id="servertime" time="305"/>
+<div id="servertime" time="253"/>
 
 
 

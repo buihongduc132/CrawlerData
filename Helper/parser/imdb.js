@@ -4,6 +4,7 @@ var pathToRoot = path.join(__dirname, '../../');
 var moduleLocation = require(path.join(pathToRoot, 'constant/require.json'));
 var commonParser = require(path.join(pathToRoot, moduleLocation.parser.common));
 var url = require(path.join(pathToRoot, moduleLocation.url));
+var config = require(path.join(pathToRoot, moduleLocation.config));
 
 var cheerio = require('cheerio');
 
@@ -81,6 +82,13 @@ module.exports = {
             body: contentBody(data)
         }
 
+        let getWiderPoster = function(posterUrl) {
+            let pattern = /(https?:\/\/images-na\.ssl-images-amazon\.com\/images\/M\/.+@\._V1_UY\d{1,5}_CR\d{1,4},0,)\d{1,4}(,\d{1,5}_AL_\.jpg)/;
+            let newPoster = posterUrl.replace(pattern, `$1${config.page.wordpress.posterWidth}$2`);
+
+            return newPoster;
+        }
+        result.poster = getWiderPoster(result.poster);
         result.postName = getPostName(result.title);
         result.duration = result.duration[0];
         result.intId = getLinkId(result.id);

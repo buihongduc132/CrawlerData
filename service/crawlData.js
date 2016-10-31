@@ -74,7 +74,7 @@ var buildCombinedMovieJson = function (onlyNew = false) {
     });
 }
 
-var buildMovieDetailJson = function () {
+var buildMovieDetailJson = function (onlyNew) {
     var moviesToBuildPromise = [];
     let total;
     let progressBar;
@@ -86,10 +86,14 @@ var buildMovieDetailJson = function () {
     return dataService.getCsvFile(dataLocation.movieExtraInfo).then((result) => {
         let allCsvMovies = result;
 
-
-        filteredCsvMovies = _.reject(result, (movie) => {
-            return movie.gotDetail;
-        });
+        if (onlyNew) {
+            filteredCsvMovies = _.reject(result, (movie) => {
+                return movie.gotDetail;
+            });
+        }
+        else {
+            filteredCsvMovies = allCsvMovies;
+        }
 
         if (!filteredCsvMovies.length) {
             return allCsvMovies;
@@ -107,6 +111,7 @@ var buildMovieDetailJson = function () {
                 progressBar.tick(0.5);
                 let movieDetail = imdbParser.detailToObject(data);
                 movieDetail.description = movie.description || '';
+                movieDetail.EmbedUrl = movie.EmbedUrl || '';
 
                 return movieDetail;
             }).then((movieDetail) => {

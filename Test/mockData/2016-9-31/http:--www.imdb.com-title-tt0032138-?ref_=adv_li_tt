@@ -23,8 +23,8 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
                 var ue_mid = "A1EVAM02EL8SFB"; 
                 var ue_sn = "www.imdb.com";  
                 var ue_furl = "fls-na.amazon.com";
-                var ue_sid = "649-9467229-8136867";
-                var ue_id = "13PFQFRXDF320XYTRF5H";
+                var ue_sid = "927-9489130-5152204";
+                var ue_id = "1WKPYCY17KNQ71BQB0JA";
                 (function(e){var c=e;var a=c.ue||{};a.main_scope="mainscopecsm";a.q=[];a.t0=c.ue_t0||+new Date();a.d=g;function g(h){return +new Date()-(h?0:a.t0)}function d(h){return function(){a.q.push({n:h,a:arguments,t:a.d()})}}function b(m,l,h,j,i){var k={m:m,f:l,l:h,c:""+j,err:i,fromOnError:1,args:arguments};c.ueLogError(k);return false}b.skipTrace=1;e.onerror=b;function f(){c.uex("ld")}if(e.addEventListener){e.addEventListener("load",f,false)}else{if(e.attachEvent){e.attachEvent("onload",f)}}a.tag=d("tag");a.log=d("log");a.reset=d("rst");c.ue_csm=c;c.ue=a;c.ueLogError=d("err");c.ues=d("ues");c.uet=d("uet");c.uex=d("uex");c.uet("ue")})(window);(function(e,d){var a=e.ue||{};function c(g){if(!g){return}var f=d.head||d.getElementsByTagName("head")[0]||d.documentElement,h=d.createElement("script");h.async="async";h.src=g;f.insertBefore(h,f.firstChild)}function b(){var k=e.ue_cdn||"z-ecx.images-amazon.com",g=e.ue_cdns||"images-na.ssl-images-amazon.com",j="/images/G/01/csminstrumentation/",h=e.ue_file||"ue-full-11e51f253e8ad9d145f4ed644b40f692._V1_.js",f,i;if(h.indexOf("NSTRUMENTATION_FIL")>=0){return}if("ue_https" in e){f=e.ue_https}else{f=e.location&&e.location.protocol=="https:"?1:0}i=f?"https://":"http://";i+=f?g:k;i+=j;i+=h;c(i)}if(!e.ue_inline){if(a.loadUEFull){a.loadUEFull()}else{b()}}a.uels=c;e.ue=a})(window,document);
                 if (!('CS' in window)) { window.CS = {}; }
                     window.CS.loginLocation = "https://www.imdb.com/registration/signin?u=%2Ftitle%2Ftt0032138%2F%3Fref_%3Dadv_li_tt";
@@ -45,7 +45,7 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/safari-favicon-517611381._CB526647668_.svg" mask rel="icon" sizes="any">
         <link rel="icon" type="image/ico" href="http://ia.media-imdb.com/images/G/01/imdb/images/favicon-2165806970._CB282921871_.ico" />
         <meta name="theme-color" content="#000000" />
-        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB526649049_.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="http://ia.media-imdb.com/images/G/01/imdb/images/desktop-favicon-2165806970._CB526660098_.ico" />
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-4151659188._CB526896755_.png" rel="apple-touch-icon"> 
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-76x76-53536248._CB526893050_.png" rel="apple-touch-icon" sizes="76x76"> 
         <link href="http://ia.media-imdb.com/images/G/01/imdb/images/mobile/apple-touch-icon-web-120x120-2442878471._CB526671435_.png" rel="apple-touch-icon" sizes="120x120"> 
@@ -70,10 +70,10 @@ xmlns:fb="http://www.facebook.com/2008/fbml">
         <meta name="description" content="Directed by Victor Fleming, George Cukor, Mervyn LeRoy.  With Judy Garland, Frank Morgan, Ray Bolger, Bert Lahr. Dorothy Gale is swept away to a magical land in a tornado and embarks on a quest to see the Wizard who can help her return home." />
         <meta property="og:description" content="Directed by Victor Fleming, George Cukor, Mervyn LeRoy.  With Judy Garland, Frank Morgan, Ray Bolger, Bert Lahr. Dorothy Gale is swept away to a magical land in a tornado and embarks on a quest to see the Wizard who can help her return home." />
         <meta name="keywords" content="Reviews, Showtimes, DVDs, Photos, Message Boards, User Ratings, Synopsis, Trailers, Credits" />
-        <meta name="request_id" content="13PFQFRXDF320XYTRF5H" />
+        <meta name="request_id" content="1WKPYCY17KNQ71BQB0JA" />
         
   <script>(function(t){ (t.events = t.events || {})["csm_head_pre_css"] = new Date().getTime(); })(IMDbTimer);</script>
-<!-- h=ics-1a-c4-2xl-793ce3b6.us-east-1 -->
+<!-- h=ics-1a-c3-2xl-5c44cfa9.us-east-1 -->
 
             <link rel="stylesheet" type="text/css" href="http://ia.media-imdb.com/images/G/01/imdb/css/collections/title-flat-v2-2242457037._CB526892456_.css" />
         <noscript>
@@ -91,21 +91,21 @@ var imdbads = imdbads || {}; imdbads.cmd = imdbads.cmd || [];
 !function a(b,c,d){function e(g,h){if(!c[g]){if(!b[g]){var i="function"==typeof require&&require;if(!h&&i)return i(g,!0);if(f)return f(g,!0);var j=new Error("Cannot find module '"+g+"'");throw j.code="MODULE_NOT_FOUND",j}var k=c[g]={exports:{}};b[g][0].call(k.exports,function(a){var c=b[g][1][a];return e(c?c:a)},k,k.exports,a,b,c,d)}return c[g].exports}for(var f="function"==typeof require&&require,g=0;g<d.length;g++)e(d[g]);return e}({1:[function(a,b,c){"use strict";a(2)},{2:2}],2:[function(a,b,c){"use strict";!function(){var a,b,c=function(a){return"[object Array]"===Object.prototype.toString.call(a)},d=function(a,b){for(var c=0;c<a.length;c++)c in a&&b.call(null,a[c],c)},e=[],f=!1,g=!1,h=function(){var a=[],b=[],c={};return d(e,function(e){var f="";d(e.dartsite.split("/"),function(b){""!==b&&(b in c||(c[b]=a.length,a.push(b)),f+="/"+c[b])}),b.push(f)}),{iu_parts:a,enc_prev_ius:b}},i=function(){var a=[];return d(e,function(b){var c=[];d(b.sizes,function(a){c.push(a.join("x"))}),a.push(c.join("|"))}),a},j=function(){var a=[];return d(e,function(b){a.push(k(b.targeting))}),a.join("|")},k=function(a,b){var c,d=[];for(var e in a){c=[];for(var f=0;f<a[e].length;f++)c.push(encodeURIComponent(a[e][f]));b?d.push(e+"="+encodeURIComponent(c.join(","))):d.push(e+"="+c.join(","))}return d.join("&")},l=function(){var a=+new Date;g||document.readyState&&"loaded"!==document.readyState||(g=!0,f&&imdbads.cmd.push(function(){for(var b=0;b<e.length;b++)generic.monitoring.record_metric(e[b].name+".fail",csm.duration(a))}))};window.tinygpt={define_slot:function(a,b,c,d){e.push({dartsite:a.replace(/\/$/,""),sizes:b,name:c,targeting:d})},set_targeting:function(b){a=b},callback:function(a){for(var c,d,f={},g=+new Date,h=0;h<e.length;h++)c=e[h].dartsite,d=e[h].name,a[h][c]?f[d]=a[h][c]:window.console&&console.error&&console.error("Unable to correlate GPT response for "+d);imdbads.cmd.push(function(){for(var a=0;a<e.length;a++)ad_utils.slot_events.trigger(e[a].name,"request",{timestamp:b}),ad_utils.slot_events.trigger(e[a].name,"tagdeliver",{timestamp:g});ad_utils.gpt.handle_response(f)})},send:function(){var d,g,m=[],n=function(a,b){c(b)&&(b=b.join(",")),b&&m.push(a+"="+encodeURIComponent(""+b))};if(0===e.length)return void tinygpt.callback({});n("gdfp_req","1"),n("correlator",Math.floor(4503599627370496*Math.random())),n("output","json_html"),n("callback","tinygpt.callback"),n("impl","fifs"),n("json_a","1");var o=h();n("iu_parts",o.iu_parts),n("enc_prev_ius",o.enc_prev_ius),n("prev_iu_szs",i()),n("prev_scp",j()),n("cust_params",k(a,!0)),d=document.createElement("script"),g=document.getElementsByTagName("script")[0],d.async=!0,d.type="text/javascript",d.src="http://pubads.g.doubleclick.net/gampad/ads?"+m.join("&"),d.id="tinygpt",d.onload=d.onerror=d.onreadystatechange=l,f=!0,g.parentNode.insertBefore(d,g),b=+new Date}}}()},{}]},{},[1]);</script>
 <script>
 tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
-[[728,90],[1008,150],[1008,200],[1008,30],[970,250],[1008,400],[9,1]],
-'top_ad',
-{
-'p': ['top','t']
-});
-tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
 [[300,250],[300,600],[300,300],[11,1]],
 'top_rhs',
 {
 'p': ['tr']
 });
+tinygpt.define_slot('/4215/imdb2.consumer.title/maindetails',
+[[728,90],[1008,150],[1008,200],[1008,30],[970,250],[1008,400],[9,1]],
+'top_ad',
+{
+'p': ['top','t']
+});
 tinygpt.set_targeting({
 'tt' : ['f'],
 'fv' : ['1'],
-'ab' : ['c'],
+'ab' : ['e'],
 'coo' : ['us'],
 'b' : ['t250'],
 'c' : ['0'],
@@ -114,7 +114,7 @@ tinygpt.set_targeting({
 'md' : ['tt0032138'],
 'id' : ['tt0032138'],
 'bpx' : ['2'],
-'u': ['249402506665'],
+'u': ['070792007910'],
 'oe': ['utf-8']
 });
 tinygpt.send();
@@ -169,29 +169,29 @@ generic.monitoring.set_forester_info("title");
 generic.monitoring.set_twilight_info(
 "title",
 "VN",
-"f4fd78768a7d05842585c647c8b3fadde434464a",
-"2016-10-30T21%3A47%3A46GMT",
+"2095189f682f26d3c88194af022a467e7cb84722",
+"2016-10-30T22%3A44%3A40GMT",
 "http://s.media-imdb.com/twilight/?",
 "consumer");
 generic.send_csm_head_metrics && generic.send_csm_head_metrics();
 generic.monitoring.start_timing("page_load");
-generic.seconds_to_midnight = 33134;
-generic.days_to_midnight = 0.3834953606128693;
-ad_utils.set_slots_on_page({ 'injected_billboard':1, 'injected_navstrip':1, 'bottom_ad':1, 'top_ad':1, 'navboard':1, 'top_rhs':1, 'btf_rhs2':1, 'rhs_cornerstone':1 });
+generic.seconds_to_midnight = 29720;
+generic.days_to_midnight = 0.3439814746379852;
+ad_utils.set_slots_on_page({ 'injected_billboard':1, 'injected_navstrip':1, 'bottom_ad':1, 'navboard':1, 'top_ad':1, 'top_rhs':1, 'btf_rhs2':1, 'rhs_cornerstone':1 });
 custom.full_page.data_url = "http://ia.media-imdb.com/images/G/01/imdbads/js/graffiti_data-846702029._CB526886387_.js";
 consoleLog('advertising initialized','ads');
 },"ads js missing, skipping ads setup.");
 var _gaq = _gaq || [];
-_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'c']);
+_gaq.push(['_setCustomVar', 4, 'ads_abtest_treatment', 'e']);
 </script>
 <script>
 doWithAds(function(){
-ad_utils.register_punt_ad("top_ad","728","90"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Qqd1-_4kKHlfqekbQPJAqzUAAAFYF5AMhwEAAADKAaUFTKI/https://www.eastdane.com/shops-top-sellers/br/v=1/22686.htm?extid=DMU_house_sea_feg_preview_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_preview&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1082092660501\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"1082092660501\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709507\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/FallPreview-728x90-International-FS5Ct._V279270782_.jpg\",I=m(\"staticImage\");v&&(I.src=h+v,w.style.display=\"block\");var y;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_preview&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811823000 --\>\n <div id=\"top_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IDTn4g0jm0GojKyH-l7nqggAAAFYF5AMswEAAADKUMzw7Q&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
+ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QvV6XteagBjaGVI0mb8zl_cAAAFYF8QktgEAAADKAcwtd8U/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_6239626880001\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"6239626880001\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709299\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/FallBags-600x500-International-kauK4._V279228414_.jpg\",I=m(\"staticImage\");v&&(I.src=h+v,w.style.display=\"block\");var y;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),y&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811823000 --\>\n <div id=\"top_rhs_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IPKeELydSUyetNl288vjBe8AAAFYF8Qk6QEAAADKBITnUQ&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
 }, "ad_utils not defined, skipping punt ad data setup.");
 </script>
 <script>
 doWithAds(function(){
-ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QtufkTKxi_V3JCWbBVvUiHwAAAFYF5AMhAEAAADKAc6ccAk/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_2757510820201\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"2757510820201\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709291\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var y=\"shazam/FallBags-300x250-International-myGky._V279227541_.jpg\",v=m(\"staticImage\");y&&(v.src=h+y,w.style.display=\"block\");var I;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),I&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"top_rhs_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IOPVcH-tS07zkbr0arTp4ycAAAFYF5AMsQEAAADK6OX_CA&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
+ad_utils.register_punt_ad("top_ad","728","90"," <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QqJYwThqeYfzs5TCez5tSKAAAAFYF8QkswEAAADKAWj1gDM/https://www.shopbop.com/whats-new-clothing-jackets-coats/br/v=1/2534374302090402.htm?extid=DMU_house_sea_weg_wints_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_6874631680401\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"6874631680401\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414115\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},p=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-winter--iyt8t._V528286691_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&p(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_wints&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701770000 --\>\n <div id=\"top_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IN7jnJYDkEBFgQGhsbCVzRQAAAFYF8Qk2QEAAADKCEGAKQ&pj=[PUNT_ORIGIN]\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n");
 }, "ad_utils not defined, skipping punt ad data setup.");
 </script>
 <script>doWithAds(function() { ad_utils.ads_header.done(); });</script>
@@ -244,8 +244,8 @@ ad_utils.register_punt_ad("top_rhs","300","250"," <!DOCTYPE html><html><body><st
 <script>
 window.generic = window.generic || {};
 generic.alphalfaComponents = {
-"alphalfa-container.html" : "http://ia.media-imdb.com/images/G/01/imdbads/alphalfa-container-253150330._TTD_",
-"js/collections/alphalfa.js" : "http://ia.media-imdb.com/images/G/01/imdbads/js/collections/alphalfa-3292747090._TTD_"
+"alphalfa-container.html" : "http://ia.media-imdb.com/images/G/01/imdbads/alphalfa-container-253150330._CB282938728_.html",
+"js/collections/alphalfa.js" : "http://ia.media-imdb.com/images/G/01/imdbads/js/collections/alphalfa-3292747090._CB526905683_.js"
 };
 </script>
 <script type="text/javascript">
@@ -253,8 +253,8 @@ doWithAds(function(){
 ad_utils.register_ad('top_ad');
 });
 </script>
-<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=728x90,1008x150,1008x200,1008x30,970x250,1008x400,9x1;p=top;p=t;g=ad;g=f;g=fm;g=m;tt=f;coo=us;b=t250;fv=1;id=tt0032138;ab=c;bpx=2;md=tt0032138;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=249402506665;ord=249402506665?" id="top_ad" name="top_ad" class="yesScript" width="0" height="0" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3Dc%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=0&c=249402506665" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3Dc%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=0&c=249402506665" border="0" alt="advertisement" /> </a> </noscript>
+<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=728x90,1008x150,1008x200,1008x30,970x250,1008x400,9x1;p=top;p=t;g=ad;g=f;g=fm;g=m;tt=f;coo=us;b=t250;fv=1;id=tt0032138;ab=e;bpx=2;md=tt0032138;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=070792007910;ord=070792007910?" id="top_ad" name="top_ad" class="yesScript" width="0" height="0" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3De%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=0&c=070792007910" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=728x90|1008x150|1008x200|1008x30|970x250|1008x400|9x1&t=p%3Dtop%26p%3Dt%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3De%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=0&c=070792007910" border="0" alt="advertisement" /> </a> </noscript>
 </div>
 <div id="top_ad_reflow_helper"></div>
 <script>
@@ -459,19 +459,19 @@ title="Home" >IMDb</a>
 <a href="/news/ni60416786/?ref_=nv_nw_tn_1"
 > 'Inferno' Has a Meltdown, 'Madea' is #1 Again & 'Doctor Strange' Opens with $86M Overseas
 </a><br />
-                        <span class="time">5 hours ago</span>
+                        <span class="time">6 hours ago</span>
                 </li>
                 <li itemprop="headline">
 <a href="/news/ni60416582/?ref_=nv_nw_tn_2"
 > ‘Doctor Strange’ Debuts to Magical $86 Million Internationally
 </a><br />
-                        <span class="time">6 hours ago</span>
+                        <span class="time">7 hours ago</span>
                 </li>
                 <li itemprop="headline">
-<a href="/news/ni60417287/?ref_=nv_nw_tn_3"
-> PopPolitics: Al Jean on Why ‘The Simpsons’ Is Taking on Trump (Listen)
+<a href="/news/ni60417334/?ref_=nv_nw_tn_3"
+> 7 Eye-Popping ‘Carrie’ Facts as Classic Horror Film Turns 40 (Photos)
 </a><br />
-                        <span class="time">9 minutes ago</span>
+                        <span class="time">22 minutes ago</span>
                 </li>
     </ul>
                     </div>
@@ -592,13 +592,13 @@ imageUrl : "http://ia.media-imdb.com/images/G/01/imdb/images/navbar/imdbpro_menu
         </li>
         <li class="social">
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYrtLbBMaEGPhZMn3QjJsGYH4SJU5AQ7dMI0kVEXzipQXU05URgde7O-8O3IPSmW_b9zD7YM2UH%0D%0Ak3oyBxMK3-xxocPDJpaW-epTNQu33bt9tRu-69IGlzVczPuCDcd5GdLsBEvFAYAl4aNMH4K9nr_8%0D%0ALLWutZuANTvTxU_El91l3AFPJlwXlLcLWkiy2bbo4cvFIa605SEAN5pAnEP-jeSlew%0D%0A&ref_=tt_nv_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYuVM1a7Swnzi5KtLUIFdzu--MfX2Q4hp6vE8saX9_rxAlftGKYD71sy962wZ501RMeitjDyPdC%0D%0AvJ7bjA6VXp4t5yDyGw4Ow8mvJtDdbcgChX6Y4JxU4fWED-ua4z8sit85ESXaytGY2aE-bS3UMDgd%0D%0AE4i37LpFvcyk-w2YzuNOdK_RoAUKPv7bvuQaJHJ3Zm66ZqKgZw4V_T3XIo7Is9zE-A%0D%0A&ref_=tt_nv_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYgrLgGQ4dAMVvrPA4iDmDwDrAz0ubY5s4SjM72arOor7jT8FXwg7tObQNcuH0rrkX4wwZXUXIT%0D%0A9CelbEgull_ixem5hAOUDXh4gnVoKQHUNlTQEprJ6joSb9GeoIit7W03TYgbMY3-CvQyif99sLJs%0D%0AgNWnnjCOkWUAU8AB2XocAYWuAvVQn_6YeMc9uQC69pClIpqBf3TQ-OuMJpPA5d70Rw%0D%0A&ref_=tt_nv_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYp0OTJwTFNHvMfq6ldU0OfJkk4ZPPUCw75G7Zu7YSv4j8vUAEo4dlYs5iFqxXIlZ7ShLCJOySL%0D%0Alf8s7SfplwTNqUuQgMn_uReGhOUt3lhPGl7a2oIYkBfMwZeTtFdcuFFhWeI20pVjLA4LLMZIBMqx%0D%0AIlX2F-h30e8Mk7a3NDwIDAZgkVVcy1hesoBaryMu7D1FwjF-_NqzrjW7vYw0gGp84A%0D%0A&ref_=tt_nv_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYjOKv8Al48vSeD8bg_JCXFT-ojI1zuoZSaEkz8OmFWZt5Do4XtLTOpUxuo9zQ0C5RGpsXmdkyo%0D%0ArsiUJ2afR9oXtVpnwzbPyTsLm1TGtyEoauTEIM2_4u8Lgf-TW_inp0h3b-ez3k5xVDM3-1QGzXA4%0D%0A7ltYqDDdKswaGgL0A-HV_DGUxpg1PolzeCxEfIwQqdJWq54yAcxscsI7ZJqGVkHhbw%0D%0A&ref_=tt_nv_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYlg8kDpk8c7-tEj_vHOusTcNA8P5e76EBoG7YQJqrgBd85qNVtkJOgkWIAlX5pWxRurQY_Ru-o%0D%0AwLmRyifi7ykLVAook6LcApRICYVbCzLZ1eeUluZ33veczjwhkxqFfVwTgvfjabZAs2axHolwRL2I%0D%0AznQgdjWE0Q3dtZSx1tWS5E7YlqFTABk7Mtkl6dkkLVPU-ONLWPpF0BVLjM4oMYaw7A%0D%0A&ref_=tt_nv_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
         </li>
@@ -609,7 +609,7 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
 
             <li class="css_nav_menu no_arrow" id="navUserMenu">
             <p class="navCategory singleLine">
-                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.7/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6IjZlNzQiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vIn0&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler" class="signin-button">
+                <a id="facebook-signin-link" href="https://graph.facebook.com/v2.7/oauth/authorize?client_id=127059960673829&scope=email%2Cuser_about_me%2Cuser_birthday&state=eyI0OWU2YyI6IjY0ZjUiLCJ1IjoiaHR0cHM6Ly93d3cuaW1kYi5jb20vIn0&redirect_uri=https%3A%2F%2Fwww.imdb.com%2Fregistration%2Ffacebookhandler" class="signin-button">
                 <span class="facebook-logo"></span>
                 <span class="signin-facebook-text">Sign in with Facebook</span></a>
                 <a href="https://www.imdb.com/registration/signin?u=/title/tt0032138/%3Fref_%3Dadv_li_tt&ref_=nv_usr_lgin_1"
@@ -626,7 +626,7 @@ rel="login" class="signin-other-options-text" id="nblogin" >Other Sign in option
 	
 	<!-- begin injectable INJECTED_NAVSTRIP -->
 <div id="injected_navstrip_wrapper" class="injected_slot">
-<iframe id="injected_navstrip" name="injected_navstrip" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=249402506665;ord=249402506665?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="injected_navstrip" name="injected_navstrip" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=070792007910;ord=070792007910?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('injected_navstrip');
@@ -646,7 +646,7 @@ ad_utils.inject_ad.register('injected_navstrip');
 	
 	<!-- begin injectable INJECTED_BILLBOARD -->
 <div id="injected_billboard_wrapper" class="injected_slot">
-<iframe id="injected_billboard" name="injected_billboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=249402506665;ord=249402506665?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="injected_billboard" name="injected_billboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=070792007910;ord=070792007910?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('injected_billboard');
@@ -672,7 +672,7 @@ ad_utils.inject_ad.register('injected_billboard');
 	
 	<!-- begin injectable NAVBOARD -->
 <div id="navboard_wrapper" class="injected_slot">
-<iframe id="navboard" name="navboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=249402506665;ord=249402506665?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
+<iframe id="navboard" name="navboard" class="yesScript" width="0" height="0" data-dart-params="#imdb2.consumer.title/maindetails;oe=utf-8;u=070792007910;ord=070792007910?" data-original-width="0" data-original-height="0" data-config-width="0" data-config-height="0" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe> </div>
 <script>
 doWithAds(function(){
 ad_utils.inject_ad.register('navboard');
@@ -801,7 +801,7 @@ class="quicklink" >IMDbPro</a>
             </div>
         </div>
     </div>
-    <input type="hidden" name="49e6c" value="6e74">
+    <input type="hidden" name="49e6c" value="64f5">
 </div>
         </div>
 
@@ -934,9 +934,9 @@ class="quicklink" >Soundtracks</a>                </div>
     <div class="ratings_wrapper">
         <div class="imdbRating" itemtype="http://schema.org/AggregateRating" itemscope="" itemprop="aggregateRating">
                 <div class="ratingValue">
-<strong title="8.1 based on 296,494 user ratings"><span itemprop="ratingValue">8.1</span></strong><span class="grey">/</span><span class="grey" itemprop="bestRating">10</span>                </div>
+<strong title="8.1 based on 296,496 user ratings"><span itemprop="ratingValue">8.1</span></strong><span class="grey">/</span><span class="grey" itemprop="bestRating">10</span>                </div>
                 <a href="/title/tt0032138/ratings?ref_=tt_ov_rt"
-><span class="small" itemprop="ratingCount">296,494</span></a>
+><span class="small" itemprop="ratingCount">296,496</span></a>
                     <div class="hiddenImportant">
                             <span itemprop="reviewCount">538 user</span>
                             <span itemprop="reviewCount">212 critic</span>
@@ -1152,8 +1152,8 @@ target='_blank'>metacritic.com</a>
 <script>
 window.generic = window.generic || {};
 generic.alphalfaComponents = {
-"alphalfa-container.html" : "http://ia.media-imdb.com/images/G/01/imdbads/alphalfa-container-253150330._TTD_",
-"js/collections/alphalfa.js" : "http://ia.media-imdb.com/images/G/01/imdbads/js/collections/alphalfa-3292747090._TTD_"
+"alphalfa-container.html" : "http://ia.media-imdb.com/images/G/01/imdbads/alphalfa-container-253150330._CB282938728_.html",
+"js/collections/alphalfa.js" : "http://ia.media-imdb.com/images/G/01/imdbads/js/collections/alphalfa-3292747090._CB526905683_.js"
 };
 </script>
 <script type="text/javascript">
@@ -1161,8 +1161,8 @@ doWithAds(function(){
 ad_utils.register_ad('top_rhs');
 });
 </script>
-<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=300x250,300x600,300x300,11x1;p=tr;g=ad;g=f;g=fm;g=m;tt=f;coo=us;b=t250;fv=1;id=tt0032138;ab=c;bpx=2;md=tt0032138;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=249402506665;ord=249402506665?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-original-width="300" data-original-height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
-<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3Dc%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=1&c=249402506665" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3Dc%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=1&c=249402506665" border="0" alt="advertisement" /> </a> </noscript>
+<iframe data-dart-params="#imdb2.consumer.title/maindetails;!TILE!;sz=300x250,300x600,300x300,11x1;p=tr;g=ad;g=f;g=fm;g=m;tt=f;coo=us;b=t250;fv=1;id=tt0032138;ab=e;bpx=2;md=tt0032138;c=0;oe=utf-8;[CLIENT_SIDE_KEYVALUES];u=070792007910;ord=070792007910?" id="top_rhs" name="top_rhs" class="yesScript" width="300" height="250" data-original-width="300" data-original-height="250" data-config-width="300" data-config-height="250" data-cookie-width="null" data-cookie-height="null" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" allowtransparency="true" onload="doWithAds.call(this, function(){ ad_utils.on_ad_load(this); });"></iframe>
+<noscript> <a href="http://pubads.g.doubleclick.net/gampad/jump?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3De%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=1&c=070792007910" target="_blank"> <img src="http://pubads.g.doubleclick.net/gampad/ad?&iu=4215/imdb2.consumer.title/maindetails&sz=300x250|300x600|300x300|11x1&t=p%3Dtr%26g%3Dad%26g%3Df%26g%3Dfm%26g%3Dm%26tt%3Df%26coo%3Dus%26b%3Dt250%26fv%3D1%26id%3Dtt0032138%26ab%3De%26bpx%3D2%26md%3Dtt0032138%26c%3D0&tile=1&c=070792007910" border="0" alt="advertisement" /> </a> </noscript>
 </div>
 <div id="top_rhs_reflow_helper"></div>
 <div id="top_rhs_after" class="after_ad" style="visibility:hidden;">
@@ -1213,7 +1213,7 @@ ad_utils.gpt.render_ad('top_rhs');
     
 
     <div class="ab_ninja">
-<span class="widget_header"> <span class="oneline"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=13PFQFRXDF320XYTRF5H&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_hd" > <h3>IMDb Picks: October</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=13PFQFRXDF320XYTRF5H&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_i_1" > <img itemprop="image" class="pri_image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BODk0NzkyOTAyNF5BMl5BanBnXkFtZTgwNDg2NjMzMDI@._CR82,281,1093,819_UX614_UY460._SY230_SX307_AL_.jpg" data-src-x2="https://images-na.ssl-images-amazon.com/images/M/MV5BODk0NzkyOTAyNF5BMl5BanBnXkFtZTgwNDg2NjMzMDI@._CR82,281,1093,819_UX614_UY460._SY230_SX307_AL_UY460_UX614_AL_.jpg" /> </a> <div class="widget_caption caption_overlay"> <div class="primary"> <div class="onoverflow"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=13PFQFRXDF320XYTRF5H&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_cap_pri_1" > "The Walking Dead" </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Of course the return of "<a href="/title/tt1520211/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=13PFQFRXDF320XYTRF5H&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_lk1">The Walking Dead</a>" is on our radar this month. See which other movies and TV shows we're excited about in <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=13PFQFRXDF320XYTRF5H&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_lk2">IMDb Picks</a>.</p> <p class="seemore"><a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=13PFQFRXDF320XYTRF5H&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_sm" class="position_bottom supplemental" >Visit IMDb Picks</a></p>    </div>
+<span class="widget_header"> <span class="oneline"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=1WKPYCY17KNQ71BQB0JA&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_hd" > <h3>IMDb Picks: October</h3> </a> </span> </span> <div class="widget_content no_inline_blurb"> <div class="widget_nested"> <div class="ninja_image_pack"> <div class="ninja_center"> <div class="ninja_image first_image last_image" style="width:307px;height:auto;" > <div style="width:307px;height:auto;margin:0 auto;"> <div class="widget_image"> <div class="image"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=1WKPYCY17KNQ71BQB0JA&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_i_1" > <img itemprop="image" class="pri_image" src="https://images-na.ssl-images-amazon.com/images/M/MV5BODk0NzkyOTAyNF5BMl5BanBnXkFtZTgwNDg2NjMzMDI@._CR82,281,1093,819_UX614_UY460._SY230_SX307_AL_.jpg" data-src-x2="https://images-na.ssl-images-amazon.com/images/M/MV5BODk0NzkyOTAyNF5BMl5BanBnXkFtZTgwNDg2NjMzMDI@._CR82,281,1093,819_UX614_UY460._SY230_SX307_AL_UY460_UX614_AL_.jpg" /> </a> <div class="widget_caption caption_overlay"> <div class="primary"> <div class="onoverflow"> <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=1WKPYCY17KNQ71BQB0JA&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_cap_pri_1" > "The Walking Dead" </a> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> </div> <p class="blurb">Of course the return of "<a href="/title/tt1520211/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=1WKPYCY17KNQ71BQB0JA&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_lk1">The Walking Dead</a>" is on our radar this month. See which other movies and TV shows we're excited about in <a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=1WKPYCY17KNQ71BQB0JA&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_lk2">IMDb Picks</a>.</p> <p class="seemore"><a href="/imdbpicks/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2665170622&pf_rd_r=1WKPYCY17KNQ71BQB0JA&pf_rd_s=right-3&pf_rd_t=15021&pf_rd_i=tt0032138&ref_=tt_ecwoctpks_sm" class="position_bottom supplemental" >Visit IMDb Picks</a></p>    </div>
     
 
                         
@@ -1621,29 +1621,29 @@ itemprop='url'>View more styles</a>
     <h3>User Polls</h3>
     <ul>
         <li>
-<a href="/poll/z_NkaZPfu9A/?ref_=tt_po_i1"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BZGEzZTExMDEtNjg4OC00NjQxLTk5NTUtNjRkNjA3MmYwZjg1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/z_NkaZPfu9A/?ref_=tt_po_q1"
+<a href="/poll/XXIYvAtZom4/?ref_=tt_po_i1"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BODBmOWU2YWMtZGUzZi00YzRhLWJjNDAtYTUwNWVkNDcyZmU5XkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/XXIYvAtZom4/?ref_=tt_po_q1"
+>If Your Life Was a Movie, What Genre Would It Be?</a>
+        <li>
+<a href="/poll/tRgM9WEmTPs/?ref_=tt_po_i2"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQzMDYxNzUxNl5BMl5BanBnXkFtZTgwMjgxNjkxMTE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/tRgM9WEmTPs/?ref_=tt_po_q2"
+>Most Ground-Breaking Visual Effects in Films</a>
+        <li>
+<a href="/poll/WRVOJ-IHvwk/?ref_=tt_po_i3"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY2MTAzODI5NV5BMl5BanBnXkFtZTgwMjM4NzQ0MjE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/WRVOJ-IHvwk/?ref_=tt_po_q3"
+>Top 25 ten-word movie quotes...</a>
+        <li>
+<a href="/poll/CiGYF4wVxEU/?ref_=tt_po_i4"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTIzNDc4MzMyNl5BMl5BanBnXkFtZTcwMjk5MDAyMQ@@._V1._CR2,1,319,449_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/CiGYF4wVxEU/?ref_=tt_po_q4"
+>25 memorable animal-themed quotes ...</a>
+        <li>
+<a href="/poll/z_NkaZPfu9A/?ref_=tt_po_i5"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BZGEzZTExMDEtNjg4OC00NjQxLTk5NTUtNjRkNjA3MmYwZjg1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/z_NkaZPfu9A/?ref_=tt_po_q5"
 >Top 25 classic 'written' movie quotes ...</a>
         <li>
-<a href="/poll/OrIhH0RUmjg/?ref_=tt_po_i2"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYWQwOWVkMGItMDU2Yy00YjIzLWJkMjEtNmVkZjE3MjMwYzEzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/OrIhH0RUmjg/?ref_=tt_po_q2"
->If Classic Movie Quotes were Politically Correct</a>
-        <li>
-<a href="/poll/Dl7OSak_2yc/?ref_=tt_po_i3"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTcwMTU3MjI1OV5BMl5BanBnXkFtZTgwNjE2OTI3MjE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/Dl7OSak_2yc/?ref_=tt_po_q3"
->Funniest combo of 2 classic AFI's Quotes ...</a>
-        <li>
-<a href="/poll/WeCKYAONxAU/?ref_=tt_po_i4"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BOTA1Mzg3NjIxNV5BMl5BanBnXkFtZTcwNzU2NTc5MQ@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/WeCKYAONxAU/?ref_=tt_po_q4"
->Movies Made by Alternate Directors - Part 2</a>
-        <li>
-<a href="/poll/rJKUU_NNlSk/?ref_=tt_po_i5"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAzOTM4MzEwNl5BMl5BanBnXkFtZTgwMzU1OTc1MDE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/rJKUU_NNlSk/?ref_=tt_po_q5"
->Top 25 classic climactic quotes ...</a>
-        <li>
-<a href="/poll/ATXbtaLLs4k/?ref_=tt_po_i6"
-><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMjA4NjE1MjM2Ml5BMl5BanBnXkFtZTgwODgzMjM5MzE@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/ATXbtaLLs4k/?ref_=tt_po_q6"
->Top 25 nine-word movie quotes ...</a>
+<a href="/poll/KDUW1-AIiKs/?ref_=tt_po_i6"
+><img height="86" width="86" alt="poll image" title="poll image"src="http://i.imdb.com/images/nopicture/140x209/unknown.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTY5OTU0OTc2NV5BMl5BanBnXkFtZTcwMzU4MDcyMQ@@._V1_SX86_CR0,0,86,86_.jpg" /></a>        <a href="/poll/KDUW1-AIiKs/?ref_=tt_po_q6"
+>The 5th Wheel Poll</a>
     </ul>
     <div class="see-more"><a href="/poll/?ref_=tt_po_sm"
 >See more polls &raquo;</a></div>
@@ -1691,7 +1691,7 @@ ad_utils.register_ad('btf_rhs2');
 <div id="btf_rhs2_reflow_helper"></div>
 <script>
 doWithAds(function(){
-ad_utils.inject_serverside_ad('btf_rhs2', '<script>document.defaultAd = {h:250,w:300}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Qhvwt3mHzbx1ZGZD3S33l-sAAAFYF5AMggEAAADKARHzO-0/https://www.shopbop.com/bags/br/v=1/2534374302024667.htm?extid=DMU_house_sea_weg_bags_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=weg_bags&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_4813845850601\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"4813845850601\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414068\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},p=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},f=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){f(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(f(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/300x250-bags-intl-70hbT._V528286100_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&p(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=weg_bags&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701769000 --\>\n <div id=\"btf_rhs2_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IHU-cdgIj0x9t-FXKMIUwCEAAAFYF5AMvAEAAADKAo2APA\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
+ad_utils.inject_serverside_ad('btf_rhs2', '<script>document.defaultAd = {h:250,w:300}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:300px;height:250px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:250px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QlQ0Qq_JbiYK7VYiww32uIQAAAFYF8QktQEAAADKAbaW14s/https://www.eastdane.com/bags/br/v=1/19222.htm?extid=DMU_house_sea_feg_bag_desktop_300_250_jpg_np&amp;cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"logo\"></a><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_2757510820201\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"5087796830501\",cid:\"2757510820201\",w:300,h:250,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3709291\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},l=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},f=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var y=\"shazam/FallBags-300x250-International-myGky._V279227541_.jpg\",v=m(\"staticImage\");y&&(v.src=h+y,w.style.display=\"block\");var I;c&&f(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),I&&l(_,\"https://www.amazon.com/adprefs\",!0);var z=a.SFClient;if(z&&\"function\"==typeof z.changeSize)try{z.changeSize(\"300px\",\"250px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/2/cvo.gif?cvosrc=display.house_sea.300_250_jpg_np&amp;cvo_campaign=feg_bag&amp;cvo_placement=desktop&amp;cvo_creative=300_250_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1473811824000 --\>\n <div id=\"btf_rhs2_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IIAnP294_0P9ly3kzGOEvEMAAAFYF8Qk6wEAAADKQXD8bg\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
 },"unable to inject serverside ad");
 </script>
 	
@@ -1886,24 +1886,24 @@ class="btn-full" >See more awards</a>&nbsp;&raquo;    </span>
                 <meta itemprop="duration" content="T2M12S" />
 
 <a href="/video/imdb/vi3563455001?ref_=tt_pv_vi_aiv_1"
-title="The Wizard of Oz -- Clip from The Wizard of Oz" alt="The Wizard of Oz -- Clip from The Wizard of Oz" class="video-modal" data-video="vi3563455001" data-context="imdb" data-rid="13PFQFRXDF320XYTRF5H" widget-context="titleMaindetails" itemprop="url" ><img height="105" width="139" alt="The Wizard of Oz -- Clip from The Wizard of Oz" title="The Wizard of Oz -- Clip from The Wizard of Oz"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/no-video-slate-856072904._CB526676956_.png"class="loadlate hidden video" loadlate="http://ia.media-imdb.com/images/M/MV5BMTg5OTgzNDY1Ml5BMl5BanBnXkFtZTgwNTE4ODM4MjE@._V1_SP229,229,0,C,0,0,0_CR45,62,139,105_PIimdb-blackband-204-14,TopLeft,0,0_PIimdb-blackband-204-28,BottomLeft,0,1_CR0,0,139,105_PIimdb-bluebutton-big,BottomRight,-1,-1_ZAClip,2,76,16,137,verdenab,8,255,255,255,1_ZAon%2520IMDb,2,1,14,137,verdenab,7,255,255,255,1_ZA02:12,103,1,14,36,verdenab,7,255,255,255,1_.jpg" itemprop='image' viconst="vi3563455001" /></a>            </span>
+title="The Wizard of Oz -- Clip from The Wizard of Oz" alt="The Wizard of Oz -- Clip from The Wizard of Oz" class="video-modal" data-video="vi3563455001" data-context="imdb" data-rid="1WKPYCY17KNQ71BQB0JA" widget-context="titleMaindetails" itemprop="url" ><img height="105" width="139" alt="The Wizard of Oz -- Clip from The Wizard of Oz" title="The Wizard of Oz -- Clip from The Wizard of Oz"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/no-video-slate-856072904._CB526676956_.png"class="loadlate hidden video" loadlate="http://ia.media-imdb.com/images/M/MV5BMTg5OTgzNDY1Ml5BMl5BanBnXkFtZTgwNTE4ODM4MjE@._V1_SP229,229,0,C,0,0,0_CR45,62,139,105_PIimdb-blackband-204-14,TopLeft,0,0_PIimdb-blackband-204-28,BottomLeft,0,1_CR0,0,139,105_PIimdb-bluebutton-big,BottomRight,-1,-1_ZAClip,2,76,16,137,verdenab,8,255,255,255,1_ZAon%2520IMDb,2,1,14,137,verdenab,7,255,255,255,1_ZA02:12,103,1,14,36,verdenab,7,255,255,255,1_.jpg" itemprop='image' viconst="vi3563455001" /></a>            </span>
                 <span class="video_slate_last" itemscope itemtype="http://schema.org/videoObject">
                 <meta itemprop="duration" content="T2M11S" />
 
 <a href="/video/imdb/vi3748004377?ref_=tt_pv_vi_aiv_2"
-title="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release." alt="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release." class="video-modal" data-video="vi3748004377" data-context="imdb" data-rid="13PFQFRXDF320XYTRF5H" widget-context="titleMaindetails" itemprop="url" ><img height="105" width="139" alt="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release." title="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release."src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/no-video-slate-856072904._CB526676956_.png"class="loadlate hidden video" loadlate="http://ia.media-imdb.com/images/M/MV5BMjE0MDE4MDU2M15BMl5BanBnXkFtZTgwNzEwNjM4MjE@._V1_SP229,229,0,C,0,0,0_CR45,62,139,105_PIimdb-blackband-204-14,TopLeft,0,0_PIimdb-blackband-204-28,BottomLeft,0,1_CR0,0,139,105_PIimdb-bluebutton-big,BottomRight,-1,-1_ZAPromo,2,76,16,137,verdenab,8,255,255,255,1_ZAon%2520IMDb,2,1,14,137,verdenab,7,255,255,255,1_ZA02:11,103,1,14,36,verdenab,7,255,255,255,1_.jpg" itemprop='image' viconst="vi3748004377" /></a>            </span>
+title="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release." alt="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release." class="video-modal" data-video="vi3748004377" data-context="imdb" data-rid="1WKPYCY17KNQ71BQB0JA" widget-context="titleMaindetails" itemprop="url" ><img height="105" width="139" alt="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release." title="The Wizard of Oz -- Promo clip reviewing features and specs for the Ultimate Collector's Edition release."src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/no-video-slate-856072904._CB526676956_.png"class="loadlate hidden video" loadlate="http://ia.media-imdb.com/images/M/MV5BMjE0MDE4MDU2M15BMl5BanBnXkFtZTgwNzEwNjM4MjE@._V1_SP229,229,0,C,0,0,0_CR45,62,139,105_PIimdb-blackband-204-14,TopLeft,0,0_PIimdb-blackband-204-28,BottomLeft,0,1_CR0,0,139,105_PIimdb-bluebutton-big,BottomRight,-1,-1_ZAPromo,2,76,16,137,verdenab,8,255,255,255,1_ZAon%2520IMDb,2,1,14,137,verdenab,7,255,255,255,1_ZA02:11,103,1,14,36,verdenab,7,255,255,255,1_.jpg" itemprop='image' viconst="vi3748004377" /></a>            </span>
     </div>
                 </div>
                 <div id="combined-photos">
                     <h2>Photos</h2>
     <div class="mediastrip">        	
                 
-<a href="/title/tt0032138/mediaviewer/rm3753904640?context=default&ref_=tt_pv_md_1"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="The Wizard of Oz (1939)" title="The Wizard of Oz (1939)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMzUwMWY1ZDQtMmM3Zi00NWEzLThhYjItNzYxMGE3YzlhYTAxXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_UY105_CR12,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0032138/mediaviewer/rm801180160?context=default&ref_=tt_pv_md_2"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="The Wizard of Oz (1939)" title="The Wizard of Oz (1939)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYzcwZjNkM2EtNTRhNi00NjQzLWIyODYtNWNlZTExMWI3NWVkXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_UX105_CR0,0,105,105_AL_.jpg" itemprop='image' /></a>                
-<a href="/title/tt0032138/mediaviewer/rm1841367552?context=default&ref_=tt_pv_md_3"
-itemprop='thumbnailUrl'><img height="105" width="105" alt="Judy Garland and Victor Fleming in The Wizard of Oz (1939)" title="Judy Garland and Victor Fleming in The Wizard of Oz (1939)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BYmU0YjMyOGYtZTMyYS00ZDM0LThkZGUtOWJiMzFmZDdlMTlkXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_UY105_CR17,0,105,105_AL_.jpg" itemprop='image' /></a>    </div>
+<a href="/title/tt0032138/mediaviewer/rm430693632?context=default&ref_=tt_pv_md_1"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="Margaret Hamilton and Pat Walshe in The Wizard of Oz (1939)" title="Margaret Hamilton and Pat Walshe in The Wizard of Oz (1939)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNDIxNTM2NDkxMV5BMl5BanBnXkFtZTgwMzk2Njc0MDE@._V1_UY105_CR12,0,105,105_AL_.jpg" itemprop='image' /></a>                
+<a href="/title/tt0032138/mediaviewer/rm2059471360?context=default&ref_=tt_pv_md_2"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="The Wizard of Oz (1939)" title="The Wizard of Oz (1939)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BOTFjMjE2M2EtODE0ZC00MTI2LTlkZDktNmNlYTBmNDdhMTljXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_UY105_CR17,0,105,105_AL_.jpg" itemprop='image' /></a>                
+<a href="/title/tt0032138/mediaviewer/rm3753904640?context=default&ref_=tt_pv_md_3"
+itemprop='thumbnailUrl'><img height="105" width="105" alt="The Wizard of Oz (1939)" title="The Wizard of Oz (1939)"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/unknown-1394846836._CB282900252_.png"class="loadlate hidden " loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMzUwMWY1ZDQtMmM3Zi00NWEzLThhYjItNzYxMGE3YzlhYTAxXkEyXkFqcGdeQXVyMjE5MzM3MjA@._V1_UY105_CR12,0,105,105_AL_.jpg" itemprop='image' /></a>    </div>
                 </div>
             <div class="combined-see-more see-more">
 <a href="/title/tt0032138/mediaindex?ref_=tt_pv_mi_sm"
@@ -2136,7 +2136,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Judy Garland and Vict
 
     
     
-    <div class="rec_item" data-info="" data-spec="p13nsims:tt0032138" data-tconst="tt0083866">
+    <div class="rec_item" data-info="" data-spec="p13nsims:tt0032138" data-tconst="tt0097757">
         <div class="rec_overlay">
             <div class="rec_filter"></div>
             <div class="glyph rec_watchlist_glyph"></div>
@@ -2144,8 +2144,8 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Judy Garland and Vict
             <div class="glyph rec_rating_glyph"></div>
             <div class="glyph rec_pending_glyph"></div>                        
         </div>            
-<a href="/title/tt0083866/?ref_=tt_rec_tti"
-><img height="113" width="76" alt="E.T. the Extra-Terrestrial" title="E.T. the Extra-Terrestrial"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/film-293970583._CB526854470_.png"class="loadlate hidden rec_poster_img" loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX76_CR0,0,76,113_AL_.jpg" /> <br/>
+<a href="/title/tt0097757/?ref_=tt_rec_tti"
+><img height="113" width="76" alt="The Little Mermaid" title="The Little Mermaid"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/small/film-293970583._CB526854470_.png"class="loadlate hidden rec_poster_img" loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNTAxMzY0MjI1Nl5BMl5BanBnXkFtZTgwMTU2NTYxMTE@._V1_UY113_CR0,0,76,113_AL_.jpg" /> <br/>
 </a>    </div>
 
                         </div>
@@ -2197,7 +2197,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Judy Garland and Vict
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -2238,7 +2238,7 @@ itemprop='thumbnailUrl'><img height="105" width="105" alt="Judy Garland and Vict
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0058331|imdb|7.8|7.8|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 7.8/10 (109,574 votes) - click stars to rate" >
+title="Users rated this 7.8/10 (109,580 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 109.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -2330,7 +2330,7 @@ David Tomlinson</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -2371,7 +2371,7 @@ David Tomlinson</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0093779|imdb|8.1|8.1|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8.1/10 (299,218 votes) - click stars to rate" >
+title="Users rated this 8.1/10 (299,223 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 113.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -2463,7 +2463,7 @@ Robin Wright</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -2504,7 +2504,7 @@ Robin Wright</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0101414|imdb|8|8|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8/10 (314,784 votes) - click stars to rate" >
+title="Users rated this 8/10 (314,788 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 112px">&nbsp;</span>
 <span class="rating-stars">
@@ -2597,7 +2597,7 @@ Jesse Corti</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -2638,7 +2638,7 @@ Jesse Corti</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0059742|imdb|8|8|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8/10 (150,590 votes) - click stars to rate" >
+title="Users rated this 8/10 (150,593 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 112px">&nbsp;</span>
 <span class="rating-stars">
@@ -2730,7 +2730,7 @@ Eleanor Parker</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -2771,7 +2771,7 @@ Eleanor Parker</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0067992|imdb|7.8|7.8|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 7.8/10 (132,621 votes) - click stars to rate" >
+title="Users rated this 7.8/10 (132,623 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 109.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -2863,7 +2863,7 @@ Peter Ostrum</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -2904,7 +2904,7 @@ Peter Ostrum</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0029583|imdb|7.7|7.7|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 7.7/10 (135,882 votes) - click stars to rate" >
+title="Users rated this 7.7/10 (135,885 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 107.8px">&nbsp;</span>
 <span class="rating-stars">
@@ -2999,7 +2999,7 @@ Lucille La Verne</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -3040,7 +3040,7 @@ Lucille La Verne</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0038650|imdb|8.6|8.6|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8.6/10 (280,690 votes) - click stars to rate" >
+title="Users rated this 8.6/10 (280,695 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 120.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -3132,7 +3132,7 @@ Lionel Barrymore</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -3173,7 +3173,7 @@ Lionel Barrymore</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0198781|imdb|8.1|8.1|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8.1/10 (598,536 votes) - click stars to rate" >
+title="Users rated this 8.1/10 (598,543 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 113.4px">&nbsp;</span>
 <span class="rating-stars">
@@ -3268,7 +3268,7 @@ Mary Gibbs</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -3309,7 +3309,7 @@ Mary Gibbs</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0114709|imdb|8.3|8.3|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8.3/10 (636,981 votes) - click stars to rate" >
+title="Users rated this 8.3/10 (636,996 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 116.2px">&nbsp;</span>
 <span class="rating-stars">
@@ -3401,7 +3401,7 @@ Don Rickles</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -3442,7 +3442,7 @@ Don Rickles</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0110357|imdb|8.5|8.5|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8.5/10 (659,303 votes) - click stars to rate" >
+title="Users rated this 8.5/10 (659,319 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 119px">&nbsp;</span>
 <span class="rating-stars">
@@ -3535,7 +3535,7 @@ James Earl Jones</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -3576,7 +3576,7 @@ James Earl Jones</span></div>
 
   
 <div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0103639|imdb|8|8|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 8/10 (265,545 votes) - click stars to rate" >
+title="Users rated this 8/10 (265,551 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
 <span class="rating-imdb " style="width: 112px">&nbsp;</span>
 <span class="rating-stars">
@@ -3633,11 +3633,11 @@ Linda Larkin</span></div>
       </div>
      
          
-      <div class="rec_overview" data-tconst="tt0083866">
+      <div class="rec_overview" data-tconst="tt0097757">
     
     
     
-    <div class="rec_poster" data-info="" data-spec="p13nsims:tt0032138" data-tconst="tt0083866">
+    <div class="rec_poster" data-info="" data-spec="p13nsims:tt0032138" data-tconst="tt0097757">
         <div class="rec_overlay">
             <div class="rec_filter"></div>
             <div class="glyph rec_watchlist_glyph"></div>
@@ -3645,8 +3645,8 @@ Linda Larkin</span></div>
             <div class="glyph rec_rating_glyph"></div>
             <div class="glyph rec_pending_glyph"></div>                        
         </div>            
-<a href="/title/tt0083866/?ref_=tt_rec_tti"
-><img height="190" width="128" alt="E.T. the Extra-Terrestrial" title="E.T. the Extra-Terrestrial"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB526906226_.png"class="loadlate hidden rec_poster_img" loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX128_CR0,0,128,190_AL_.jpg" /> <br/>
+<a href="/title/tt0097757/?ref_=tt_rec_tti"
+><img height="190" width="128" alt="The Little Mermaid" title="The Little Mermaid"src="http://ia.media-imdb.com/images/G/01/imdb/images/nopicture/large/film-184890147._CB526906226_.png"class="loadlate hidden rec_poster_img" loadlate="https://images-na.ssl-images-amazon.com/images/M/MV5BNTAxMzY0MjI1Nl5BMl5BanBnXkFtZTgwMTU2NTYxMTE@._V1_UY190_CR0,0,128,190_AL_.jpg" /> <br/>
 </a>    </div>
 
     
@@ -3655,7 +3655,7 @@ Linda Larkin</span></div>
          <div class="rec_action_divider">
            <div class="wlb_classic_wrapper">
              <span class="wlb_wrapper">
-               <a class="rec_wlb_watchlist_btn" data-tconst="tt0083866" data-size="medium" data-caller-name="p13nsims-title" data-type="primary"></a>
+               <a class="rec_wlb_watchlist_btn" data-tconst="tt0097757" data-size="medium" data-caller-name="p13nsims-title" data-type="primary"></a>
              </span>
            </div>  
          </div> 
@@ -3669,7 +3669,7 @@ Linda Larkin</span></div>
            </span>
          </div>    
          
-             <input type="hidden" name="49e6c" value="6e74">
+             <input type="hidden" name="49e6c" value="64f5">
        </div>
        
        <div class="rec_details">
@@ -3678,9 +3678,9 @@ Linda Larkin</span></div>
            <div class="rec-jaw-upper">  
 
      <div class="rec-title">
-       <a href="/title/tt0083866/?ref_=tt_rec_tt"
-><b>E.T. the Extra-Terrestrial</b></a>
-            <span class="nobr">(1982)</span>
+       <a href="/title/tt0097757/?ref_=tt_rec_tt"
+><b>The Little Mermaid</b></a>
+            <span class="nobr">(1989)</span>
    </div>  
              
 
@@ -3691,13 +3691,14 @@ Linda Larkin</span></div>
             
             
                 
-                    <span title="Ratings certificate for E.T. the Extra-Terrestrial (1982)"
-                          class="us_pg titlePageSprite absmiddle"></span>
+                    <span title="Ratings certificate for The Little Mermaid (1989)"
+                          class="us_g titlePageSprite absmiddle"></span>
 
+                     Animation          
+ <span class="ghost">|</span> 
                      Family          
  <span class="ghost">|</span> 
-                     Sci-Fi          
-
+                     Fantasy          
 
         
     </div>
@@ -3708,10 +3709,10 @@ Linda Larkin</span></div>
   
 
   
-<div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0083866|imdb|7.9|7.9|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
-title="Users rated this 7.9/10 (286,387 votes) - click stars to rate" >
+<div class="rating rating-list" data-starbar-class="rating-list" data-auth="" data-user="" id="tt0097757|imdb|7.6|7.6|p13nsims-title|tt0032138|title|main" data-ga-identifier=""
+title="Users rated this 7.6/10 (173,534 votes) - click stars to rate" >
 <span class="rating-bg">&nbsp;</span>
-<span class="rating-imdb " style="width: 110.6px">&nbsp;</span>
+<span class="rating-imdb " style="width: 106.4px">&nbsp;</span>
 <span class="rating-stars">
       <a href="/register/login?why=vote&ref_=tt_ov_rt"
 rel="nofollow" title="Register or login to rate this title" ><span>1</span></a>
@@ -3734,13 +3735,13 @@ rel="nofollow" title="Register or login to rate this title" ><span>9</span></a>
       <a href="/register/login?why=vote&ref_=tt_ov_rt"
 rel="nofollow" title="Register or login to rate this title" ><span>10</span></a>
 </span>
-<span class="rating-rating "><span class="value">7.9</span><span class="grey">/</span><span class="grey">10</span></span>
-<span class="rating-cancel "><a href="/title/tt0083866/vote?v=X;k=" title="Delete" rel="nofollow"><span>X</span></a></span>
+<span class="rating-rating "><span class="value">7.6</span><span class="grey">/</span><span class="grey">10</span></span>
+<span class="rating-cancel "><a href="/title/tt0097757/vote?v=X;k=" title="Delete" rel="nofollow"><span>X</span></a></span>
 &nbsp;</div>
 
                <div class="rec-outline">
     <p>
-A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.    </p>
+A mermaid princess makes a Faustian bargain with an unscrupulous sea-witch in order to meet a human prince on land.    </p>
                </div>
                
              </div>  
@@ -3750,13 +3751,14 @@ A troubled child summons the courage to help a friendly alien escape Earth and r
            <div class="rec-jaw-lower">
              <div class="rec-jaw-teeth"></div>                       
  <div class="rec-director rec-ellipsis">
-      <b>Director:</b>
-Steven Spielberg  </div>
+      <b>Directors:</b>
+Ron Clements,
+John Musker  </div>
 <div class="rec-actor rec-ellipsis"> <span>
     <b>Stars:</b> 
-Henry Thomas, 
-Drew Barrymore, 
-Peter Coyote</span></div> 
+Jodi Benson, 
+Rene Auberjonois, 
+Christopher Daniel Barnes</span></div> 
            </div>
            
          </div>
@@ -4146,7 +4148,7 @@ In this charming film based on the popular L. Frank Baum stories, Dorothy and he
         <hr />
         <div class="txt-block">
             <h4 class="inline">Taglines:</h4>
-Mighty Miracle Show Of 1000 Delights !                <span class="see-more inline">
+The Greatest Picture in the History of Entertainment                <span class="see-more inline">
 <a href="/title/tt0032138/taglines?ref_=tt_stry_tg"
 > See more</a>&nbsp;&raquo;
                 </span>
@@ -4222,7 +4224,7 @@ rel="login">Edit</a>
         <h2>Details</h2>
       <div class="txt-block">
       <h4 class="inline">Official Sites:</h4>
-    <a href="/offsite/?page-action=offsite-thewizardofoz&token=BCYk0waynb6CzIL4ujSX49p8VAG6KKfTQBodB3H_LSMEXf0dSP3eRcpQsiOhqf9Db0CmQZvKdCC_%0D%0AKI34P7qfbqwKkFuqK7A7aLRcznJm4_08C4jGd-C8Ue7vnDrKP910QIsbzDtUj1ooKvKKD-fxxVkQ%0D%0ADjgeMYKblP0OCtAhxXuw4edGvECOs5AO8kYwYloidQHAXxEX45mKKjy22-VggIBR47IfAZnQTql1%0D%0AUhJwtWO9Pnc%0D%0A&ref_=tt_pdt_ofs_offsite_0"
+    <a href="/offsite/?page-action=offsite-thewizardofoz&token=BCYsm23x6XOnf-EicodgJDbYk2IKJtj7shVRGEA0NW1jkJIEIiPta1Ma3GKiBoho4GK571NHIs_y%0D%0A6CAZhELiKEudhN1RSPRRmNXY0TFyhS1V4eWaF5RCW4eEEWFPQScc9xf4M83B8SQsZwjrpxte38PP%0D%0AdmkkySKlYDCOMlTo0He708LuEXSNTnNvmdjW1rZ_LTV9uuNE0WCyNQHb1_ptxZql1IWMTGDJm2GD%0D%0AJzUT_VXE-wI%0D%0A&ref_=tt_pdt_ofs_offsite_0"
 rel="nofollow" itemprop='url'>Warner Bros. (1998 rerelease)</a>
         
       <span class="see-more inline">
@@ -4391,13 +4393,13 @@ rel="login">Edit</a>
         <h2>Did You Know?</h2>
     <div id="trivia" class="txt-block">
         <h4>Trivia</h4>
-The Scarecrow face makeup that <a href="/name/nm0001961?ref_=tt_trv_trv">Ray Bolger</a> wore consisted, in part, of a rubber prosthetic with a woven pattern to suggest burlap cloth. By the time the film was finished the prosthetic had left a pattern of lines on his face that took more than a year to vanish.        <a href="trivia?ref_=tt_trv_trv"
+The "tornado" was a 35-foot-long muslin stocking, spun around among miniatures of a Kansas farm and fields in a dusty atmosphere.        <a href="trivia?ref_=tt_trv_trv"
 class="nobr" >See more</a>  &raquo;
     </div>
                 <hr />
      <div id="goofs"  class="txt-block">
         <h4>Goofs</h4>
-The sign pointing the way to the Haunted Forest and Witch's Castle says, &quot;Witches Castle.&quot;        <a href="trivia?tab=gf&ref_=tt_trv_gf"
+Oz refers to the Tinman as &quot;my galvanized friend&quot;. Galvanization is a process in which a metal is covered with zinc to prevent rusting. If Tinman was galvanized, he wouldn't rust and we know how badly and quickly he can rust throughout the movie.        <a href="trivia?tab=gf&ref_=tt_trv_gf"
 class="nobr" >See more</a>  &raquo;
     </div>   
                 <hr />
@@ -4413,13 +4415,13 @@ class="nobr" >See more</a> &raquo;
                 <hr />
      <div id="crazyCredits"  class="txt-block">
         <h4>Crazy Credits</h4>
-In the opening credits, The Singer Midgets, who portray the Munchkins, are not billed under their real name, but as simply The Munchkins. In the cast list at the end, they are billed as The Singer Midgets. None of the actors who play Munchkins are given an individual credit. In the posters and advertising publicity for the film, the group was billed as The Munchkins.        <a href="trivia?tab=cz&ref_=tt_trv_cc"
+Clara Blandick, who plays Aunt Em, Pat Walshe, who plays Nikko, and Toto are not listed at all in the opening credits, only in the closing ones.        <a href="trivia?tab=cz&ref_=tt_trv_cc"
 class="nobr" >See more</a>  &raquo;
     </div>   
                 <hr />
     <div id="connections" class="text-block">
         <h4>Connections</h4>
-        Referenced in <a href="/title/tt0749208?ref_=tt_trv_cnn">Wings: All for One and Two for Helen</a>&nbsp;(1990)
+        Referenced in <a href="/title/tt5876842?ref_=tt_trv_cnn">Epic Rap Battles of History: Alexander the Great vs Ivan the Terrible</a>&nbsp;(2016)
 
 
         <a href="trivia?tab=mc&ref_=tt_trv_cnn"
@@ -4428,11 +4430,11 @@ class="nobr" >See more</a> &raquo;
                 <hr />
     <div id="soundtracks" class="text-block">
         <h4>Soundtracks</h4>
-If I Were King of the Forest<br />
-(1939) (uncredited)<br />
-Lyrics by <a href="/name/nm0361971?ref_=tt_trv_snd">E.Y. Harburg</a><br />
-Music by <a href="/name/nm0002182?ref_=tt_trv_snd">Harold Arlen</a><br />
-Sung by <a href="/name/nm0481618?ref_=tt_trv_snd">Bert Lahr</a>, <a href="/name/nm0000023?ref_=tt_trv_snd">Judy Garland</a>, <a href="/name/nm0001961?ref_=tt_trv_snd">Ray Bolger</a>, and <a href="/name/nm0355095?ref_=tt_trv_snd">Jack Haley</a><br />        <a href="soundtrack?ref_=tt_trv_snd"
+The Happy Farmer, Op. 68, No. 10<br />
+(1848) (uncredited)<br />
+Music by <a href="/name/nm0006281?ref_=tt_trv_snd">Robert Schumann</a><br />
+Heard as background music during opening scene and in scene during which Toto runs back to Dorothy<br />
+Played by <a href="/name/nm1759306?ref_=tt_trv_snd">The MGM Symphony Orchestra</a><br />        <a href="soundtrack?ref_=tt_trv_snd"
 class="nobr" >See more</a> &raquo;
     </div>
     </div>
@@ -4479,18 +4481,18 @@ class="nobr" >See more</a> &raquo;
             <div class="faq" >
                     <div class="odd">
                     <b>Q:</b>
-<a href="/title/tt0032138/faq?ref_=tt_faq_1#.2.1.2"
-> Where does the red brick road lead?</a>
+<a href="/title/tt0032138/faq?ref_=tt_faq_1#.2.1.17"
+> What is 'The Wizard of Oz' about?</a>
                     </div>
                     <div class="even">
                     <b>Q:</b>
-<a href="/title/tt0032138/faq?ref_=tt_faq_2#.2.1.17"
-> What is 'The Wizard of Oz' about?</a>
+<a href="/title/tt0032138/faq?ref_=tt_faq_2#.2.1.4"
+> What do the Witch's guards chant?</a>
                     </div>
                     <div class="odd">
                     <b>Q:</b>
-<a href="/title/tt0032138/faq?ref_=tt_faq_3#.2.1.18"
-> How does the movie end?</a>
+<a href="/title/tt0032138/faq?ref_=tt_faq_3#.2.1.2"
+> Where does the red brick road lead?</a>
                     </div>
             </div>
         
@@ -4534,30 +4536,29 @@ class="nobr" >See more</a>
         <h2>User Reviews</h2>
         <div class="user-comments">
                 <span itemprop="review" itemscope itemtype="http://schema.org/Review">  
-                    <strong itemprop="name">a milestone</strong>
+                    <strong itemprop="name">A Wiz of a film, if ever a Wiz there was</strong>
                     <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
                         <meta itemprop="worstRating" content = "1" />
                         <meta itemprop="ratingValue" content="0" />
                         <meta itemprop="bestRating" content="10" />
                     </span>
                     <div class="comment-meta">
-                        12 November 2004 | by <a href="/user/ur1517556/?ref_=tt_urv"
-><span itemprop="author">rzajac</span></a>
-                        <meta itemprop="datePublished" content="2004-11-12" />
-                              (Taichung, Taiwan)
-                        &ndash; <a href="/user/ur1517556/comments?ref_=tt_urv"
+                        11 August 2003 | by <a href="/user/ur0466747/?ref_=tt_urv"
+><span itemprop="author">DonFL</span></a>
+                        <meta itemprop="datePublished" content="2003-08-11" />
+                        &ndash; <a href="/user/ur0466747/comments?ref_=tt_urv"
 >See all my reviews</a>
                     </div>
                     <div>
-                        <p itemprop="reviewBody">People talk about The Wizard of Oz as a backdrop to their lives; and how true that is. I just saw it again, DVD, for the first time in--gosh!--20 years. There was a little art house in Lansing Michigan USA that ran it back then, on the popular premise that there's nothing like TWoO on &quot;the big screen.&quot; That's the last time I'd seen it, 'til today.<br /><br />I guess the part that &quot;gets&quot; me about the movie is how the writers made it pretty plain that the Scarecrow, Tin Man, and Cowardly Lion really already had what they thought they were missing; that their respective problems were in misapprehending their own complete natures. That's a powerful statement for many of us. I found myself most touched in scenes where the Scarecrow was showing wisdom, the Tin Man feeling deeply (&quot;...when I think of Dorothy in that awful place...&quot;), and the Lion...well, maybe accomplishing this effect was harder in his case...what *is* true courage?<br /><br />Anyway, if you're reading this here, you must be a movie weenie, and you've no doubt already seen the movie, so I'm not going to recite the usual &quot;go see this movie&quot; mantra.<br /><br />I was just very touching to see this movie again, at this phase in my life.<br /><br />I will mention a few more things about how I now see this movie as a &quot;growed up&quot; (I'm almost 50): It's interesting how you can see the production values of the time; the lot sets and special effects and so forth. This movie is a powerful example of how a good story overcomes limited means in other areas.<br /><br />People who look back with disdain on the low-tech chintz of old movies can see in TWoO the magic ingredient; narrative solidity. And I'm not a pollyanna about this: I'm sure the underlying reality behind its making is rife with horror stories of expert disagreement, rewrites, discarding, jerryrigging, and the rest of it. But in the end, something like narrative love won out; and that's the important thing.<br /><br />Oh: And having Harold Arlen write the music was good luck indeed. And orchestrations which cleverly appropriated very tasty new ideas in composition (polymodalism, non-standard phrasings, etc.) didn't hurt, either!<br /><br />Geez, this movie is such a little universe....I'd better stop here.</p>
+                        <p itemprop="reviewBody"> The NBC Peacock began unfolding its wings.  &quot;The following program is brought to you in living color--with portions in black &amp; white--on NBC.&quot; That exclusive intro began my exposure to color television at Grandma's in 1968.  When Dorothy stepped out into Technicolor, I'll bet my eyes just popped.<br /><br />This is the Movie of All Time, folks--a status achieved during its long run as a huge annual TV event during that classic era whose programs now show up on TV Land network.  In the 1970s, Peter Marshall once read the answer on Hollywood Squares as to the program seen more times by more people than anything else ever shown on television.  It was &quot;Oz.&quot;  Likewise, no movie has the hold on popular culture that this one does.  What lion character ever since (i.e., Snagglepuss) hasn't been an impersonation of Bert Lahr going, &quot;Put 'em up, put 'em uuuuup!&quot;<br /><br />Few musicals offer an equal combination of lovable music and engaging story. Perhaps &quot;The Sound of Music.&quot;  Hard to think of many Hollywood musicals where the story gets as serious as it does here when the Witch informs Dorothy that, &quot;The last to go will see the first three go before her...and her mangy little dog too!&quot;  Yikes!  In contrast, even the best of other Hollywood musicals seem to serve up fluffy, forgettable story lines that are mere backdrop to the song numbers that typically put the plot on hold.<br /><br />I can't say that &quot;Oz&quot; doesn't have technical flaws or story element inconsistencies.  It's just that the astonishing production values all around so overwhelm the shortcomings.  The tornado sequence is a 1939 special effects tour de force--incredible.  And the Nutcracker-quality musical score offers songs tastefully interwoven with the action.  Certain numbers like &quot;Merry Old Land of Oz,&quot; I never get tired off, though I like each of the songs.<br /><br />Oz should be viewed in the lightness of spirit that it deserves.  I mean look, we have Frank Morgan as the Emerald City gatekeeper, then seconds later as the cabbie with the Horse of a Different Color, then the Wizard's palace guard, and then the voice of fire-and-smoke Wizard of Oz who bellows, &quot;Step forward, Tin Man!&quot;  What other film could put an actor go through 4 quick-changes within 10 minutes to such an endearing result?  &quot;Oz&quot; is as magic as those sparkling ruby shoes.<br /><br />The early Technicolor process utilized triple nitrate negative strips--separately recording each primary color in light.  This was done due to the lack of a suitable &quot;color film&quot; in 1939.  That would quickly change--but films from years following suffered from hues that faded with the years, even original negatives.  Because &quot;Oz&quot; was actually filmed on a black-and-white base film, the negatives never faded.  So now we have home videos/DVDs of breathtaking color quality.  Now, the tinted filters in the cameras that separated the colors onto the negative strips meant that intense illumination was required, rendering the filming experience miserably hot for the actors involved, especially Lahr.  But they all hold up amazingly well.<br /><br />&quot;Oz&quot; has a valuable message.  As the pop group America once said, &quot;No, Oz never did give nothin' to the Tin Man....that he didn't, didn't already have.&quot;  If we have truly search, we can find within us--or create through trial, like the Lion's courage--what we think we most lack.  The Wizard (like the Lord) helps those who find help within themselves.<br /><br />I feel sorry for the Almira Gulches who can't treasure this film experience. They need to visit the Emerald City to get their own ticking Testimonials and find their hearts.<br /><br />Didn't bring your broomsticks with you?  Well, I'm afraid you'll have to walk.</p>
                     </div>
                 </span>
                 <hr />
-                <div class="yn" id="ynd_961291">
-                    140 of 180 people found this review helpful.&nbsp;
+                <div class="yn" id="ynd_20919">
+                    103 of 126 people found this review helpful.&nbsp;
                     Was this review helpful to you?
-                    <button class="btn small" value="Yes" name="ynb_961291_yes" onclick="CS.TMD.user_review_vote(961291, 'tt0032138', 'yes');" >Yes</button>
-                    <button class="btn small" value="No" name="ynb_961291_no" onclick="CS.TMD.user_review_vote(961291, 'tt0032138', 'no');" >No</button>
+                    <button class="btn small" value="Yes" name="ynb_20919_yes" onclick="CS.TMD.user_review_vote(20919, 'tt0032138', 'yes');" >Yes</button>
+                    <button class="btn small" value="No" name="ynb_20919_no" onclick="CS.TMD.user_review_vote(20919, 'tt0032138', 'no');" >No</button>
                 </div>
             <div class="see-more">
                 
@@ -4820,7 +4821,7 @@ ad_utils.register_ad('bottom_ad');
 <div id="bottom_ad_reflow_helper"></div>
 <script>
 doWithAds(function(){
-ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w:728}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;top:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-topright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/Qm9VhjjOj8oYu8rBL5ZmSAgAAAFYF5AMhQEAAADKAVhe39Q/https://www.shopbop.com/shoes-boots/br/v=1/2534374302112432.htm?extid=DMU_house_sea_weg_boots_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_boots&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_1695945310701\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,o=!1;if(!c){var i=a;try{for(;i!=i.parent;){if(!i.parent.document)throw new Error(\"cross-domain exception\");i=i.parent}}catch(r){}try{o=i.SFClient?i.SFClient.isOnAmazon():n.test(i.location.host)}catch(r){}}var s=!c&&!o;t.ad={aid:\"4342920890301\",cid:\"1695945310701\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"4414083\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},f=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},p=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},l=function(a,t){p(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(p(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),w=m(\"ad\");w.target=\"_blank\";var v=\"shazam/728x90-boots--VfKoX._V528285894_.jpg\",y=m(\"staticImage\");v&&(y.src=h+v,w.style.display=\"block\");var z;c&&l(w,\"aap\"),(c||s)&&(w.target=\"_blank\"),_&&c&&g(_),z&&f(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=weg_boots&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1477701770000 --\>\n <div id=\"bottom_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IEL0q63DAE48qsG0_jE0UnAAAAFYF5AMuAEAAADKznCJVA\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
+ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w:728}; document.ad = document.defaultAd;<\/script> <!DOCTYPE html><html><body><style>.ac{display:block;position:absolute;overflow:hidden;width:19px;height:15px;z-index:9;bottom:0;right:0;background:url(https://images-na.ssl-images-amazon.com/images/G/01/da/adchoices/ac-bottomright-sprite.png)}.ac:hover{width:77px;background-position:-19px 0}.hide{display:none!important}#ad{position:relative;overflow:hidden;width:728px;height:90px;display:none}</style><div id=\"creative-wrapper\" style=\"width: 100%;height:90px;\">\n <a id=\"ad\" href=\"http://aax-us-east.amazon-adsystem.com/x/c/QvD2Rx9AjJawK9DFwQjXEDMAAAFYF8QktgEAAADKAXKruTY/https://www.shopbop.com/whats-new-clothing/br/v=1/2534374302155172.htm?extid=DMU_house_sea_feg_app2_desktop_728_90_jpg_np&amp;cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_app2&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" target=\"_top\" >\n<img id=\"staticImage\" width=\"100%\" height=\"100%\"><a id=\"aapInfo\" target=\"_blank\" class=\"hide ac\" href=\"https://www.amazon.com/adprefs/ref=cs_aap_2610827850801\"></a></div><script>setTimeout(function(){!function(a,t,e){var n=/\\.amazon\\.com(:.*)?$/,c=\"undefined\"!=typeof IS_3P&&IS_3P,i=!1;if(!c){var o=a;try{for(;o!=o.parent;){if(!o.parent.document)throw new Error(\"cross-domain exception\");o=o.parent}}catch(r){}try{i=o.SFClient?o.SFClient.isOnAmazon():n.test(o.location.host)}catch(r){}}var s=!c&&!i;t.ad={aid:\"4342920890301\",cid:\"2610827850801\",w:728,h:90,template:\"Image-1.55\"},a.aanResponse={adId:t.ad.aid,creativeId:t.ad.cid,adNetwork:\"pda\",shazamStage:\"prod\",shazamId:\"3894472\"};try{e&&e.ad_utils&&e.ad_utils.expand_ad(frameElement)}catch(r){}var d=function(a){return/s/.test(a.protocol)},m=function(a){return t.getElementById(a)},f=function(a,t,e){a.href=t,a.target=e?\"_blank\":\"_top\"},l=function(a,t){return a.className.match(new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\"))},p=function(a,t){l(a,t)||(a.className+=\" \"+t)},u=function(a,t){if(l(a,t)){var e=new RegExp(\"(\\\\s|^)\"+t+\"(\\\\s|$)\");a.className=a.className.replace(e,\" \")}},g=function(a){u(a,\"hide\")},h=(d(location)?\"//images-na.ssl-\":\"//g-ecx.\")+\"images-amazon.com/images/G/01/\",_=m(\"aapInfo\"),v=m(\"ad\");v.target=\"_blank\";var w=\"shazam/728x90-fall2--g7v04._V278602134_.jpg\",y=m(\"staticImage\");w&&(y.src=h+w,v.style.display=\"block\");var z;c&&p(v,\"aap\"),(c||s)&&(v.target=\"_blank\"),_&&c&&g(_),z&&f(_,\"https://www.amazon.com/adprefs\",!0);var I=a.SFClient;if(I&&\"function\"==typeof I.changeSize)try{I.changeSize(\"728px\",\"90px\")}catch(r){}}(window,document,parent)},0);<\/script><img src=\"https://shopbop.sp1.convertro.com/view/vt/v1/shopbop/1/cvo.gif?cvosrc=display.house_sea.728_90_jpg_np&amp;cvo_campaign=feg_app2&amp;cvo_placement=desktop&amp;cvo_creative=728_90_jpg_np\" width=\"0\" height=\"0\">\n</body></html><\!-- creativeModDate = 1475190497000 --\>\n <div id=\"bottom_ad_webbug\" style=\"display:none;\">\n <img src=\"http://aax-us-east.amazon-adsystem.com/e/loi/imp?b=IKhnGA4ytkUIi1GH9jJiqYYAAAFYF8Qk5gEAAADKUWOUTw\" border=\"0\" height=\"1\" width=\"1\" alt=\"\"/>\n </div>\n');
 },"unable to inject serverside ad");
 </script>
 	
@@ -4830,13 +4831,13 @@ ad_utils.inject_serverside_ad('bottom_ad', '<script>document.defaultAd = {h:90,w
                 <div class="col outside">
     <h3>IMDb Everywhere</h3>
     <div class="app-links">
-    <a href="/offsite/?page-action=ft_app_apple&token=BCYqI3menUH_ilU1exP0gHfNSSJOTAnorQi0HhJQAsz4OuZVEqvRbxyOCQ2tb_HOCEv_pt3kkhjb%0D%0ABvMOzyoXKQqBAW50tnTYdIt_RNPvLNwbtk4UEt3XYan8hHhaweFkyq-QfnA9Yx2RKZ7c1fs0wyNJ%0D%0Ao1VR874zo_yaWDapcYozKSQO7qFj8w2f8PRaYv5hnd16iKbw9bDB0Z2D6jgWMo0pF8SmxxSFk5_T%0D%0AKNOko-1uK-g%0D%0A&ref_=ft_app_apple"
+    <a href="/offsite/?page-action=ft_app_apple&token=BCYro7wa2G_B4vLBXNxFk_V-ZpM4zqyB3zsHgeVINQpaza8-J-69rUGCoPIy_2Yv_N3AVXwRziPK%0D%0ACAwb6uKSbiiGaQBQn-5ER8jewk7ZFsXFReha15cjAm6uPSRzgw8LLPeUnRSDuL3tXjh99YVpvWh4%0D%0AqfwXklvJURpb2nkeGH-x8vgrRhVBjQViEIOC-fHnoNQFNtBB7Rtoyznrw6KjoNpbB9hhKFZGZTNQ%0D%0AJNspA079Lf8%0D%0A&ref_=ft_app_apple"
 title="Get the IMDb App on the Apple App Store" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-apple" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_google&token=BCYsL4BI80V_JrF-Cda4aaS0FQDV8PX8kRky4BxsPP5YJyXyK2rCnjniQ7z49UKuwWmlksUJMSyd%0D%0AdOAwkv1TnXw62IetBX5L30dbaULFsiYvO6JDM4_mbta0T_pBFSxYmR2GSqtj5-psWbV1R1BBG2C5%0D%0AAq8NfeeMKU_m1Q5r7RRapU560OjgaDdH6oTQxYC9CJWcj5OM1B7eEbHkMUPKthTsK0hAkxzgD1OI%0D%0Aqe0_YV3nr6w%0D%0A&ref_=ft_app_google"
+    <a href="/offsite/?page-action=ft_app_google&token=BCYiVBrCHOfvltT1iKvcmd-eEtmUiBAwhqLrbWHQL13ZP64LvzlNgmxNxaVUYE2Xz1eyfXIOqPy8%0D%0AC8AwvLyq46P0Agymz2TKpIeCQQA1hT9rUERVxDBZv9AraPYqWPWf9LmMW-yjVrOzeRoM-ZdTlGsD%0D%0AP6LAGpYp-UZK0yhEMKGkZjW1rVUQyeddKdwpS3MrSbOfVgWFUshnrSOMbGAUbk7NL5CClEdXNVxR%0D%0A80UGAh9V5tw%0D%0A&ref_=ft_app_google"
 title="Get the IMDb app on Google Play" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-google" ></span>
 </a>
-    <a href="/offsite/?page-action=ft_app_amazon&token=BCYmim8d_y4sUZnJew-QmMVADC0k9Hbqr9JlYpXrXUYwqoHNiqA5krYVuKLg61M2XLjd-_05k-_K%0D%0AVl1p_j_yIJOt-DIybx51Em2sGRfFQf98ViptZhwO9CC89T3lwej9gv1k8XsU0JZ-0GCW9TxOwoGk%0D%0AMdfNDu5nHnrAYOIwB8zs9PJLac29u5zDF5nB1m_a_-GlrFMkGR3RB3VdMPtFYQKjDk-C2Im3X35Z%0D%0A755Ojb7rv6Sz2oM6z_7ugTne_GomzgP-aFXwpA5vcbV-vU138Y7lHRiWjFktgsXf6W1yN1oPsenu%0D%0A228q4kpMfCjK6dmpyUjUybxWtbwrlnmy1QkdJ54IVXpdcUEESaLnJpT2U5aWkrakfnsSY8hgwwUN%0D%0AyOzbdz1aO71VUPaSgYvy63l3s6uONlVprBLP6T5tDf2S1bZwb38%0D%0A&ref_=ft_app_amazon"
+    <a href="/offsite/?page-action=ft_app_amazon&token=BCYo4c48DvZ-W7zCZ0plwpsumYx3kPmiUPHUvNrbHYJ3kF2ay92DhQptIMR8q6KOMfIkN3Cd7suT%0D%0AVFexWxnz9LFJw8g2u5tPK1AvsMiHjtYA-UxeaxYmF8McaE_Yc7YrlW3Ctg2L-PGQfg9-NPnlIfQD%0D%0A0DwssoBl4Aq8pPpd1IzP9JI6E6fhrzlvx-LiX0laPb_CeOf_DvwzUHTITUReWZrbxbvzh9rGF1UJ%0D%0AKSL-2KSpaKnUDYo2mmziGScrbvXAw56eXcSnQIUEsI6V0wVBcEVx224MdizFhhDQJpu3hQFvjEqm%0D%0AQrydw0d4mHADg8UEFlUbTG4_YiIEz75H41gaYXiN0KL1Gdra8ahIVlj5vgLPCDwqIepz_K7Yj3El%0D%0AI5iNo2Z5EPHiib2lh_-A29zl5qVwDx5RVAOn93Ai9KeZV-167mQ%0D%0A&ref_=ft_app_amazon"
 title="Get the IMDb app on Amazon Appstore for Android" target="_blank" itemprop='url'> <span class="desktop-sprite appstore-amazon" ></span>
 </a>
     </div>
@@ -4852,13 +4853,13 @@ class="touchlink" >IMDb Mobile site</a>
       Follow IMDb on
       <div>
 
-    <a href="/offsite/?page-action=fol_fb&token=BCYmBc8sNVy8KgsxUZHKnVUHx9AtqGjcDChwNwRVi4nEn0LWPlOwF8-fO0jp775WySnQwkbLvoGP%0D%0ARUEcp63-7GM3nUewCjwgDkcXNm9FEC6L1_aXq1XYL22XCn97JVmQrT8NhqGq7QpLPsKfEmxbYyX4%0D%0AxVo-stFCvcXcjbHiRL3uljUBH44_SXRm7yjqVDOUvQ4Uk391f7ADv4-NEjAWvdI5hg%0D%0A&ref_=tt_ft_fol_fb"
+    <a href="/offsite/?page-action=fol_fb&token=BCYnDv6F3NvrM57VQzJUeWt0TkBcl2sdVP7HR5nhQuVWwwGj-QO_MdEPMtGBPigzt06yziV9p1NZ%0D%0A51cjyAvaA53EPBgMV6iz_qnV6cSE1n4W2k_e1D-teM4GIZbH8MiYWiTwlhDNh8paEGacHK1ZLZhf%0D%0AY3exVIT2fWZKFaXZ21WeMiuv0DXdxXrKnF6V8lW5QFzK2nhMTWZDSMzZ-gEJeO5ygQ%0D%0A&ref_=tt_ft_fol_fb"
 title="Follow IMDb on Facebook" target="_blank" itemprop='url'> <span class="desktop-sprite follow-facebook" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_tw&token=BCYmCowimc8SOUMHCGXteH86GakGIZKywbYBuwXg_XdqbwTbh7FnP_YX6-OIw2jePkadX4eq55QL%0D%0ADv5E3qGRZHmOqqXK_i4GRPFZ7Jril3i_tYm8OrrMOfEjk8xmrgG94OBw8c6sCXFRZEYc3ALnzX1e%0D%0AbRFi-_w609yRxETaTlpvF3Y3JuRvaja7E9hK5_bj7zS3Q41NSGzYN4o-OPNV90e22g%0D%0A&ref_=tt_ft_fol_tw"
+    <a href="/offsite/?page-action=fol_tw&token=BCYr3cayg-5ngrSqfhQwb9EjGB3VsCTYNL_SdThYZb932Ceqs4KErp3sRpjsNdIH3wI55ZeCL43u%0D%0AyVJAIZeEzB4K_XCmHsioZ1pHrcSC8by7UHSWBLAwWWT0sRMg9IqK3wWY0EVzdCqAJh3VHt-xhkK2%0D%0AAi0mI1Oana09APdLFj17etjtF-liS3uV6ZljfXcVL7Vi4LwQ5RaEMEYzBZZ2m3UM9A%0D%0A&ref_=tt_ft_fol_tw"
 title="Follow IMDb on Twitter" target="_blank" itemprop='url'> <span class="desktop-sprite follow-twitter" ></span>
 </a>
-    <a href="/offsite/?page-action=fol_inst&token=BCYgWW1lc8HGAJXSKOfcj4LsPH_Se2tnEaYCqBb8zaWGlsG3VrSb4OnRIfDuJuB64Nv9wmJrGZnY%0D%0A_92l1SLk6j9lwVfKt445AjKvX4IMtrV8aJ58kVSPo-MBMFSZIT2okFxm_QtZyYdeCMHuJc2o_ORL%0D%0Ag9nqDvEeNk7OG0EPHQXN5q_zJFph63HGinFsw8eubZk8MYOqG9s83Q6cgJFFigxtsg%0D%0A&ref_=tt_ft_fol_inst"
+    <a href="/offsite/?page-action=fol_inst&token=BCYsJn5SxyHk0OYucB5hlx185LKGh1eKWCv8m6etRQeJHgWkd8InN0fzA_Enf3p1LoC4ANQhYjQ9%0D%0A8bxSeIHvuzKihf4GrEEZ_o40C29UMKVX1-o63Xkr4Hb0i6OK5Ch2Q1gE1Bg6LJ4YjVMc0Ba2HaNq%0D%0ACZWPsSqHGNN_l1Nv_TYecoKVAU7xrqs7yf9nik2AGDPLZE0iBirCJwfBOBezNzdreQ%0D%0A&ref_=tt_ft_fol_inst"
 title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="desktop-sprite follow-instagram" ></span>
 </a>
       </div>
@@ -4911,10 +4912,10 @@ title="Follow IMDb on Instagram" target="_blank" itemprop='url'> <span class="de
             <ul class="unstyled">
                 <li><a href="http://pro.imdb.com/signup/index.html?rf=cons_ft_hm&ref_=cons_ft_hm"
 >IMDbPro</a></li>
-                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYuuht5flPyRRDIuOWlSKQthTVzMAtoalqjrZx9L6nPBnK_zeeOPTN_oC9YSyrYP1A4570Kljpr%0D%0AIfd4R3B7hNsTg35FpMx_G4Oiw1bPPkuqUQfFatByrcStEex1IFPZhUbsEQ_PHMUrR25nQjwUveY1%0D%0A1p3W4o-xXiBbs45mBtOX9d-XpBcRzKXSvTW5Lqj3KCmrPbjpmZvXHtdBJgLkVEK9lA%0D%0A&ref_=ft_bom"
+                <li>    <a href="/offsite/?page-action=ft-mojo&token=BCYpVyIpM8kxQTq2W21Owdnj7aX1pTxIh5jZ9Gek4xSu-aoU8lCryE2GfpTD_gxgso76JsRmrD22%0D%0A5ieJpcTOB_zIrw7lKN8faZ7hD-Wc0pO5vU-4Ymz0fEjtHhbk_SKQKRQGzTtyKE8XXI_qOPn5ThEk%0D%0Ae1INWkIegKMcPf6tYxUxWg3UVhIkcOVxyNN5jk_4J11Z-i8bVHVAJ9Lz74zU1N_Iyg%0D%0A&ref_=ft_bom"
 itemprop='url'>Box Office Mojo</a>
 </li>
-                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYiWYA_KeVerJmbSxXB6Qh4-8q0QPpYjtk01Sf2OLrhm_fZOxiCMeRwuBtyvukh5-fpu2ZJTBJi%0D%0AkaVuRUi3-BFCjBwW69pfNozrM6GSmdG6OY1neHq3cZAVJ7kqkMqkXrEdMcWWEyBB2u7eM-CjWhp-%0D%0A41m8YYNqgXIwTCh1pUscl5k1StnGUiNZqw79dhuyqDTpvdf4JqiRxqAv3ra5qHfB-A%0D%0A&ref_=ft_wab"
+                <li>    <a href="/offsite/?page-action=ft-wab&token=BCYuLimG4D6xC2W6F4aJ8VO4k3XqQ3CEJeHOB89mrpTZ0WMZAOwDzjo0vjiCRWCdkDKlf9ZykD6H%0D%0AyTRfQOHn-u0MZeYnV8jNp04xoZzl_-u5LKtyG_yTNgvLIXhZQ3STrB2Cwq1uv0isCBFEYA_TTX7t%0D%0AdspYisOUTUkfvQV7hAkvIHkkGFQLHOGtZVy_5fq_ODNF_txLQU1sULvAwLFsSfKO2Q%0D%0A&ref_=ft_wab"
 itemprop='url'>Withoutabox</a>
 </li>
                 <li class="spacer"></li>
@@ -4922,7 +4923,7 @@ itemprop='url'>Withoutabox</a>
 >Conditions of Use</a></li>
                 <li><a href="/privacy?ref_=ft_pvc"
 >Privacy Policy</a></li>
-                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYu974fKjgh1L8nawJWx3Lm1ObswwB6B5QVtuxEJdGmyUr3CAsu7I0xlBIUQb30_x3xHaNkNdlm%0D%0AmkYNMIqRkhDUzJbvKMLWfaVcDYAj8n4nE9MpkUN-3lkaRZsvqsrBQtirxBb2TMYUbAjlJQ3JhNVZ%0D%0A7WrEST3NPXkuSUU2YZfkPDg9DQ0UfGnLFw_NvRBtTDirFt_EsVhK614itkzjBaV7Zv9CRfk-Zo_D%0D%0AA7l8JZZhVK4dyTsJjScObgeh6J2E1WzA%0D%0A&ref_=ft_iba"
+                <li>    <a href="/offsite/?page-action=ft-iba&token=BCYoZNDm3FOLm5flDy7eZvnN-TWT3RhUtrg2o9zhATFA-VWTPUnPV0AoS62tfa-fuQP7sloqKR36%0D%0A6EGjJa2ccfM_Cq5ua_OIA8dvq2sP1liKVtobWrWAXshOFNQ3IuB97atN0liW0AFVuv87mdXUIasP%0D%0AsCHUt0PPXMkCDTpQ4MgB3kdcNDFPk5iWkb2mAAKXHsFlKoPR9eppizqEfFof2nT4NyNKibkijMMQ%0D%0A3r50S3saMC8WBz7ghUFTxZxwDsCcS8h0%0D%0A&ref_=ft_iba"
 itemprop='url'>Interest-Based Ads</a>
 </li>
                 <li class="spacer"></li>
@@ -4959,7 +4960,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-aiv&token=BCYq3VyfSnrCl2doJLFpO60LeV-sNIcJic-W3jHP2_UPyP8ZPaixVwy3bG5Iv-NKcw2tLTcziiHJ%0D%0Atb7eVERrQLJk4G4D7J5c4TRkqAWfwGZUQQiUunhbOZM-9TLfW4c2OlgYz94v_kbsLDKuM1RG25Yb%0D%0AAil6UjTvp8yXhaewsUcY2FjXuQML3SsCurzQy9jO8SyfZxqKJG1wq2iXWrdQFa8dcmx8xn0SQxNd%0D%0A5SxdQ_iJSpo%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-aiv&token=BCYiQTv3AbiHbeUA5HAXtb9L7YdLzkkgVTHBh1NZC9KZEtWRcSxyCyW3NTP6XZ8gcPWFai8O4JnB%0D%0AK4WoqZ4nYw9t-H7SmjWKxZp61nqnbIAGXCrFrU11quvD46DdObEOrQQBfSlE-cNpyjQFrB1yfcyn%0D%0ABT-pi3zC_3aYGKucJBvpCJIE9rlvEOYPWqe1Fj_7EhUfu5Gz6IjpuAc9atzwxeMFevEEYCFyGLZK%0D%0AeYmje7S5d_Y%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Video</span><br>
                 <span class="amazon-affiliate-site-desc">Watch Movies &<br>TV Online</span>
             </a>
@@ -4968,7 +4969,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-piv&token=BCYqFgGwgRtehXl5cQY58yRFM79CFRVIxPX-TA3mn8nipBrPfeoEMaBOgzMuicoOqj57IQJ6h3-H%0D%0A3OUnHtpXbFSEPvsFZJtcJojCvGHkeesXmogKSBnDEgYU9I_WN-MdzxznQXy-yG-h_lku3JmczWY-%0D%0AK3n4jeQ-4GJzCsezFHEgsWzWunTLyo_2-mC32nbkEHm7ZM2zizqStlp8sJMemFtx7rs73TRxhArv%0D%0AxfKorBegJjE%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-piv&token=BCYrxtAyCo3rBj2s_cYXt0pdoQ_sb0gOFZH7qSBnPiEFNYosD24WrH7IXujjWUr1PQxv5dJehWhb%0D%0AxPUvTU1SS2244WJgcMiFFbEeyii24sjhLock1C6Ov0ucAErQHC_eyu36CHKaM1Dfh7f8QfJJPSv2%0D%0A43xkCscD-4zoUqDfVQvpADnyr7Rl_JNqXHQIw_u98S2xN6XM-FKD0KqWUwMglvqi4PUrvaK1Sw5V%0D%0Abv4U-34W4_Y%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Prime Video</span><br>
                 <span class="amazon-affiliate-site-desc">Unlimited Streaming<br>of Movies & TV</span>
             </a>
@@ -4977,7 +4978,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-de&token=BCYl6bECQfCeuzMBV7NEhsdXWG_DLBBBiEVNmgKlMBMZmqgu1JJ7TkutN9nbT7lmL2MKXCsAiCLp%0D%0A2ZkkIxY6pORib31Scmt_pyRAI9awhEhnrMGApJmbTK3zqJc5VZQR513l2_fWl43d3koxyCNP_x_a%0D%0AViShNAb-6YusrshRUNPQK3YzWnLISi7d_kxPfx98wvyWLTLwJbHowwPz4LsPfcWLmx6UGpIKdaME%0D%0AwVQH3q3-OMc%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-de&token=BCYjLPwb-qXmM6taE3PDIx6-Hdt95qvtdzEBGqOAhVh2BkvFAm7AMyHRHPW4jXmdUIBXgUJIZBT4%0D%0A-u9QhXq4wxfxoQ1pqH2tiZi9KqV1GMC5x3_b45afEZsa1qx7ZvUZRhUoctGkwgbMJbgr1mESR14v%0D%0ATjgNOXcAQUa6NAADMdO0iUtbw5FC5lD3al1LkJizaSk8jqXK-DFdt4cVDMQzdkcMy6Nm6Bp-xzIK%0D%0A_BCWO7HF6eg%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Germany</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4986,7 +4987,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-it&token=BCYiiy0YvWF1bjcrKDnkhja1eJxCPjzqPKlXGqCp6mEZstchJQqloMcQBYCDK8AFMk6dMfekPphg%0D%0A86HwivdkL3Uf8prNQF_ydilHfvIirJqJtHiS1s408ktbnBrkRlFcUxNjs_dExAKttkLAPjWYSLVc%0D%0AkDi9oqeowIJYzB2E8Fm6Wf5IGDc0We9tZ8alzt_N0l6aiQHu18U57VOnzjnZFQE0TuXfroNIvWj5%0D%0AWwJ_stxTXB8%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-it&token=BCYjVftYnTo-EV9XsvKYPqNrudsriSysZ-_q1fgaWvVOD5UzWWPovRSrZgoxnBxZroXHaFEvJCMP%0D%0AZwoFT_pkkZRpSVeb1E5iG2O2KZtrKsFG6y3Ye-3bb0JTa_ZrJ06r3PBNZEnm6xYJkYPQFiZM8PQy%0D%0AmfG2vo5TiPe0T1ZBPZauA84YkiH6-s7PfVBjRywqzhUVYGOiZ5ldB_X-XMx3DvEyV_oWtR66e6gj%0D%0A7IATGjP6Zu0%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon Italy</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -4995,7 +4996,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYlSiYTiriObQtW9XDTK0VUaRXnj3iYTZiZ-LKFD0d5tvCXCVqdl4wPYyVc592Jl_7FJGnTaXht%0D%0A8KvxJdEVTOghqqB-5SFNzvYpk4V0IscqJ589fr7u50t7PHL_UbZQomm9gflajjNO_40dI61JKKAG%0D%0AsuUVmXYQxvfpeRrVTldX5vJxJ_8hL_tjDhjAU9YlvVqIz-D6gUFh-uFrRof_LF9c-TWGtjIk0NjD%0D%0AVPcPkfjZr78%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-fr&token=BCYl6IVxgYEfcZr8OfelNvIqVYC7yVf-ySXa65bb_gqu7t2GUhCIxfGGr0wRQ3Jd95GbyaVpOVpM%0D%0AGHqQsUcx92i9K1GJNHoA5fhLjxLeSqp-WP107HhxcSSCf2DkNyjSkoUlTzUhmRQwRRYO8_8NRAto%0D%0AsAAUPrbtDpp3kBdzqGYOpd5RX4HzwsUJyDW8XYunXswgtwMTZlO8b6C2mbjP8ITo4S2MoZx8PLNE%0D%0ApTjjHtsSnoc%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon France</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movies on<br>DVD & Blu-ray</span>
             </a>
@@ -5004,7 +5005,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-in&token=BCYr47hbG7jx5ZjbF4OVJtPrvG31adrm9kDZMityCltdfhC5Arn5ERm-7mbeG8pEshfFHXDK2v5s%0D%0ANL2NRcvLDqS_cbAyyhMtEriYXyup4rbtmtfKSwl_fFL4aJ5OPLU5AR5qX-UxGhd_BFkVGqxWAKsr%0D%0AkpssZHiNpCoYK9spjLQqF1FXidA0oz7Ruy_r8jhHjqcznUQMlMFcvAywUHRw36vWrIgtoaRCiGEz%0D%0A9h5dSOrM7aD1y_q4hL5RRv1M8sH0d8k8%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-in&token=BCYm4C976q-T8JiO5f2RiwoB6XCMVFg6Hl5TSEAT4239k00zxpifaHlGfOFFLSTEPYhN2xR8uOc3%0D%0ANgAA3sMzHzyNpHKxVtN37qdqnruJf8caEBrkflQwg0TJ05ohQyVpVhsN3H8d76pt4HeAHLUcoC-t%0D%0AULb4wwRlGZl6UMsWtP1r8Of5rJpO5K-9OF4TwmGrylfUIklukLdKNGLudcBBa36lCthfO-1WonTW%0D%0AQcpcuY1MuuD9r1Y8lSo1NB1VSPDsm4QD%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Amazon India</span><br>
                 <span class="amazon-affiliate-site-desc">Buy Movie and<br>TV Show DVDs</span>
             </a>
@@ -5013,7 +5014,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYkaBqJ-D-aMJBgmwRDrdvmWltyckCVbbRxPtx-sEewfUfDBJMghx1shqeTXkKlaqDMne3dXvKl%0D%0A4hBfyUKOnIEgCbUx_xerKnYL7v4X0dA0EKQxxmmE6bqE2JXJqQzpwJ35pBIPHnsNOcP7DYxdiFT3%0D%0ACmt1h0jJOoN9IYy5ThQleR0%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-dpr&token=BCYuGtGeBJiHkcBAgvN-ipMqlMARmL97N4KHbIdm6RxN5LdftgirOk9m2MqHQGfyAYcVey1EqWjn%0D%0As-oX1L9qDK_e0qJ8zrFMpha-aYmrHEVoWRqzIv5u-pHcAyLnvJlxUA38qom-2nldnIfjSGJ559po%0D%0ARynHrrTM5KmDGBv1lLn-gTM%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">DPReview</span><br>
                 <span class="amazon-affiliate-site-desc">Digital<br>Photography</span>
             </a>
@@ -5022,7 +5023,7 @@ href="/help/"
 
     <td>
         <div>
-            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYiyruL8pWBes9xAlgZ2dv-gkPq7GGA9cWccA6BXnXwq71oriLKu8n1JU4DEos3OHRLRBzXKVO2%0D%0AebuN5O0BDbw155u0n4_Ali5CmuE_knP7o2mgKO9dLcsV3GeY9YKTebbEtmuRqrroh5ZAgMuMRfxk%0D%0AwAsslLeCFxDtQOy_315iKtA%0D%0A" class="amazon-affiliate-site-link">
+            <a href="/offsite/?page-action=ft-amzn-aud&token=BCYn7EqhlXntSY7ng4dGdsWSuKoJ1p3JMTvaTVfaEe0Jf4QOo7KhuAWuYjEoZzeKxaGflNQw_0Xv%0D%0AxRP1n6RzgeMfxXreVFcbcR9sv6aL9LYRmkcKV0T5U-FlwyGvr7a52ocX8da4z5b6J52JBTYo-6y7%0D%0AlWfZPInaob8h-67vdn4wn-o%0D%0A" class="amazon-affiliate-site-link">
                 <span class="amazon-affiliate-site-name">Audible</span><br>
                 <span class="amazon-affiliate-site-desc">Download<br>Audio Books</span>
             </a>
@@ -5106,13 +5107,13 @@ href="/help/"
                 params_sis3 = [
                     "d=imdb.com",
                     "a1=",
-                    "a2=0101b78e7cde8f1cdf63b7f4032f5cda8a096c170f89bf7ad4eb99a9624e3b72dde8",
+                    "a2=01011efe1fb339ff814e998cf7c5f23c45b2f890c9be3ffd46414a6ec139d851c1d7",
                     "pId=tt0032138",
                     "r=1",
                     "rP=http%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0032138%2F%3Fref_%3Dadv_li_tt",
                     "ex-hargs=v=1.0;c=IMDB;p=tt0032138;t=imdb_title_view;",
                     "encoding=server",
-                    "cb=249402506665"  
+                    "cb=070792007910"  
                 ];
         
             if (document.getElementById('sis_pixel_sitewide')) {
@@ -5153,13 +5154,13 @@ c15:""
 
 <script>
     doWithAds(function(){
-        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=249402506665&ord=249402506665";
+        (new Image()).src = "http://www.amazon.com/aan/2009-05-01/imdb/default?slot=sitewide-iframe&u=070792007910&ord=070792007910";
     },"unable to request AAN pixel");
 </script>
 
 <!-- end ads footer -->
 
-<div id="servertime" time="231"/>
+<div id="servertime" time="279"/>
 
 
 

@@ -11,6 +11,7 @@
             "compactItems": 250
         },
         "wordpress": {
+            "posterWidth": 800,
             "pageSlogan": "Free Movie For Everyone.",
             "pageName": "Free Online Movie",
             "homepage": "https://alexfreemovie.wordpress.com",
