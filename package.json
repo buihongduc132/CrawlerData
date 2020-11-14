@@ -39,7 +39,7 @@
     "progress": "^1.1.8",
     "request": "^2.75.0",
     "xmlbuilder": "^8.2.2",
-    "xmldom": "^0.1.22",
+    "xmldom": "^0.3.0",
     "xpath": "0.0.23"
   }
 }
